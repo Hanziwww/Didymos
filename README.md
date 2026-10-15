@@ -194,8 +194,10 @@ layout:
 
 ## Model weights
 
-Didymos 1.0 was trained on data under data-use agreements. Its weights are not in this repository; they are available
-on application, as stated in the article's Data availability section.
+Didymos 1.0 was trained on data under data-use agreements. Its weights and fitted
+tokenizer are hosted at [HanZiwww/Didymos-1.0](https://huggingface.co/HanZiwww/Didymos-1.0)
+with manual review of access requests. The model card describes the package and
+the applicable access conditions. The weights are not covered by this code repository's Apache-2.0 license.
 
 ## Tests
 
@@ -224,7 +226,7 @@ Use `CITATION.cff` to cite this software release. The article citation will be a
 
 This public-release packaging was prepared on 2026-10-15 from the supplied
 `release/paper-v1` source snapshot, commit `344652d0dc3c1c0cb6dbfe329e06530fd78d4252`
-(`COMMIT.txt`). Packaging adds citation metadata, corrects the README's canonical
+(`COMMIT.txt`). Packaging adds citation metadata and the model-access link, corrects the README's canonical
 CLIF version, declares the statistics tool's `statsmodels` dependency and uses
 pytest's default temporary directory so a clean checkout can run the tests.
 The model, training, sampling and evaluation implementation was preserved.
