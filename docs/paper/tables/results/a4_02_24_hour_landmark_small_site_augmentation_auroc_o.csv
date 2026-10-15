@@ -1,0 +1,7 @@
+Endpoint,Dataset,300 real,300 real + 300 twins,300 real + 900 twins,all real
+ICU death,INSPIRE,0.841,0.652,-,0.894
+ICU death,NWICU,0.804,0.797,0.851,0.885
+In-hospital death,INSPIRE,0.759,0.765,-,0.794
+In-hospital death,NWICU,0.822,0.820,0.809,0.854
+ICU stay > 7 days,INSPIRE,0.818,0.887,-,0.902
+ICU stay > 7 days,NWICU,0.728,0.762,0.757,0.794

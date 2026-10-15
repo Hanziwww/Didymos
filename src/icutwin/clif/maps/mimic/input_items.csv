@@ -1,0 +1,175 @@
+itemid,label,input_category,provenance
+220970,Fresh Frozen Plasma,blood_products,d_items 'Blood Products/Colloids'
+221036,Nutren Renal (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+221207,Impact (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+225162,Prismasate K2,renal_replacement_fluids,d_items 'Fluids/Intake'; CRRT dialysate / replacement
+225163,Prismasate K4,renal_replacement_fluids,d_items 'Fluids/Intake'
+225164,Trisodium Citrate 0.4%,renal_replacement_fluids,d_items 'Fluids/Intake'; CRRT citrate anticoagulation
+225165,Bicarbonate Base,iv_crystalloid,d_items 'Fluids/Intake'; isotonic bicarbonate base fluid
+225168,Packed Red Blood Cells,blood_products,d_items 'Blood Products/Colloids'
+225170,Platelets,blood_products,d_items 'Blood Products/Colloids'
+225171,Cryoprecipitate,blood_products,d_items 'Blood Products/Colloids'
+225173,Cell Saver,blood_products,d_items 'Blood Products/Colloids'; cell saver
+225174,Hetastarch (Hespan) 6%,iv_colloid,d_items 'Blood Products/Colloids'
+225795,Dextran 40,iv_colloid,d_items 'Blood Products/Colloids'
+225796,Dextran 70,iv_colloid,d_items 'Blood Products/Colloids'
+225797,Free Water,enteral_water,d_items 'Fluids/Intake'
+225799,Gastric Meds,enteral_medication,d_items 'Fluids/Intake'
+225801,Lipids 20%,parenteral_nutrition,d_items 'Nutrition - Parenteral'
+225823,D5 1/2NS,iv_crystalloid,d_items 'Fluids/Intake'
+225825,D5NS,iv_crystalloid,d_items 'Fluids/Intake'
+225827,D5LR,iv_crystalloid,d_items 'Fluids/Intake'
+225828,LR,iv_crystalloid,d_items 'Fluids/Intake'; lactated Ringer's: CLIF-MIMIC maps no LR item
+225830,Multivitamins,iv_medication,d_items 'Fluids/Intake'
+225918,Aminosyn 3.5%,po_intake,d_items 'Nutrition - Supplements' (mL)
+225919,D5 Aminosyn 3.5%,po_intake,d_items 'Nutrition - Supplements' (mL)
+225920,Peripheral Parenteral Nutrition,parenteral_nutrition,d_items 'Nutrition - Parenteral'
+225921,Hepatamine,po_intake,d_items 'Nutrition - Supplements' (mL)
+225922,Nephramine,po_intake,d_items 'Nutrition - Supplements' (mL)
+225928,Impact with Fiber (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+225929,ProBalance (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+225930,Peptamen 1.5 (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+225931,Nutren 2.0 (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+225934,Vivonex (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+225935,Replete (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+225936,Replete with Fiber (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+225937,Ensure (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+225941,D5 1/4NS,iv_crystalloid,d_items 'Fluids/Intake'
+225943,Solution,other,d_items 'Fluids/Intake'; unspecified solution
+225944,Sterile Water,other,d_items 'Fluids/Intake'; sterile water
+225991,Resource Fruit Beverage,po_intake,d_items 'Nutrition - Supplements' (mL)
+225994,Mighty Shake (Vanilla/Strawberry),po_intake,d_items 'Nutrition - Supplements' (mL)
+225995,Mighty Shake (Chocolate),po_intake,d_items 'Nutrition - Supplements' (mL)
+225996,Mighty Shake (no sugar added),po_intake,d_items 'Nutrition - Supplements' (mL)
+225999,Vanilla Scandi Shake (mixed),po_intake,d_items 'Nutrition - Supplements' (mL)
+226000,Chocolate Scandi Shake (mixed),po_intake,d_items 'Nutrition - Supplements' (mL)
+226002,Vanilla Lactose Free Scandi Shake (mixed),po_intake,d_items 'Nutrition - Supplements' (mL)
+226016,Nutren 2.0 (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226017,Nutren 2.0 (2/3),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226018,Nutren 2.0 (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226019,Nutren 2.0 (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226020,Impact (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226021,Impact (2/3),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226022,Impact (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226023,Impact (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226024,Impact with Fiber (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226025,Impact with Fiber (2/3),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226026,Impact with Fiber (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226027,Impact with Fiber (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226028,Nutren Renal (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226029,Nutren Renal (2/3),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226030,Nutren Renal (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226031,Nutren Renal (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226036,Peptamen 1.5 (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226037,Peptamen 1.5 (2/3),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226038,Peptamen 1.5 (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226039,Peptamen 1.5 (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226040,ProBalance (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226041,ProBalance (2/3),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226042,ProBalance (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226043,ProBalance (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226044,Replete (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226045,Replete (2/3),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226046,Replete (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226047,Replete (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226048,Replete with Fiber (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226049,Replete with Fiber (2/3),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226050,Replete with Fiber (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226051,Replete with Fiber (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226056,Vivonex (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226057,Vivonex (2/3),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226058,Vivonex (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226059,Vivonex (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226089,Piggyback,iv_medication,d_items 'Fluids/Intake'; piggyback medication volume
+226361,Pre-Admission/Non-ICU Intake,other,d_items 'Fluids/Intake'; pre-admission / non-ICU
+226362,ZGastric/TF Residual Intake,other,d_items 'Fluids/Intake'; gastric residual returned
+226363,Cath Lab Intake,other,d_items 'Fluids/Intake'; cath lab
+226364,OR Crystalloid Intake,iv_crystalloid,d_items 'Fluids/Intake'; OR
+226365,OR Colloid Intake,iv_colloid,d_items 'Blood Products/Colloids'; OR
+226367,OR FFP Intake,blood_products,d_items 'Blood Products/Colloids'; OR
+226368,OR Packed RBC Intake,blood_products,d_items 'Blood Products/Colloids'; OR
+226369,OR Platelet Intake,blood_products,d_items 'Blood Products/Colloids'; OR
+226370,OR Autologous Blood Intake,blood_products,d_items 'Blood Products/Colloids'; OR
+226371,OR Cryoprecipitate Intake,blood_products,d_items 'Blood Products/Colloids'; OR
+226372,OR Cell Saver Intake,blood_products,d_items 'Blood Products/Colloids'; OR
+226375,PACU Crystalloid Intake,iv_crystalloid,d_items 'Fluids/Intake'; PACU
+226376,PACU Colloid Intake,iv_colloid,d_items 'Blood Products/Colloids'; PACU
+226377,PACU PO Intake,po_intake,d_items 'Fluids/Intake'; PACU
+226401,GU Irrigant - Normal Saline,flush_irrigation_urine,d_items 'Fluids/Intake'; as CLIF-MIMIC's GU Irrigant Volume In
+226402,GU Irrigant - Sterile Water,flush_irrigation_urine,d_items 'Fluids/Intake'
+226403,GU Irrigant - Amphotericin B,flush_irrigation_urine,d_items 'Fluids/Intake'
+226452,PO Intake,po_intake,d_items 'Fluids/Intake'
+226453,GT Flush,flush_irrigation_gi,d_items 'Fluids/Intake'
+226875,Ensure (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226876,Ensure (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226877,Ensure Plus (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226878,Ensure Plus (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226879,Ensure Plus (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226880,Nutren Pulmonary (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226881,Nutren Pulmonary (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+226882,Nutren Pulmonary (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227070,PACU Packed RBC Intake,blood_products,d_items 'Blood Products/Colloids'; PACU
+227071,PACU Platelet Intake,blood_products,d_items 'Blood Products/Colloids'; PACU
+227072,PACU FFP Intake,blood_products,d_items 'Blood Products/Colloids'; PACU
+227090,Lipids 10%,parenteral_nutrition,d_items 'Nutrition - Parenteral'
+227091,Ensure (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227092,Ensure Plus (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227370,Peptamen VHP (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227371,Peptamen VHP (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227372,Peptamen VHP (2/3),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227373,Peptamen VHP (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227374,Peptamen VHP (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227518,Nutren 2.0 (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227532,Plasma Pheresis,blood_products,d_items 'Blood Products/Colloids'; plasma exchange replacement
+227695,Fibersource HN (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227696,Fibersource HN (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227697,Fibersource HN (2/3),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227698,Fibersource HN (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227699,Fibersource HN (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227972,NovaSource Renal (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227973,NovaSource Renal (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227974,NovaSource Renal (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227975,NovaSource Renal (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227976,Boost Glucose Control (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227977,Boost Glucose Control (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227978,Boost Glucose Control (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+227979,Boost Glucose Control (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228131,Isosource 1.5 (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228132,Isosource 1.5 (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228133,Isosource 1.5 (2/3),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228134,Isosource 1.5 (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228135,Isosource 1.5 (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228348,Nepro (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228349,Nepro (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228350,Nepro (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228351,Nepro (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228352,Enlive (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228353,Enlive (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228354,Enlive (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228355,Enlive (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228356,Glucerna (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228357,Glucerna (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228358,Glucerna (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228359,Glucerna (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228360,Pulmocare (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228361,Pulmocare (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228362,Pulmocare (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228363,Pulmocare (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228364,Two Cal HN (1/2),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228365,Two Cal HN (1/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228366,Two Cal HN (3/4),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228367,Two Cal HN (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+228383,Peptamen Bariatric (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+229009,Promote (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+229010,Jevity 1.2 (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+229011,Jevity 1.5 (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+229012,Vital 1.5 (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+229013,Glucerna 1.2 (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+229014,Promote with Fiber (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+229067,Granulocytes,blood_products,d_items 'Blood Products/Colloids'
+229294,Ensure Clear (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+229295,Glucerna 1.5 (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+229296,Vital High Protein (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+229297,Osmolite 1.5 (Full),enteral_nutrition,d_items 'Nutrition - Enteral' (mL)
+229574,Fiber Supplement (i.e. Banana Flakes),po_intake,d_items 'Nutrition - Supplements' (mL)
+229583,Beneprotein.,po_intake,d_items 'Nutrition - Supplements' (mL)

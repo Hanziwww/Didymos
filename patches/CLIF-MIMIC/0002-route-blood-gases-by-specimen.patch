@@ -1,0 +1,54 @@
+diff --git a/src/tables/labs.py b/src/tables/labs.py
+index f5cadb6..80087eb 100644
+--- a/src/tables/labs.py
++++ b/src/tables/labs.py
+@@ -17,6 +17,7 @@ from src.utils import (
+     load_mapping_csv,
+     save_to_rclif,
+     convert_tz_to_utc,
++    mimic_table_pathfinder,
+ )
+ 
+ from src.utils_qa import all_null_check
+@@ -136,15 +137,30 @@ def le_labs_comments_parsed(le_labs_extracted: pd.DataFrame) -> pd.DataFrame:
+ def le_labs_processed(le_labs_comments_parsed: pd.DataFrame, labs_mapping: pd.DataFrame) -> duckdb.DuckDBPyRelation:
+     """Map item IDs to names/categories and convert units via mapping."""
+     logger.info("processing labevents: mapping names/categories and converting units...")
+-    q = """
++    # icutwin patch: route blood gases by specimen type (itemid 52033, as mimic-code's bg concept does);
++    # otherwise venous, mixed-venous and central-venous gases are reported as arterial. Venous pO2 and
++    # peripheral-venous SO2 have no CLIF category and are dropped.
++    q = f"""
++    WITH specimen AS (
++        SELECT specimen_id, any_value(value) AS specimen_type
++        FROM '{mimic_table_pathfinder("labevents")}'
++        WHERE itemid = 52033
++        GROUP BY specimen_id
++    )
+     FROM le_labs_comments_parsed e
+     LEFT JOIN labs_mapping m ON e.itemid = m.itemid
+         AND m.decision IN ('TO MAP, CONVERT UOM', 'TO MAP, AS IS', 'UNSURE')
++    LEFT JOIN specimen s ON s.specimen_id = e.specimen_id
+     SELECT hadm_id AS hospitalization_id
+         , charttime AS lab_collect_dttm
+         , storetime AS lab_result_dttm
+         , m.label AS lab_name
+-        , m.lab_category
++        , lab_category: CASE
++            WHEN e.itemid = 50818 AND s.specimen_type IN ('VEN.', 'MIX.', 'CENTRAL VENOUS.') THEN 'pco2_venous'
++            WHEN e.itemid = 50820 AND s.specimen_type IN ('VEN.', 'MIX.', 'CENTRAL VENOUS.') THEN 'ph_venous'
++            WHEN e.itemid = 50817 AND s.specimen_type = 'MIX.' THEN 'so2_mixed_venous'
++            WHEN e.itemid = 50817 AND s.specimen_type = 'CENTRAL VENOUS.' THEN 'so2_central_venous'
++            ELSE m.lab_category END
+         , lab_value_numeric: CASE
+             WHEN m.decision = 'TO MAP, CONVERT UOM'
+                 THEN e.valuenum * m.conversion_multiplier
+@@ -155,6 +171,8 @@ def le_labs_processed(le_labs_comments_parsed: pd.DataFrame, labs_mapping: pd.Da
+             ELSE COALESCE(e.value, e.comments) END
+         , m.target_uom AS reference_unit
+     WHERE m.lab_category IS NOT NULL
++        AND NOT (e.itemid = 50821 AND coalesce(s.specimen_type, '') IN ('VEN.', 'MIX.', 'CENTRAL VENOUS.'))
++        AND NOT (e.itemid = 50817 AND coalesce(s.specimen_type, '') = 'VEN.')
+     """
+     return duckdb.sql(q)
+ 

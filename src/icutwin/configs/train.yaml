@@ -1,0 +1,83 @@
+# S6 training (M5). Locally only the bounded pilot and the overfit test run; real runs are on the server (M9):
+#   python -m icutwin.model.cli task=parity mode=full     # FlashAttention-2 packing check, before the first run
+#   accelerate launch --config_file src/icutwin/configs/accelerate/ddp.yaml -m icutwin.model.cli task=train mode=full
+# (fsdp2.yaml for L only; S and M fit one GPU each). The next run's settings and their basis: docs/m5_training.md
+defaults:
+  - paths
+  - _self_
+
+task: pilot             # pilot | overfit | resources | exposure | parity | smoke | train
+mode: subset            # which token layout to read
+tokens_root: ${paths.data}/tokens/${mode}
+qa_root: ${paths.data}/qa/${mode}
+run_root: ${paths.runs}/train/${mode}
+datasets: [mimic, aumc, eicu, hirid, sicdb, nwicu, inspire]
+seed: 1234
+overfit_steps: 300
+
+pilot:
+  runs:                                 # short training runs with validation: two sizes, each at its best of a few rates
+    - {preset: pilot, lr: 1.0e-3}
+    - {preset: pilot, lr: 5.0e-4}
+    - {preset: pilot_wide, lr: 1.0e-3}
+    - {preset: pilot_wide, lr: 5.0e-4}
+    - {preset: pilot_wide, lr: 2.5e-4}
+  probes: [tiny, pilot, pilot_wide, S, M]   # memory and throughput at full context, a few steps each
+  steps: 600
+  tokens_per_batch: 16384               # per micro-batch: float32 logits over the 12k vocabulary dominate memory
+  grad_accum: 2                         # 32k tokens per optimizer step
+  gpu_memory_fraction: 0.75             # of the GPU: the pilot never takes the whole card
+  n_check: 2000                         # train windows whose transforms are checked (plus every tuning window)
+
+smoke:                                  # task=smoke: the train section's path, bounded (icutwin.model.smoke)
+  steps: 50
+  resume_at: 25
+
+exposure:                               # task=exposure: train tokens and the sampling exposure of the train section
+  gpus: 4                               # its processes: tokens per step = tokens_per_batch x grad_accum x gpus
+  budgets: [5.0e8, 1.0e9, 1.5e9, 2.0e9] # further token budgets to report
+
+train:                                  # icutwin.model.train.TrainConfig: the next server run (docs/m5_training.md)
+  # round 3 (docs/m7_refinement.md): M32_main's data, passes and recipe with goal-field subsets (#110), residual
+  # dropout and, for R2, input noise (tools/server/round3_candidate.sh passes the name and R2's train.input_noise).
+  # Earlier runs keep their configs in runs/train/full/<name>/config (ML32_main: preset ML, lr 4e-4)
+  name: R1_main
+  preset: M                             # 123.5M; context 32,768 from the grammar spec, RoPE base 1e6 (presets)
+  eval_split: tuning
+  alpha: 0.5                            # not used: target passes below
+  # every dataset drawn about as often (M_main: 1.5 to 5.9 passes at alpha 0.5; the M7 membership attack's AUC
+  # rose with passes and failed on INSPIRE at 5.9): 3 passes, 2.5 for the two smallest datasets
+  passes: {default: 3.0, nwicu: 2.5, inspire: 2.5}
+  transforms: {goal_fraction: 0.25, shuffle_header: true, dataset_unknown: 0.10, header_unknown: 0.05,
+               goal_subsets: true, goal_targets: false}   # goal_targets: goal fields as targets (goal-first)
+  tokens_per_batch: 65536               # per micro-batch and GPU, packed: holds a 32k window with its goal block
+  grad_accum: 2                         # x 4 GPUs: 0.52M tokens per optimizer step
+  max_steps: 2600                       # sum of passes x train tokens / tokens per step (set from task=exposure)
+  lr: 6.0e-4                            # M: GPT-3 Small's rate at width 768 (ML32_main, 1024 wide: 4e-4)
+  min_lr_ratio: 0.1
+  warmup_steps: 100
+  weight_decay: 0.1
+  betas: [0.9, 0.95]
+  grad_clip: 1.0
+  precision: bf16
+  attn_implementation: varlen           # torch's varlen FlashAttention (model/attention.py); flash_attention_2 also packs
+  compile: true                         # torch.compile, inductor (2.2x on the server GPUs)
+  eval_every: 250
+  eval_max_windows: null                # the whole tuning split
+  log_every: 10
+  checkpoint_every: 250
+  gpu_memory_fraction: null
+  resume_from: null
+  init_from: null                       # amendment 17: a finished model's final/hf to start from (fresh optimizer)
+  dropout: 0.1                         # round 3: residual and embedding dropout (R1, R2)
+  ema_decay: null                       # round 3: off (step 0d: averaging gained 0.0017 nats, under the 0.002 rule)
+  input_noise: 0.0                      # round 3: R2 sets 0.15 (input-noise augmentation)
+  input_noise_ramp: 0.5
+  optimizer: adamw                      # amendment 2: muon (Muon on hidden matrices, AdamW on embeddings and norms)
+  muon_momentum: 0.95
+
+hydra:
+  run:
+    dir: ${paths.runs}/hydra/train/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    chdir: false

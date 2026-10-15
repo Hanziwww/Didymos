@@ -1,0 +1,21 @@
+variableid,code,device_category,mode_category,tracheostomy,provenance
+15001552,1,imv,,0,intubiert (ricu mech_vent: invasive)
+15001552,2,imv,,1,tracheotomiert (ricu mech_vent: invasive)
+15001552,3,nippv,,0,Maske (ricu mech_vent: noninvasive)
+15001552,4,nippv,,0,Helm (ricu mech_vent: noninvasive)
+15001552,5,nippv,,0,Mundstueck (Stellar) (ricu mech_vent: noninvasive)
+3845,2,,pressure_control,,DGV (druckgesteuert)
+3845,3,,acvc,,CMV
+3845,4,,prvc,,Druckreg. Vol.Kontr. (pressure-regulated volume control)
+3845,5,,volume_support,,Volumenunterstuetzung
+3845,6,,simv,,SIMV(CMV)+DU
+3845,7,,simv,,SIMV(DGV.)+DU
+3845,8,,ps_or_cpap,,DU/ST (Druckunterstuetzung / spontan)
+3845,9,,other,,Optional
+3845,10,,simv,,SIMV-PregVctrl+Psupp
+3845,11,,aprv,,Bi-Vent
+3845,12,nippv,other,,NIV DGV
+3845,13,nippv,other,,NIV DU
+3845,14,cpap,ps_or_cpap,,Nasal CPAP
+3845,15,,other,,NAVA
+3845,17,nippv,other,,NIV neur adj (NIV-NAVA)

@@ -1,0 +1,22 @@
+Endpoint,Dataset,Twin,n=100,300,"1,000","3,000","all (up to 5,000)"
+ICU death,MIMIC-IV,0.843,0.749,0.850,0.868,0.850,0.852
+ICU death,eICU,0.939,0.697,0.784,0.795,0.828,0.828
+ICU death,HiRID,0.877,0.868,0.872,0.896,-,0.872
+ICU death,AmsterdamUMCdb,0.875,0.818,0.816,0.855,0.865,0.867
+ICU death,SICdb,0.786,0.879,0.888,0.880,-,0.898
+ICU death,NWICU,0.761,0.755,0.783,0.838,0.849,0.881
+ICU death,INSPIRE,0.998,0.720,0.829,0.875,-,0.913
+In-hospital death,MIMIC-IV,0.857,0.670,0.802,0.823,0.864,0.850
+In-hospital death,eICU,0.913,0.680,0.724,0.781,0.837,0.818
+In-hospital death,HiRID,0.847,0.820,0.879,0.878,-,0.870
+In-hospital death,AmsterdamUMCdb,0.850,0.818,0.816,0.855,0.865,0.867
+In-hospital death,SICdb,0.869,0.737,0.804,0.792,-,0.832
+In-hospital death,NWICU,0.896,0.731,0.840,0.852,0.847,0.852
+In-hospital death,INSPIRE,0.731,0.757,0.734,0.756,-,0.755
+ICU stay > 7 days,MIMIC-IV,0.825,0.705,0.749,0.789,0.822,0.826
+ICU stay > 7 days,eICU,0.673,0.627,0.721,0.744,0.803,0.787
+ICU stay > 7 days,HiRID,0.727,0.640,0.688,0.709,-,0.737
+ICU stay > 7 days,AmsterdamUMCdb,0.846,0.763,0.846,0.844,0.851,0.850
+ICU stay > 7 days,SICdb,0.799,0.770,0.814,0.819,-,0.842
+ICU stay > 7 days,NWICU,0.797,0.684,0.732,0.770,0.766,0.796
+ICU stay > 7 days,INSPIRE,0.845,0.736,0.881,0.915,-,0.890

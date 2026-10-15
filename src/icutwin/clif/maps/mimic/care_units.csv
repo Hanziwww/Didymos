@@ -1,0 +1,47 @@
+careunit,location_category,location_type,admission_source,provenance
+Emergency Department,ed,,ed,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Medicine,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Emergency Department Observation,ed,,ed,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Discharge Lounge,other,,other,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Med/Surg,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Medicine/Cardiology,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Neurology,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Transplant,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Hematology/Oncology,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+PACU,procedural,,or,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Vascular,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Labor & Delivery,l&d,,other,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Med/Surg/GYN,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Medical Intensive Care Unit (MICU),icu,medical_icu,other_icu,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Surgery/Trauma,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Med/Surg/Trauma,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Hematology/Oncology Intermediate,stepdown,,stepdown,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Surgery,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Cardiac Vascular Intensive Care Unit (CVICU),icu,mixed_cardiothoracic_icu,other_icu,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Medical/Surgical Intensive Care Unit (MICU/SICU),icu,general_icu,other_icu,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Cardiac Surgery,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Surgical Intensive Care Unit (SICU),icu,surgical_icu,other_icu,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Obstetrics (Postpartum & Antepartum),ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Psychiatry,psych,,other,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Medicine/Cardiology Intermediate,stepdown,,stepdown,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Trauma SICU (TSICU),icu,surgical_icu,other_icu,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Coronary Care Unit (CCU),icu,cardiac_icu,other_icu,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Cardiology Surgery Intermediate,stepdown,,stepdown,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Medical/Surgical (Gynecology),ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Surgery/Pancreatic/Biliary/Bariatric,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Neuro Intermediate,stepdown,,stepdown,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Obstetrics Postpartum,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Surgery/Vascular/Intermediate,stepdown,,stepdown,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Observation,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Cardiology,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Neuro Surgical Intensive Care Unit (Neuro SICU),icu,mixed_neuro_icu,other_icu,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Thoracic Surgery,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Obstetrics Antepartum,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Neuro Stepdown,stepdown,,stepdown,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Nursery,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Surgical Intermediate,stepdown,,stepdown,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Oncology,ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+UNKNOWN,other,,unknown,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Unknown,other,,unknown,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Intensive Care Unit (ICU),icu,general_icu,other_icu,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk
+Special Care Nursery (SCN),ward,,ward,CLIF-MIMIC afc89f0 adt mapping; location_type via clifpy 2.1->3.0 crosswalk

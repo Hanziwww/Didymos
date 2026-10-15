@@ -1,0 +1,8 @@
+Endpoint,Database,Anchors,Positives,LABEL positives,Z0: 16a,Z1: back-off,F1: adapted,F1+S: stacked,"LightGBM, LABEL","LightGBM, FT+LABEL",TabPFN-3.5
+ICU death,RICD,338,133,94,0.695,0.685,0.738 (0.678 to 0.792),0.744,0.711,0.768,0.701
+In-hospital death,RICD,338,163,125,0.658,0.660,0.715 (0.659 to 0.767),0.719,0.684,0.718,0.680
+ICU stay > 7 days,RICD,338,241,179,0.601,0.593,0.720 (0.644 to 0.792),0.789,0.772,0.795,0.553
+ICU death,zigongICU,345,137,73,0.733,0.742,0.710 (0.651 to 0.770),0.730,0.695,0.752,0.741
+In-hospital death,zigongICU,345,165,99,0.690,0.699,0.676 (0.616 to 0.733),0.692,0.646,0.710,0.722
+ICU stay > 7 days,zigongICU,345,94,68,0.617,0.605,0.705 (0.634 to 0.769),0.706,0.588,0.676,0.649
+"Decompensation, 24 h",zigongICU,345,42,19,0.755,0.746,0.736 (0.657 to 0.809),0.735,0.637,0.725,0.750

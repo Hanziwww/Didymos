@@ -1,0 +1,63 @@
+itemid,item,med_category,provenance
+6811,Aciclovir (Zovirax),acyclovir,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+6847,Amoxicilline (Clamoxyl/Flemoxin),amoxicillin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+6871,Benzylpenicilline (Penicilline),penicillin_g,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+6891,Paracetamol,acetaminophen,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+6919,Cefotaxim (Claforan),cefotaxime,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+6922,Prednisolon (Prednison),prednisone,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+6948,Ciprofloxacine (Ciproxin),ciprofloxacin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+6953,Rifampicine (Rifadin),rifampin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+6958,Clindamycine (Dalacin),clindamycin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+6960,Rocuronium (Esmeron),rocuronium,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+6963,Alteplase (Actilyse),alteplase,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+6995,Dexamethason,dexamethasone,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7044,Tobramycine (Obracin),tobramycin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7064,Vancomycine,vancomycin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7097,Haloperidol (Haldol),haloperidol,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7106,Hydrocortison (Solu Cortef),hydrocortisone,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7123,Imipenem (Tienam),imipenem_cilastatin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7165,Lorazepam (Temesta),lorazepam,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7170,Diazepam (Valium),diazepam,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7185,Doxycycline (Vibramycine),doxycycline,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7187,Metronidazol (Flagyl),metronidazole,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7208,Erythromycine (Erythrocine),erythromycin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7212,Naloxon (Narcan),naloxone,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7214,Etomidaat (Hypnomidate),etomidate,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7219,Fentanyl,fentanyl,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7225,Morfine,morphine,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7227,Flucloxacilline (Stafoxil/Floxapen),flucloxacillin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7231,Fluconazol (Diflucan),fluconazole,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7232,Ganciclovir (Cymevene),ganciclovir,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7235,Gentamicine (Garamycin),gentamicin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7243,Foscarnet trinatrium (Foscavir),foscarnet,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7450,Amfotericine B (Fungizone),amphotericin_b,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+7479,Ketamine (Ketalar),ketamine,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+8127,Meropenem (Meronem),meropenem,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+8132,Methylprednisolon (Solu-Medrol),methylprednisolone,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+8394,Co-Trimoxazol (Bactrimel),trimethoprim_sulfamethoxazole,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+8547,Voriconazol (VFEND),voriconazole,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+8549,Belcomycine (Colistinesulfaat) 4x,colistin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+9018,Esketamine (Ketanest-S),ketamine,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+9029,Amoxicilline/Clavulaanzuur (Augmentin),amoxicillin_clavulanate,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+9128,Piperacilline (Pipcil),piperacillin_tazobactam,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+9133,Ceftriaxon (Rocephin),ceftriaxone,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+9141,Suxamethonium (Succinylcholine),succinylcholine,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+9151,Cefuroxim (Zinacef),cefuroxime,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+9458,Caspofungine,caspofungin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+10628,Fludrocortison (Florinef),fludrocortisone,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+12391,Valproinezuur (Depakine) drank,valproate,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+12398,Levofloxacine (Tavanic),levofloxacin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+12630,Risperidon (Risperdal),risperidone,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+13012,Olanzapine (Zyprexa),olanzapine,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+13057,Azitromycine (Zithromax),azithromycin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+13883,Oxycodon (OxyNorm),oxycodone,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+14443,Valproinezuur (Orfiril),valproate,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+15739,Ecalta (Anidulafungine),anidulafungin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+16360,Quetiapine (Seroquel),quetiapine,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+18675,Amfotericine B liposomen (Ambisome),amphotericin_b,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+19137,Linezolid (Zyvoxid),linezolid,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+19221,Oxycodon (OxyContin),oxycodone,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+19571,Oseltamivir (Tamiflu),oseltamivir,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+19764,Tigecycline (Tygacil),tigecycline,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+19773,Daptomycine (Cubicin),daptomycin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml
+20175,Colistine,colistin,CLIF-AmsterdamUMCdb mappings/medication_admin_intermittent.yaml

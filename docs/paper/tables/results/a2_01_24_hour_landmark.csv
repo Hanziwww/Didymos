@@ -1,0 +1,4 @@
+Endpoint,O/E,Slope,ECE,Brier,O/E recalibrated,ECE recalibrated,O/E by ICU day of the anchor
+ICU death,1.14,0.45,0.010,0.024,0.97,0.013,d1: 1.14
+In-hospital death,1.40,0.55,0.028,0.068,0.93,0.020,d1: 1.40
+ICU stay > 7 days,0.81,0.38,0.055,0.104,0.83,0.032,d1: 0.81

@@ -1,0 +1,31 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif", "fontSize": "13px", "primaryColor": "#F0F0F0", "primaryBorderColor": "#4D4D4D", "primaryTextColor": "#000000", "lineColor": "#333333", "clusterBkg": "#FFFFFF", "clusterBorder": "#8C8C8C", "edgeLabelBackground": "#FFFFFF"}, "fontFamily": "Arial, Helvetica, sans-serif", "markdownAutoWrap": false, "htmlLabels": false, "flowchart": {"htmlLabels": false, "wrappingWidth": 480, "subGraphTitleMargin": {"top": 6, "bottom": 10}, "curve": "linear", "nodeSpacing": 24, "rankSpacing": 26}}}%%
+%% Supplementary Fig. 1a: from seven source databases to model-ready sequences (sources: docs/paper/preprocessing.md, data.md, tokenization.md)
+%% Stage labels start with "Stage n:", not "n.", which Mermaid would read as a Markdown list.
+flowchart TB
+    SRC["Seven ICU databases, credentialed access<br/>MIMIC-IV 3.1 (USA); eICU-CRD 2.0 (USA, 208 hospitals);<br/>HiRID 1.1.1 (Switzerland); AmsterdamUMCdb 1.0.2 (Netherlands);<br/>SICdb 1.0.8 (Austria); NWICU 0.1.0 (USA); INSPIRE 1.4.2 (South Korea)"]
+    ST["Stage 1: staging<br/>native layouts; Parquet mirror with row-count parity"]
+    CL["Stage 2: CLIF tables per database<br/>official ETLs for MIMIC-IV and AmsterdamUMCdb;<br/>mapping-table adapters for the other five; normalized to CLIF 3.0"]
+    QA["Stage 3: quality assurance<br/>schema and vocabulary validation; cross-database distribution checks;<br/>reconciliation with the community MEDS pipelines"]
+    MD["Stage 4: harmonized MEDS<br/>one subject per adult ICU stay, from 48 h before ICU admission to ICU discharge;<br/>common event codes; canonical units"]
+    RU["Uniform rules<br/>hourly medians for monitor streams; one row per infusion rate change;<br/>doses only with weights charted before them;<br/>fields documented later masked until documented"]
+    DC["Derived concepts, used as labels only<br/>KDIGO AKI stage; ventilation, vasopressor and RRT episodes;<br/>norepinephrine equivalents; first-day SOFA; Adult Sepsis Event"]
+    SP["Splits within each database, grouped by patient<br/>train 80%, tuning 5%, held-out 15%"]
+    TK["Stage 5: tokenization<br/>vocabulary fitted on the train split: 25,601 tokens;<br/>value deciles per event code; 12 interval tokens;<br/>the grammar accepts all 409,297 stays; lossless round trip"]
+    TR["Train: 327,662 stays<br/>Didymos's training, without task labels;<br/>comparators' training, with labels"]
+    TU["Tuning: 20,453 stays<br/>model selection, recalibration"]
+    HO["Held-out: 61,182 stays<br/>a test store of 2,000 per database"]
+    SRC --> ST --> CL --> QA --> MD
+    RU -.-> MD
+    MD --> SP --> TK
+    MD --> DC
+    TK --> TR
+    TK --> TU
+    TK --> HO
+    DC -.->|"labels"| TR
+    DC -.->|"labels"| HO
+    classDef accent fill:#E3EEF7,stroke:#0072B2,stroke-width:1.5px,color:#000000;
+    classDef plain fill:#F0F0F0,stroke:#4D4D4D,stroke-width:1px,color:#000000;
+    classDef note fill:#FFFFFF,stroke:#B3B3B3,stroke-width:1px,color:#4D4D4D;
+    class MD,TK accent;
+    class SRC,ST,CL,QA,SP,TR,TU,HO plain;
+    class RU,DC note;

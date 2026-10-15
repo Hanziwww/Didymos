@@ -1,0 +1,9 @@
+race,race_category,ethnicity_category,provenance
+WHITE,white,non_hispanic,CLIF-MIMIC: WHITE -> White / Non-Hispanic
+BLACK/AFRICAN,black_or_african_american,non_hispanic,CLIF-MIMIC: BLACK/AFRICAN -> Black / Non-Hispanic
+ASIAN,asian,non_hispanic,CLIF-MIMIC: ASIAN
+NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER,native_hawaiian_or_other_pacific_islander,non_hispanic,CLIF-MIMIC
+AMERICAN INDIAN OR ALASKA NATIVE,american_indian_or_alaska_native,non_hispanic,CLIF-MIMIC
+MULTIPLE RACE/ETHNICITY,other,unknown,CLIF-MIMIC: MULTIPLE RACE/ETHNICITY -> Other / Unknown
+OTHER,other,unknown,CLIF-MIMIC: OTHER -> Other / Unknown
+UNKNOWN,unknown,unknown,

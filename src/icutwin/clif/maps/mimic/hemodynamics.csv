@@ -1,0 +1,16 @@
+itemid,measurement_category,provenance
+220074,cvp,d_items 220074 Central Venous Pressure (mmHg)
+220059,pa_systolic,d_items 220059 Pulmonary Artery Pressure systolic (mmHg)
+220060,pa_diastolic,d_items 220060 Pulmonary Artery Pressure diastolic (mmHg)
+220061,pa_mean,d_items 220061 Pulmonary Artery Pressure mean (mmHg)
+223771,pcwp,d_items 223771 PCWP (mmHg)
+224842,cco,d_items 224842 Cardiac Output (CCO) (L/min); continuous PA-catheter thermodilution
+220088,cardiac_output_thermodilution,d_items 220088 Cardiac Output (thermodilution) (L/min)
+228177,cardiac_index,d_items 228177 CI (PiCCO) (L/min/m2)
+227547,stroke_volume,d_items 227547 SV (Arterial) (mL/beat)
+227546,svv,d_items 227546 SVV (Arterial) (%)
+228184,svv,d_items 228184 SVV (PiCCO) (%)
+228182,svi,d_items 228182 SVI (PiCCO) (mL/m2)
+228185,svri,d_items 228185 SVRI (PiCCO) (dyn*s/cm5/m2)
+228179,evlwi,d_items 228179 ELWI (PiCCO) (mL/kg)
+226272,ef,d_items 226272 EF (CCO) (%)

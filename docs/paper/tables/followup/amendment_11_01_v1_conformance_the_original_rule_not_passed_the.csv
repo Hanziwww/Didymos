@@ -1,0 +1,10 @@
+Endpoint,Toolkit AUROC,A1,F1 (32),Limit,Toolkit O/E,A1 O/E,F1 O/E,Limit,Original rule,Added check,Within the limit of
+"Decompensation, 24 h",0.880,0.903,0.881,0.017,1.69,1.85,1.74,0.15,yes,no,F1
+"New IMV, 24 h",0.843,0.838,0.837,0.065,0.83,0.80,0.76,0.09,yes,yes,"A1, F1"
+"New vasopressor, 24 h",0.899,0.889,0.887,0.024,0.56,0.61,0.57,0.05,yes,yes,"A1, F1"
+"New RRT, 48 h",0.948,0.932,0.934,0.016,0.56,0.57,0.56,0.06,yes,no,F1
+"AKI stage >= 2, 48 h",0.893,0.887,0.883,0.018,0.67,0.66,0.65,0.03,yes,yes,"A1, F1"
+"Sepsis (ASE), 24 h",0.963,0.989,0.900,0.152,0.80,0.83,0.92,0.15,no,yes,"A1, F1"
+"Hypotension, 4 h",0.891,0.875,0.878,0.021,0.98,0.95,0.96,0.07,yes,yes,"A1, F1"
+"Hyperkalaemia (top bin), 24 h",0.806,0.847,0.805,0.055,0.82,0.76,0.76,0.06,yes,yes,"A1, F1"
+"Thrombocytopenia, 48 h",0.892,0.829,0.886,0.077,0.78,0.76,0.82,0.09,yes,yes,"A1, F1"

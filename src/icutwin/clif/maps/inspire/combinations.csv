@@ -1,0 +1,9 @@
+component_a,component_b,product,provenance
+piperacillin,tazobactam,piperacillin + tazobactam,INSPIRE releases combination products as one row per component (same subject/time/route; co-occurrence 99.5%)
+tazobactam,ceftolozane,ceftolozane + tazobactam,combination product released per component
+sulfamethoxazole,trimethoprim,sulfamethoxazole + trimethoprim,combination product released per component (co-occurrence 100%)
+imipenem,cilastatin,imipenem + cilastatin,combination product released per component (co-occurrence 100%)
+amoxicillin,clavulanate,amoxicillin + clavulanate,combination product released per component (co-occurrence 100%)
+ampicillin,sulbactam,ampicillin + sulbactam,combination product released per component
+cefoperazone,sulbactam,cefoperazone + sulbactam,combination product released per component
+ceftazidime,avibactam,ceftazidime + avibactam,combination product released per component

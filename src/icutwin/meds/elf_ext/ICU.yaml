@@ -1,0 +1,46 @@
+# ICU-stay context (ext_icu_stay): CLIF has no ICU-stay table. Header events at ICU admission, the ICU
+# outcome at ICU discharge; dataset and site as static events of the patient. Stay events carry their
+# stay_id as text value so S4 assigns them to their own stay exactly (it blanks the id afterwards).
+elf_version: "icutwin-ext-0.1.0"
+subject_id_col: patient_id
+
+ext_icu_stay:
+  admission:
+    text_value: stay_id
+    code: [ICU, admission, col(unit_type)]
+    time: col(icu_in_dttm)
+  admission_source:
+    text_value: stay_id
+    code: [ICU, admission_source, col(admission_source)]
+    time: col(icu_in_dttm)
+  surgical_status:
+    text_value: stay_id
+    code: [ICU, surgical_status, col(surgical_status)]
+    time: col(icu_in_dttm)
+  adm_dx_group:
+    text_value: stay_id
+    code: [ICU, adm_dx_group, col(adm_dx_group)]
+    time: col(icu_in_dttm)
+    where: adm_dx_group IS NOT NULL
+  era:
+    text_value: stay_id
+    code: [ICU, era, col(era)]
+    time: col(icu_in_dttm)
+    where: era IS NOT NULL
+  stay_seq:
+    text_value: stay_id
+    code: ICU//stay_seq
+    time: col(icu_in_dttm)
+    numeric_value: stay_seq
+  discharge:
+    text_value: stay_id
+    code: [ICU, discharge, col(icu_outcome)]
+    time: col(icu_out_dttm)
+  dataset:
+    code: [DATASET, col(dataset)]
+    time: null
+    distinct: true
+  site:
+    code: [SITE, col(dataset), col(site_id)]
+    time: null
+    distinct: true

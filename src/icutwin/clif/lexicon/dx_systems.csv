@@ -1,0 +1,15 @@
+priority,pattern,system,provenance
+1,sepsis|septic|infectieziekt,sepsis,"APACHE II sepsis group (HiRID 102); eICU APACHE IV 'Sepsis, <site>' diagnoses; AmsterdamUMCdb internal medicine 'Infectieziekten'"
+1,overdose|intoxica|poison|vergiftig|toxicity,intoxication,"APACHE IV intoxication group (HiRID 206); eICU APACHE IV 'Overdose, ...' and 'Toxicity, drug' diagnoses"
+2,transplant,transplant,APACHE IV operative and non-operative transplant (eICU; AmsterdamUMCdb 17006 / 17016 / transplant surgery)
+3,neuro|cerebr|hersen|spinal,neurologic,"APACHE neurologic; before vascular: AmsterdamUMCdb 'Neurochirurgie _Vasculair chirurgisch', 'Neurologie_Vasculair neurologisch'"
+4,trauma|letsel,trauma,APACHE trauma (operative / not operative)
+5,cardio|vascul|vaat|aort|cabg|klep|valve|cardiac,cardiovascular,"APACHE cardiovascular; vascular surgery ('Vaatchirurgie'), aortic and valve surgery; before thorax: 'Thoraxchirurgie_CABG en Klepchirurgie', 'Thoraxchirurgie_Cardio anders'"
+6,respir|pulmon|thora,respiratory,APACHE respiratory; 'Thoraxchirurgie_Pulmonale chirurgie'
+7,gastr|abdomin|buik|intestin,gastrointestinal,APACHE gastrointestinal (AmsterdamUMCdb 'Gastr-intenstinaal' typo included); 'Buikchirurgie' (abdominal surgery)
+8,metabo|endocrin,metabolic_endocrine,APACHE metabolic/endocrine
+9,hemato|haemato,hematologic,APACHE hematologic
+10,genito|urogen|renaal|renal|urolog,genitourinary,APACHE genitourinary / APACHE II renal
+11,gyn|obstet,gynecologic,APACHE II gynecology surgical (HiRID 113)
+12,musculo|orthop|skin|huid,musculoskeletal_skin,APACHE IV musculoskeletal/skin; APACHE II orthopedics surgical (HiRID 114)
+13,overig|other|\bkno\b,other,"APACHE 'Other'; AmsterdamUMCdb 'Overige', 'KNO/Overige' (ENT and other)"

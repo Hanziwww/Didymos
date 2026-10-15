@@ -1,0 +1,16 @@
+source,unit_admission_source,hospital_admission_type,provenance
+Emergency Department,ed,ed,
+Operating Room,or,other,
+Recovery Room,or,other,post-anaesthesia recovery
+PACU,or,other,post-anaesthesia care unit
+Floor,ward,other,
+Acute Care/Floor,ward,other,
+Step-Down Unit (SDU),stepdown,other,
+Observation,ward,other,
+Chest Pain Center,ed,ed,emergency chest pain unit
+Direct Admit,direct,direct,
+Other Hospital,other_hospital,osh,
+Other ICU,other_icu,other,
+ICU,other_icu,other,
+ICU to SDU,other_icu,other,patient arrives from an ICU-to-step-down transfer
+Other,other,other,

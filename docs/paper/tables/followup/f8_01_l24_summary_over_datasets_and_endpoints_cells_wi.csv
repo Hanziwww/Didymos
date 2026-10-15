@@ -1,0 +1,6 @@
+Real stays n,Twins added,Cells,Mean gain,Median gain,Cells with a gain,Cells whose test-anchor interval excludes 0
+100,1 x n,19,0.038,0.036,19/19,2/19
+100,3 x n,19,0.059,0.048,19/19,3/19
+300,1 x n,19,0.012,0.007,19/19,0/19
+300,3 x n,8,0.028,0.027,8/8,2/8
+1000,1 x n,8,0.007,0.006,6/8,0/8

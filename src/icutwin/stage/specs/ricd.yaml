@@ -1,0 +1,17 @@
+# RICD 3.0 (Russian Intensive Care Dataset) — eleven ';'-delimited CSVs (csv/) plus the same data as SQLite databases
+# (processed/, vanilla/), which are not staged. Inference only (Paper P amendment 16a): staged in full mode; every CSV
+# copied byte-exactly (subset filtering parses ',' only).
+name: ricd
+archive: RICD/RICD-3.0.tar.zst
+strip_prefix: RICD-3.0/
+out_compression: gzip
+delimiter: ";"
+anchor:
+  member: csv/all_patients.csv
+  patient_col: new_patient_id
+rules:
+  - {pattern: "*.db", action: skip}
+  - {pattern: "processed/sql/*", action: skip}
+  - {pattern: "*SHA256SUMS.txt", action: checksums}
+  - {pattern: "csv/*.csv", action: copy}
+  - {pattern: "*", action: copy}

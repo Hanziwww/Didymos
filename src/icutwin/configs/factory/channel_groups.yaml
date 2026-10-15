@@ -1,0 +1,23 @@
+# The factory's channel groups (plan Phase F, Factory design 1): every event code of the token vocabulary is a
+# channel of the group its domain (the code's first part) maps to. Groups "outcome" and "boundary" are never input
+# channels of a query: end-block codes (hospital outcome, discharge diagnoses) are outcomes; the ICU admission and
+# discharge events bound the stay (a context trajectory shows them, a query is cut before its discharge).
+groups:
+  vitals: [VITAL]
+  labs: [LAB]
+  respiratory: [RESP, AIRWAY]
+  hemodynamics: [HEMO]
+  assessments: [PA]
+  fluids: [INPUT, OUTPUT, DRAIN]
+  infusions: [MED_CON]
+  intermittent: [MED_INT]
+  orders: [MED_ORD]
+  renal_support: [CRRT, IHD]
+  mechanical_support: [MCS]
+  microbiology: [MICRO, MICRO_SUS, MICRO_ORDER, MICRO_NC]
+  procedures: [PROC, LINE, POS, CODE_STATUS]
+  transfers: [ADT]
+  boundary: [ICU]
+  outcome: [HOSP, HOSP_DX, END, MEDS_DEATH, ICD9CM, ICD10CM, ICD9PCS, ICD10PCS]
+# the physiological groups: numeric measurements a threshold, value or forecast program may target
+physiological: [vitals, labs, respiratory, hemodynamics, assessments, fluids, renal_support, mechanical_support]

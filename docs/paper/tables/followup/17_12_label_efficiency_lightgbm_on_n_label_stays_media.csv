@@ -1,0 +1,16 @@
+Design,Endpoint,Database,F1+R,n=25,n=50,n=100,n=200,all LABEL,LightGBM reaches F1+R at n
+R,"Decompensation, 24 h",RICD,0.898,0.684,0.704,0.745,0.776,0.874 (n=877),not reached
+R,"New vasopressor, 24 h",RICD,0.851,0.600,0.675,0.680,0.661,0.709 (n=877),not reached
+R,"AKI stage >= 2, 48 h",RICD,0.847,0.590,0.708,0.779,0.803,0.900 (n=877),"interpolated, 393"
+R,"Hyperkalaemia (top bin), 24 h",RICD,0.873,0.689,0.624,0.615,0.643,0.501 (n=877),not reached
+R,"Decompensation, 24 h",zigongICU,0.834,0.643,0.708,0.733,0.772,0.802 (n=466),not reached
+R,"New vasopressor, 24 h",zigongICU,0.745,0.681,0.664,0.702,0.744,0.748 (n=466),"interpolated, 249"
+R,"Hyperkalaemia (top bin), 24 h",zigongICU,0.851,0.659,0.668,0.720,0.706,0.775 (n=466),not reached
+R,"Thrombocytopenia, 48 h",zigongICU,0.902,0.669,0.580,0.562,0.646,0.810 (n=466),not reached
+L24e,ICU death,RICD,0.738,0.500,0.500,0.677,0.676,0.711 (n=877),not reached
+L24e,In-hospital death,RICD,0.715,0.500,0.500,0.635,0.654,0.684 (n=877),not reached
+L24e,ICU stay > 7 days,RICD,0.720,0.500,0.500,0.669,0.709,0.772 (n=877),"interpolated, 257"
+L24e,ICU death,zigongICU,0.710,0.500,0.500,0.604,0.625,0.695 (n=466),not reached
+L24e,In-hospital death,zigongICU,0.676,0.500,0.500,0.579,0.593,0.646 (n=466),not reached
+L24e,ICU stay > 7 days,zigongICU,0.705,0.500,0.500,0.533,0.576,0.588 (n=466),not reached
+L24e,"Decompensation, 24 h",zigongICU,0.736,0.500,0.500,0.612,0.624,0.637 (n=466),not reached

@@ -1,0 +1,35 @@
+variableid,code,name,surgical,system,provenance
+9990002,98,Cardiovascular,0,cardiovascular,HiRID-ICU-Benchmark (Yeche et al. 2021) appendix table 7; hirid.intensivecare.ai APACHE group mapping
+9990002,99,Respiratory,0,respiratory,HiRID-ICU-Benchmark table 7
+9990002,100,Gastrointestinal,0,gastrointestinal,HiRID-ICU-Benchmark table 7
+9990002,101,Neurologic,0,neurologic,HiRID-ICU-Benchmark table 7
+9990002,102,Sepsis,0,sepsis,HiRID-ICU-Benchmark table 7 (benchmark target: other medical diseases)
+9990002,103,Trauma not surgical,0,trauma,HiRID-ICU-Benchmark table 7
+9990002,104,Metabolic/Endocrinology,0,metabolic_endocrine,HiRID-ICU-Benchmark table 7
+9990002,105,Hematologic,0,hematologic,HiRID-ICU-Benchmark table 7
+9990002,106,Other,0,other,HiRID-ICU-Benchmark table 7 (benchmark target: other medical diseases)
+9990002,107,(Cardio)vascular surgical,1,cardiovascular,HiRID-ICU-Benchmark table 7
+9990002,108,Respiratory surgical,1,respiratory,HiRID-ICU-Benchmark table 7
+9990002,109,Gastrointestinal surgical,1,gastrointestinal,HiRID-ICU-Benchmark table 7
+9990002,110,Neurologic surgical,1,neurologic,HiRID-ICU-Benchmark table 7
+9990002,111,Trauma surgical,1,trauma,HiRID-ICU-Benchmark table 7
+9990002,112,Renal surgical,1,genitourinary,HiRID-ICU-Benchmark table 7
+9990002,113,Gynecology surgical,1,gynecologic,HiRID-ICU-Benchmark table 7 (benchmark target: other surgical)
+9990002,114,Orthopedics surgical,1,musculoskeletal_skin,HiRID-ICU-Benchmark table 7 (benchmark target: other surgical)
+9990004,190,Cardiovascular,0,cardiovascular,HiRID-ICU-Benchmark table 7
+9990004,191,Respiratory,0,respiratory,HiRID-ICU-Benchmark table 7
+9990004,192,Gastrointestinal,0,gastrointestinal,HiRID-ICU-Benchmark table 7
+9990004,193,Neurologic,0,neurologic,HiRID-ICU-Benchmark table 7
+9990004,194,Trauma not surgical,0,trauma,HiRID-ICU-Benchmark table 7
+9990004,195,Metabolic/Endocrinology,0,metabolic_endocrine,HiRID-ICU-Benchmark table 7
+9990004,196,Hematologic,0,hematologic,HiRID-ICU-Benchmark table 7
+9990004,197,Urogenital,0,genitourinary,HiRID-ICU-Benchmark table 7 (benchmark target: other medical diseases)
+9990004,198,Other,0,other,HiRID-ICU-Benchmark table 7 (benchmark target: other medical diseases)
+9990004,199,(Cardio)vascular surgical,1,cardiovascular,HiRID-ICU-Benchmark table 7
+9990004,200,Gastrointestinal surgical,1,gastrointestinal,HiRID-ICU-Benchmark table 7
+9990004,201,Respiratory surgical,1,respiratory,HiRID-ICU-Benchmark table 7
+9990004,202,Neurologic surgical,1,neurologic,HiRID-ICU-Benchmark table 7
+9990004,203,Trauma surgical,1,trauma,HiRID-ICU-Benchmark table 7
+9990004,204,Renal surgical,1,genitourinary,HiRID-ICU-Benchmark table 7
+9990004,205,Other surgical,1,other,HiRID-ICU-Benchmark table 7
+9990004,206,Intoxication,0,intoxication,HiRID-ICU-Benchmark table 7 (benchmark target: other medical diseases)

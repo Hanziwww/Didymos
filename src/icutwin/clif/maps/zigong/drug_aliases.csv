@@ -1,0 +1,4 @@
+pattern,replacement,provenance
+(?i)deoxyepinephrine,phenylephrine,"去氧肾上腺素 (deoxyepinephrine) is phenylephrine"
+(?i)piperacillin sodium and tazobactam sodium,piperacillin-tazobactam,the combination product's English name (the lexicon allows at most 6 characters between the two names)
+(?i)injectio mannitou,mannitol injection,mannitol injection (a transliteration in the release)

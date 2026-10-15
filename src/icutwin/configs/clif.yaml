@@ -1,0 +1,32 @@
+# S2-S4 per dataset: raw -> CLIF (reference ETL + supplement, or our adapter) -> canonical CLIF 3.0 -> MEDS (ELF)
+defaults:
+  - paths
+  - _self_
+
+task: validate          # pipeline | build | mimic_tool | aumc_tool | supplement | adapter | harmonize | validate | meds_tool | qa | community | reconcile
+mode: subset            # which staged layout to read (data/raw/<mode>)
+datasets: [mimic, aumc, eicu, hirid, sicdb, nwicu, inspire]
+raw_root: ${paths.data}/raw/${mode}
+parquet_root: ${paths.data}/parquet/${mode}
+clif_root: ${paths.data}/clif/${mode}
+harmonized_root: ${paths.data}/clif_canonical/${mode}
+meds_root: ${paths.data}/meds_elf/${mode}
+qa_root: ${paths.data}/qa/${mode}
+work_root: ${paths.data}/work/${mode}
+community_root: ${paths.data}/community_meds/${mode}   # community MEDS ETL outputs (task=community: bash on Linux, WSL2 on Windows)
+community_proxy: null   # HTTP(S) proxy for the MIMIC concept-map download, e.g. http://127.0.0.1:10808
+community_wsl_distro: Ubuntu-24.04   # WSL2 distribution running the community ETLs (Windows only)
+strict: true            # harmonize: fail on values outside CLIF 3.0 + declared extensions
+# Canonical timestamps are site-local wall-clock times stored as UTC. A reference ETL that emits true UTC is
+# shifted back in harmonize by the fixed offset it applied. CLIF-MIMIC localizes MIMIC times as US/Eastern
+# with pandas/pytz, whose DST table ends in 2037; MIMIC dates are shifted to 2100-2200, so the applied offset
+# is a constant UTC-5 (checked against raw transfers by the MIMIC supplement; a DST-aware inverse would be
+# 1 h off in summer).
+utc_offset_hours:
+  mimic: -5
+
+hydra:
+  run:
+    dir: ${paths.runs}/hydra/clif/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    chdir: false

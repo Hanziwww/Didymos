@@ -1,0 +1,8 @@
+Database,Domain,"Events to OOV, 16a (%)",after the back-off (%)
+RICD,ADT,12.7,0.0
+RICD,MED_CON,85.1,0.0
+RICD,MED_INT,31.6,2.9
+RICD,OUTPUT,14.5,0.0
+zigongICU,ADT,0.1,0.0
+zigongICU,MED_CON,55.5,0.6
+zigongICU,MED_INT,6.5,1.2

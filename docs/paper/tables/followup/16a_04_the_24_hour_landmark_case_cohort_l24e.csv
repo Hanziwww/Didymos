@@ -1,0 +1,8 @@
+Endpoint,Database,Anchors,Positives,Didymos estimate,Didymos AUROC (95% CI),Didymos O/E,"Didymos AUROC, internal (follow-up)","LightGBM, transferred","Logistic, transferred","TabPFN-3.5, transferred",Didymos probe,"LightGBM, local (cross-fitted)"
+In-hospital death,RICD,700,350,sampled,0.650 (0.609 to 0.691),1.63,0.883,0.710,0.673,0.731,0.688,0.757
+ICU death,RICD,700,289,hazard (E2),0.686 (0.647 to 0.725),1.40,0.924,0.671,0.659,0.711,0.698,0.775
+ICU stay > 7 days,RICD,700,507,sampled,0.569 (0.508 to 0.628),3.46,0.864,0.543,0.456,0.530,0.557,0.787
+"Decompensation, 24 h",zigongICU,700,77,hazard (E2),0.796 (0.743 to 0.847),0.29,0.982,0.733,0.636,0.778,0.781,0.679
+In-hospital death,zigongICU,700,350,sampled,0.717 (0.681 to 0.754),0.67,0.883,0.696,0.599,0.721,0.738,0.710
+ICU death,zigongICU,700,274,hazard (E2),0.765 (0.730 to 0.801),0.55,0.924,0.721,0.548,0.755,0.765,0.785
+ICU stay > 7 days,zigongICU,700,184,sampled,0.603 (0.554 to 0.653),1.36,0.864,0.676,0.413,0.671,0.642,0.704

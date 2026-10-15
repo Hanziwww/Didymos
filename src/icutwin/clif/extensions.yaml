@@ -1,0 +1,38 @@
+# Declared additions to the CLIF 3.0 vocabularies (strict harmonization accepts nothing else).
+#  * `ext_` values are new concepts CLIF 3.0 has no category for (units = canonical units we convert to).
+#  * unprefixed values are consortium practice: emitted by the official CLIF ETLs although missing from the
+#    3.0 permissible lists. They keep their names so codes stay identical to other CLIF sites.
+labs:
+  lab_category:
+    ext_base_excess: {unit: mmol/l, order_category: blood_gas}
+    ext_creatine_kinase: {unit: u/l, order_category: misc}
+    ext_ggt: {unit: u/l, order_category: lft}
+    ext_ammonia: {unit: umol/l, order_category: misc}
+    ext_methemoglobin: {unit: "%", order_category: blood_gas}
+    ext_carboxyhemoglobin: {unit: "%", order_category: blood_gas}
+    ext_bands_percent: {unit: "%", order_category: cbc}
+# Medication categories outside CLIF 3.0 (consortium practice, local and ext_ concepts) are declared in
+# medication_extensions.csv; medication_orders accepts the union of both administration tables' additions.
+medication_admin_intermittent:
+  med_route_category:
+    inhaled:
+      why: "nebulized and inhaled doses (bronchodilators, inhaled corticosteroids, mucolytics): CLIF 3.0 lists 'inhaled' for continuous administrations only"
+      origin: local
+      clif_3_0: medication_admin_continuous only
+      source: "route maps: MIMIC eMAR IH/NEB/INHALATION, NWICU 'Inhalation', HiRID 'inhal', AmsterdamUMCdb order category 70 'Niet iv Tractus Respiratorius'"
+medication_orders:
+  med_category:
+    adenosine: {group: cardiac, why: "intermittent practice name (medication_extensions.csv); missing from the 3.0 orders list"}
+hospital_diagnosis:
+  diagnosis_code_format:
+    AMSTERDAM_APACHE: {why: "AmsterdamUMCdb has no ICD codes; CLIF-AmsterdamUMCdb codes APACHE IV/NICE diagnosis items"}
+patient_diagnosis:
+  diagnosis_code_format:
+    ICD9CM: {why: "eICU problem-list entries coded only in ICD-9-CM (CLIF 3.0 patient_diagnosis lists ICD10CM only)"}
+patient_procedures:
+  procedure_code_format:
+    SNOMED: {why: "CLIF-AmsterdamUMCdb maps procedure orders to SNOMED via AMSTEL"}
+    ICD9PCS: {why: "ICD-9-CM volume 3 procedure codes (MIMIC before Oct 2015)"}
+mcs:
+  support_category:
+    ext_iabp: {why: "CLIF 3.0 mcs covers ecmo/lvad/rvad only; IABP (CLIF 2.1 ecmo_mcs) has no 3.0 home"}

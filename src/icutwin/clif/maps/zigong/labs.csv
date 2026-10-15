@@ -1,0 +1,75 @@
+item,unit,lab_category,factor,reference_unit,lab_order_category,lab_specimen_category,provenance
+White blood cell (WBC),10^9/L,wbc,1,10^3/ul,cbc,plasma_blood,10^9/L = 10^3/uL
+Number of neutrophils (neu#),10^9/L,neutrophils_absolute,1,10^3/ul,cbc,plasma_blood,10^9/L = 10^3/uL
+Neutrophil ratio (neu%),,neutrophils_percent,100,%,cbc,plasma_blood,a fraction (median 0.84) -> %
+Number of lymphocytes (lym#),10^9/L,lymphocytes_absolute,1,10^3/ul,misc,plasma_blood,10^9/L = 10^3/uL
+Lymphocyte ratio (lym%),,lymphocytes_percent,100,%,cbc,plasma_blood,a fraction -> %
+Number of monocytes (mon#),10^9/L,monocytes_absolute,1,10^3/ul,cbc,plasma_blood,10^9/L = 10^3/uL
+Monocyte ratio (Mon%),,monocytes_percent,100,%,cbc,plasma_blood,a fraction -> %
+Eosinophil count (eos#),10^9/L,eosinophils_absolute,1,10^3/ul,cbc,plasma_blood,10^9/L = 10^3/uL
+Eosinophil ratio (EOS%),,eosinophils_percent,100,%,cbc,plasma_blood,a fraction -> %
+Basophil count (bas#),10^9/L,basophils_absolute,1,10^3/ul,cbc,plasma_blood,10^9/L = 10^3/uL
+Basophil ratio (BAS%),,basophils_percent,100,%,cbc,plasma_blood,a fraction -> %
+Platelet (PLT),10^9/L,platelet_count,1,10^3/ul,cbc,plasma_blood,10^9/L = 10^3/uL
+Hemoglobin (Hgb),g/L,hemoglobin,0.1,g/dl,cbc,plasma_blood,g/L -> g/dL
+Hematocrit (HCT),,hematocrit,100,%,cbc,plasma_blood,blood count: a fraction (median 0.31) -> %
+Hematocrit (HCT),%,hematocrit,1,%,cbc,plasma_blood,blood gas analyser (median 32 %)
+Hct(Hct),,hematocrit,1,%,cbc,plasma_blood,EICU and ED blood gas analysers: percent without a unit (median 31)
+Total hemoglobin (THB),g/L,hemoglobin,0.1,g/dl,cbc,plasma_blood,blood gas analyser haemoglobin g/L -> g/dL (grouped with the blood count as for SICdb)
+Hemoglobin concentration (THB),g/L,hemoglobin,0.1,g/dl,cbc,plasma_blood,EICU and ED blood gas analysers g/L -> g/dL
+Oxygen partial pressure (PO2),mmHg,po2_arterial,1,mmhg,blood_gas,plasma_blood,blood gas analyser; site not stated (ICU blood gases taken as arterial; ricu po2)
+Arterial oxygen partial pressure (PO2),mmHg,po2_arterial,1,mmhg,blood_gas,plasma_blood,arterial (EICU and ED analysers); the temperature-corrected PO2 (T) duplicates it and is not mapped
+Carbon dioxide partial pressure (PCO2),mmHg,pco2_arterial,1,mmhg,blood_gas,plasma_blood,blood gas analyser; site not stated (as PO2)
+Arterial partial pressure of carbon dioxide (PCO2),mmHg,pco2_arterial,1,mmhg,blood_gas,plasma_blood,arterial; PCO2 (T) duplicates it and is not mapped
+PH (PH),,ph_arterial,1,(no units),blood_gas,plasma_blood,blood gas pH (urinalysis pH is excluded by its panel); PH (T) duplicates it and is not mapped
+Oxygen saturation (SO2),%,so2_arterial,1,%,blood_gas,plasma_blood,blood gas analyser SO2
+Measured bicarbonate (hco3act),mmol/L,bicarbonate,1,mmol/l,blood_gas,plasma_blood,blood gas actual bicarbonate
+HCO3 - measured bicarbonate (HCO3 -),mmol/L,bicarbonate,1,mmol/l,blood_gas,plasma_blood,EICU and ED analysers' actual bicarbonate
+Standard residual base (be (ECF)),mmol/L,ext_base_excess,1,mmol/l,blood_gas,plasma_blood,standard base excess (extracellular fluid)
+Standard alkali residue (SBE),mmol/L,ext_base_excess,1,mmol/l,blood_gas,plasma_blood,EICU and ED analysers' standard base excess
+Lactic acid (LAC),mmol/L,lactate,1,mmol/l,misc,plasma_blood,blood gas lactate
+Lactic acid concentration (CLAC),mmol/L,lactate,1,mmol/l,misc,plasma_blood,EICU and ED analysers' lactate
+Potassium ion (K +),mmol/L,potassium,1,mmol/l,bmp,plasma_blood,blood gas analyser potassium (grouped with serum potassium as for SICdb)
+Potassium ion concentration (CK +),mmol/L,potassium,1,mmol/l,bmp,plasma_blood,EICU and ED analysers' potassium
+Sodium ion (Na +),mmol/L,sodium,1,mmol/l,bmp,plasma_blood,blood gas analyser sodium
+Sodium ion concentration (CNA +),mmol/L,sodium,1,mmol/l,bmp,plasma_blood,EICU and ED analysers' sodium
+Chloride ion (Cl -),mmol/L,chloride,1,mmol/l,bmp,plasma_blood,blood gas analyser chloride
+Chloride ion concentration (CCL -),mmol/L,chloride,1,mmol/l,bmp,plasma_blood,EICU and ED analysers' chloride
+Free calcium (Ca + +),mmol/L,calcium_ionized,4.008,mg/dl,misc,plasma_blood,ionized calcium mmol/L -> mg/dL
+Calcium ion concentration (caca2 +),mmol/L,calcium_ionized,4.008,mg/dl,misc,plasma_blood,EICU and ED analysers' ionized calcium mmol/L -> mg/dL
+Glucose concentration (cglu),mmol/L,glucose_serum,18.016,mg/dl,bmp,plasma_blood,EICU and ED analysers' glucose mmol/L -> mg/dL (grouped with laboratory glucose as for SICdb)
+Methemoglobin (fmethb),%,ext_methemoglobin,1,%,blood_gas,plasma_blood,co-oximetry
+Carboxyhemoglobin (fcohb),%,ext_carboxyhemoglobin,1,%,blood_gas,plasma_blood,co-oximetry
+Glucose (Glu),mmol/L,glucose_serum,18.016,mg/dl,bmp,plasma_blood,blood glucose mmol/L -> mg/dL (urinalysis glucose excluded by its panel)
+Urea (urea),mmol/L,bun,2.801,mg/dl,bmp,plasma_blood,urea mmol/L -> BUN mg/dL
+Creatinine (enzymatic method) (CRE),umol/L,creatinine,0.011312,mg/dl,bmp,plasma_blood,umol/L -> mg/dL (1/88.4)
+Potassium (k),mmol/L,potassium,1,mmol/l,bmp,plasma_blood,serum potassium
+Sodium (NA),mmol/L,sodium,1,mmol/l,bmp,plasma_blood,serum sodium
+Chlorine (CL),mmol/L,chloride,1,mmol/l,bmp,plasma_blood,serum chloride
+Carbon dioxide (CO2),mmol/L,co2,1,mmol/l,bmp,plasma_blood,serum total CO2
+Calcium (CA),mmol/L,calcium_total,4.008,mg/dl,bmp,plasma_blood,total calcium mmol/L -> mg/dL
+Serum magnesium (mg),mmol/L,magnesium,2.431,mg/dl,misc,plasma_blood,mmol/L -> mg/dL
+Inorganic phosphorus (P),mmol/L,phosphate,3.097,mg/dl,misc,plasma_blood,mmol/L -> mg/dL
+Total bilirubin (TBIL),umol/L,bilirubin_total,0.05847,mg/dl,lft,plasma_blood,umol/L -> mg/dL (1/17.1)
+Direct bilirubin (DBIL),umol/L,bilirubin_conjugated,0.05847,mg/dl,lft,plasma_blood,umol/L -> mg/dL
+Indirect bilirubin (ibil),umol/L,bilirubin_unconjugated,0.05847,mg/dl,lft,plasma_blood,umol/L -> mg/dL
+Albumin (ALB),g/L,albumin,0.1,g/dl,lft,plasma_blood,g/L -> g/dL
+Total protein (TP),g/L,total_protein,0.1,g/dl,lft,plasma_blood,g/L -> g/dL
+Alanine aminotransferase (ALT),U/L,alt,1,u/l,lft,plasma_blood,U/L
+Aspartate aminotransferase (AST),U/L,ast,1,u/l,lft,plasma_blood,U/L
+Alkaline phosphatase (ALP),U/L,alkaline_phosphatase,1,u/l,lft,plasma_blood,U/L
+γ- Glutamyltransferase (GGT),U/L,ext_ggt,1,u/l,lft,plasma_blood,U/L
+Lactate dehydrogenase (LDH),U/L,ldh,1,u/l,misc,plasma_blood,U/L
+Creatine kinase (CK),U/L,ext_creatine_kinase,1,u/l,misc,plasma_blood,U/L (CK-MB is an activity in U/L against CLIF's mass unit and is not mapped)
+High sensitivity troponin I (tn-i),ng/mL,troponin_i,1000,ng/l,misc,plasma_blood,ng/mL -> ng/L
+Brain natriuretic peptide (BNP),pg/mL,bnp,1,pg/ml,cardiac,plasma_blood,pg/mL
+C-reactive protein (CRP),mg/L,crp,1,mg/l,misc,plasma_blood,mg/L
+Cystatin C (CysC),mg/L,cystatin_c,1,mg/l,misc,plasma_blood,mg/L
+ESR (SR),mm/h,esr,1,mm/hour,misc,plasma_blood,mm/h
+Total cholesterol (TCHO),mmol/L,cholesterol,38.67,mg/dl,misc,plasma_blood,mmol/L -> mg/dL
+Triglyceride (TG),mmol/L,triglycerides,88.57,mg/dl,misc,plasma_blood,mmol/L -> mg/dL
+International normalized ratio (INR),,inr,1,(no units),coags,plasma_blood,ratio
+Prothrombin time (PT),sec,pt,1,sec,coags,plasma_blood,seconds
+Activated partial thromboplastin time (APTT),sec,ptt,1,sec,coags,plasma_blood,seconds
+Fibrinogen (FIB),g/L,fibrinogen,100,mg/dl,coags,plasma_blood,g/L -> mg/dL
+D-Dimer (D2),mg/L FEU,d_dimer,1,ug/ml,coags,plasma_blood,mg/L FEU = ug/mL FEU

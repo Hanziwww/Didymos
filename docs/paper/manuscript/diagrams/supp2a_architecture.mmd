@@ -1,0 +1,38 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif", "fontSize": "13px", "primaryColor": "#F0F0F0", "primaryBorderColor": "#4D4D4D", "primaryTextColor": "#000000", "lineColor": "#333333", "clusterBkg": "#FFFFFF", "clusterBorder": "#8C8C8C", "edgeLabelBackground": "#FFFFFF"}, "fontFamily": "Arial, Helvetica, sans-serif", "markdownAutoWrap": false, "htmlLabels": false, "flowchart": {"htmlLabels": false, "wrappingWidth": 480, "subGraphTitleMargin": {"top": 6, "bottom": 10}, "curve": "linear", "nodeSpacing": 28, "rankSpacing": 26}}}%%
+%% Supplementary Fig. 2a: the Didymos network and its training (sources: docs/paper/architecture.md, training.md)
+flowchart TB
+    IN["Input: one ICU stay as a token sequence<br/>up to 32,768 tokens; vocabulary of 25,601 tokens"]
+    EMB["Token embedding, 25,601 × 768<br/>(shared with the output head)"]
+    subgraph BLOCK["Decoder block × 12"]
+        direction TB
+        N1["RMSNorm (pre-norm)"]
+        ATT["Grouped-query self-attention, causal<br/>12 query heads, 4 key-value heads, head dimension 64<br/>rotary positions (base 1,000,000); per-head q/k RMSNorm<br/>full attention over the whole context"]
+        ADD1(["Add"])
+        N2["RMSNorm"]
+        FFN["SwiGLU feed-forward<br/>768 → 3,072 → 768"]
+        ADD2(["Add"])
+        N1 --> ATT --> ADD1 --> N2 --> FFN --> ADD2
+    end
+    NF["Final RMSNorm"]
+    HEAD["Output head, 768 → 25,601<br/>(the shared embedding)"]
+    OUT["Next-token probabilities<br/>softmax over the vocabulary"]
+    PAR["123.5 million parameters<br/>embedding 19.7M; decoder body 103.8M"]
+    IN --> EMB --> N1
+    EMB -.->|"residual"| ADD1
+    ADD1 -.->|"residual"| ADD2
+    ADD2 --> NF --> HEAD --> OUT
+    OUT ~~~ PAR
+    subgraph TRAIN["Training, once"]
+        direction TB
+        T1["Data: the train split of all seven databases<br/>Objective: next-token cross-entropy<br/>(goal and ICU-day clock blocks are inputs, not targets)"]
+        T2["Optimizers: Muon on hidden matrices; AdamW on embeddings and norms<br/>learning rate 6e-4, warm-up then cosine decay<br/>1,990 steps of 524,288 tokens: 997.5M tokens"]
+        T3["Passes per database set so that membership-inference AUC<br/>stays near 0.555: from 1.59 (MIMIC-IV) to 3.05 (AmsterdamUMCdb)"]
+        T1 --> T2 --> T3
+    end
+    OUT -.-> T1
+    classDef accent fill:#E3EEF7,stroke:#0072B2,stroke-width:1.5px,color:#000000;
+    classDef plain fill:#F0F0F0,stroke:#4D4D4D,stroke-width:1px,color:#000000;
+    classDef note fill:#FFFFFF,stroke:#B3B3B3,stroke-width:1px,color:#4D4D4D;
+    class ATT,FFN,OUT accent;
+    class IN,EMB,N1,N2,NF,HEAD,ADD1,ADD2 plain;
+    class PAR,T1,T2,T3 note;

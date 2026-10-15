@@ -1,0 +1,135 @@
+Endpoint,Attribute,Value,Anchors,Positives,Twin AUROC,Twin O/E,LightGBM AUROC
+"Decompensation, 24 h",sex,female,1326,308,0.908,1.74,0.954
+"Decompensation, 24 h",sex,male,2152,428,0.880,1.89,0.955
+"Decompensation, 24 h",age_band,0,414,68,0.916,1.74,0.981
+"Decompensation, 24 h",age_band,1,1097,212,0.861,1.99,0.961
+"Decompensation, 24 h",age_band,2,1260,246,0.910,1.97,0.960
+"Decompensation, 24 h",age_band,3,715,216,0.890,1.59,0.921
+"Decompensation, 24 h",dataset,aumc,499,154,0.892,1.90,0.954
+"Decompensation, 24 h",dataset,eicu,500,125,0.828,1.87,0.908
+"Decompensation, 24 h",dataset,hirid,500,91,0.885,1.80,0.952
+"Decompensation, 24 h",dataset,inspire,500,51,0.912,2.21,0.980
+"Decompensation, 24 h",dataset,mimic,500,125,0.927,1.91,0.962
+"Decompensation, 24 h",dataset,nwicu,500,117,0.896,2.09,0.942
+"Decompensation, 24 h",dataset,sicdb,487,79,0.873,1.23,0.957
+"Decompensation, 24 h",admission_type,UNK,803,142,0.860,1.69,0.940
+"Decompensation, 24 h",admission_type,ed,1203,359,0.909,2.02,0.954
+"Decompensation, 24 h",admission_type,elective,707,63,0.890,1.69,0.981
+"Decompensation, 24 h",admission_type,other,614,141,0.875,1.60,0.940
+"Decompensation, 24 h",race,black_or_african_american,198,38,0.874,1.21,0.937
+"Decompensation, 24 h",race,not recorded,1986,375,0.893,1.73,0.964
+"Decompensation, 24 h",race,unknown,109,33,0.867,1.73,0.927
+"Decompensation, 24 h",race,white,1051,268,0.892,2.11,0.939
+"New IMV, 24 h",sex,female,957,78,0.827,0.79,0.859
+"New IMV, 24 h",sex,male,1480,157,0.825,0.64,0.785
+"New IMV, 24 h",age_band,0,283,34,0.751,0.66,0.787
+"New IMV, 24 h",age_band,1,744,81,0.816,0.77,0.779
+"New IMV, 24 h",age_band,2,887,90,0.863,0.78,0.872
+"New IMV, 24 h",age_band,3,527,31,0.815,0.42,0.783
+"New IMV, 24 h",dataset,eicu,350,45,0.795,1.09,0.885
+"New IMV, 24 h",dataset,hirid,275,33,0.698,0.63,0.767
+"New IMV, 24 h",dataset,mimic,359,36,0.935,0.53,0.817
+"New IMV, 24 h",dataset,nwicu,455,36,0.860,0.36,0.835
+"New IMV, 24 h",dataset,sicdb,395,36,0.945,0.99,0.833
+"New IMV, 24 h",admission_type,UNK,515,70,0.828,0.83,0.816
+"New IMV, 24 h",admission_type,ed,863,80,0.857,0.41,0.766
+"New IMV, 24 h",admission_type,other,448,55,0.714,1.11,0.790
+"New IMV, 24 h",race,not recorded,1277,119,0.801,0.74,0.811
+"New IMV, 24 h",race,white,821,69,0.820,0.58,0.830
+"New vasopressor, 24 h",sex,female,1011,120,0.841,0.42,0.776
+"New vasopressor, 24 h",sex,male,1713,236,0.867,0.54,0.814
+"New vasopressor, 24 h",age_band,0,353,33,0.922,0.37,0.921
+"New vasopressor, 24 h",age_band,1,878,116,0.849,0.46,0.821
+"New vasopressor, 24 h",age_band,2,966,139,0.868,0.63,0.782
+"New vasopressor, 24 h",age_band,3,533,69,0.803,0.38,0.712
+"New vasopressor, 24 h",dataset,aumc,297,48,0.884,0.55,0.824
+"New vasopressor, 24 h",dataset,eicu,448,48,0.910,0.63,0.800
+"New vasopressor, 24 h",dataset,hirid,416,57,0.693,0.46,0.690
+"New vasopressor, 24 h",dataset,inspire,418,47,0.701,0.60,0.654
+"New vasopressor, 24 h",dataset,mimic,393,38,0.942,0.54,0.875
+"New vasopressor, 24 h",dataset,nwicu,426,39,0.874,0.28,0.861
+"New vasopressor, 24 h",dataset,sicdb,332,80,0.769,0.56,0.706
+"New vasopressor, 24 h",admission_type,UNK,660,88,0.761,0.45,0.692
+"New vasopressor, 24 h",admission_type,ed,931,90,0.903,0.44,0.847
+"New vasopressor, 24 h",admission_type,elective,532,90,0.892,0.54,0.865
+"New vasopressor, 24 h",admission_type,other,495,72,0.824,0.49,0.793
+"New vasopressor, 24 h",race,not recorded,1463,232,0.816,0.52,0.778
+"New vasopressor, 24 h",race,white,910,88,0.920,0.42,0.831
+"New RRT, 48 h",sex,female,1252,107,0.892,0.68,0.891
+"New RRT, 48 h",sex,male,2025,189,0.965,0.66,0.959
+"New RRT, 48 h",age_band,0,388,36,0.960,0.60,0.954
+"New RRT, 48 h",age_band,1,1039,107,0.961,0.74,0.967
+"New RRT, 48 h",age_band,2,1176,114,0.904,0.73,0.880
+"New RRT, 48 h",age_band,3,682,39,0.960,0.43,0.943
+"New RRT, 48 h",dataset,aumc,462,37,0.912,0.44,0.959
+"New RRT, 48 h",dataset,hirid,467,100,0.907,0.98,0.857
+"New RRT, 48 h",dataset,mimic,483,40,0.971,0.52,0.961
+"New RRT, 48 h",dataset,nwicu,488,40,0.986,0.80,0.975
+"New RRT, 48 h",admission_type,UNK,753,119,0.922,1.00,0.890
+"New RRT, 48 h",admission_type,ed,1152,87,0.973,0.58,0.956
+"New RRT, 48 h",admission_type,elective,661,38,0.948,0.30,0.964
+"New RRT, 48 h",admission_type,other,567,42,0.902,0.40,0.941
+"New RRT, 48 h",race,black_or_african_american,186,31,0.966,0.88,0.962
+"New RRT, 48 h",race,not recorded,1838,188,0.918,0.65,0.920
+"New RRT, 48 h",race,white,1020,56,0.977,0.68,0.959
+"AKI stage >= 2, 48 h",sex,female,1135,249,0.906,0.70,0.873
+"AKI stage >= 2, 48 h",sex,male,1780,398,0.888,0.75,0.848
+"AKI stage >= 2, 48 h",age_band,0,375,50,0.927,0.65,0.893
+"AKI stage >= 2, 48 h",age_band,1,938,188,0.865,0.67,0.809
+"AKI stage >= 2, 48 h",age_band,2,1034,276,0.901,0.82,0.874
+"AKI stage >= 2, 48 h",age_band,3,575,134,0.900,0.69,0.855
+"AKI stage >= 2, 48 h",dataset,aumc,381,109,0.875,0.78,0.786
+"AKI stage >= 2, 48 h",dataset,eicu,438,86,0.863,0.86,0.775
+"AKI stage >= 2, 48 h",dataset,hirid,448,142,0.866,0.68,0.871
+"AKI stage >= 2, 48 h",dataset,inspire,438,33,0.864,0.41,0.896
+"AKI stage >= 2, 48 h",dataset,mimic,383,115,0.842,0.64,0.783
+"AKI stage >= 2, 48 h",dataset,sicdb,380,150,0.854,0.85,0.770
+"AKI stage >= 2, 48 h",admission_type,UNK,703,207,0.877,0.73,0.849
+"AKI stage >= 2, 48 h",admission_type,direct,105,30,0.897,0.73,0.795
+"AKI stage >= 2, 48 h",admission_type,ed,1000,185,0.905,0.69,0.853
+"AKI stage >= 2, 48 h",admission_type,elective,596,112,0.909,0.75,0.899
+"AKI stage >= 2, 48 h",admission_type,other,498,109,0.864,0.81,0.842
+"AKI stage >= 2, 48 h",race,not recorded,1647,434,0.890,0.75,0.862
+"AKI stage >= 2, 48 h",race,white,892,148,0.898,0.70,0.852
+"Hypotension, 4 h",sex,female,1152,102,0.932,0.85,0.931
+"Hypotension, 4 h",sex,male,1851,171,0.894,1.19,0.922
+"Hypotension, 4 h",age_band,1,976,81,0.919,1.15,0.927
+"Hypotension, 4 h",age_band,2,1080,107,0.900,1.16,0.911
+"Hypotension, 4 h",age_band,3,570,78,0.900,0.93,0.922
+"Hypotension, 4 h",dataset,aumc,439,40,0.904,0.83,0.900
+"Hypotension, 4 h",dataset,eicu,427,49,0.886,1.09,0.914
+"Hypotension, 4 h",dataset,hirid,369,46,0.884,1.13,0.850
+"Hypotension, 4 h",dataset,mimic,444,41,0.841,1.12,0.908
+"Hypotension, 4 h",dataset,sicdb,364,76,0.893,1.07,0.908
+"Hypotension, 4 h",admission_type,UNK,601,74,0.870,1.11,0.865
+"Hypotension, 4 h",admission_type,ed,1098,69,0.898,0.85,0.953
+"Hypotension, 4 h",admission_type,elective,660,47,0.924,1.00,0.930
+"Hypotension, 4 h",admission_type,other,518,68,0.943,1.23,0.953
+"Hypotension, 4 h",race,not recorded,1640,184,0.908,1.01,0.909
+"Hypotension, 4 h",race,white,960,67,0.913,1.05,0.952
+"Hyperkalaemia (top bin), 24 h",sex,female,1168,92,0.771,0.86,0.794
+"Hyperkalaemia (top bin), 24 h",sex,male,1891,191,0.825,0.74,0.849
+"Hyperkalaemia (top bin), 24 h",age_band,1,960,75,0.817,0.65,0.853
+"Hyperkalaemia (top bin), 24 h",age_band,2,1106,125,0.773,0.90,0.810
+"Hyperkalaemia (top bin), 24 h",age_band,3,628,61,0.824,0.78,0.857
+"Hyperkalaemia (top bin), 24 h",dataset,aumc,438,52,0.901,0.75,0.906
+"Hyperkalaemia (top bin), 24 h",dataset,eicu,440,30,0.814,1.14,0.812
+"Hyperkalaemia (top bin), 24 h",dataset,hirid,436,38,0.853,1.05,0.889
+"Hyperkalaemia (top bin), 24 h",dataset,inspire,453,41,0.729,0.38,0.867
+"Hyperkalaemia (top bin), 24 h",dataset,mimic,414,49,0.799,0.84,0.810
+"Hyperkalaemia (top bin), 24 h",dataset,sicdb,439,54,0.650,0.89,0.666
+"Hyperkalaemia (top bin), 24 h",admission_type,UNK,712,59,0.816,0.93,0.844
+"Hyperkalaemia (top bin), 24 h",admission_type,ed,1031,94,0.798,0.74,0.812
+"Hyperkalaemia (top bin), 24 h",admission_type,elective,643,65,0.857,0.63,0.867
+"Hyperkalaemia (top bin), 24 h",admission_type,other,537,52,0.725,0.94,0.763
+"Hyperkalaemia (top bin), 24 h",race,not recorded,1766,185,0.803,0.76,0.845
+"Hyperkalaemia (top bin), 24 h",race,white,926,65,0.791,0.77,0.783
+"Thrombocytopenia, 48 h",sex,female,1149,42,0.969,0.77,0.958
+"Thrombocytopenia, 48 h",sex,male,1905,107,0.919,0.84,0.951
+"Thrombocytopenia, 48 h",age_band,1,932,52,0.975,0.81,0.961
+"Thrombocytopenia, 48 h",age_band,2,1109,55,0.883,0.95,0.938
+"Thrombocytopenia, 48 h",dataset,inspire,411,49,0.966,1.25,0.958
+"Thrombocytopenia, 48 h",admission_type,ed,1060,37,0.895,0.79,0.931
+"Thrombocytopenia, 48 h",admission_type,elective,629,45,0.977,0.83,0.966
+"Thrombocytopenia, 48 h",admission_type,other,526,35,0.974,1.21,0.974
+"Thrombocytopenia, 48 h",race,not recorded,1736,107,0.978,0.83,0.972

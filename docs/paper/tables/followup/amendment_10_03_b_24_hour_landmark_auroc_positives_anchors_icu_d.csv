@@ -1,0 +1,29 @@
+Group,Predictor,ICU death,In-hospital death,ICU stay > 7 days,"Decompensation, 24 h","New IMV, 24 h","New vasopressor, 24 h","New RRT, 48 h"
+Twin,"Twin (A1: 32 rollouts, share)",0.858,0.858,0.808,0.929,0.838,0.880,0.939
+Tabular foundation models,TabPFN-3.5,0.932,0.881,0.856,-,-,-,-
+Tabular foundation models,TabPFN v2,0.914,0.869,0.839,-,-,-,-
+Gradient boosting,"LightGBM, pooled",0.915,0.867,0.855,0.958,0.829,0.806,0.922
+Gradient boosting,"LightGBM, per dataset",0.895,0.853,0.844,-,-,-,-
+Other trees,Random forest,0.908,0.855,0.841,0.942,0.811,0.804,0.932
+Other trees,Extra trees,0.893,0.850,0.840,0.949,0.838,0.811,0.921
+Other trees,Decision tree (CART),0.805,0.780,0.777,0.815,0.618,0.673,0.863
+Linear,"Logistic regression, L2",0.864,0.830,0.787,0.868,0.674,0.717,0.871
+Linear,"Logistic regression, L1 (LASSO)",0.898,0.853,0.817,0.935,0.758,0.780,0.912
+Linear,"Logistic regression, elastic net",0.898,0.855,0.833,0.922,0.760,0.780,0.919
+Linear,"Twin probe (linear, frozen states)",0.906,0.870,0.837,0.974,0.822,0.826,0.935
+Other learners,Naive Bayes,0.732,0.696,0.705,0.794,0.704,0.668,0.684
+Other learners,k-nearest neighbours,0.831,0.794,0.810,0.866,0.727,0.765,0.844
+Other learners,Multilayer perceptron,0.889,0.827,0.818,0.936,0.744,0.748,0.903
+Clinical scores,SOFA,0.706,0.685,0.678,0.790,0.530,0.675,0.816
+Clinical scores,SAPS II,0.778,0.745,0.636,0.879,0.539,0.655,0.757
+Clinical scores,OASIS,0.730,0.701,0.639,0.841,0.584,0.608,0.680
+Clinical scores,NEWS,0.805,0.712,0.633,0.849,0.709,0.614,0.646
+Clinical scores,MEWS,0.787,0.688,0.586,0.861,0.655,0.588,0.603
+Clinical scores,qSOFA,0.713,0.634,0.577,0.762,0.653,0.567,0.586
+Clinical scores,SIRS,0.710,0.656,0.590,0.722,0.615,0.540,0.593
+Bedside indicators,Shock index,-,-,-,0.721,-,0.627,-
+Bedside indicators,Lactate,-,-,-,0.741,-,-,-
+Bedside indicators,ROX index (lower worse),-,-,-,-,0.675,-,-
+Bedside indicators,MAP (lower worse),-,-,-,-,-,0.631,-
+Bedside indicators,KDIGO stage,-,-,-,-,-,-,0.814
+Bedside indicators,Creatinine,-,-,-,-,-,-,0.889

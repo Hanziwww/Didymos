@@ -1,0 +1,12 @@
+priority,pattern,device_category,provenance
+10,^(none|no)\b.*room ?air|^\.?r/?a\.?$|^r(oo)?m ?air|^ra\b|^none$,room_air,
+20,venturi|^venti\b|^vm$,face_mask,CLIF-MIMIC: Venti mask -> Face Mask
+30,bi-?pap|v-?pap|^niv|nippv|non-?invasive|\bs/t\b|avaps|bi-?level,nippv,CLIF-MIMIC: Bipap mask -> NIPPV
+40,c-?pap,cpap,CLIF-MIMIC: CPAP mask -> CPAP
+50,hi(gh)?[ -]?flo|\bhfnc\b|optiflow|airvo|vapotherm|^nchh?f$,hfnc,CLIF-MIMIC: High flow nasal cannula and High flow neb -> High Flow NC
+60,ventil|\bvent\b|mechanical|\bett\b|endotrach|^mv$|^ac \d,imv,CLIF-MIMIC: Endotracheal tube -> IMV; 'ac <settings>' is a ventilator mode typed as device
+70,trach (mask|collar)|t[ -]?collar,trach_collar,CLIF-MIMIC: Trach mask -> Trach Collar
+80,t[ -]?piece,t_piece,CLIF 3.0 t_piece
+90,rebreather|\bnrb\b|\bnrm\b|face ?mask|simple mask|face tent|aerosol|ox[iy] ?mask|misty|^mask$|oxymi[sz]er|oximizer,face_mask,"CLIF-MIMIC: Non-rebreather, Face tent, Aerosol-cool and Oxymizer -> Face Mask"
+100,nasal ?cann?ula|cann?ula|^n/?c\b|\d ?l ?nc\b|\bnc\b,nasal_cannula,
+110,^other|ambu|blender,other,CLIF-MIMIC: Other -> Other

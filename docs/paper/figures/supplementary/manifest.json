@@ -1,0 +1,272 @@
+{
+ "supp1": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp1.pdf",
+   "docs/paper/figures/supplementary/supp1.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "docs/paper/figures/artwork/gpt_image/original/supp1a.png": "a458f8fbef463e75d66bb90215c77f42284a31071e01d36d1d893cc97ae3f572",
+   "docs/paper/figures/artwork/gpt_image/original/supp1b.png": "ac9fe9d06d40d6b7a5f8aa63c6ee5c9378483a37caefe3939beba38e7c349c29",
+   "docs/paper/manuscript/diagrams/supp1a_data_processing.mmd": "f99db472f7aca37ab4465442d73d4d7466b02e2f8f37c66388e949090c7b1d25",
+   "docs/paper/manuscript/diagrams/supp1b_sequence.mmd": "a30f4020f273a814e87eb9de4459449655eb8f0e6dc8ae9fa91353f7722a1fe0"
+  }
+ },
+ "supp10": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp10.pdf",
+   "docs/paper/figures/supplementary/supp10.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/a1/test_L24/a1.json": "880a4a32e1672dc35df96276547a64fea0537fe007a4daf1052b78fb526caf77",
+   "runs/paper/a1/test_L48/a1.json": "100af359438e8dd5480d172e8f9105c4e3c56371f870d1a3328a07c23caa6c93",
+   "runs/paper/a1/test_R/a1.json": "94da091442551fd6d08edc1b272b959d0d0bb6a2ae3f1d3ce5dabf3b1be63b8b"
+  }
+ },
+ "supp11": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp11.pdf",
+   "docs/paper/figures/supplementary/supp11.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/f9/transfer_R.json": "fd6ea478df72cc0ce3d10e2169c079d4db3923f3276eb356fdf3c9f1e85f1a6a"
+  }
+ },
+ "supp12": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp12.pdf",
+   "docs/paper/figures/supplementary/supp12.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/a1/test_L24/compare.json": "d7bd394a42a61f626b7ba4e7126be4cc7581d753143dcbc98878829ade0e0437"
+  }
+ },
+ "supp13": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp13.pdf",
+   "docs/paper/figures/supplementary/supp13.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/toolkit/recalibration/MUC32_main.json": "bc0ecde996b1ac07817f09ad4f02291bdff439148af1494358c97956f5e58348"
+  }
+ },
+ "supp14": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp14.pdf",
+   "docs/paper/figures/supplementary/supp14.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/toolkit/v1/v1_adjusted.json": "4e624098c17edfb1d06a4a1969b0795a84acdeb2f7df5ecffd85cddbb0427bbe",
+   "runs/toolkit/v1/v1_noise.json": "a62b6c8117f3ae5479a0513716f1c1e5f92e3e9db420ad7150947e1022f40d52"
+  }
+ },
+ "supp15": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp15.pdf",
+   "docs/paper/figures/supplementary/supp15.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/c4/c4b_R.json": "70190df926d195747535e9422d5060b3450f0e72ada2c04216af925bd10efb7d"
+  }
+ },
+ "supp16": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp16.pdf",
+   "docs/paper/figures/supplementary/supp16.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/stats/stats.json": "969fc9f8ba8e2c29572d764bd96d99283ab841cd6141311496a098d7bbf754d1"
+  }
+ },
+ "supp2": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp2.pdf",
+   "docs/paper/figures/supplementary/supp2.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "docs/paper/figures/artwork/gpt_image/original/supp2a.png": "6069f0a542553dd538937024cb55b0a7acf01dba91f2b1c6e6600b94ca27c75a",
+   "docs/paper/figures/artwork/gpt_image/original/supp2b.png": "020a8cccc6a3ed071b020056d70413b5dd2f09ba8b9fcd80d05aca45570cf244",
+   "docs/paper/manuscript/diagrams/supp2a_architecture.mmd": "6d987e5d7e937ba6a42526b0e0b846338c7008104d29f6ce6f552ae0b992a990",
+   "docs/paper/manuscript/diagrams/supp2b_simulation.mmd": "61f6600f2a1c9a73cd452e4059243a3ee100fe9039ab9bb7bc23727c826be12d"
+  }
+ },
+ "supp3": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp3.pdf",
+   "docs/paper/figures/supplementary/supp3.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "docs/paper/figures/artwork/gpt_image/original/supp3.png": "9c7bc5e346412b3b5b7777b7ba8047fa218c6db01c1a4ca6033b36326616b067",
+   "runs/paper/a1/test_L24/a1.json": "880a4a32e1672dc35df96276547a64fea0537fe007a4daf1052b78fb526caf77",
+   "runs/paper/a1/test_L48/a1.json": "100af359438e8dd5480d172e8f9105c4e3c56371f870d1a3328a07c23caa6c93",
+   "runs/paper/a1/test_R/a1.json": "94da091442551fd6d08edc1b272b959d0d0bb6a2ae3f1d3ce5dabf3b1be63b8b",
+   "runs/paper/f1/L24x/f2.json": "de4bd03b53853f80685e7ee30b79ea2b83e2a384a95280b7ed950a8d76f9832e",
+   "runs/paper/f1/R128/f2.json": "38febffb28d77be6db3afc3925ac199adec63a58bc6e459bb540ad71a80a9971",
+   "runs/paper/materials/table1.json": "63b27a968f1e9812eaec8a143c26e1550f2255bc2672265320e3b5c5d8fa6a8d"
+  }
+ },
+ "supp4": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp4.pdf",
+   "docs/paper/figures/supplementary/supp4.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/f1/L24x/f2.json": "de4bd03b53853f80685e7ee30b79ea2b83e2a384a95280b7ed950a8d76f9832e",
+   "runs/paper/f1/R128/f2.json": "38febffb28d77be6db3afc3925ac199adec63a58bc6e459bb540ad71a80a9971",
+   "runs/paper/f10/comparators.json": "bce96747ef4c64c62bf10184869a0b89668182b6e1d179d71b8afa7a54e2f0d3"
+  }
+ },
+ "supp5": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp5.pdf",
+   "docs/paper/figures/supplementary/supp5.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/stats/stats.json": "969fc9f8ba8e2c29572d764bd96d99283ab841cd6141311496a098d7bbf754d1"
+  }
+ },
+ "supp6": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp6.pdf",
+   "docs/paper/figures/supplementary/supp6.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/f1/L24x/a1.json": "3ab1e50c2d38719bd0b4f42f97288b52bad59c9e1e9f24bc0b49baeb6b852cb2",
+   "runs/paper/f1/R128/a1.json": "19704bae056d981eb1908883e735ba68b0e0ebf3721095beca2784a51d04f3f5"
+  }
+ },
+ "supp7": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp7.pdf",
+   "docs/paper/figures/supplementary/supp7.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/f10/comparators.json": "bce96747ef4c64c62bf10184869a0b89668182b6e1d179d71b8afa7a54e2f0d3"
+  }
+ },
+ "supp8": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp8.pdf",
+   "docs/paper/figures/supplementary/supp8.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/stats/stats.json": "969fc9f8ba8e2c29572d764bd96d99283ab841cd6141311496a098d7bbf754d1"
+  }
+ },
+ "supp9": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp9.pdf",
+   "docs/paper/figures/supplementary/supp9.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/stats/stats.json": "969fc9f8ba8e2c29572d764bd96d99283ab841cd6141311496a098d7bbf754d1"
+  }
+ },
+ "supp_adapt": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp_adapt.pdf",
+   "docs/paper/figures/supplementary/supp_adapt.svg"
+  ],
+  "git": "763e271122d149e0ac59619177afed1246283340",
+  "inputs": {
+   "runs/paper/ext17/ext17.json": "03921974a82a020867897cd16584aef1f9cacfca78c9e690fcf18b3d18b968b1",
+   "runs/paper/ext17/grid.json": "29a49dfcea75d2cab34493b6326e94624f5064df2322b2bc1d27918d00b5cd90",
+   "runs/paper/stats/stats.json": "555aa57081108a4887dee9f9418ed333b4b84b4fb97034f33c75d55df879a8ee"
+  }
+ },
+ "supp_adapt_cal": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp_adapt_cal.pdf",
+   "docs/paper/figures/supplementary/supp_adapt_cal.svg"
+  ],
+  "git": "763e271122d149e0ac59619177afed1246283340",
+  "inputs": {
+   "runs/paper/ext17/ext17.json": "03921974a82a020867897cd16584aef1f9cacfca78c9e690fcf18b3d18b968b1"
+  }
+ },
+ "supp_adapt_gate": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp_adapt_gate.pdf",
+   "docs/paper/figures/supplementary/supp_adapt_gate.svg"
+  ],
+  "git": "763e271122d149e0ac59619177afed1246283340",
+  "inputs": {
+   "runs/audit/m7_E17_lr0.0001_p3/p1.json": "ec3ff136601be7529e61757640de16f31dffdf879c56e567099bbb0a427cddf3",
+   "runs/audit/m7_E17_lr0.0001_p3/p1_cap3000.json": "695a58800c636f0abcf0fe81a1453240422242101eaa33a9c42675ae04e9f0a5",
+   "runs/audit/m7_MUC32_main/p1.json": "caa5fcbd6d56c34fb9f0d931012b14d4cb79f511e594f176a17aa93bdaf7e9da",
+   "runs/paper/ext17/grid.json": "29a49dfcea75d2cab34493b6326e94624f5064df2322b2bc1d27918d00b5cd90"
+  }
+ },
+ "supp_knockout": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp_knockout.pdf",
+   "docs/paper/figures/supplementary/supp_knockout.svg"
+  ],
+  "git": "763e271122d149e0ac59619177afed1246283340",
+  "inputs": {
+   "runs/paper/f4r/c2b.json": "09794d67d147e454ac62bbc72edf10e338d37b7061ffca4481de4b857989871e",
+   "runs/paper/f4r/knockout_vs_edit.parquet": "10626cb5564bb672ba49eafdb27994e78079e6f667389a6af288b07917c1adec",
+   "runs/paper/stats/stats.json": "555aa57081108a4887dee9f9418ed333b4b84b4fb97034f33c75d55df879a8ee"
+  }
+ },
+ "supp_l48x": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp_l48x.pdf",
+   "docs/paper/figures/supplementary/supp_l48x.svg"
+  ],
+  "git": "763e271122d149e0ac59619177afed1246283340",
+  "inputs": {
+   "runs/paper/a16/comparators_L48x.json": "66f7023a1f96bf97335cd22a6e5ba00c8d53f934bf61dc1316cb58318c8bb721",
+   "runs/paper/stats/stats.json": "555aa57081108a4887dee9f9418ed333b4b84b4fb97034f33c75d55df879a8ee"
+  }
+ },
+ "supp_transfer": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/supplementary/supp_transfer.pdf",
+   "docs/paper/figures/supplementary/supp_transfer.svg"
+  ],
+  "git": "763e271122d149e0ac59619177afed1246283340",
+  "inputs": {
+   "runs/paper/ext/ext.json": "242628cd6d118aecc05fac75bb48da22525b6131248948f844e82e9279276fcb",
+   "runs/paper/ext/ranks.json": "d46b04d624e830bb945351f599afe824fa553f52936cd68e32768f2a3bf325c5",
+   "runs/paper/stats/stats.json": "555aa57081108a4887dee9f9418ed333b4b84b4fb97034f33c75d55df879a8ee"
+  }
+ }
+}

@@ -1,0 +1,9 @@
+priority,pattern,category,group_name,provenance
+10,sojabohnen|medikament|perfusor lsg|aqua,__skip__,,"drug vehicles ('Sojabohnenöl Propofol': the lipid paired with every propofol record; diluents) are part of the drug record; 'propofol' itself is the drug (S3 QA coverage gap: all SICdb propofol was dropped)"
+20,erythrozyt|thrombozyt|octaplas|plasma|\bffp\b|kryo,blood_products,blood_products,
+30,gelofusin|albumin|voluven|hes\b|haes,iv_colloid,iv_fluids,
+40,nutrison|fresubin|sondenn|survimed|peptamen|diben|supportan|reconvan|glucerna|jevity,enteral_nutrition,nutrition,
+50,spülung magensonde|spuelung magensonde,enteral_water,nutrition,
+60,trinken|tee|suppe|joghurt|wunschkost|kost\b,po_intake,nutrition,
+70,kabiven|nutriflex|aminomix|aminoven|intralipid|smoflipid|omegaven|olimel,parenteral_nutrition,nutrition,
+80,nacl|natriumchlorid|elomel|ringer|glukose|glucose|elozell,iv_crystalloid,iv_fluids,crystalloid volumes not recorded as a continuous medication

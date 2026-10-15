@@ -1,0 +1,5 @@
+Hospital-level rate,Hospitals (twins),Spearman twins vs real (95% CI),Hospitals (control),Spearman control vs real
+icu_death,17,0.45 (-0.04 to 0.82),15,0.61 (0.13 to 0.86)
+ever_imv,17,0.63 (0.15 to 0.93),15,0.52 (-0.08 to 0.94)
+ever_vasopressor,17,0.66 (0.15 to 0.90),15,0.85 (0.54 to 0.99)
+los_median,17,0.72 (0.29 to 0.92),15,0.71 (0.21 to 0.94)

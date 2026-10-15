@@ -1,0 +1,12 @@
+# CLIF 3.0 line: placement and removal of a vascular line (the site is not part of the code: SICdb, the only
+# source, records none).
+elf_version: "icutwin-ext-0.1.0"
+subject_id_col: patient_id
+
+line:
+  placed:
+    code: [LINE, col(line_category), placed]
+    time: col(placed_dttm)
+  removed:
+    code: [LINE, col(line_category), removed]
+    time: col(removed_dttm)

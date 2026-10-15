@@ -1,0 +1,136 @@
+{
+ "fig1": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/fig1.pdf",
+   "docs/paper/figures/fig1.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "docs/paper/figures/artwork/gpt_image/original/fig1a.png": "e1e12688f49b0a4d7d1e07117098c23c1f6d8f50aa325f6f5e76721186b54341",
+   "docs/paper/figures/artwork/gpt_image/original/fig1c.png": "1c2c72bb371219151ac570f446cb7ba05ec61f052c6618b6c142f0a7efac9489",
+   "runs/paper/materials/table1.json": "63b27a968f1e9812eaec8a143c26e1550f2255bc2672265320e3b5c5d8fa6a8d"
+  }
+ },
+ "fig2": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/fig2.pdf",
+   "docs/paper/figures/fig2.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/f1/L24x/f2.json": "de4bd03b53853f80685e7ee30b79ea2b83e2a384a95280b7ed950a8d76f9832e",
+   "runs/paper/f1/R128/f2.json": "38febffb28d77be6db3afc3925ac199adec63a58bc6e459bb540ad71a80a9971",
+   "runs/paper/f10/comparators.json": "bce96747ef4c64c62bf10184869a0b89668182b6e1d179d71b8afa7a54e2f0d3",
+   "runs/paper/stats/stats.json": "969fc9f8ba8e2c29572d764bd96d99283ab841cd6141311496a098d7bbf754d1"
+  }
+ },
+ "fig3": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/fig3.pdf",
+   "docs/paper/figures/fig3.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/a1/test_L24/a1.json": "880a4a32e1672dc35df96276547a64fea0537fe007a4daf1052b78fb526caf77",
+   "runs/paper/a1/test_R/predictions.parquet": "563d6394a5f62d804482c62b0cb87570df35bb1d0abd0fac602a173e75202bbe",
+   "runs/paper/c3/c3b.json": "dd4137e1b011be9b9851efc4f1f4a7a11e053fbdce4954f5ef8785c062d90ce6",
+   "runs/paper/f1/L24x/a1.json": "3ab1e50c2d38719bd0b4f42f97288b52bad59c9e1e9f24bc0b49baeb6b852cb2",
+   "runs/paper/f1/L24x/f2.json": "de4bd03b53853f80685e7ee30b79ea2b83e2a384a95280b7ed950a8d76f9832e",
+   "runs/paper/f1/R128/f2.json": "38febffb28d77be6db3afc3925ac199adec63a58bc6e459bb540ad71a80a9971",
+   "runs/paper/f3/D1_L24/f2.json": "425f2db774ab97f0442d3deb64c912a3cdecaf0f979b5a866cd61e9c408c99f8",
+   "runs/paper/f3/D1_R/f2.json": "d5e80807cbc8818b8ee31df852be8bb25f325a32959891b958633a9f0bb0e7a5",
+   "runs/toolkit/recalibration/MUC32_main.json": "bc0ecde996b1ac07817f09ad4f02291bdff439148af1494358c97956f5e58348",
+   "runs/toolkit/v1/forecast/e2.parquet": "d96a7681efa5ea62cc41150b6f5c524a304dfa29273276efb777ec432f7224c4",
+   "runs/toolkit/v1/forecast/predictions.parquet": "fa5589e9908a0c087631233a2fc1d123123d76dec3d5d6501c54df1b9456df0a"
+  }
+ },
+ "fig4": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/fig4.pdf",
+   "docs/paper/figures/fig4.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "docs/paper/figures/artwork/gpt_image/original/fig4a.png": "83101065b9f9ee386e431b62da1a7863665d35d32adc55adeb7fd8dc64238d19",
+   "runs/paper/c1/c1.json": "47d6ba62a402845f107274d271887eb18d957fe70bceb4b206a37ee4fc67bbca",
+   "runs/paper/f5/c1b.json": "6b39e992c1a3624e75d8db00e4a79849b76b13428d0f92f96ae17e8da7600bc3",
+   "runs/paper/stats/stats.json": "969fc9f8ba8e2c29572d764bd96d99283ab841cd6141311496a098d7bbf754d1"
+  }
+ },
+ "fig5": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/fig5.pdf",
+   "docs/paper/figures/fig5.svg"
+  ],
+  "git": "2342cf22643255d3a3a881806141f66837ceea37",
+  "inputs": {
+   "runs/paper/a1/test_L24/baselines.json": "3e07fd6693e226b13406f6a32e450005c9c6213875961fcb74b235d205a0f0bb",
+   "runs/paper/a1/test_R/baselines.json": "fcdd583a9b25b36d1fac933fbabd8b2bd6ba7f2e4cd5faee8b3bf042b08d9d3f",
+   "runs/paper/a3/a3.json": "47ee316bbbfa1e91fb0e909a0aa23ba597e08962e07fb196f758cf1950d41674",
+   "runs/paper/c3/c3.json": "9e87e4f29aae75d4177700acdf5230a6dc06a582ac1ce4ac30f1184ee78afa7d",
+   "runs/paper/c3/c3b.json": "dd4137e1b011be9b9851efc4f1f4a7a11e053fbdce4954f5ef8785c062d90ce6",
+   "runs/paper/f8/aug_L24.json": "e2982ac22b73cf735a92fbe5995221d76af5d03dc5fd8f8b48b85e50508ba059",
+   "runs/paper/f8/aug_R.json": "b02a025331d22b23eaf4467fc97056b49e151efac182366775fc03533671f041",
+   "runs/paper/stats/stats.json": "969fc9f8ba8e2c29572d764bd96d99283ab841cd6141311496a098d7bbf754d1",
+   "runs/toolkit/v3/v3_final.json": "7c1c7d37398a0bc4ccb6257e752c00676e88ec07567010170aa5d509c4e38ac5",
+   "runs/toolkit/v3x/v3x.json": "a6bbd6b87f013b8609f211bd59ccc54c3cac910c2df5a6a8e55d0ba5ea7ab442"
+  }
+ },
+ "fig6": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/fig6.pdf",
+   "docs/paper/figures/fig6.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/f4/attn_diag/attn_diag.json": "c06088ab208aeed0c28c43249c9904806c8ec2998ba03832d15fd8bd444479d4",
+   "runs/paper/f4/c2b.json": "dfbbcc5f9b05030998b57e135ed144a4adae5d8061ea539cdac387de2b0b60ae",
+   "runs/paper/stats/stats.json": "969fc9f8ba8e2c29572d764bd96d99283ab841cd6141311496a098d7bbf754d1"
+  }
+ },
+ "fig7": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/fig7.pdf",
+   "docs/paper/figures/fig7.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "docs/paper/figures/artwork/gpt_image/original/fig7a.png": "4dbcae10c6ecccbbc9506f3e3512f81782d3751c22416bf008be41ef33309ae0",
+   "runs/paper/figures/internal/case.json": "b4d4189d6733c74a161d8f0e6a67c67ec8983c657b7dc7499cb8266bcf86aba8",
+   "runs/paper/stats/stats.json": "969fc9f8ba8e2c29572d764bd96d99283ab841cd6141311496a098d7bbf754d1",
+   "runs/toolkit/v4/v4.json": "1a1dc378dfa961ee167a15e3cb1b6537ef721641870be73a32f97f1b021321bc"
+  }
+ },
+ "fig8": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/fig8.pdf",
+   "docs/paper/figures/fig8.svg"
+  ],
+  "git": "8506abd10b76299f7eae8259fb752ae7fae873a4",
+  "inputs": {
+   "runs/paper/figures/internal/clinician_answers/aggregates.json": "ab9c657a5acc4526b1ee35afb472f6806afffff7f866822a56d49c23ae92f890"
+  }
+ },
+ "fig9": {
+  "checks": "pass",
+  "files": [
+   "docs/paper/figures/fig9.pdf",
+   "docs/paper/figures/fig9.svg"
+  ],
+  "git": "763e271122d149e0ac59619177afed1246283340",
+  "inputs": {
+   "runs/paper/ext17/ext17.json": "03921974a82a020867897cd16584aef1f9cacfca78c9e690fcf18b3d18b968b1",
+   "runs/paper/ext17/grid.json": "29a49dfcea75d2cab34493b6326e94624f5064df2322b2bc1d27918d00b5cd90",
+   "runs/paper/ext17/split.json": "dc559dc384032c99653168bfe560436fda5a286084e76c37b847c9fcf364053e",
+   "runs/paper/stats/stats.json": "555aa57081108a4887dee9f9418ed333b4b84b4fb97034f33c75d55df879a8ee"
+  }
+ }
+}

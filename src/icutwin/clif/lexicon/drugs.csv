@@ -1,0 +1,488 @@
+priority,ingredient,pattern,continuous,intermittent,provenance
+1,non_systemic_formulation,\btop\b|topical|\bopht|ophthalm|\botic\b|ear drop|eye drop|\bcrea\b|\bcream\b|\boint\b|ointment|\blotion\b|shampoo|vaginal|\bvag\b|\bsupp\b|suppositor|\brectal\b|\benema\b|mouthwash|swish|irrigation|\birr\b|nasal spray|\bnasal\b|transderm|\btd patch|\bpatch\b|salbe|creme|augentropf|augengel|augen|ohrentropf|nasentropf|nasenspray|nasensalbe|z[aä]pfchen|zaepfchen|vaginal|pflaster|mundsp[uü]l|lutsch|lotio\b|\bsupp\.|rektal|\bnasl\b|neusspray|neusdruppel|pleister,,,topical/ophthalmic/otic/nasal/vaginal/rectal/transdermal form: no CLIF route category
+5,line_flush,\bflush|sp[uü]lung|spuelung|drukzak|medicijnlijn|pressure bag|carrier line,,,"catheter/line flushes, locks, arterial-line pressure bags and carrier lines are not administrations of their drug"
+10,piperacillin_tazobactam,"tazobac\b|zosyn|piperacillin.{0,6}tazobactam|pip.?tazo",,piperacillin_tazobactam,combination product
+10,amoxicillin_clavulanate,"augmentin|co-?amoxi|amoxi.{0,12}clav",,amoxicillin_clavulanate,combination product
+10,trimethoprim_sulfamethoxazole,"bactrim|co-?trimox|sulfameth?.{0,16}trimethoprim|trimethoprim.{0,16}sulfameth?|septra|smx.?tmp",,trimethoprim_sulfamethoxazole,combination product (also MIMIC's abbreviation 'Sulfameth/Trimethoprim')
+10,ampicillin_sulbactam,"unasyn|ampicillin.{0,8}sulbactam",,ampicillin_sulbactam,combination product
+10,imipenem,tienam|imipenem|primaxin,,imipenem,imipenem/cilastatin product
+10,ceftazidime_avibactam,"zavicefta|avycaz|ceftazidime.{0,8}avibactam",,ceftazidime_avibactam,combination product
+10,ceftolozane_tazobactam,zerbaxa|ceftolozane,,ceftolozane_tazobactam,combination product
+10,oxycodone,targin|oxycodon|oxycontin|percocet|roxicodone,,oxycodone,(Targin: oxycodone/naloxone)
+10,buprenorphine,buprenorph|suboxone|zubsolv|subutex|temgesic|transtec|butrans|sublocade,,,"opioid, also as buprenorphine-naloxone (its naloxone deters misuse; not a reversal dose); no CLIF 3.0 category"
+10,ics_laba,"(fluticason|beclometason|budesonid|mometason|ciclesonid).{0,30}(salmeterol|formo?terol|formeterol|vilanterol)|(salmeterol|formo?terol|formeterol|vilanterol).{0,30}(fluticason|beclometason|budesonid|mometason|ciclesonid)|seretide|advair|symbicort|\bfoster\b|\bbreo\b|dulera|wixela|airduo|trelegy",,,inhaled corticosteroid with a long-acting beta2-agonist (combination product)
+10,calcium,"calcium.{0,40}(vitamin d|vit\.? ?d|cholecalc|\bd3\b)",,,calcium with vitamin D: a calcium supplement (combination product)
+10,aluminium_magnesium_antacid,"alumin(i)?um.{0,40}magnes|magnes.{0,40}alumin|maalox|mylanta|magaldrat|hydrotalcit|talcid|riopan",,,antacid (aluminium and magnesium hydroxide or carbonate; magaldrate; hydrotalcite): a combination product and not magnesium repletion; no CLIF 3.0 category
+10,tpn,\btpv\b,tpn,,"AmsterdamUMCdb TPV (totale parenterale voeding) admixtures, also 'TPV A - zonder Kalium' (without potassium)"
+20,norepinephrine,noradrenalin|norepinephrin|levophed|norepinefrin,norepinephrine,,
+21,epinephrine,(^|[^r])adrenalin|(^|[^r])epinephrin|\bepi(pen)?\b|(^|[^r])epinefrin,epinephrine,epinephrine,
+22,phenylephrine,phenylephrin|neo-?synephrin|fenylefrin,phenylephrine,,
+23,vasopressin,vasopressin|pitressin|vasostrict,vasopressin,,
+24,dopamine,dopamin(?:e)?\b|intropin,dopamine,,
+25,dobutamine,dobutrex|dobutamin,dobutamine,,
+26,milrinone,milrinon|corotrop|primacor,milrinone,,
+27,isoproterenol,isoprenalin|isoproterenol|isuprel,isoproterenol,,
+28,angiotensin,giapreza|angiotensin,angiotensin,,
+30,propofol,propofol|disoprivan|diprivan,propofol,propofol,
+31,fentanyl,fentanyl|sublimaze|durogesic,fentanyl,fentanyl,
+32,remifentanil,remifentanil|ultiva,remifentanil,,
+33,midazolam,midazolam|dormicum|versed,midazolam,midazolam,
+34,lorazepam,lorazepam|temesta|ativan,lorazepam,lorazepam,
+35,diazepam,diazepam|valium,,diazepam,
+36,dexmedetomidine,dexmedetomidin|dexdor|precedex,dexmedetomidine,,
+37,ketamine,ketamin|ketalar,ketamine,ketamine,
+38,morphine,morphin|\bmst\b|duramorph|ms contin|morfin,morphine,morphine,
+39,hydromorphone,hydromorphon|dilaudid|palladon|hydromorfon,hydromorphone,hydromorphone,
+40,insulin,insulin|actrapid|novorapid|novolog|humalog|lispro|glargin|lantus|levemir|insulatard|humulin|novolin|toujeo|apidra,insulin,,
+41,heparin,heparin|liquemin|calciparin,heparin,,unfractionated heparin
+42,argatroban,argatroban,argatroban,,
+43,bivalirudin,bivalirudin|angiomax,bivalirudin,,
+44,eptifibatide,eptifibatid|integrilin,eptifibatide,,
+45,alteplase,alteplase|actilyse|activase|cathflo,,alteplase,
+46,aminocaproic_acid,aminocaproic|amicar,aminocaproic_acid,,
+50,amiodarone,amiodaron|cordarone|pacerone|nexterone,amiodarone,,
+51,diltiazem,diltiazem|cardizem|dilzem,diltiazem,,
+52,esmolol,esmolol|brevibloc,esmolol,,
+53,labetalol,labetalol|trandate,labetalol,,
+54,nicardipine,nicardipin|cardene,nicardipine,,
+55,clevidipine,clevidipin|cleviprex,clevidipine,,
+56,nitroglycerin,nitroglycerin|glyceryl trinitrate|glyceroltrinitrat|perlinganit|nitroderm|nitrolingual|\bntg\b|tridil|nitro-?bid|nitrostat,nitroglycerin,,
+57,nitroprusside,nitroprussi|nipruss|nitriate|nipride|sodium nitro\b,nitroprusside,,HiRID 'Sodium nitro' (cv-inf; nitroglycerin is Perlinganit) read as sodium nitroprusside
+58,procainamide,procainamid,procainamide,,
+59,lidocaine,lidocain|xylocain|rapidocain,lidocaine,,
+60,adenosine,adenosin|krenosin|adenocard,,,
+61,phentolamine,phentolamin|regitin|fentolamin,phentolamine,,
+62,cisatracurium,cisatracurium|nimbex,cisatracurium,cisatracurium,
+63,atracurium,(^|[^s])atracurium|tracrium,,atracurium,continuous atracurium has no CLIF 3.0 category
+64,vecuronium,vecuronium|norcuron,vecuronium,vecuronium,
+65,rocuronium,rocuronium|esmeron|zemuron,rocuronium,rocuronium,
+66,succinylcholine,succinylcholin|suxamethonium|lysthenon|anectine|quelicin,,succinylcholine,
+67,furosemide,furosemid|lasix,furosemide,,
+68,bumetanide,bumetanid|bumex|burinex,bumetanide,,
+69,torsemide,torasemid|torsemid|torem|demadex,torsemide,,
+70,pantoprazole,pantoprazol|protonix|pantozol|zurcal,pantoprazole,,
+71,esomeprazole,esomeprazol|nexium,esomeprazole,,
+72,octreotide,octreotid|sandostatin,octreotide,,
+73,naloxone,naloxon|narcan,naloxone,naloxone,
+74,oxytocin,oxytocin|syntocinon|pitocin,oxytocin,,
+75,levothyroxine,levothyroxin|thyroxin|euthyrox|eltroxin|synthroid|levoxyl,levothyroxine,,
+76,liothyronine,liothyronin|thyrotardin|cytomel|triostat,liothyronine,,Thyrotardin-inject = liothyronine (T3)
+77,aminophylline,aminophyllin|theophyllin|euphyllin|aminofyllin|theofyllin,aminophylline,,
+78,terbutaline,terbutalin|bricanyl,terbutaline,,
+79,epoprostenol,epoprostenol|flolan|veletri,epoprostenol,,
+80,treprostinil,treprostinil|remodulin,treprostinil,,
+81,alprostadil,alprostadil|prostin vr,alprostadil,,
+82,levalbuterol,levalbuterol|levosalbutamol|xopenex,,,no CLIF 3.0 category (R-enantiomer of albuterol at half its dose: kept apart)
+82,albuterol,salbutamol|albuterol|ventolin|proventil,albuterol,,continuous nebulisation
+83,ipratropium,ipratr?opium|ipratroprium|atrovent,ipratropium,,
+84,tacrolimus,tacrolimus|prograf|advagraf,tacrolimus,,
+85,levetiracetam,levetiracetam|keppra,,,no CLIF 3.0 category
+86,acetaminophen,paracetamol|acetaminophen|dafalgan|perfalgan|benuron|tylenol|ofirmev|panadol,,acetaminophen,
+87,haloperidol,haloperidol|haldol,,haloperidol,
+88,quetiapine,quetiapin|seroquel,,quetiapine,
+89,olanzapine,olanzapin|zyprexa,,olanzapine,
+90,risperidone,risperidon|risperdal,,risperidone,
+91,promethazine,promethazin|phenergan,,promethazine,
+92,diphenhydramine,diphenhydramin|benadryl|difenhydramin,,diphenhydramine,
+93,etomidate,etomidat|hypnomidate|amidate,,etomidate,
+94,valproate,valpro|orfiril|depakine|depakote|depacon,,valproate,
+95,methylprednisolone,methylprednisolon|solu.?medrol|medrol|urbason,,methylprednisolone,
+96,hydrocortisone,hydrocortison|solu.?cortef|hydrocortone|cortef,,hydrocortisone,
+97,dexamethasone,dexamethason|mephameson|fortecortin|decadron,,dexamethasone,
+98,prednisolone,prednisolon|spiricort,,prednisolone,
+99,prednisone,prednison|deltasone,,prednisone,
+100,fludrocortisone,fludrocortison|florinef,,fludrocortisone,
+110,magnesium_sulfate,magnesium.?sulfat|mg-?sulfat|magnesiocard,magnesium_sulfate,magnesium_repletion,continuous: magnesium sulfate; intermittent: magnesium repletion (other magnesium salts: the salt-name row at 940)
+111,potassium_phosphate,kalium.?phosphat|potassium phosphate|\bk-?pi\b|k-?phos|phoscap|natrium.?phosphat|sodium phosphate|glycophos|glucose-1-phosphat|kalium.?fosfa|natrium.?fosfa|natrium-kalium-fosfa|glycerofosfa,,phosphate_repletion,continuous phosphate infusions have no CLIF 3.0 category (glucose-1-phosphate grouped as phosphate repletion)
+112,potassium_chloride,kalium.?chlorid|potassium chloride|\bk-?cl\b|\bkcl\b|kalium effervetten|\bkalium\b|klor-?con|k-?dur|potassium cl\b|kayciel,,potassium_repletion,continuous potassium infusions have no CLIF 3.0 category
+113,sodium_bicarbonate,bicarbonat|bicarb|nahco3|bikarbonat|hydrogencarbonat,sodium_bicarbonate,,
+114,hypertonic_saline_3,nacl 3\s?%|sodium chloride 3\s?%,,hypertonic_saline_3,
+115,hypertonic_saline_23.4,nacl 23\.4|sodium chloride 23\.4,,hypertonic_saline_23.4,
+116,mannitol,mannitol|osmitrol,,mannitol,
+117,albumin_25,"albumin.{0,12}25\s?%",albumin_25,,
+117,albumin_20,"albumin.{0,12}20\s?%",,,20% albumin (hyperoncotic European product)
+118,albumin_5,"albumin.{0,12}[45]\s?%",albumin_5,,4% and 5% (iso-oncotic) albumin
+120,cefazolin,cefazolin|kefzol|ancef,,cefazolin,
+121,cefuroxime,cefuroxim|zinacef|zinat,,cefuroxime,
+122,ceftriaxone,ceftriaxon|rocephin,,ceftriaxone,
+123,ceftazidime,ceftazidim|fortam|fortaz|tazicef,,ceftazidime,
+124,cefepime,cefepim|cepimex|maxipime,,cefepime,
+125,meropenem,meropenem|meronem|merrem,,meropenem,
+126,ertapenem,ertapenem|invanz,,ertapenem,
+127,vancomycin,vancomycin|vancocin,,vancomycin,
+128,metronidazole,metronidazol|flagyl,,metronidazole,
+129,clindamycin,clindamycin|dalacin|cleocin,,clindamycin,
+130,flucloxacillin,flucloxacillin|floxapen,,,
+131,amoxicillin,amoxicillin|amoxil|clamoxyl,,amoxicillin,
+132,ampicillin,\bampicillin,,ampicillin,word start: not pivampicillin
+133,penicillin,penicillin,,penicillin,
+134,clarithromycin,clarithromycin|klacid|biaxin,,clarithromycin,
+135,erythromycin,erythromycin|erythrocin,,erythromycin,
+136,azithromycin,azithromycin|zithromax,,azithromycin,
+137,doxycycline,doxycyclin|vibramycin|vibravenös|vibravenos,,doxycycline,
+138,gentamicin,gentamicin|garamycin,,gentamicin,
+139,tobramycin,tobramycin|obracin|nebcin,,tobramycin,
+140,amikacin,amikacin|amikin,,amikacin,
+141,ciprofloxacin,ciprofloxacin|ciproxin|cipro\b,,ciprofloxacin,
+142,levofloxacin,levofloxacin|tavanic|levaquin,,levofloxacin,
+143,moxifloxacin,moxifloxacin|avalox|avelox,,moxifloxacin,
+144,rifampin,rifampi|rimactan|rifadin,,rifampin,
+145,linezolid,linezolid|zyvox,,linezolid,
+146,daptomycin,daptomycin|cubicin,,daptomycin,
+147,colistin,colistin|colistimethat,,colistin,
+148,aztreonam,aztreonam|azactam,,aztreonam,
+149,fluconazole,fluconazol|diflucan,,fluconazole,
+150,voriconazole,voriconazol|vfend,,voriconazole,
+151,caspofungin,caspofungin|cancidas,,caspofungin,
+152,anidulafungin,anidulafungin|ecalta|eraxis,,anidulafungin,
+153,micafungin,micafungin|mycamine,,micafungin,
+154,amphotericin_b,amphotericin|ambisome|ampho-?moronal|fungizone|abelcet|amfotericin,,amphotericin_b,
+155,acyclovir,\baciclovir|\bacyclovir|zovirax,,acyclovir,word start: not the prodrug valacyclovir
+156,ganciclovir,\bganciclovir|cymevene|cytovene,,ganciclovir,word start: not the prodrug valganciclovir
+157,valganciclovir,valganciclovir|valcyte,,valganciclovir,
+158,valacyclovir,valaciclovir|valacyclovir|valtrex,,valacyclovir,
+159,oseltamivir,oseltamivir|tamiflu,,oseltamivir,
+160,nystatin,nystatin|mycostatin,,nystatin,
+170,captopril,captopril|lopirin|capoten,,captopril,
+171,enalapril,enalapril|enatec|vasotec|reniten,,enalapril,
+172,lisinopril,lisinopril|zestril|prinivil,,lisinopril,
+173,ramipril,ramipril|triatec|altace,,ramipril,
+174,losartan,losartan|cosaar|cozaar,,losartan,
+175,valsartan,valsartan|diovan,,valsartan,
+176,candesartan,candesartan|atacand|blopress,,candesartan,
+950,dextrose_5_water,glucose 5\s?%|dextrose 5\s?%|\bd5w\b|glukose 5\s?%|\bdext\.? 5\s?%,dextrose_5_water,,vehicle: matched only when no active ingredient (even one without a CLIF category) matches
+181,dextrose_10_water,glucose 10\s?%|dextrose 10\s?%|\bd10w?\b|glukose 10\s?%,dextrose_10_water,,
+182,dextrose_other,glucose [2-7]0\s?%|dextrose [2-7]0\s?%|glukose [2-7]0\s?%|\bd50w?\b,dextrose_other,,
+950,lactated_ringers_solution,"ringers?.?lact|lactated ringer|ringer-?laktat|hartmann|ringers? solution,? ?lactated|\blr\b|ri-lac",lactated_ringers_solution,,vehicle: matched only when no active ingredient (even one without a CLIF category) matches
+184,plasma_lyte,plasma-?lyte|ringerfundin|sterofundin|normosol|elomel|isofundin,plasma_lyte,,balanced acetate/malate-buffered crystalloids grouped with Plasma-Lyte
+950,sodium_chloride,\bnacl\b|natriumchlorid|sodium chloride|kochsalz|normal saline|\bns\b|\bnss\b|sodium chl\b,sodium_chloride,,vehicle: matched only when no active ingredient (even one without a CLIF category) matches
+186,tpn,kabiven|nutriflex|olimel|clinimix|\btpn\b|parenteral nutrition,tpn,,parenteral nutrition admixtures (CLIF-MIMIC: TPN -> tpn)
+900,clonidine,(^|[^a])clonidin|catapres,,,no CLIF 3.0 category (apraclonidine eye drops excluded)
+900,nimodipine,nimodipin|nimotop,,,no CLIF 3.0 category
+900,urapidil,urapidil|ebrantil,,,no CLIF 3.0 category
+900,metamizole,metamizol|novalgin|dipyron|novaminsulfon,,,no CLIF 3.0 category (Novaminsulfon: German name of metamizole sodium)
+900,phenytoin,phenytoin|phenhydan|dilantin|fenyto[iï]n,,,no CLIF 3.0 category
+900,aspirin,aspirin|asp[eé]gic|acetylsalicyl|carbasala|\bascal\b,,,no CLIF 3.0 category (carbasalate calcium: aspirin)
+900,thiamine,thiamin|benerva|vitamin b1,,,no CLIF 3.0 category
+900,metoprolol,metoprolol|beloc|lopressor|toprol,,,no CLIF 3.0 category
+900,iloprost,iloprost|ilomedin|ventavis,,,no CLIF 3.0 category
+900,levosimendan,levosimendan|simdax,,,no CLIF 3.0 category
+900,hyperimmune_globulin,"hepatitis b immun|tetanus immun|rabies immun|anti-?d immun|rho ?\(d\)|rhogam|cytomegalovirus immun|cytogam|cytotect|hepatect|\bhbig\b|varicella.zoster immun",,,no CLIF 3.0 category (a specific hyperimmune globulin is not IVIG)
+900,immunoglobulin,octagam|intratect|privigen|gamunex|immunoglobulin|ivig,,,no CLIF 3.0 category
+900,clopidogrel,clopidogrel|plavix,,,no CLIF 3.0 category
+900,tranexamic_acid,tranexam|cyklokapron|ciklokapron,,,no CLIF 3.0 category
+900,enoxaparin,enoxaparin|clexane|lovenox,,,no CLIF 3.0 category
+900,nadroparin,nadroparin|fraxiparin,,,no CLIF 3.0 category
+940,calcium,calcium|calciumchlorid|ca-?acetat,,,"salt name: matched only when no other active ingredient matches (rosuvastatin calcium, carbasalate calcium)"
+940,magnesium_sulfate,magnesium,magnesium_sulfate,magnesium_repletion,"salt name: other magnesium salts (oxide, lactate, aspartate), matched only when no other active ingredient matches (omeprazole magnesium; laxatives and antacids)"
+900,magnesium_hydroxide,magnesium.?hydrox|milk of magnesia,,,"laxative or antacid (milk of magnesia), not magnesium repletion; no CLIF 3.0 category"
+900,magnesium_citrate,magnesium.?citrat,,,"osmotic laxative (bowel preparation), not magnesium repletion; no CLIF 3.0 category"
+900,choline_magnesium_trisalicylate,trisalicylat|trilisate,,,salicylate analgesic; no CLIF 3.0 category
+900,leucovorin,leucovorin|folin(?:at|ic|aat|säure)|levofolin,,,"folinic acid (leucovorin calcium, calcium folinate): not calcium; no CLIF 3.0 category"
+900,levomefolate,levomefolat|methylfolat|metafolin|deplin,,,"L-methylfolate (levomefolate calcium): not calcium; no CLIF 3.0 category"
+900,patiromer,patiromer|veltassa,,,"potassium binder (patiromer sorbitex calcium): not calcium; no CLIF 3.0 category"
+900,calcium_dobesilate,dobesilat|doxium,,,"vasoprotective (calcium dobesilate): not calcium; no CLIF 3.0 category"
+900,clonazepam,clonazepam|rivotril|klonopin,,,no CLIF 3.0 category
+900,mirtazapine,mirtazap|mirtazep|remeron,,,no CLIF 3.0 category
+900,hydralazine,hydralazin|nepresol,,,no CLIF 3.0 category (includes dihydralazine: Nepresol)
+9,epidural_analgesia,"pda-|periduralan|epidural|paravertebralblock|(levo)?bupivaca[iï]ne?[^/]{0,20}/ ?(sufenta|fenta)|ropivaca[iï]ne?[^/]{0,20}/ ?(sufenta|fenta)",,,"regional anaesthesia: an epidural or nerve-block mixture is not a systemic administration of the drugs it holds"
+900,vitamins,becozym|becotal|multivitamin|vitamin|cernevit|soluvit|vitalipid|trace elements|addamel|tracutil|multivit|prenatal|\bpnv\b|b-?complex|\bvit\.? ?b,,,no CLIF 3.0 category
+900,mycophenolate,mycophenol|cellcept|myfortic|mycofenol,,,no CLIF 3.0 category
+900,amlodipine,amlodipin|norvasc,,,no CLIF 3.0 category (only amlodipine combinations)
+900,spironolactone,spironolacton|aldactone|soldactone|kalium-?canrenoat,,,no CLIF 3.0 category
+900,escitalopram,escitalopram|cipralex|lexapro,,,no CLIF 3.0 category
+900,citalopram,citalopram|seropram|cipramil|celexa,,,no CLIF 3.0 category
+900,lepirudin,lepirudin|refludan,,,no CLIF 3.0 category
+900,methadone,methadon,,,no CLIF 3.0 category
+900,flumazenil,flumazenil|anexate,,,no CLIF 3.0 category
+900,thiopental,thiopental|pentothal,,,no CLIF 3.0 category
+900,budesonide,budesonid|pulmicort,,,no CLIF 3.0 category
+900,anti_thymocyte_globulin,\batg\b|thymoglobulin,,,no CLIF 3.0 category
+900,metolazone,metolazon,,,no CLIF 3.0 category
+900,digoxin,digoxin|lanoxin,,,no CLIF 3.0 category
+900,carvedilol,carvedilol|dilatrend|coreg,,,no CLIF 3.0 category
+900,ondansetron,ondansetron|zofran,,,no CLIF 3.0 category
+900,metoclopramide,metoclopramid|paspertin|primperan|reglan,,,no CLIF 3.0 category
+900,ranitidine,ranitidin|zantac,,,no CLIF 3.0 category
+900,famotidine,famotidin|pepcid,,,no CLIF 3.0 category
+900,omeprazole,(^|[^s])omeprazol|antra|prilosec,,,no CLIF 3.0 category
+900,lactulose,lactulos|duphalac,,,no CLIF 3.0 category
+900,macrogol,macrogol|movicol|polyethylene glycol|miralax,,,no CLIF 3.0 category
+900,senna,senna|sennosid|senokot,,,no CLIF 3.0 category
+900,docusate,docusat|colace,,,no CLIF 3.0 category
+900,bisacodyl,bisacodyl|dulcolax,,,no CLIF 3.0 category
+900,atorvastatin,atorvastatin|sortis|lipitor,,,no CLIF 3.0 category
+900,simvastatin,simvastatin|zocor,,,no CLIF 3.0 category
+900,tramadol,tramadol|tramal|ultram,,,no CLIF 3.0 category
+900,pethidine,pethidin|meperidin|demerol,,,no CLIF 3.0 category
+900,ketorolac,ketorolac|toradol,,,no CLIF 3.0 category
+900,ibuprofen,ibuprofen|brufen|motrin|advil,,,no CLIF 3.0 category
+900,diclofenac,diclofenac|voltaren,,,no CLIF 3.0 category
+900,gabapentin,gabapentin|neurontin,,,no CLIF 3.0 category
+900,pregabalin,pregabalin|lyrica,,,no CLIF 3.0 category
+900,warfarin,warfarin|coumadin|jantoven,,,no CLIF 3.0 category
+900,phenprocoumon,phenprocoumon|marcoumar|marcumar,,,no CLIF 3.0 category
+900,acenocoumarol,acenocoumarol|sintrom,,,no CLIF 3.0 category
+900,apixaban,apixaban|eliquis,,,no CLIF 3.0 category
+900,rivaroxaban,rivaroxaban|xarelto,,,no CLIF 3.0 category
+900,ticagrelor,ticagrelor|brilique|brilinta,,,no CLIF 3.0 category
+900,prasugrel,prasugrel|efient|effient,,,no CLIF 3.0 category
+900,diphenoxylate,diphenoxylat|lomotil|reasec,,,no CLIF 3.0 category (antidiarrhoeal; its atropine is a sub-therapeutic additive)
+900,phenobarbital,phenobarb|luminal|donnatal,,,no CLIF 3.0 category
+900,hydrocodone,hydrocodon|hycodan|tussionex,,,no CLIF 3.0 category (with acetaminophen: acetaminophen)
+900,atropine,(^|[^m])atropin,,,no CLIF 3.0 category (homatropine excluded)
+900,glycopyrrolate,glycopyrron|glycopyrrolat|robinul,,,no CLIF 3.0 category
+900,neostigmine,neostigmin|prostigmin,,,no CLIF 3.0 category
+900,sugammadex,sugammadex|bridion,,,no CLIF 3.0 category
+900,desmopressin,desmopressin|minirin|ddavp,,,no CLIF 3.0 category
+900,terlipressin,terlipressin|glypressin|haemopressin,,,no CLIF 3.0 category
+900,protamine,protamin,,,no CLIF 3.0 category
+900,prothrombin_complex,beriplex|kcentra|octaplex|prothromplex,,,no CLIF 3.0 category
+900,fibrinogen_concentrate,haemocomplettan|riastap|fibrinogen,,,no CLIF 3.0 category
+900,urokinase,urokinase,,,no CLIF 3.0 category
+900,abciximab,abciximab|reopro,,,no CLIF 3.0 category
+900,tirofiban,tirofiban|aggrastat,,,no CLIF 3.0 category
+900,filgrastim,filgrastim|neupogen,,,no CLIF 3.0 category
+900,ciclosporin,ciclosporin|cyclosporin|sandimmun|neoral,,,no CLIF 3.0 category
+900,azathioprine,azathioprin|imurek|imuran,,,no CLIF 3.0 category
+900,basiliximab,basiliximab|simulect,,,no CLIF 3.0 category
+900,levodopa,levodopa|madopar|sinemet,,,no CLIF 3.0 category
+900,lamotrigine,lamotrigin|lamictal,,,no CLIF 3.0 category
+900,carbamazepine,carbamazepin|tegretol,,,no CLIF 3.0 category
+900,oxcarbazepine,oxcarbazepin|trileptal,,,no CLIF 3.0 category
+900,lacosamide,lacosamid|vimpat,,,no CLIF 3.0 category
+900,topiramate,topiramat|topamax,,,no CLIF 3.0 category
+900,clomethiazole,clomethiazol|distraneurin,,,no CLIF 3.0 category
+900,zolpidem,zolpidem|stilnox|ambien,,,no CLIF 3.0 category
+900,oxazepam,oxazepam|seresta,,,no CLIF 3.0 category
+900,levomepromazine,levomepromazin|nozinan,,,no CLIF 3.0 category
+900,pipamperone,pipamperon|dipiperon,,,no CLIF 3.0 category
+900,trazodone,trazodon|trittico,,,no CLIF 3.0 category
+900,sertraline,sertralin|zoloft,,,no CLIF 3.0 category
+900,venlafaxine,venlafaxin|efexor|effexor,,,no CLIF 3.0 category
+900,amitriptyline,amitriptylin|saroten|elavil,,,no CLIF 3.0 category
+900,trimipramine,trimipramin|surmontil,,,no CLIF 3.0 category
+900,clemastine,clemastin|tavegyl,,,no CLIF 3.0 category
+900,levocetirizine,levocetirizin|xyzal,,,no CLIF 3.0 category
+900,acetazolamide,acetazolamid|diamox,,,no CLIF 3.0 category
+900,triamterene,triamteren|dyrenium,,,no CLIF 3.0 category
+900,amiloride,amilorid|moduretic,,,no CLIF 3.0 category
+900,hydrochlorothiazide,hydrochlorothiazid|esidrex,,,no CLIF 3.0 category
+900,minoxidil,minoxidil|loniten,,,no CLIF 3.0 category
+900,doxazosin,doxazosin|cardura,,,no CLIF 3.0 category
+900,carbimazole,carbimazol|neo-?mercazole|thiamazol,,,no CLIF 3.0 category
+900,propranolol,propranolol|inderal,,,no CLIF 3.0 category
+900,bisoprolol,bisoprolol|concor,,,no CLIF 3.0 category
+900,nebivolol,nebivolol|nebilet,,,no CLIF 3.0 category
+900,sotalol,sotalol|sotalex,,,no CLIF 3.0 category
+900,verapamil,verapamil|isoptin,,,no CLIF 3.0 category
+900,nifedipine,nifedipin|adalat,,,no CLIF 3.0 category
+900,metformin,metformin|glucophage,,,no CLIF 3.0 category
+900,chlorhexidine,chlorhexidin|dequonal,,,antiseptic
+900,piritramide,piritramid|dipidolor,,,no CLIF 3.0 category
+900,sufentanil,sufentanil|sufenta,,,no CLIF 3.0 category
+900,dalteparin,dalteparin|fragmin,,,no CLIF 3.0 category
+160,ropivacaine,ropivacain|naropin,ropivacaine,,local anaesthetic
+900,melatonin,melatonin|circadin,,,no CLIF 3.0 category
+900,phytomenadione,phytomenadion|phytmenadion|konakion|vitamin k|fytomenadion,,,no CLIF 3.0 category
+900,cafedrine_theodrenaline,cafedrin|theodrenalin|akrinor,,,no CLIF 3.0 category
+900,ephedrine,(^|[^o])ephedrin|(^|[^o])efedrin,,,no CLIF 3.0 category (pseudoephedrine excluded)
+900,pseudoephedrine,pseudoephedrin|pseudoefedrin|sudafed,,,no CLIF 3.0 category (decongestant)
+900,rosuvastatin,rosuvastatin|crestor,,,no CLIF 3.0 category
+900,pitavastatin,pitavastatin|livalo,,,no CLIF 3.0 category
+900,polystyrene_sulfonate,"polystyren.{0,8}sulfonat|kayexalate|resonium|sorbisterit|kalimate|argamate",,,no CLIF 3.0 category (potassium binder)
+900,polycarbophil,polycarbophil,,,no CLIF 3.0 category (bulk laxative)
+900,droperidol,droperidol|xomolix,,,no CLIF 3.0 category
+900,acetylcysteine,acetylcystein|fluimucil|mucomyst,,,no CLIF 3.0 category
+900,sevoflurane,sevofluran,,,no CLIF 3.0 category (inhaled sedation)
+900,xipamide,xipamid,,,no CLIF 3.0 category
+900,sodium_picosulfate,picosulfat|laxoberal,,,no CLIF 3.0 category
+900,fenoterol,fenoterol|berotec|berodual,,,no CLIF 3.0 category
+900,fluticasone,fluticason|flovent|flixotide|arnuity,,,no CLIF 3.0 category (nasal sprays are non-systemic forms)
+900,beclometasone,beclometason|beclomethason|qvar,,,no CLIF 3.0 category
+900,mometasone,mometason|nasonex|asmanex,,,no CLIF 3.0 category
+900,salmeterol,salmeterol|serevent,,,no CLIF 3.0 category
+900,formoterol,formo?terol|formeterol|foradil|perforomist|brovana,,,no CLIF 3.0 category
+900,digitoxin,digitoxin,,,no CLIF 3.0 category
+900,nicotine,nicotin,,,no CLIF 3.0 category
+900,tiotropium,tiotropium|spiriva,,,no CLIF 3.0 category
+900,probiotics,lactobacillus|saccharomyces|bioflorin,,,no CLIF 3.0 category
+900,lercanidipine,lercanidipin|zanidip,,,no CLIF 3.0 category
+900,ezetimibe,ezetimib|ezetrol,,,no CLIF 3.0 category
+900,ivabradine,ivabradin|procoralan,,,no CLIF 3.0 category
+900,hydroxyzine,hydroxyzin|atarax,,,no CLIF 3.0 category
+900,rifaximin,rifaximin|xifaxan,,,no CLIF 3.0 category
+900,sildenafil,sildenafil|revatio|viagra,,,no CLIF 3.0 category
+940,sodium_citrate,natrium.?citrat|sodium.?citrat|\bsod\.? citrat|trinatriumcitrat|\bacd-?a\b|citra-?lock|^citrate\b,,,"salt name: matched only when no other active ingredient matches (CRRT anticoagulant, catheter lock, oral alkalinizer)"
+900,potassium_citrate,potassium citrat|kalium.?citrat|urocit,,,no CLIF 3.0 category
+900,passion_flower,passionsblume,,,no CLIF 3.0 category
+190,iohexol,iohexol|omnipaque,,iohexol,contrast agent
+190,iodixanol,iodixanol|visipaque,,iodixanol,contrast agent
+190,iopamidol,iopamidol|isovue,,iopamidol,contrast agent
+190,ioversol,ioversol|optiray,,ioversol,contrast agent
+190,iomeprol,iomeprol|iomeron,,iomeprol,contrast agent
+190,gadobutrol,gadobutrol|gadavist|gadovist,,gadobutrol,contrast agent
+190,gadoterate,gadoterat|dotarem|clariscan,,gadoterate,contrast agent
+900,tamsulosin,tamsulosin|flomax,,,no CLIF 3.0 category
+900,folic_acid,folic acid|folsäure|folsaeure,,,no CLIF 3.0 category
+900,ramelteon,ramelteon,,,no CLIF 3.0 category
+900,midodrine,midodrin|gutron,,,no CLIF 3.0 category
+900,iron,ferrous|ferric|eisen|iron sucrose|venofer|ferinject,,,no CLIF 3.0 category
+900,allopurinol,allopurinol,,,no CLIF 3.0 category
+900,loperamide,loperamid|imodium,,,no CLIF 3.0 category
+900,sevelamer,sevelamer|renvela,,,no CLIF 3.0 category
+900,umeclidinium,umeclidinium,,,no CLIF 3.0 category
+900,ursodiol,ursodiol|ursodeoxychol,,,no CLIF 3.0 category
+900,chlordiazepoxide,chlordiazepoxid,,,no CLIF 3.0 category
+900,dihydrocodeine,dihydrocodein|paracodin,,,no CLIF 3.0 category
+900,codeine,(^|[^o])codein,,,no CLIF 3.0 category (with acetaminophen: acetaminophen)
+900,guaifenesin,guaifenesin,,,no CLIF 3.0 category
+900,sucralfate,sucralfat,,,no CLIF 3.0 category
+900,bacitracin,bacitracin,,,no CLIF 3.0 category
+900,duloxetine,duloxetin|cymbalta,,,no CLIF 3.0 category
+900,pravastatin,pravastatin,,,no CLIF 3.0 category
+900,ocular_lubricant,petrolatum|carboxymethylcellulose|artificial tears|opht oint,,,no CLIF 3.0 category
+900,mineral_oil,mineral oil,,,no CLIF 3.0 category
+160,anakinra,\banakinra\b|kineret,,anakinra,CLIF 3.0 category name + brands
+160,axicabtagene_ciloleucel,\baxicabtagene[ _-]?ciloleucel\b|yescarta,,axicabtagene_ciloleucel,CLIF 3.0 category name + brands
+160,azilsartan,\bazilsartan\b|edarbi,,azilsartan,CLIF 3.0 category name + brands
+160,baclofen,\bbaclofen\b|lioresal,baclofen,,CLIF 3.0 category name + brands
+160,baricitinib,\bbaricitinib\b|olumiant,,baricitinib,CLIF 3.0 category name + brands
+160,benazepril,\bbenazepril\b|lotensin,,benazepril,CLIF 3.0 category name + brands
+9,benazepril_hctz,"benazepril.{0,25}(hctz|hct\b|hydrochlorothiazid)|(hctz|hct\b|hydrochlorothiazid).{0,25}benazepril",,benazepril_hctz,CLIF 3.0 category name
+160,betamethasone,\bbetamethasone?\b|celestone|celeston,,betamethasone,CLIF 3.0 category name + brands
+160,blinatumomab,\bblinatumomab\b|blincyto,,blinatumomab,CLIF 3.0 category name + brands
+160,brexucabtagene_autoleucel,\bbrexucabtagene[ _-]?autoleucel\b|tecartus,,brexucabtagene_autoleucel,CLIF 3.0 category name + brands
+160,bupivacaine,\bbupivacaine?\b|bupivacain|marcain|sensorcaine|carbostesin,bupivacaine,,CLIF 3.0 category name + brands
+9,candesartan_hctz,"candesartan.{0,25}(hctz|hct\b|hydrochlorothiazid)|(hctz|hct\b|hydrochlorothiazid).{0,25}candesartan",,candesartan_hctz,CLIF 3.0 category name
+160,cangrelor,\bcangrelor\b|kengreal,cangrelor,,CLIF 3.0 category name + brands
+160,cefaclor,\bcefaclor\b|ceclor,,cefaclor,CLIF 3.0 category name + brands
+160,cefadroxil,\bcefadroxil\b|duricef,,cefadroxil,CLIF 3.0 category name + brands
+160,cefamandole,\bcefamandole?\b,,cefamandole,CLIF 3.0 category name
+160,cefdinir,\bcefdinir\b|omnicef,,cefdinir,CLIF 3.0 category name + brands
+160,cefiderocol,\bcefiderocol\b|fetroja|fetcroja,,cefiderocol,CLIF 3.0 category name + brands
+160,cefixime,\bcefixime?\b|suprax,,cefixime,CLIF 3.0 category name + brands
+160,cefmetazole,\bcefmetazole?\b|zefazone,,cefmetazole,CLIF 3.0 category name + brands
+160,cefonicid,\bcefonicid\b,,cefonicid,CLIF 3.0 category name
+160,cefoperazone,\bcefoperazone?\b|cefobid,,cefoperazone,CLIF 3.0 category name + brands
+160,cefotaxime,\bcefotaxime?\b|claforan,,cefotaxime,CLIF 3.0 category name + brands
+160,cefotetan,\bcefotetan\b|cefotan,,cefotetan,CLIF 3.0 category name + brands
+160,cefoxitin,\bcefoxitin\b|mefoxin,,cefoxitin,CLIF 3.0 category name + brands
+160,cefpodoxime,\bcefpodoxime?\b|vantin|orelox,,cefpodoxime,CLIF 3.0 category name + brands
+160,cefprozil,\bcefprozil\b|cefzil,,cefprozil,CLIF 3.0 category name + brands
+160,ceftaroline,\bceftaroline?\b|teflaro|zinforo,,ceftaroline,CLIF 3.0 category name + brands
+9,ceftazidime_clavulanate,"ceftazidim.{0,25}clavulan|clavulan.{0,25}ceftazidim",,ceftazidime_clavulanate,CLIF 3.0 category name
+160,ceftibuten,\bceftibuten\b|cedax,,ceftibuten,CLIF 3.0 category name + brands
+160,ceftizoxime,\bceftizoxime?\b,,ceftizoxime,CLIF 3.0 category name
+160,cephalexin,\bce(?:ph|f)alexin\b|cefalexin|keflex,,cephalexin,CLIF 3.0 category name + brands
+160,cephalothin,\bce(?:ph|f)alothin\b|cefalotin|keflin,,cephalothin,CLIF 3.0 category name + brands
+160,cephapirin,\bce(?:ph|f)apirin\b|cefapirin,,cephapirin,CLIF 3.0 category name + brands
+160,cephradine,\bce(?:ph|f)radine?\b|cefradin,,cephradine,CLIF 3.0 category name + brands
+160,chloramphenicol,\bchloram(?:ph|f)enicol\b|chloramphenicol|chloromycetin,,chloramphenicol,CLIF 3.0 category name + brands
+160,cidofovir,\bcidofovir\b|vistide,,cidofovir,CLIF 3.0 category name + brands
+160,ciltacabtagene_autoleucel,\bciltacabtagene[ _-]?autoleucel\b|carvykti,,ciltacabtagene_autoleucel,CLIF 3.0 category name + brands
+160,cinoxacin,\bcinoxacin\b,,cinoxacin,CLIF 3.0 category name
+160,cloxacillin,\bcloxacillin,,cloxacillin,CLIF 3.0 category name (word start: not dicloxacillin or flucloxacillin)
+160,dalbavancin,\bdalbavancin\b|dalvance|xydalba,,dalbavancin,CLIF 3.0 category name + brands
+160,delafloxacin,\bdelafloxacin\b|baxdela,,delafloxacin,CLIF 3.0 category name + brands
+160,diatrizoate,\bdiatrizoate?\b|diatrizo|amidotrizo|gastrografin|hypaque,,diatrizoate,CLIF 3.0 category name + brands
+160,dicloxacillin,\bdicloxacillin\b|dynapen,,dicloxacillin,CLIF 3.0 category name + brands
+160,doripenem,\bdoripenem\b|doribax,,doripenem,CLIF 3.0 category name + brands
+160,dornase_alfa,\bdornase[ _-]?alfa\b|pulmozyme,,dornase_alfa,CLIF 3.0 category name + brands
+160,elratanamab,\belratanamab\b|elranatamab|elrexfio,,elratanamab,CLIF 3.0 category name + brands
+9,enalapril_hctz,"enalapril.{0,25}(hctz|hct\b|hydrochlorothiazid)|(hctz|hct\b|hydrochlorothiazid).{0,25}enalapril",,enalapril_hctz,CLIF 3.0 category name
+160,epcoritamab,\bepcoritamab\b|epkinly|tepkinly,,epcoritamab,CLIF 3.0 category name + brands
+160,eprosartan,\beprosartan\b|teveten,,eprosartan,CLIF 3.0 category name + brands
+160,eravacycline,\beravacycline?\b|xerava,,eravacycline,CLIF 3.0 category name + brands
+160,fidaxomicin,\bfidaxomicin\b|dificid|dificlir,,fidaxomicin,CLIF 3.0 category name + brands
+160,foscarnet,\bfoscarnet\b|foscavir,,foscarnet,CLIF 3.0 category name + brands
+160,fosfomycin,\bfosfomycin\b|monurol|fosfocin|infectofos,,fosfomycin,CLIF 3.0 category name + brands
+160,fosinopril,\bfosinopril\b|monopril,,fosinopril,CLIF 3.0 category name + brands
+160,gadobenate,\bgadobenate?\b|multihance,,gadobenate,CLIF 3.0 category name + brands
+160,gadodiamide,\bgadodiamide?\b|omniscan,,gadodiamide,CLIF 3.0 category name + brands
+160,gadopentetate,\bgadopentetate?\b|magnevist,,gadopentetate,CLIF 3.0 category name + brands
+160,gadoteridol,\bgadoteridol\b|prohance,,gadoteridol,CLIF 3.0 category name + brands
+160,gadoxetate,\bgadoxetate?\b|eovist|primovist,,gadoxetate,CLIF 3.0 category name + brands
+160,gatifloxacin,\bgatifloxacin\b|tequin,,gatifloxacin,CLIF 3.0 category name + brands
+160,glofitamab,\bglofitamab\b|columvi,,glofitamab,CLIF 3.0 category name + brands
+160,hydroxocobalamin,\bhydroxocobalamin\b|cyanokit,,hydroxocobalamin,CLIF 3.0 category name + brands
+113,hypertonic_saline_20,(nacl|sodium chloride|natriumchlorid) 20\s?%,,hypertonic_saline_20,CLIF 3.0 category name
+113,hypertonic_saline_7,(nacl|sodium chloride|natriumchlorid) 7\s?%,,hypertonic_saline_7,CLIF 3.0 category name
+113,hypertonic_saline_7.5,"(nacl|sodium chloride|natriumchlorid) 7[.,]5\s?%",,hypertonic_saline_7.5,CLIF 3.0 category name
+160,idecabtagene_vicleucel,\bidecabtagene[ _-]?vicleucel\b|abecma,,idecabtagene_vicleucel,CLIF 3.0 category name + brands
+9,imipenem_relebactam,"imipenem.{0,25}relebactam|relebactam.{0,25}imipenem|recarbrio",,imipenem_relebactam,CLIF 3.0 category name + brands
+160,iobitridol,\biobitridol\b|xenetix,,iobitridol,CLIF 3.0 category name + brands
+160,ioxaglate,\bioxaglate?\b|hexabrix,,ioxaglate,CLIF 3.0 category name + brands
+160,irbesartan,\birbesartan\b|avapro|aprovel,,irbesartan,CLIF 3.0 category name + brands
+9,irbesartan_hctz,"irbesartan.{0,25}(hctz|hct\b|hydrochlorothiazid)|(hctz|hct\b|hydrochlorothiazid).{0,25}irbesartan|co-?aprovel|avalide",,irbesartan_hctz,CLIF 3.0 category name (CoAprovel/Avalide = irbesartan + HCTZ)
+160,isavuconazole,\bisavuconazole?\b,,isavuconazole,CLIF 3.0 category name
+160,isavuconazonium,\bisavuconazonium\b|cresemba,,isavuconazonium,CLIF 3.0 category name + brands
+160,itraconazole,\bitraconazole?\b|sporanox,,itraconazole,CLIF 3.0 category name + brands
+160,kanamycin,\bkanamycin\b,,kanamycin,CLIF 3.0 category name
+160,lefamulin,\blefamulin\b|xenleta,,lefamulin,CLIF 3.0 category name + brands
+160,lincomycin,\blincomycin\b|lincocin,,lincomycin,CLIF 3.0 category name + brands
+160,linvoseltamab,\blinvoseltamab\b|lynozyfic,,linvoseltamab,CLIF 3.0 category name + brands
+9,lisinopril_hctz,"lisinopril.{0,25}(hctz|hct\b|hydrochlorothiazid)|(hctz|hct\b|hydrochlorothiazid).{0,25}lisinopril",,lisinopril_hctz,CLIF 3.0 category name
+160,lisocabtagene_maraleucel,\blisocabtagene[ _-]?maraleucel\b|breyanzi,,lisocabtagene_maraleucel,CLIF 3.0 category name + brands
+9,losartan_hctz,"losartan.{0,25}(hctz|hct\b|hydrochlorothiazid)|(hctz|hct\b|hydrochlorothiazid).{0,25}losartan",,losartan_hctz,CLIF 3.0 category name
+160,maribavir,\bmaribavir\b|livtencity,,maribavir,CLIF 3.0 category name + brands
+9,meropenem_vaborbactam,"meropenem.{0,25}vaborbactam|vaborbactam.{0,25}meropenem|vabomere|vaborem",,meropenem_vaborbactam,CLIF 3.0 category name + brands
+160,methicillin,\bmethicillin\b,,methicillin,CLIF 3.0 category name
+160,methylene_blue,\bmethylene[ _-]?blue?\b|methylthioninium|provayblue,,methylene_blue,CLIF 3.0 category name + brands
+160,metrizamide,\bmetrizamide?\b|amipaque,,metrizamide,CLIF 3.0 category name + brands
+160,mezlocillin,\bmezlocillin\b,,mezlocillin,CLIF 3.0 category name
+160,minocycline,\bminocycline?\b|minocin,,minocycline,CLIF 3.0 category name + brands
+160,moexipril,\bmoexipril\b|univasc,,moexipril,CLIF 3.0 category name + brands
+160,mosunetuzumab,\bmosunetuzumab\b|lunsumio,,mosunetuzumab,CLIF 3.0 category name + brands
+160,nafcillin,\bnafcillin\b|nafcil|unipen,,nafcillin,CLIF 3.0 category name + brands
+160,nitric_oxide,\bnitric[ _-]?oxide?\b|inomax,nitric_oxide,,CLIF 3.0 category name + brands
+160,nitrofurantoin,\bnitrofurantoin\b|macrobid|macrodantin|furadantin,,nitrofurantoin,CLIF 3.0 category name + brands
+160,norfloxacin,\bnorfloxacin\b|noroxin,,norfloxacin,CLIF 3.0 category name + brands
+160,ofloxacin,\bofloxacin\b,,ofloxacin,CLIF 3.0 category name
+160,olmesartan,\bolmesartan\b|benicar|olmetec,,olmesartan,CLIF 3.0 category name + brands
+9,olmesartan_hctz,"olmesartan.{0,25}(hctz|hct\b|hydrochlorothiazid)|(hctz|hct\b|hydrochlorothiazid).{0,25}olmesartan",,olmesartan_hctz,CLIF 3.0 category name
+160,omadacycline,\bomadacycline?\b|nuzyra,,omadacycline,CLIF 3.0 category name + brands
+160,oritavancin,\boritavancin\b|orbactiv|kimyrsa,,oritavancin,CLIF 3.0 category name + brands
+160,oxacillin,\boxacillin\b|bactocill,,oxacillin,CLIF 3.0 category name + brands
+160,papaverine,\bpapaverine?\b|papaverin,papaverine,,CLIF 3.0 category name + brands
+160,pentobarbital,\bpentobarbital\b|nembutal,pentobarbital,,CLIF 3.0 category name + brands
+160,peramivir,\bperamivir\b|rapivab,,peramivir,CLIF 3.0 category name + brands
+160,perindopril,\bperindopril\b|coversyl|aceon,,perindopril,CLIF 3.0 category name + brands
+9,perindopril_amlodipine,"perindopril.{0,25}amlodipin|amlodipin.{0,25}perindopril",,perindopril_amlodipine,CLIF 3.0 category name
+160,pivampicillin,\bpivampicillin\b,,pivampicillin,CLIF 3.0 category name
+160,plazomicin,\bplazomicin\b|zemdri,,plazomicin,CLIF 3.0 category name + brands
+160,polymyxin_b,\bpolymyxin[ _-]?b\b|polymyxin b|polymyxine b,,polymyxin_b,CLIF 3.0 category name + brands
+160,posaconazole,\bposaconazole?\b|noxafil,,posaconazole,CLIF 3.0 category name + brands
+160,quinapril,\bquinapril\b|accupril|accupro,,quinapril,CLIF 3.0 category name + brands
+9,quinupristin_dalfopristin,"quinupristin.{0,25}dalfopristin|dalfopristin.{0,25}quinupristin|synercid",,quinupristin_dalfopristin,CLIF 3.0 category name + brands
+9,ramipril_amlodipine,"ramipril.{0,25}amlodipin|amlodipin.{0,25}ramipril",,ramipril_amlodipine,CLIF 3.0 category name
+160,remdesivir,\bremdesivir\b|veklury,,remdesivir,CLIF 3.0 category name + brands
+160,rezafungin,\brezafungin\b|rezzayo,,rezafungin,CLIF 3.0 category name + brands
+160,ribavirin,\bribavirin\b|virazole|rebetol,,ribavirin,CLIF 3.0 category name + brands
+9,sacubitril_valsartan,"sacubitril.{0,25}valsartan|valsartan.{0,25}sacubitril|entresto",,sacubitril_valsartan,CLIF 3.0 category name + brands
+160,siltuximab,\bsiltuximab\b|sylvant,,siltuximab,CLIF 3.0 category name + brands
+160,streptomycin,\bstreptomycin\b,,streptomycin,CLIF 3.0 category name
+9,sulbactam_durlobactam,"sulbactam.{0,25}durlobactam|durlobactam.{0,25}sulbactam|xacduro",,sulbactam_durlobactam,CLIF 3.0 category name + brands
+160,sulfadiazine,\bsulfadiazine?\b,,sulfadiazine,CLIF 3.0 category name
+9,sulfadiazine_trimethoprim,"sulfadiazin.{0,25}trimethoprim|trimethoprim.{0,25}sulfadiazin",,sulfadiazine_trimethoprim,CLIF 3.0 category name
+160,sulfisoxazole,\bsulfisoxazole?\b,,sulfisoxazole,CLIF 3.0 category name
+160,talquetamab,\btalquetamab\b|talvey,,talquetamab,CLIF 3.0 category name + brands
+160,tarlatamab,\btarlatamab\b|imdelltra,,tarlatamab,CLIF 3.0 category name + brands
+160,tebentafusp,\btebentafusp\b|kimmtrak,,tebentafusp,CLIF 3.0 category name + brands
+160,teclistamab,\bteclistamab\b|tecvayli,,teclistamab,CLIF 3.0 category name + brands
+160,tedizolid,\btedizolid\b|sivextro,,tedizolid,CLIF 3.0 category name + brands
+160,telavancin,\btelavancin\b|vibativ,,telavancin,CLIF 3.0 category name + brands
+160,telithromycin,\btelithromycin\b|ketek,,telithromycin,CLIF 3.0 category name + brands
+160,telmisartan,\btelmisartan\b|micardis,,telmisartan,CLIF 3.0 category name + brands
+9,telmisartan_amlodipine,"telmisartan.{0,25}amlodipin|amlodipin.{0,25}telmisartan",,telmisartan_amlodipine,CLIF 3.0 category name
+160,tetracycline,\btetracycline?\b,,tetracycline,CLIF 3.0 category name
+160,ticarcillin,\bticarcillin\b,,ticarcillin,CLIF 3.0 category name
+9,ticarcillin_clavulanate,"ticarcillin.{0,25}clavulan|clavulan.{0,25}ticarcillin|timentin",,ticarcillin_clavulanate,CLIF 3.0 category name + brands
+160,tigecycline,\btigecycline?\b|tygacil,,tigecycline,CLIF 3.0 category name + brands
+160,tisagenlecleucel,\btisagenlecleucel\b|kymriah,,tisagenlecleucel,CLIF 3.0 category name + brands
+160,tocilizumab,\btocilizumab\b|actemra|roactemra,,tocilizumab,CLIF 3.0 category name + brands
+160,trandolapril,\btrandolapril\b|mavik|gopten,,trandolapril,CLIF 3.0 category name + brands
+160,trimethoprim,\btrimethoprim\b,,trimethoprim,CLIF 3.0 category name
+9,valsartan_amlodipine,"valsartan.{0,25}amlodipin|amlodipin.{0,25}valsartan",,valsartan_amlodipine,CLIF 3.0 category name
+9,valsartan_hctz,"valsartan.{0,25}(hctz|hct\b|hydrochlorothiazid)|(hctz|hct\b|hydrochlorothiazid).{0,25}valsartan",,valsartan_hctz,CLIF 3.0 category name
+160,zidovudine,\bzidovudine?\b|retrovir|\bazt\b,zidovudine,,CLIF 3.0 category name + brands

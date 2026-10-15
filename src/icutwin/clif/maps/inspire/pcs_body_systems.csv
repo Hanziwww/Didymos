@@ -1,0 +1,33 @@
+prefix,system,provenance
+00,neurologic,ICD-10-PCS medical and surgical: central nervous system and cranial nerves
+01,neurologic,peripheral nervous system
+02,cardiovascular,heart and great vessels
+03,cardiovascular,upper arteries
+04,cardiovascular,lower arteries
+05,cardiovascular,upper veins
+06,cardiovascular,lower veins
+07,hematologic,lymphatic and hemic systems
+08,other,eye
+09,other,"ear, nose, sinus"
+0B,respiratory,respiratory system
+0C,other,mouth and throat
+0D,gastrointestinal,gastrointestinal system
+0F,gastrointestinal,hepatobiliary system and pancreas
+0G,metabolic_endocrine,endocrine system
+0H,musculoskeletal_skin,skin and breast
+0J,musculoskeletal_skin,subcutaneous tissue and fascia
+0K,musculoskeletal_skin,muscles
+0L,musculoskeletal_skin,tendons
+0M,musculoskeletal_skin,bursae and ligaments
+0N,musculoskeletal_skin,head and facial bones
+0P,musculoskeletal_skin,upper bones
+0Q,musculoskeletal_skin,lower bones
+0R,musculoskeletal_skin,upper joints
+0S,musculoskeletal_skin,lower joints
+0T,genitourinary,urinary system
+0U,gynecologic,female reproductive system
+0V,genitourinary,male reproductive system
+0W,other,"anatomical regions, general"
+0X,musculoskeletal_skin,"anatomical regions, upper extremities"
+0Y,musculoskeletal_skin,"anatomical regions, lower extremities"
+1,gynecologic,ICD-10-PCS obstetrics section

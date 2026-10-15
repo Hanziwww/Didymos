@@ -1,0 +1,9 @@
+# CLIF 3.0 patient_diagnosis (eICU problem list): a diagnosis entered during the stay, at its start time
+# (unlike ELF HOSP_DX billing codes, which are known at discharge).
+elf_version: "icutwin-ext-0.1.0"
+subject_id_col: patient_id
+
+patient_diagnosis:
+  diagnosis:
+    code: [PT_DX, col(diagnosis_code_format), col(diagnosis_code)]
+    time: col(start_dttm)

@@ -1,0 +1,26 @@
+ordercategoryid,ordercategory,med_route_category,provenance
+15,Injecties Antimicrobiele middelen,iv,CLIF-AmsterdamUMCdb route_map
+17,Infuus - Colloid,,colloids are input (order_categories.csv)
+21,Niet iv Antimicrobiele middelen,enteral,CLIF-AmsterdamUMCdb route_map
+23,Injecties CZS/Sedatie/Analgetica,iv,CLIF-AmsterdamUMCdb route_map
+24,Injecties Circulatie/Diuretica,iv,CLIF-AmsterdamUMCdb route_map
+25,Injecties Haematologisch,iv,CLIF-AmsterdamUMCdb route_map
+26,Injecties Tractus Digestivus,iv,CLIF-AmsterdamUMCdb route_map
+27,Injecties Overig,iv,CLIF-AmsterdamUMCdb route_map
+29,Niet iv CZS/Sedatie/Analgetica,enteral,CLIF-AmsterdamUMCdb route_map
+30,Niet iv Circulatie/Diurese,enteral,CLIF-AmsterdamUMCdb route_map
+31,Niet iv Tractus Digestivus,enteral,CLIF-AmsterdamUMCdb route_map
+32,Niet iv Overig,enteral,CLIF-AmsterdamUMCdb route_map
+39,Voeding Parenteraal,,parenteral nutrition is a continuous medication (order_categories.csv)
+42,Voeding Drinken,,oral fluids are input
+55,Infuus - Crystalloid,iv,CLIF-AmsterdamUMCdb route_map (non-continuous records: boluses)
+56,Voeding Vast voedsel,,solid food: not a medication
+61,Infuus - Bloedproducten,,blood products are input
+65,2. Spuitpompen,iv,CLIF-AmsterdamUMCdb route_map (non-continuous syringe-pump records: short infusions)
+67,Injecties Hormonen/Vitaminen/Mineralen,iv,CLIF-AmsterdamUMCdb route_map
+69,Niet iv Zalven/Crèmes/Druppels,,"ointments, creams, drops: no CLIF route"
+70,Niet iv Tractus Respiratorius,inhaled,"inhaled (units 'Puff': no amount); local intermittent route extension (extensions.yaml); the tool maps 'enteral'"
+71,Niet iv Hormonen/Vitaminen/Mineralen,enteral,CLIF-AmsterdamUMCdb route_map
+114,Voeding Enteraal ,,enteral nutrition is input
+118,Research,,research products
+119,Niet IV Groot Volume,enteral,CLIF-AmsterdamUMCdb route_map

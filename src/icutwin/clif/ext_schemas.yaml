@@ -1,0 +1,44 @@
+# Extension tables (not part of CLIF), declared in the same format as clifpy's schemas so the
+# same strict writer (icutwin.clif.conform.ClifWriter) validates them.
+ext_icu_stay:
+  table_name: ext_icu_stay
+  version: icutwin-1
+  description: >
+    One row per ICU stay (the digital-twin unit). CLIF has no ICU-stay context table; ADT gives the
+    location segments, this table gives the stay identity, source/site and admission context.
+  primary_key: [stay_id]
+  columns:
+    - {name: stay_id, data_type: VARCHAR, required: true}            # "<dataset>:<native stay id>"
+    - {name: patient_id, data_type: VARCHAR, required: true}
+    - {name: hospitalization_id, data_type: VARCHAR, required: true}
+    - {name: dataset, data_type: VARCHAR, required: true,
+       permissible_values: [mimic, eicu, aumc, hirid, sicdb, nwicu, inspire, ricd, zigong]}  # ricd, zigong: inference only
+    - {name: site_id, data_type: VARCHAR, required: true}            # eICU hospitalid; otherwise the dataset
+    - {name: icu_in_dttm, data_type: DATETIME, required: true}
+    - {name: icu_out_dttm, data_type: DATETIME, required: true}
+    - {name: unit_type, data_type: VARCHAR, required: false,         # CLIF 3.0 adt.location_type
+       permissible_values: [general_icu, cardiac_icu, cardiothoracic_surgical_icu, mixed_cardiothoracic_icu,
+                            surgical_icu, burn_icu, neuro_icu, neurosurgical_icu, mixed_neuro_icu, medical_icu]}
+    - {name: clock_valid, data_type: BOOLEAN, required: true}        # time of day is real (not pseudo-anchored)
+    - {name: demographics_binned, data_type: BOOLEAN, required: false}  # age (and height/weight) given as bins; stored as midpoints
+    - {name: admission_source, data_type: VARCHAR, required: true,
+       permissible_values: [ed, or, ward, stepdown, other_icu, other_hospital, direct, other, unknown]}
+    - {name: surgical_status, data_type: VARCHAR, required: true,
+       permissible_values: [nonsurgical, elective_surgery, emergency_surgery, unknown]}
+    - {name: surgery_context, data_type: VARCHAR, required: false}    # JSON: dataset-specific surgery details
+    - {name: adm_dx_name, data_type: VARCHAR, required: false}       # native admission diagnosis text
+    - {name: adm_dx_group, data_type: VARCHAR, required: false,      # icutwin.clif.dx_groups (APACHE II/IV groups)
+       permissible_values: [medical_cardiovascular, medical_respiratory, medical_gastrointestinal,
+                          medical_neurologic, medical_sepsis, medical_trauma, medical_metabolic_endocrine,
+                          medical_hematologic, medical_genitourinary, medical_musculoskeletal_skin,
+                          medical_intoxication, medical_transplant, medical_other, medical_unspecified,
+                          surgical_cardiovascular, surgical_respiratory, surgical_gastrointestinal,
+                          surgical_neurologic, surgical_trauma, surgical_metabolic_endocrine,
+                          surgical_hematologic, surgical_genitourinary, surgical_gynecologic,
+                          surgical_musculoskeletal_skin, surgical_transplant, surgical_other,
+                          surgical_unspecified]}
+    - {name: stay_seq, data_type: INT, required: true}               # ICU stay number within the patient
+    - {name: icu_outcome, data_type: VARCHAR, required: true, permissible_values: [alive, dead, unknown]}
+    - {name: era, data_type: VARCHAR, required: false}               # admission period as the source releases it
+    - {name: severity_name, data_type: VARCHAR, required: false}     # native score, evaluation only
+    - {name: severity_value, data_type: DOUBLE, required: false}

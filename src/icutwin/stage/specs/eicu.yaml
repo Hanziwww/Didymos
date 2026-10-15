@@ -1,0 +1,19 @@
+# eICU-CRD 2.0 — flat layout of .csv.gz; patient key = uniquepid, row key = patientunitstayid.
+# The archive also bundles eicu-code and mimic-code (concept SQL), extracted to refs/.
+name: eicu
+archive: eICU/eICU-2.0.tar.zst
+strip_prefix: eICU-2.0/
+out_compression: gzip
+anchor:
+  member: patient.csv
+  patient_col: uniquepid
+  derived_keys: {stay: patientunitstayid}
+rules:
+  - {pattern: "eicu-code-master/*", action: refs}
+  - {pattern: "mimic-code-main/*", action: refs}
+  - {pattern: "CODE_SOURCES.json", action: refs}
+  - {pattern: "hospital.csv", action: copy}
+  - {pattern: "patient.csv", action: filter, key_col: uniquepid, key: patient}
+  - {pattern: "*.csv", action: filter, key_col: patientunitstayid, key: stay}
+  - {pattern: "*SHA256SUMS.txt", action: checksums}
+  - {pattern: "*", action: copy}

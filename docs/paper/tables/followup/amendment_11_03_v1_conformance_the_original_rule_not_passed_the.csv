@@ -1,0 +1,5 @@
+Endpoint,Anchors,Toolkit E2 AUROC,F2 at k = 32,Within
+"Decompensation, 24 h",1045,0.940,0.951,yes
+"New IMV, 24 h",744,0.856,0.866,yes
+"New vasopressor, 24 h",802,0.894,0.896,yes
+"New RRT, 48 h",979,0.958,0.957,yes

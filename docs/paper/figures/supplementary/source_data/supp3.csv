@@ -1,0 +1,9 @@
+panel,series,file,credit,crop_px,width_mm,height_mm,printed_dpi,pixels,n,train_stays,tuning_stays,held_out_stays,design,anchors,deaths
+flow,artwork,docs/paper/figures/artwork/gpt_image/original/supp3.png,GPT-image,"20,10,1516,985",180.0,117.31,600,4252x2771,,,,,,,
+flow,stays,,,,,,,,409297,327662,20453,61182,,,
+flow,pre-specified anchors,,,,,,,,,,,,R,3500,
+flow,pre-specified anchors,,,,,,,,,,,,L24,3500,
+flow,pre-specified anchors,,,,,,,,,,,,L48,3500,
+flow,follow-up anchors,,,,,,,,,,,,R128,1050,
+flow,follow-up anchors,,,,,,,,,,,,L24x,700,
+flow,case-cohort in-hospital deaths,,,,,,,,,,,,L24x,,346

@@ -1,0 +1,9 @@
+Checkpoint,Optimizer,Tuning NLL,P1 AUC pooled,Probe AUROC ICU death (L24),Probe AUROC new IMV 24 h,Probe AUROC new RRT 48 h,Teacher-forced O/E IMV after 24 h,Teacher-forced O/E RRT after 24 h
+M32_main,adamw,1.5611,0.530,0.907,0.823,0.937,0.68,0.39
+ML32_main,adamw,1.5631,0.539,0.897,0.807,0.926,-,-
+MC32_main,adamw,1.5636,0.530,0.908,0.826,0.922,0.72,0.41
+MCN32_main,adamw,1.6067,0.521,0.913,0.821,0.921,0.70,0.36
+MU32_main,muon,1.5274,0.554,0.898,0.837,0.933,0.79,0.51
+MUH32_main,muon,1.5092,0.564,0.903,0.821,0.938,0.80,0.55
+MUF32_main,muon,1.5388,0.549,0.906,0.812,0.934,0.78,0.52
+MUC32_main,muon,1.5525,0.538,0.901,0.828,0.934,0.76,0.44

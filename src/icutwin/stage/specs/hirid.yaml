@@ -1,0 +1,17 @@
+# HiRID 1.1.1 — csv parts per stage (patientid in every data file); general_table is the last member.
+# imputed_stage is a derived product and not staged unless include=[hirid_imputed].
+name: hirid
+archive: HIRDI/HiRID-1.1.1.tar.zst
+strip_prefix: HiRID-1.1.1/
+out_compression: none
+anchor:
+  member: reference/general_table.csv
+  patient_col: patientid
+rules:
+  - {pattern: "reference/general_table.csv", action: filter, key_col: patientid, key: patient}
+  - {pattern: "reference/*", action: copy}
+  - {pattern: "imputed_stage/*", action: filter, key_col: patientid, key: patient, optional: hirid_imputed}
+  - {pattern: "*_index.csv", action: filter, key_col: patientid, key: patient}
+  - {pattern: "*/csv/part-*.csv", action: filter, key_col: patientid, key: patient}
+  - {pattern: "*SHA256SUMS.txt", action: checksums}
+  - {pattern: "*", action: copy}

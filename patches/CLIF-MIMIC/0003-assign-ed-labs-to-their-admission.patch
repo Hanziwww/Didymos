@@ -1,0 +1,27 @@
+diff --git a/src/utils.py b/src/utils.py
+index 7f08b32..e575d39 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -476,11 +476,18 @@ def fetch_mimic_events(item_ids: list[int], original: bool = False, for_labs: bo
+     associated with those item IDs.
+     """
+     if for_labs:
++        # icutwin patch: labs drawn in the emergency department before the hospital admission carry no hadm_id;
++        # they belong to the admission whose ED stay (edregtime..admittime) contains them (mimic-code joins labs
++        # by patient, so its KDIGO baseline includes them).
+         query = f"""
+-        SELECT *
+-        FROM '{mimic_table_pathfinder("labevents")}'
+-        WHERE itemid IN ({','.join(map(str, item_ids))})
+-            AND hadm_id IS NOT NULL
++        SELECT l.* REPLACE (coalesce(l.hadm_id, a.hadm_id) AS hadm_id)
++        FROM '{mimic_table_pathfinder("labevents")}' l
++        LEFT JOIN '{mimic_table_pathfinder("admissions")}' a
++            ON l.hadm_id IS NULL AND a.subject_id = l.subject_id
++            AND l.charttime BETWEEN a.edregtime AND a.admittime
++        WHERE l.itemid IN ({','.join(map(str, item_ids))})
++            AND coalesce(l.hadm_id, a.hadm_id) IS NOT NULL
++        QUALIFY row_number() OVER (PARTITION BY l.labevent_id ORDER BY a.admittime) = 1
+         """
+         df = con.execute(query).fetchdf()
+         return df

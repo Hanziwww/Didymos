@@ -1,0 +1,4 @@
+Endpoint,Anchors,Sign agreement probe vs rollouts,Rank correlation (median)
+"AKI stage >= 2, 48 h",23,0.55,0.17
+"Hypotension, 4 h",6,0.63,0.41
+"New IMV, 24 h",22,0.57,0.13

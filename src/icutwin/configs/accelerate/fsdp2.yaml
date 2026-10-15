@@ -1,0 +1,15 @@
+# Accelerate launch config for the server (M9): FSDP2, bf16, one process per GPU on one node. For L (about 1B
+# parameters); S and M use ddp.yaml. Not exercised locally (Windows has no NCCL): smoke-test it on the server first.
+compute_environment: LOCAL_MACHINE
+distributed_type: FSDP
+mixed_precision: bf16
+num_machines: 1
+num_processes: 8
+fsdp_config:
+  fsdp_version: 2
+  fsdp_auto_wrap_policy: TRANSFORMER_BASED_WRAP
+  fsdp_transformer_layer_cls_to_wrap: Qwen3DecoderLayer
+  fsdp_state_dict_type: SHARDED_STATE_DICT
+  fsdp_cpu_ram_efficient_loading: true
+  fsdp_reshard_after_forward: true
+  fsdp_activation_checkpointing: false

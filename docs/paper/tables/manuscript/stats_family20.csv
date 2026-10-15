@@ -1,0 +1,6 @@
+program,endpoint,anchors,rho knockout (median),rho editing (median),difference (median),knockout higher/ties/lower,P (Wilcoxon),P (Holm)
+pooled,pooled,158,0.150,0.119,0.000,77/3/78,0.61,-
+aki_2@2880,"AKI stage >= 2, 48 h",40,0.189,0.132,0.053,23/0/17,0.54,1.00
+decompensation@1440,Death within 24 h,40,0.234,0.132,0.012,21/1/18,0.90,1.00
+hypotension@240,"Hypotension, 4 h",38,0.062,0.085,0.020,22/2/14,0.33,0.99
+imv_onset@1440,"New IMV, 24 h",40,0.063,0.217,-0.097,11/0/29,0.0098,0.039

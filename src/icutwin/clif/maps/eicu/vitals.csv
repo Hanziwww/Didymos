@@ -1,0 +1,26 @@
+source_table,item,vital_category,meas_site_name,transform,provenance
+vitalPeriodic,heartrate,heart_rate,,,ricu hr (monitor 5-min median)
+vitalPeriodic,respiration,respiratory_rate,,,ricu resp
+vitalPeriodic,sao2,spo2,,,ricu o2sat
+vitalPeriodic,temperature,temp_c,,temp_c_or_f,ricu temp; values 80-113 are degF (eICU temperatures are bimodal with no values in 45-80)
+vitalPeriodic,systemicsystolic,sbp,arterial,,ricu sbp (invasive)
+vitalPeriodic,systemicdiastolic,dbp,arterial,,ricu dbp (invasive)
+vitalPeriodic,systemicmean,map,arterial,,ricu map (invasive)
+vitalPeriodic,icp,intracranial_pressure,,,CLIF 3.0 intracranial_pressure
+vitalAperiodic,noninvasivesystolic,sbp,cuff,,ricu sbp (non-invasive)
+vitalAperiodic,noninvasivediastolic,dbp,cuff,,ricu dbp (non-invasive)
+vitalAperiodic,noninvasivemean,map,cuff,,ricu map (non-invasive)
+nurseCharting,Heart Rate|Heart Rate,heart_rate,,,nurse-validated vital signs
+nurseCharting,Respiratory Rate|Respiratory Rate,respiratory_rate,,,nurse-validated vital signs
+nurseCharting,O2 Saturation|O2 Saturation,spo2,,,nurse-validated vital signs
+nurseCharting,Non-Invasive BP|Non-Invasive BP Systolic,sbp,cuff,,nurse-validated vital signs
+nurseCharting,Non-Invasive BP|Non-Invasive BP Diastolic,dbp,cuff,,nurse-validated vital signs
+nurseCharting,Non-Invasive BP|Non-Invasive BP Mean,map,cuff,,nurse-validated vital signs
+nurseCharting,Invasive BP|Invasive BP Systolic,sbp,arterial,,nurse-validated vital signs
+nurseCharting,Invasive BP|Invasive BP Diastolic,dbp,arterial,,nurse-validated vital signs
+nurseCharting,Invasive BP|Invasive BP Mean,map,arterial,,nurse-validated vital signs
+nurseCharting,Temperature|Temperature (C),temp_c,,temp_c_or_f,ricu temp (nursecharting Temperature (C)); (F) duplicates it; values 80-113 are degF (eICU temperatures are bimodal with no values in 45-80)
+nurseCharting,ICP|ICP,intracranial_pressure,,,nurse-validated vital signs
+nurseCharting,Pulse|Value,heart_rate,,,site-specific flowsheet row 'Pulse'
+nurseCharting,SpO2|Value,spo2,,,site-specific flowsheet row 'SpO2'
+nurseCharting,Arterial Line MAP (mmHg)|Value,map,arterial,,site-specific flowsheet row

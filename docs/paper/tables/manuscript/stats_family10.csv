@@ -1,0 +1,6 @@
+program,endpoint,anchors,median difference,P,"P (Holm, per endpoint)"
+pooled,pooled,152,0.74,<0.001,-
+aki_2@2880,"AKI stage >= 2, 48 h",39,0.77,<0.001,<0.001
+decompensation@1440,Death within 24 h,38,0.62,<0.001,<0.001
+hypotension@240,"Hypotension, 4 h",37,0.85,<0.001,<0.001
+imv_onset@1440,"New IMV, 24 h",38,0.64,<0.001,<0.001

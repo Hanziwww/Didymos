@@ -1,0 +1,258 @@
+drughiclseqno,ingredient,purity,named_orders,unnamed_orders,example_name
+4,digoxin,1.0,11381,8354,digoxin
+57,ipratropium,1.0,8794,5753,atrovent
+83,amiodarone,1.0,27534,15560,amiodarone
+113,clonidine,0.9953,8494,4964,clonidine hcl 0.1 mg po tabs
+132,lisinopril,1.0,29123,11620,lisinopril
+136,nitroprusside,1.0,1542,3889,2 ml  -  nitroprusside sodium 25 mg/ml iv soln
+150,iopamidol,1.0,4516,800,100 ml glass cont : iopamidol 76 % iv soln
+151,iohexol,1.0,1167,2722,iohexol 350 mg iodine/ml iv soln
+159,nitroglycerin,1.0,21900,10613,nitroglycerin
+182,diltiazem,1.0,13493,23071,diltiazem
+183,nicardipine,1.0,865,5997,10 ml  -  nicardipine hcl 2.5 mg/ml iv soln
+187,sodium_chloride,1.0,356,3197,sodium chloride 0.9%
+271,guaifenesin,1.0,1311,7114,guaifenesin er 600 mg po tb12
+517,albuterol,0.9987,1591,7620,albuterol inh soln (variable dose)
+523,sodium_bicarbonate,1.0,18291,21181,sodium bicarbonate
+525,lactated_ringers_solution,1.0,39840,8899,lactated ringers iv solp
+532,potassium_phosphate,1.0,5216,3143,potassium sodium phosphate pwdpkt
+537,sodium_citrate,1.0,485,1231,3 ml syringe custom ndc : anticoagulant sodium citrate 4 % vi soln
+538,sodium_chloride,0.9989,1842,9545,sodium chloride
+540,potassium_phosphate,1.0,16172,7850,sodium phosphate 3 mmol/ml 15 ml inj
+549,potassium_chloride,1.0,264481,45111,potassium chloride
+551,potassium_phosphate,0.9089,7253,12507,potassium phosphate 3 mmol/ml15 ml inj
+581,calcium,1.0,2044,1180,calcium carbonate 500 mg chew tab
+582,calcium,1.0,5198,6572,calcium chloride
+585,calcium,1.0,27446,12492,calcium gluconate 100 mg/ml iv soln
+607,magnesium_sulfate,1.0,1221,862,magnesium chloride
+610,magnesium_sulfate,1.0,75115,24243,magnesium sulfate 2 gm/50 ml ivpb
+629,plasma_lyte,1.0,1808,754,plasma-lyte 148 infusion
+739,iron,1.0,4556,5950,ferrous sulfate 325 (65 fe) mg po tabs
+768,insulin,1.0,47043,17880,insulin (regular) 100 units in 1
+915,dextrose_5_water,0.9897,16933,15357,1000 ml  -  dextrose 5 % iv soln
+926,dextrose_other,0.9998,116131,9875,dextrose 50%
+940,sodium_chloride,1.0,2427,447,1000 ml  -  dextrose-nacl 5-0.45 % iv soln
+996,vitamins,1.0,1128,4621,vitamin d 1000 units po tabs
+1049,folic_acid,1.0,10,39,folic acid
+1062,folic_acid,1.0,12412,7438,folic acid
+1075,thiamine,1.0,8613,11336,thiamine
+1095,vitamins,1.0,92,77,multivitamins
+1096,vitamins,1.0,796,708,vitamins/minerals po tabs
+1097,vitamins,1.0,1939,1046,vitamins/minerals po tabs
+1098,vitamins,1.0,821,1867,multivitamin
+1099,vitamins,1.0,1734,4629,multivitamins
+1100,allopurinol,1.0,2253,4083,allopurinol
+1163,calcium,1.0,3966,1887,calcium carbonate 200 mg calcium (500 mg) oral chew tab
+1289,senna,1.0,9696,7544,sennosides
+1301,bisacodyl,1.0,43071,6959,bisacodyl
+1319,mineral_oil,1.0,1088,949,mineral oil rect enem
+1326,docusate,1.0,50081,6363,docusate sodium
+1330,potassium_phosphate,1.0,11,4717,sodium phosphate
+1478,lidocaine,1.0,10169,17136,lidocaine hcl 1 % inj soln
+1554,etomidate,1.0,1121,5282,etomidate
+1619,midazolam,1.0,50918,11342,midazolam
+1652,trazodone,1.0,8345,4562,trazodone
+1661,haloperidol,1.0,14185,8907,haloperidol lactate
+1662,haloperidol,1.0,1628,1343,haloperidol
+1687,pethidine,1.0,2615,1633,meperidine range inj
+1694,morphine,0.9854,96243,23925,morphine
+1695,hydromorphone,1.0,39132,12052,dilaudid
+1741,oxycodone,1.0,27907,10187,percocet 5/325 tab
+1742,oxycodone,1.0,32144,11230,oxycodone ir
+1747,fentanyl,1.0,1446,1035,fentanyl 25 mcg/ml iv soln
+1866,acetaminophen,1.0,157467,22931,acetaminophen
+1874,naloxone,1.0,31164,10028,narcan
+1894,clonazepam,1.0,4355,3415,clonazepam
+1948,succinylcholine,1.0,1366,3658,succinylcholine
+1988,neostigmine,1.0,2103,1269,neostigmine
+2004,atropine,1.0,9497,9287,atropine 0.1 mg/ml inj syringe
+2028,glycopyrrolate,1.0,5269,4281,glycopyrrolate
+2050,epinephrine,1.0,2174,6464,epinephrine
+2051,norepinephrine,1.0,12828,14220,norepinephrine bitartrate 1 mg/ml ij soln
+2059,dopamine,1.0,1523,8426,dopamine
+2060,dopamine,1.0,30,436,dopamine
+2073,albuterol,1.0,44874,15571,albuterol
+2074,albuterol,1.0,519,442,ventolin 2.5mg/0.5ml
+2084,ephedrine,1.0,3222,1173,ephedrine sulfate
+2087,phenylephrine,1.0,9276,6886,phenylephrine
+2095,labetalol,1.0,29188,10800,labetalol
+2102,metoprolol,1.0,95572,16681,metoprolol tartrate
+2148,metoclopramide,1.0,23301,7847,reglan
+2801,aminocaproic_acid,1.0,1109,3796,aminocaproic acid
+2803,alteplase,1.0,5507,11796,alteplase   2 mg inj recon soln
+2808,heparin,1.0,6548,8253,"heparin 25,000 unit(s) in d5w 25"
+2810,heparin,1.0,60977,27950,heparin
+2812,warfarin,1.0,39143,22456,warfarin
+2839,vasopressin,1.0,1256,7258,vasopressin 60 units in 100 ml ns
+2849,levothyroxine,1.0,13152,15059,synthroid
+2866,hydrocortisone,1.0,4063,5693,hydrocortisone  (pf) 100 mg inj
+2875,methylprednisolone,1.0,19,112,methylprednisolone
+2876,methylprednisolone,1.0,20081,7598,solu-medrol
+2877,methylprednisolone,1.0,2041,1320,medrol
+2879,prednisone,1.0,24911,9097,prednisone
+2888,dexamethasone,1.0,10393,7910,dexamethasone 4 mg/1ml injection
+2889,dexamethasone,1.0,3376,3230,dexamethasone
+2901,spironolactone,1.0,3141,5190,spironolactone
+3318,naloxone,1.0,9,80,naloxone
+3467,diphenhydramine,1.0,311,42,diphenhydramine
+3649,hydrochlorothiazide,1.0,2700,4270,hydrochlorothiazide
+3660,furosemide,1.0,145787,19522,furosemide
+3664,bumetanide,1.0,7449,6924,bumex
+3723,ibuprofen,1.0,3010,5978,ibuprofen
+3792,macrogol,1.0,6,163,polyethylene glycol
+3794,sodium_chloride,1.0,2886,397,sodium chloride bacteriostatic 0.9 % inj soln
+3953,fentanyl,1.0,20,78,fentanyl
+3957,nafcillin,1.0,1283,577,nafcillin
+3960,enoxaparin,1.0,28,40,enoxaparin
+3976,cefazolin,1.0,11829,13632,cefazolin
+3996,ceftriaxone,1.0,12780,11034,ceftriaxone
+4042,vancomycin,1.0,46198,22753,vancomycin hcl 1000 mg iv solr
+4044,clindamycin,1.0,56,774,clindamycin
+4045,clindamycin,1.0,830,2577,clindamycin
+4047,bacitracin,1.0,934,3858,bacitracin
+4129,nystatin,1.0,1446,5978,nystatin
+4137,quetiapine,1.0,88,1025,quetiapine
+4157,metronidazole,1.0,2601,2549,metronidazole 500 mg po tabs
+4285,sodium_chloride,1.0,456,1210,sodium chloride 0.9%
+4297,chlorhexidine,1.0,14425,6652,chlorhexidine (periogard) 0.12 % oral rinse 15 ml
+4377,nitroglycerin,1.0,7,2,nitroglycerin
+4480,diphenhydramine,1.0,33813,12365,benadryl
+4521,famotidine,1.0,41167,6282,pepcid
+4673,omeprazole,1.0,5215,3501,omeprazole 20 mg po cap-del-rel
+4703,ioversol,1.0,2748,3952,optiray 320
+4704,clindamycin,1.0,255,3570,clindamycin
+4763,metformin,1.0,1219,4678,metformin hcl 500 mg po tabs
+4842,propofol,1.0,41721,11063,propofol
+4846,lorazepam,1.0,89165,16487,lorazepam
+4851,famotidine,1.0,165,438,famotidine
+5175,ketorolac,1.0,7561,7486,toradol
+5888,nitroglycerin,1.0,4777,9114,nitroglycerin in d5w 200-5 mcg/ml-% iv soln
+6055,ondansetron,1.0,24116,2078,ondansetron hcl 4 mg/2ml ij soln
+6071,ciprofloxacin,1.0,1045,2940,ciprofloxacin in d5w 400 mg/200ml iv soln
+6091,bacitracin,1.0,18,1843,bacitracin
+6227,pravastatin,1.0,1041,6452,pravastatin sodium 40 mg po tabs
+6306,magnesium_sulfate,1.0,24311,7019,100 ml  -  magnesium sulfate in d5w 10-5 mg/ml-% iv soln
+6312,simvastatin,0.9998,6461,5365,simvastatin
+6319,flumazenil,1.0,1291,1433,flumazenil
+6323,metoprolol,1.0,6080,10551,metoprolol succinate
+6324,sertraline,1.0,1068,6337,sertraline hcl 50 mg po tabs
+6334,azithromycin,1.0,5639,7969,azithromycin
+6438,fentanyl,1.0,4504,4818,fentanyl standard infusion 10 mcg/ml premix
+6494,amlodipine,1.0,21024,7601,amlodipine
+6545,budesonide,1.0,1269,4347,pulmicort respule
+7842,zolpidem,1.0,14150,4232,zolpidem tartrate 5 mg po tabs
+7844,potassium_chloride,1.0,11,765,potassium chloride
+7878,enoxaparin,1.0,42426,15494,lovenox
+8006,tpn,1.0,15,33,parenteral nutrition
+8254,sodium_chloride,1.0,4586,10108,sodium chloride 0.45% 1000 ml lvp
+8255,sodium_chloride,0.9556,426142,61191,1000 ml flex cont : sodium chloride 0.9 % iv soln
+8256,sodium_chloride,1.0,48,4234,sodium chloride
+8259,metronidazole,1.0,6358,7024,metronidazole 500 mg in 100ml rtu-pb
+8317,tramadol,1.0,9530,4499,tramadol hcl 50 mg po tabs
+8466,vancomycin,1.0,9513,4518,vancomycin hcl in dextrose 1 gm/200ml iv soln
+8643,heparin,1.0,2826,4708,heparin (porcine) in nacl 100-0.45 unit/ml-% ij soln
+8738,piperacillin_tazobactam,1.0,20934,13340,piperacillin-tazobactam
+8831,gabapentin,1.0,14187,7761,gabapentin
+8963,rocuronium,1.0,5031,3418,rocuronium
+8974,tacrolimus,1.0,642,178,tacrolimus 1 mg po caps
+9829,losartan,1.0,3144,6897,losartan potassium 50 mg po tabs
+10037,tpn,1.0,62,121,parenteral nutrition
+10093,vancomycin,0.9995,11409,7144,vancomycin 1 gm in ns 250 ml ivpb
+10132,cefepime,1.0,11260,11374,cefepime
+10278,cisatracurium,1.0,1794,3863,cisatracurium
+10321,citalopram,1.0,1023,5402,citalopram
+10329,midazolam,1.0,2304,678,versed
+10705,lidocaine,1.0,2216,4198,lidocaine 5 % top ptmd
+11249,magnesium_sulfate,1.0,6409,305,magnesium sulfate 2 g in ns premix
+11254,meropenem,1.0,6445,5369,meropenem
+11265,morphine,1.0,76,911,morphine
+11528,insulin,1.0,45775,9610,insulin-lispro (rdna) *unit* inj
+12014,promethazine,1.0,7477,7306,promethazine 25 mg/1 ml 1ml sdv inj
+12383,levofloxacin,1.0,17577,14503,levaquin
+12384,levofloxacin,1.0,5300,5022,levaquin
+13748,lidocaine,1.0,465,433,lidocaine hcl 1%
+13795,carvedilol,1.0,23235,9813,coreg
+13864,tamsulosin,1.0,6020,4496,tamsulosin hcl 0.4 mg po caps
+14015,quetiapine,1.0,5024,9275,quetiapine
+14772,potassium_chloride,1.0,2711,7757,potassium chloride in nacl 40 meq in 250 ml (premix)
+14778,potassium_chloride,1.0,4171,10141,1000 ml  -  kcl in dextrose-nacl 20-5-0.45 meq/l-%-% iv soln
+14944,tpn,1.0,65,426,parenteral nutrition
+15908,midodrine,1.0,1372,4400,midodrine hcl 5 mg po tabs
+17539,clopidogrel,1.0,19579,6323,clopidogrel bisulfate 75 mg po tabs
+17791,potassium_phosphate,1.0,1701,744,potassium phosphate
+17793,amiodarone,1.0,1187,4114,amiodarone 450 mg/250 ml d5w infusion (std con'c) (repackage)
+18202,tpn,1.0,40,382,parenteral nutrition
+18205,tpn,1.0,38,151,parenteral nutrition
+18280,tpn,1.0,29,166,parenteral nutrition
+18561,potassium_phosphate,1.0,7,8,potassium & sodium phosphates 280-160-250 mg po pack
+19058,ondansetron,1.0,9349,2869,ondansetron 4 mg po tbdp
+19849,tpn,1.0,109,185,parenteral nutrition
+19850,tpn,1.0,28,102,parenteral nutrition
+20292,iron,1.0,12,1,ferrous sulfate
+20769,insulin,1.0,65354,3432,novolog
+20952,levetiracetam,1.0,12604,11758,levetiracetam
+20971,dexmedetomidine,1.0,6295,6493,dexmedetomidine 200 mcg in 50 ml ns
+20974,tacrolimus,1.0,2159,2458,tacrolimus
+21772,senna,1.0,22774,3841,sennosides-docusate sodium 8.6-50 mg po tabs
+22008,pantoprazole,1.0,103472,12952,pantoprazole
+22025,insulin,1.0,27671,11038,insulin-glargine *unit* inj
+22038,lidocaine,1.0,2859,94,lidocaine-transparent dressing 4 % external kit
+22708,hydromorphone,1.0,427,1596,dilaudid
+22724,fentanyl,1.0,2983,4717,fentanyl 1000 mcg in 100 ml ns
+22819,macrogol,1.0,27882,6795,polyethylene glycol 3350 po pack
+24024,tiotropium,1.0,498,5215,tiotropium bromide monohydrate 18 mcg in caps
+24523,midazolam,1.0,1028,2286,midazolam 100 mg in 100 ml ns
+25040,cefazolin,1.0,2417,5609,ancef
+25277,morphine,1.0,3021,4765,morphine 5 mg/ml injection : 1 ml vial
+25281,potassium_chloride,1.0,1049,1790,1000 ml  -  potassium chloride in nacl 20-0.9 meq/l-% iv soln
+25386,fentanyl,1.0,105344,19235,fentanyl
+25968,esomeprazole,1.0,1227,589,esomeprazole inj
+26407,insulin,1.0,4981,4936,insulin detemir
+26726,lidocaine,1.0,7,85,lidocaine
+26808,cefazolin,1.0,2941,490,cefazolin 2 gm in ns 100 ml ivpb (repackage)
+26809,cefazolin,1.0,148,2085,cefazolin
+26810,diltiazem,1.0,5,2576,diltiazem
+32900,piperacillin_tazobactam,1.0,5866,9416,zosyn
+33094,ceftriaxone,1.0,1049,6030,ceftriaxone
+33220,atorvastatin,1.0,32,163,lipitor
+33243,pethidine,1.0,3224,4649,meperidine (pf)  25 mg/ml inj syringe
+33442,heparin,1.0,1858,2818,heparin sod (porcine)
+33592,lidocaine,1.0,4814,5191,lidocaine
+33594,lidocaine,1.0,51,975,lidocaine
+33598,ondansetron,1.0,127616,4230,ondansetron
+34361,epinephrine,1.0,22,1620,epinephrine
+34381,dexamethasone,1.0,135,700,dexamethasone
+34632,spironolactone,1.0,6,0,spironolactone
+34667,macrogol,1.0,134,3090,polyethylene glycol
+34805,hydromorphone,1.0,19970,9160,hydromorphone hcl
+34908,midazolam,1.0,6981,583,midazolam
+35085,famotidine,1.0,23938,2962,pepcid
+35107,famotidine,1.0,646,603,famotidine
+35282,cefazolin,1.0,2017,135,20 ml syringe : cefazolin 2 g in sterile water 20 ml syringe iv
+35295,tpn,1.0,5,0,parenteral nutrition
+35344,vitamins,1.0,760,727,multivitamins
+35516,ephedrine,1.0,836,70,ephedrine
+35517,phenylephrine,1.0,182,591,phenylephrine
+35587,phenylephrine,1.0,1750,896,phenylephrine
+35779,nicardipine,1.0,2668,5182,nicardipine 40 mg in 200 ml ns rtu-
+35805,clonidine,1.0,9,26,clonidine
+35848,cefepime,1.0,7,1535,cefepime
+36086,atropine,1.0,30,2,atropine
+36346,norepinephrine,1.0,7924,967,norepinephrine 8 mg in 250ml ns
+36437,epinephrine,1.0,1467,2,epinephrine 8 mg in 250 ml ns
+36550,clonidine,1.0,198,1882,clonidine
+36808,methylprednisolone,1.0,10026,4634,solumedrol
+36875,hydrocortisone,1.0,1449,4057,hydrocortisone na succinate pf 100 mg ij solr
+37021,cefepime,1.0,18,1046,cefepime
+37109,calcium,1.0,2698,1523,calcium gluconate 2 g/50 ml ns
+37328,ticagrelor,1.0,1003,1958,ticagrelor 90 mg po tabs
+37356,potassium_phosphate,1.0,1253,3058,potassium and sodium phosphate
+37442,vancomycin,1.0,2000,1977,vancomycin 1 g mini-bag plus (vial mate)
+37458,lidocaine,1.0,2597,5,buffered lidocaine 1%
+37537,methylprednisolone,1.0,5,0,methylprednisolone
+37678,amiodarone,1.0,2426,3628,nexterone
+37768,fentanyl,1.0,5,579,fentanyl citrate inj
+38176,dexamethasone,1.0,25,8,decadron
+38373,levetiracetam,1.0,329,1304,levetiracetam
+38645,dexamethasone,1.0,5,0,dexamethasone
+40230,dexmedetomidine,1.0,5808,2162,dexmedetomidine

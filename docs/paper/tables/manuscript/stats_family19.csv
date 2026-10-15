@@ -1,0 +1,5 @@
+design,database,program,endpoint,comparison,estimate,events/n,estimate (95% CI),P,P (Holm)
+L48x,pooled seven,icu_death@-1,ICU death,e2 minus twin_a1_32,hazard (E2),127/505,0.026 (0.002 to 0.052),0.033,0.033
+L48x,pooled seven,hospital_death@0,In-hospital death,twin_128 minus twin_a1_32,sampled,455/809,0.021 (0.005 to 0.037),0.013,0.026
+L48x,pooled seven,remaining_los_gt_7d,ICU stay > 7 days,twin_128 minus twin_a1_32,sampled,219/796,0.080 (0.040 to 0.127),<0.001,<0.001
+L48x,pooled seven,decompensation@1440,Death within 24 h,e2 minus twin_a1_32,hazard (E2),57/808,0.054 (0.017 to 0.097),0.007,0.021

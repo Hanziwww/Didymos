@@ -1,0 +1,43 @@
+column,value_21,support_category,device_category,config_category,setting_category,provenance
+mcs_group,ecmo,ecmo,,,,CLIF 3.0 change log: ecmo_mcs -> mcs (long form)
+mcs_group,temporary_lvad,lvad,,,,CLIF 3.0 support_category
+mcs_group,durable_lvad,lvad,,,,CLIF 3.0 support_category
+mcs_group,impella_lvad,lvad,,,,CLIF-MIMIC group of left-sided Impella catheters
+mcs_group,rvad,rvad,,,,CLIF 3.0 support_category
+mcs_group,temporary_rvad,rvad,,,,CLIF-MIMIC group of right-sided temporary devices
+mcs_group,iabp,ext_iabp,,,,IABP has no CLIF 3.0 mcs category (extension)
+device_category,va_ecmo,ecmo,,v_a,,configuration encoded in the 2.1 device name
+device_category,vv_ecmo,ecmo,,v_v,,configuration encoded in the 2.1 device name
+device_category,vav_ecmo,ecmo,,v_av,,configuration encoded in the 2.1 device name
+device_category,impella_2.5,lvad,impella,2_5,,CLIF 3.0 config_category
+device_category,impella_cp,lvad,impella,cp,,CLIF 3.0 config_category
+device_category,impella_5.0,lvad,impella,5,,CLIF 3.0 config_category
+device_category,impella_5.5,lvad,impella,5_5,,CLIF 3.0 config_category
+device_category,impella_rp,rvad,impella,rp,,CLIF 3.0 config_category (right-sided)
+device_category,impella_rp_flex,rvad,impella,rp_flex,,CLIF 3.0 config_category (right-sided)
+device_category,tandemheart_lv,lvad,tandemheart,,,CLIF 3.0 device_category
+device_category,tandemheart_rv,rvad,tandemheart,,,CLIF 3.0 device_category
+device_category,centrimag_lv,lvad,centrimag,,,CLIF 3.0 device_category
+device_category,centrimag_rv,rvad,centrimag,,,CLIF 3.0 device_category
+device_category,heartware,lvad,durable,heartware,,CLIF 3.0 config_category
+device_category,hmii,lvad,durable,heartmate2,,CLIF 3.0 config_category
+device_category,hmiii,lvad,durable,heartmate3,,CLIF 3.0 config_category
+device_category,iabp,ext_iabp,,,,IABP has no CLIF 3.0 mcs category (extension)
+device_category,impella_5_5,lvad,impella,5_5,,CLIF-MIMIC 3.0-style value
+device_category,impella_lv_other_unspec,lvad,impella,,,CLIF-MIMIC 3.0-style value (model in device_name)
+device_category,ecmo_other_unspec,ecmo,,,,CLIF-MIMIC 3.0-style value (device and configuration not in this column)
+_device_context,ecmo_ch,ecmo,cardiohelp,,,"CLIF-MIMIC context of the 'CH' item family (Circuit Configuration (CH), Speed (CH)): Maquet Cardiohelp"
+_device_context,impella_r,rvad,impella,,,CLIF-MIMIC context of right-sided Impella items
+_device_context,impella_l,lvad,impella,,,CLIF-MIMIC context of left-sided Impella items
+_device_context,centrimag_lv,lvad,centrimag,,,CLIF-MIMIC context of CentriMag LVAD items
+_device_context,centrimag_rv,rvad,centrimag,,,CLIF-MIMIC context of CentriMag RVAD items
+_device_context,tandem_heart,,tandemheart,,,CLIF-MIMIC context of TandemHeart items (side not in the context)
+_device_context,ecmo_ecmo,ecmo,,,,CLIF-MIMIC context of the 'ECMO' item family (device not named)
+ecmo_configuration_category,v_a,ecmo,,v_a,,CLIF-MIMIC configuration column
+ecmo_configuration_category,v_v,ecmo,,v_v,,CLIF-MIMIC configuration column
+ecmo_configuration_category,v_av,ecmo,,v_av,,CLIF-MIMIC configuration column
+device_name,= 2\.5 / cp,,,2_5_or_cp,,"CLIF-MIMIC device_name 'Type of Catheter (Impella) = 2.5 / CP' (regex, case-insensitive)"
+device_name,= 5\.5$,,,5_5,,CLIF-MIMIC device_name 'Type of Catheter (Impella) = 5.5' (regex)
+device_name,= rp$,,,rp,,CLIF-MIMIC device_name 'Type of Catheter (Impella) = RP' (regex)
+control_parameter_category,rpm,,,,rpm,CLIF-MIMIC control parameter (pump speed)
+control_parameter_category,impella_power,,,,performance,CLIF-MIMIC 'Performance Level': the Impella P-level (P0-P9) is CLIF 3.0 'performance'

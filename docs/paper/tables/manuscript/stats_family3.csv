@@ -1,0 +1,14 @@
+subset,program,endpoint,comparison,estimate,events/n,estimate (95% CI),P,P (Holm),method
+R128,decompensation@1440,Death within 24 h,follow-up minus pre-specified,hazard,221/1045,0.058 (0.033 to 0.082),<0.001,<0.001,from the stored interval (Altman and Bland)
+R128,imv_onset@1440,"New IMV, 24 h",follow-up minus pre-specified,hazard,77/744,0.050 (-0.020 to 0.133),0.17,1.00,from the stored interval (Altman and Bland)
+R128,vasopressor_onset@1440,"New vasopressor, 24 h",follow-up minus pre-specified,hazard,107/802,0.014 (-0.007 to 0.043),0.18,1.00,from the stored interval (Altman and Bland)
+R128,rrt_onset@2880,"New RRT, 48 h",follow-up minus pre-specified,hazard,96/979,0.028 (0.009 to 0.050),0.0033,0.033,from the stored interval (Altman and Bland)
+R128,aki_2@2880,"AKI stage >= 2, 48 h",follow-up minus pre-specified,sampled,188/884,0.001 (-0.014 to 0.015),0.90,1.00,"exact paired bootstrap (10,000 resamples)"
+R128,sepsis_ase@1440,"Sepsis (ASE), 24 h",follow-up minus pre-specified,sampled,8/1045,-0.023 (-0.072 to 0.002),0.16,1.00,"exact paired bootstrap (10,000 resamples)"
+R128,hypotension@240,"Hypotension, 4 h",follow-up minus pre-specified,sampled,70/914,-0.001 (-0.019 to 0.022),0.88,1.00,"exact paired bootstrap (10,000 resamples)"
+R128,hyperkalemia_top@1440,"Hyperkalaemia (top bin), 24 h",follow-up minus pre-specified,sampled,92/923,-0.016 (-0.055 to 0.016),0.38,1.00,"exact paired bootstrap (10,000 resamples)"
+R128,thrombocytopenia@2880,"Thrombocytopenia, 48 h",follow-up minus pre-specified,sampled,42/890,0.103 (0.004 to 0.203),0.0078,0.062,"exact paired bootstrap (10,000 resamples)"
+L24x,icu_death@-1,ICU death,follow-up minus pre-specified,hazard,104/500,0.071 (0.035 to 0.111),<0.001,0.0012,from the stored interval (Altman and Bland)
+L24x,hospital_death@0,In-hospital death,follow-up minus pre-specified,sampled,346/700,0.027 (0.012 to 0.044),0.0014,0.015,"exact paired bootstrap (10,000 resamples)"
+L24x,remaining_los_gt_7d,ICU stay > 7 days,follow-up minus pre-specified,sampled,148/696,0.021 (-0.021 to 0.062),0.33,1.00,"exact paired bootstrap (10,000 resamples)"
+L24x,decompensation@1440,Death within 24 h,follow-up minus pre-specified,hazard,48/698,0.053 (0.015 to 0.102),0.006,0.054,from the stored interval (Altman and Bland)

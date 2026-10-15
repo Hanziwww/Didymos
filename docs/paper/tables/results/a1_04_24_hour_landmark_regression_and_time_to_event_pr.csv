@@ -1,0 +1,10 @@
+Program,Anchors,MAE (median),MAE (predict the mean),CRPS,80% coverage,C-index (48 h share)
+remaining_los@0,2904,41.746,58.560,34.477,0.697,-
+creatinine_24h@0,320,0.431,0.915,0.335,0.794,-
+creatinine_change_48h@0,492,0.690,0.777,0.564,0.728,-
+lactate_max_12h@0,941,1.001,1.846,0.762,0.744,-
+map_min_6h@0,2242,8.537,13.033,6.394,0.739,-
+heart_rate_next_1h@0,1965,6.462,15.367,5.147,0.768,-
+imv_time@0,2758,-,-,-,-,0.795
+vasopressor_time@0,2948,-,-,-,-,0.827
+death_time@0,3500,-,-,-,-,0.854

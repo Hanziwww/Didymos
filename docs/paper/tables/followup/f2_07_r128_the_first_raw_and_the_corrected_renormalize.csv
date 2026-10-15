@@ -1,0 +1,5 @@
+Endpoint,"E2 AUROC, raw",renormalized,"E2 O/E, raw",renormalized,"Self-check, raw",renormalized
+"Decompensation, 24 h",0.960,0.960,1.83,1.77,1.070,1.002
+"New IMV, 24 h",0.886,0.886,0.55,0.55,1.016,1.009
+"New vasopressor, 24 h",0.901,0.903,0.45,0.46,0.995,0.993
+"New RRT, 48 h",0.960,0.959,0.52,0.56,0.969,1.002

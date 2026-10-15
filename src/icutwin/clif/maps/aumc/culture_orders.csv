@@ -1,0 +1,18 @@
+itemid,item,fluid_category,provenance
+9189,Bloedkweken afnemen,blood_buffy,blood cultures (dictionary: blood culture); ricu aumc samp
+8097,Sputumkweek afnemen,respiratory_tract_lower,sputum (lexicon: sputum -> respiratory_tract_lower); ricu aumc samp
+8418,Urinekweek afnemen,genito_urinary_tract,urine (SNOMED 117010004 urine culture); ricu aumc samp
+9190,Cathetertipkweek afnemen,catheter_tip,catheter tip (LOINC 19128-8); ricu aumc samp
+9191,Drainvochtkweek afnemen,woundsite,drain fluid (LOINC 607-2; lexicon: drain -> woundsite); ricu aumc samp
+9192,Faeceskweek afnemen,feces_stool,stool (SNOMED stool culture); ricu aumc samp
+9193,X-Kweek nader te bepalen,other_unspecified,culture with the specimen to be specified (SNOMED 61594008 microbial culture); ricu aumc samp
+9194,Liquorkweek afnemen,meninges_csf,cerebrospinal fluid (SNOMED 252399001); ricu aumc samp
+9195,Neuskweek afnemen,nasopharynx_upperairway,nose swab (lexicon: nose -> nasopharynx_upperairway); ricu aumc samp
+9197,Perineumkweek afnemen,skin_unspecified,perineal swab (carriage screening of the skin); ricu aumc samp
+9198,Rectumkweek afnemen,gastrointestinal_tract,rectal swab (LOINC 52966-9; lexicon: rectal swab -> gastrointestinal_tract); ricu aumc samp
+9200,Wondkweek afnemen,woundsite,wound (LOINC 6462-6); ricu aumc samp
+9202,Ascitesvochtkweek afnemen,peritoneum,ascites (LOINC 619-7); ricu aumc samp
+9203,Keelkweek afnemen,oropharynx_tongue_oralcavity,throat (SNOMED 117015009 throat culture); ricu aumc samp
+8588,MRSA kweken afnemen,other_unspecified,MRSA screening set (several sites); ricu aumc samp
+9204,SDD-kweken afnemen,other_unspecified,selective-decontamination surveillance set (several sites); ricu aumc samp
+13024,SDD Inventarisatiekweken afnemen,other_unspecified,selective-decontamination admission screening set (several sites); ricu aumc samp

@@ -1,0 +1,9 @@
+unittype,location_type,provenance
+Med-Surg ICU,general_icu,mixed medical-surgical ICU
+MICU,medical_icu,
+SICU,surgical_icu,
+Neuro ICU,neuro_icu,
+Cardiac ICU,cardiac_icu,
+CCU-CTICU,mixed_cardiothoracic_icu,coronary care + cardiothoracic ICU
+CSICU,cardiothoracic_surgical_icu,cardiac surgery ICU
+CTICU,cardiothoracic_surgical_icu,cardiothoracic surgery ICU

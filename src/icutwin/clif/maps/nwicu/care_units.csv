@@ -1,0 +1,13 @@
+careunit,location_category,location_type,is_icu,provenance
+ICU,icu,general_icu,1,
+ICU OVERFLOW,icu,general_icu,1,ICU beds outside the home unit
+MICU,icu,medical_icu,1,
+SICU,icu,surgical_icu,1,
+NSICU,icu,neurosurgical_icu,1,
+CCU,icu,cardiac_icu,1,coronary care unit
+CICU,icu,cardiac_icu,1,cardiac ICU
+CTICU,icu,cardiothoracic_surgical_icu,1,
+IMCU,stepdown,,0,intermediate care: not an ICU stay
+INPATIENT,ward,,0,
+NEUROSCIENCE INPATIENT,ward,,0,
+BOARDERS,ward,,0,

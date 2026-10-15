@@ -1,0 +1,38 @@
+# Declared extension columns of CLIF 3.0 tables (M4 decision D2). The strict writer, harmonization and the
+# validation gate treat them as schema columns of the table (``icutwin.clif.conform.table_schema``); clifpy's
+# own validation ignores them. Each names why CLIF 3.0 lacks it.
+medication_orders:
+  - name: med_route_category
+    data_type: VARCHAR
+    required: false
+    # the CLIF 3.0 intermittent and continuous route categories plus the declared intermittent extension 'inhaled'
+    permissible_values: [iv, im, enteral, buccal_sublingual, intrapleural, inhaled]
+    why: >
+      the ordered route: CLIF 3.0 administration tables carry med_route_category, medication_orders only the
+      route name, so an order's code could not state its route (MED_ORD codes carry it as their qualifier level)
+  - name: med_route_basis
+    data_type: VARCHAR
+    required: false
+    permissible_values: [reported, reported_class, inferred, assumed, verified]
+    why: >
+      what med_route_category rests on (clif/route_basis.csv): the source's route, a route class or order
+      category, a rule on drug and dose, or the record type alone; 'verified' is reserved for clinically
+      verified routes, which no source supplies, so source-reported routes stay distinguishable from them
+medication_admin_intermittent:
+  - name: med_route_basis
+    data_type: VARCHAR
+    required: false
+    permissible_values: [reported, reported_class, inferred, assumed, verified]
+    why: >
+      what med_route_category rests on (clif/route_basis.csv): the source's route, a route class or order
+      category, a rule on drug and dose, or the record type alone; 'verified' is reserved for clinically
+      verified routes, which no source supplies, so source-reported routes stay distinguishable from them
+medication_admin_continuous:
+  - name: med_route_basis
+    data_type: VARCHAR
+    required: false
+    permissible_values: [reported, reported_class, inferred, assumed, verified]
+    why: >
+      what med_route_category rests on (clif/route_basis.csv): the source's route, a route class or order
+      category, a rule on drug and dose, or the record type alone; 'verified' is reserved for clinically
+      verified routes, which no source supplies, so source-reported routes stay distinguishable from them

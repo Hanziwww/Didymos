@@ -1,0 +1,19 @@
+Treatment,Response,Group,Anchors,80% interval coverage,CRPS,Persistence error,PIT KS
+norepinephrine,map,starter,165,0.69,5.87,12.14,0.08
+norepinephrine,map,nonstarter,160,0.69,5.74,10.20,0.09
+insulin,glucose,starter,183,0.66,62.55,117.45,0.10
+insulin,glucose,nonstarter,170,0.72,36.61,80.08,0.10
+crrt,potassium,starter,125,0.73,0.46,0.76,0.08
+crrt,potassium,nonstarter,132,0.79,0.31,0.62,0.07
+crrt,creatinine_24h,starter,154,0.66,0.85,1.68,0.08
+crrt,creatinine_24h,nonstarter,148,0.68,0.64,1.14,0.15
+furosemide,urine_output,starter,86,0.71,213.36,450.00,0.08
+furosemide,urine_output,nonstarter,89,0.78,104.36,293.71,0.11
+imv,fio2_charted,starter,158,0.84,0.76,2.78,0.14
+imv,fio2_charted,nonstarter,158,0.91,0.43,0.94,0.29
+imv,spo2,starter,142,0.71,1.09,2.22,0.10
+imv,spo2,nonstarter,131,0.73,1.35,2.63,0.07
+fluid_bolus,map,starter,187,0.71,6.05,10.81,0.12
+fluid_bolus,map,nonstarter,183,0.70,6.23,10.66,0.07
+fluid_bolus,urine_output,starter,163,0.75,197.11,349.90,0.12
+fluid_bolus,urine_output,nonstarter,152,0.72,168.55,276.12,0.10

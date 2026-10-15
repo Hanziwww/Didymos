@@ -1,0 +1,4 @@
+Endpoint,Prevalence,Positive neighbours of positives: model state,TF-IDF,Lift: model state,TF-IDF
+ICU death,0.069,0.222,0.200,3.24,2.92
+"New IMV, 24 h",0.033,0.080,0.066,2.47,2.03
+"New RRT, 48 h",0.028,0.122,0.090,4.42,3.29

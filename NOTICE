@@ -1,0 +1,45 @@
+Didymos (Python package: icutwin)
+Copyright 2026 The Didymos authors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE). The notices below cover material
+in this repository that comes from, or is derived from, other projects. They do not change the terms of those
+projects' licences.
+
+-----------------------------------------------------------------------------------------------------------------------
+patches/CLIF-MIMIC/
+  Patches to CLIF-MIMIC (https://github.com/Common-Longitudinal-ICU-data-Format/CLIF-MIMIC, commit afc89f0).
+  MIT License, Copyright (c) 2025 CLIF Consortium. The patches modify that project's code and are distributed
+  under its licence.
+
+src/icutwin/clif/, src/icutwin/meds/ (vocabularies, formats and ETL conventions)
+  The CLIF 2.1/3.0 data model and its mCIDE category names, the CLIF-to-MEDS conversion and the ELF event
+  definitions are from the CLIF Consortium's CLIF, CLIF_MEDS, ELF and clifpy projects (Apache License 2.0,
+  https://github.com/Common-Longitudinal-ICU-data-Format). The extension files (for example
+  src/icutwin/meds/elf_ext/, src/icutwin/clif/extensions.yaml) follow those formats.
+
+src/icutwin/meds/derived.py (derived clinical concepts)
+  KDIGO staging, norepinephrine-equivalent dose and ventilation episodes are ported from the concept SQL of
+  mimic-code (https://github.com/MIT-LCP/mimic-code, commit 303d26c). MIT License, Copyright (c) 2019 MIT
+  Laboratory for Computational Physiology.
+
+src/icutwin/clif/maps/, src/icutwin/clif/lexicon/, src/icutwin/clif/adapters/ (provenance notes)
+  Several mapping rows name a concept of the ricu concept dictionary (https://github.com/eth-mds/ricu, ricu 0.6.3,
+  commit c0efac7; GNU GPL v3) as the reference for an item's selection. Several adapters re-implement
+  conventions that ricu documents, for example its rule for infusions that are not charted again within 6 hours.
+  This repository includes no ricu code and no ricu dictionary file.
+
+Community MEDS ETLs (refs/REFS.lock)
+  The community ETLs used for reconciliation (MIMIC_IV_MEDS, eICU_MEDS, HiRID_MEDS, AUMCdb_MEDS, SICdb_MEDS,
+  NWICU_MEDS, INSPIRE_MEDS; MIT) are run as external tools from pinned checkouts and are not included here.
+  src/icutwin/clif/community_envs/ holds only their pinned dependency lists.
+
+docs/paper/figures/artwork/gpt_image/
+  The schematic artwork in Figs. 1a, 1c, 4a and 7a and Supplementary Figs. 1-3 was generated with GPT-image
+  (OpenAI). It is credited "(GPT-image)" wherever it is used. provenance.json records the files' sha256 and the
+  authors' statement on their accuracy.
+
+Optional components with their own licences (not included)
+  TabICL (BSD-3-Clause) and TabPFN (Prior Labs licence; research, evaluation and internal benchmarking only) are
+  optional comparators. Their weights are downloaded or supplied by the user under their own terms. vLLM
+  (Apache License 2.0) is an optional sampling backend.
+-----------------------------------------------------------------------------------------------------------------------

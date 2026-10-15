@@ -1,0 +1,50 @@
+Endpoint,Attribute,Value,Anchors,Positives,Twin AUROC,Twin O/E,LightGBM AUROC
+ICU death,sex,female,1053,51,0.882,1.13,0.898
+ICU death,sex,male,1584,76,0.882,1.27,0.907
+ICU death,age_band,1,842,34,0.814,1.29,0.900
+ICU death,age_band,2,1003,50,0.915,1.25,0.901
+ICU death,age_band,3,455,36,0.875,1.13,0.856
+ICU death,dataset,aumc,320,42,0.836,1.51,0.858
+ICU death,admission_type,ed,954,69,0.868,1.24,0.868
+ICU death,race,not recorded,1381,67,0.894,1.25,0.931
+ICU death,race,white,926,39,0.862,1.09,0.864
+In-hospital death,sex,female,1367,168,0.831,1.35,0.851
+In-hospital death,sex,male,2118,287,0.829,1.60,0.865
+In-hospital death,age_band,0,447,33,0.774,1.74,0.866
+In-hospital death,age_band,1,1156,125,0.834,1.70,0.854
+In-hospital death,age_band,2,1326,196,0.837,1.54,0.877
+In-hospital death,age_band,3,571,101,0.806,1.19,0.800
+In-hospital death,dataset,aumc,500,103,0.816,2.47,0.833
+In-hospital death,dataset,eicu,500,43,0.890,1.14,0.893
+In-hospital death,dataset,hirid,500,47,0.790,2.74,0.894
+In-hospital death,dataset,inspire,500,42,0.785,1.26,0.833
+In-hospital death,dataset,mimic,500,78,0.849,1.48,0.842
+In-hospital death,dataset,nwicu,500,73,0.835,1.28,0.816
+In-hospital death,dataset,sicdb,500,69,0.882,1.06,0.876
+In-hospital death,admission_type,UNK,809,96,0.845,1.85,0.904
+In-hospital death,admission_type,ed,1182,191,0.842,1.48,0.839
+In-hospital death,admission_type,elective,775,63,0.768,1.56,0.846
+In-hospital death,admission_type,other,579,81,0.787,1.12,0.822
+In-hospital death,race,black_or_african_american,189,31,0.867,1.40,0.830
+In-hospital death,race,not recorded,2000,261,0.815,1.66,0.867
+In-hospital death,race,white,1073,123,0.860,1.26,0.870
+ICU stay > 7 days,sex,female,1351,245,0.807,0.78,0.837
+ICU stay > 7 days,sex,male,2083,432,0.790,0.86,0.830
+ICU stay > 7 days,age_band,0,444,97,0.760,0.90,0.809
+ICU stay > 7 days,age_band,1,1144,243,0.823,0.85,0.854
+ICU stay > 7 days,age_band,2,1301,260,0.780,0.84,0.822
+ICU stay > 7 days,age_band,3,560,86,0.813,0.72,0.844
+ICU stay > 7 days,dataset,aumc,500,179,0.810,0.90,0.808
+ICU stay > 7 days,dataset,eicu,500,57,0.785,0.69,0.830
+ICU stay > 7 days,dataset,hirid,495,97,0.696,0.85,0.773
+ICU stay > 7 days,dataset,inspire,499,74,0.797,0.57,0.905
+ICU stay > 7 days,dataset,mimic,500,86,0.834,0.84,0.833
+ICU stay > 7 days,dataset,nwicu,500,85,0.771,0.87,0.786
+ICU stay > 7 days,dataset,sicdb,455,108,0.784,1.10,0.803
+ICU stay > 7 days,admission_type,UNK,786,150,0.721,0.88,0.798
+ICU stay > 7 days,admission_type,direct,134,32,0.808,0.91,0.823
+ICU stay > 7 days,admission_type,ed,1182,220,0.836,0.81,0.833
+ICU stay > 7 days,admission_type,elective,758,141,0.815,0.78,0.866
+ICU stay > 7 days,admission_type,other,568,135,0.786,0.85,0.829
+ICU stay > 7 days,race,not recorded,1949,458,0.787,0.85,0.835
+ICU stay > 7 days,race,white,1073,147,0.784,0.80,0.821

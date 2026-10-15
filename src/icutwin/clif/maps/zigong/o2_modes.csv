@@ -1,0 +1,12 @@
+priority,pattern,device,airway,provenance
+10,气切|切导管,,trach,"tracheostomy tube (气切导管; truncated 切导管): the airway; the device follows the ventilator mode, a tracheostomy collar without one"
+20,气插|气管插管|气管导管|插导管|气导管,,ett,"endotracheal tube (气插导管, 气管插管, 气管导管 and truncations): the airway; the device follows the ventilator mode, invasive ventilation without one"
+25,球囊,other,,"bag-valve ventilation (球囊, 球囊辅助, 球囊面罩, 呼吸球囊, 球囊入室)"
+30,辅助|^助$,,,"ventilator-assisted breathing (辅助; 1辅助, 助): no device of its own, the ventilator mode decides (no mode: no record)"
+35,文丘里|丘里,face_mask,,"Venturi mask (文丘里 and its humidified, high-flow and flow variants)"
+40,经鼻高流量|高流量,hfnc,,"high-flow nasal oxygen (经鼻高流量, 经鼻高流量吸氧, 经鼻高流量氧疗, 高流量)"
+50,面罩,face_mask,,face mask (面罩)
+60,鼻塞|鼻导管,nasal_cannula,,"nasal prongs (鼻塞) and nasal cannula (鼻导管)"
+70,氧气枕,other,,oxygen bag (氧气枕)
+80,口咽通气|口内,,,"oropharyngeal airway (口咽通气管, 口咽通气道): not a respiratory support device"
+90,测试|拔|^[0-9. ]+$,,,"test entries (测试), removal notes (拔除) and stray numbers: no record"

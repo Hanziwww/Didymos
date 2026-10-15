@@ -1,0 +1,68 @@
+DIDYMOS - INCLUDED-FIGURE VISUAL REVIEW
+
+Both full-suite reviews covered every included image.
+Only records for the nine retained figures are reproduced below.
+
+Research timeline: excluded from this package; do not disclose in the manuscript.
+
+ROUND 1
+fig1a / r4 / refine
+Concise text and no model specs verified. Replace sampled-risk fan with event-count motif for clearer distinction from simulated ensemble; match event-key dot size.
+
+fig1c / r4 / refine
+Eight exact model/renormalized probabilities and three masks verified. Remove redundant footer equation; its unqualified p/0.80 is less clear for masked entries.
+
+fig4a / r2 / pass
+Shared cut, 1 minute lead and 6h bracket aligned. Three arms clear and individual paths visible.
+
+fig7a / r3 / pass
+Exactly seven tools, no figure references, no explanatory subtitles or model specs; clean left-to-right flow.
+
+supp1 / r3 / refine
+All cohort and sampling counts verified. Reduce thick frames and percentage pill badges for less UI-like appearance.
+
+supp15a_architecture / r5 / refine
+Parameter/specification removal and both pre-norm residuals verified. Current attention motif is one-to-one; show shared key/value structure without numerical annotations.
+
+supp15b_simulation / r3 / refine
+Concise loop and two-estimator structure verified. Replace generic gear/clock/flask graphics; add explicit stage sequencing.
+
+supp16a_data_processing / r3 / refine
+Core ordering and seven source versions verified. Incorrect temporal-rules-to-train labels edge must be removed; simplify label output as a terminal side product.
+
+supp16b_sequence / r3 / refine
+All concise grammar counts and optional goal bypass verified. Termination annotation should not act as a flow node; point directly into END.
+
+ROUND 2
+fig1a / r5 / pass
+Event-count motif now distinguishes sampled risk from the future fan. Full ensemble feeds both risks; five uses and token labels intact. No model specifications.
+
+fig1c / r5 / pass
+All eight probabilities, zeroed masked rows and three mask reasons checked. Formula/legend removed; illustrative label retained. Model sum and renormalized sum are both 1.
+
+fig4a / r2 / pass
+Single cutoff aligned with 6h window and all three arm origins. Recorded-start lead and independent null seed retained. No uncertainty ribbons.
+
+fig7a / r3 / pass
+Seven parallel capabilities rechecked. No figure/panel references, parameter specifications or explanatory subtitles. Input/model/output directions readable.
+
+supp1 / r4 / pass
+409,297 total equals 327,662+20,453+61,182. Held-out evaluation structure, three 3,500 sets and 1,050/700 follow-ups correct. Thin frames and plain percentages retained.
+
+supp15a_architecture / r6 / pass
+Both residuals begin before their normalization-containing sublayers and join the correct addition. Grouped-query motif shows shared KV pattern. No numerical model specifications.
+
+supp15b_simulation / r4 / pass
+Four stages explicitly sequenced and repeated through Didymos. Entire ensemble feeds both estimators. 32/128 sample label retained; generic flask/people/document glyphs replaced.
+
+supp16a_data_processing / r4 / pass
+Seven source/version labels and core stage order checked. Split precedes tokenization. Temporal rules only feed MEDS; outcome labels are a terminal side product, with no false dataset edges.
+
+supp16b_sequence / r4 / pass
+Optional goal bypass joins TL; middle return enters END directly, then EOS. Phase headings are unconnected labels. Long bottom note is absent; grammar counts retained.
+
+CHECKS
+327,662 + 20,453 + 61,182 = 409,297.
+Illustrative original probabilities sum to 1; masked mass is 0.20; renormalized probabilities sum to 1.
+Removed toolkit figure references, explanatory prose, the sequence continuation note and numerical model specifications.
+Trajectories and small event motifs are illustrative.

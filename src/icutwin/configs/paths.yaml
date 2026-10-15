@@ -1,0 +1,8 @@
+# Filesystem roots. Every path can be overridden with an environment variable (server runs).
+paths:
+  root: ${oc.env:ICUTWIN_ROOT,.}
+  raw_archives: ${oc.env:ICUTWIN_RAW_ARCHIVES,${paths.root}/dataset}
+  data: ${oc.env:ICUTWIN_DATA,${paths.root}/data}
+  runs: ${oc.env:ICUTWIN_RUNS,${paths.root}/runs}
+  refs: ${oc.env:ICUTWIN_REFS,${paths.root}/refs}
+  tmp: ${oc.env:ICUTWIN_TMP,${paths.root}/.tmp}

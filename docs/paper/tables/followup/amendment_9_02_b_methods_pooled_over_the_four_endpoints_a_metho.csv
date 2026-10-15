@@ -1,0 +1,16 @@
+Method,Trained against random (sanity; want low),"Sanity, token counts fixed",Agreement with probe editing,"Editing, token counts fixed",With absolute editing,With token counts,With the null,Passes
+"Attention rollout (C2, F4: group sums)",0.97 (0.95 to 0.98),0.96,-0.08 (-0.22 to 0.11),-0.09,0.21,0.67,0.97,no
+"Attention rollout, group means",0.92 (0.89 to 0.96),0.94,-0.11 (-0.29 to 0.11),-0.09,0.02,0.03,0.93,no
+"Rollout less the structural null, sums",0.00 (-0.20 to 0.24),0.14,-0.04 (-0.25 to 0.12),-0.08,0.10,0.55,0.27,no
+"Rollout less the null, means",0.08 (-0.10 to 0.30),0.07,-0.08 (-0.28 to 0.08),-0.08,-0.10,-0.18,0.11,no
+"Rollout over the null (lift), means",0.39 (0.00 to 0.62),0.37,0.10 (-0.18 to 0.26),0.10,-0.03,-0.39,-0.78,no
+"Last layer's attention, sums",0.78 (0.71 to 0.86),0.06,0.07 (-0.09 to 0.26),0.15,0.31,0.80,0.30,no
+"Last layer's attention, means",0.01 (-0.27 to 0.34),0.05,0.08 (-0.07 to 0.27),0.13,0.04,-0.43,-0.59,yes
+"Norm-weighted rollout (Kobayashi et al. 2020), sums",0.96 (0.94 to 0.98),0.95,-0.08 (-0.22 to 0.10),-0.10,0.22,0.67,0.96,no
+"Norm-weighted rollout, means",0.92 (0.88 to 0.95),0.94,-0.12 (-0.28 to 0.11),-0.11,0.03,0.02,0.92,no
+"Attention x gradient (C2, F4: sums)",0.58 (0.46 to 0.71),0.08,0.19 (-0.03 to 0.42),0.23,0.41,0.58,0.05,no
+"Attention x gradient, means",-0.03 (-0.25 to 0.14),-0.00,0.14 (-0.04 to 0.33),0.20,0.09,-0.60,-0.55,yes
+"Gradient-weighted rollout (Chefer et al. 2021), sums",0.59 (0.47 to 0.71),0.05,0.20 (-0.03 to 0.40),0.25,0.41,0.60,0.06,no
+"Gradient-weighted rollout, means",-0.04 (-0.27 to 0.15),-0.03,0.14 (-0.02 to 0.33),0.22,0.10,-0.59,-0.54,yes
+Attention knockout (Geva et al. 2023),-0.02 (-0.25 to 0.16),-0.05,0.71 (0.53 to 0.80),0.70,0.11,0.03,-0.00,yes
+"The structural null (no model), sums",1.00 (1.00 to 1.00),1.00,-0.07 (-0.24 to 0.14),-0.09,0.18,0.58,1.00,-

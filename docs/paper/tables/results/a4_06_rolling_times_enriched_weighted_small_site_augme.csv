@@ -1,0 +1,19 @@
+Endpoint,Dataset,300 real,300 real + 300 twins,300 real + 900 twins,all real
+"Decompensation, 24 h",INSPIRE,0.698,0.726,0.655,0.835
+"Decompensation, 24 h",NWICU,0.854,0.897,0.923,0.938
+"New IMV, 24 h",INSPIRE,0.495,0.447,0.396,0.807
+"New IMV, 24 h",NWICU,0.715,0.783,0.731,0.788
+"New vasopressor, 24 h",INSPIRE,0.497,0.429,0.486,0.462
+"New vasopressor, 24 h",NWICU,0.520,0.774,0.790,0.831
+"New RRT, 48 h",INSPIRE,0.573,0.740,0.652,0.560
+"New RRT, 48 h",NWICU,0.958,0.917,0.947,0.977
+"AKI stage >= 2, 48 h",INSPIRE,0.533,0.375,0.478,0.839
+"AKI stage >= 2, 48 h",NWICU,0.745,0.837,0.804,0.824
+"Sepsis (ASE), 24 h",INSPIRE,-,-,-,-
+"Sepsis (ASE), 24 h",NWICU,-,-,-,-
+"Hypotension, 4 h",INSPIRE,0.883,0.885,0.901,0.965
+"Hypotension, 4 h",NWICU,-,-,-,-
+"Hyperkalaemia (top bin), 24 h",INSPIRE,0.836,0.827,0.822,0.824
+"Hyperkalaemia (top bin), 24 h",NWICU,0.572,0.579,0.604,0.614
+"Thrombocytopenia, 48 h",INSPIRE,0.951,0.947,0.954,0.963
+"Thrombocytopenia, 48 h",NWICU,0.444,0.317,0.903,0.926

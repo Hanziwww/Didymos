@@ -1,0 +1,17 @@
+priority,pattern,route_class,provenance
+10,epidur|\bepid\b|\bep\b|intrathec,non_systemic,"epidural / intrathecal (no CLIF route category)"
+11,eye|ophthal|\boph\b|\bou\b|i-ocular|\bod\b|\bos\b,non_systemic,ophthalmic
+12,nasal|nare|nostril|\bnas\b|\bnasl\b,non_systemic,nasal
+13,rectal|\brect\b|\brec\b|\brtl\b|\bpr\b|\bre\b|\brc\b,non_systemic,rectal
+14,topical|\btop\b|\btp\b|\btopl\b|transderm|\btd\b|swab|vaginal|\botic\b|\bear\b|urethral,non_systemic,"topical, transdermal, vaginal, otic, urethral"
+15,swish|mouth|oral rinse|oral mucosa|mucous|\bmthw\b|\bmt\b|\bmm\b,non_systemic,oral rinse / mucosal
+16,irrig|\birr|\bir\b|flush|dwell|catheter|cathet|intralumin|dialysis|crrt|hemodialysis|access site,non_systemic,"irrigation, line flush or lock, dialysis circuit"
+17,intradermal|\bid\b|\bidrm\b|idermal|intraderma|infiltration|intra-?arteri|\bia\b|arterial,non_systemic,"intradermal, local infiltration, intra-arterial"
+20,chest tube|intrapleural,intrapleural,
+30,nebu|\bneb\b|inhal|\binh\b|\binhl\b|\bsvn\b|intratracheal|endotracheal|inh/neb|\bnb\b,inhaled,
+40,\bsl\b|sublingual|buccal,buccal_sublingual,
+50,subq|\bsc\b|subcut|sub-q|\bsq\b,im,subcutaneous (CLIF 'im' includes subcutaneous)
+51,\bim\b|intramusc|\bimv\b,im,intramuscular
+60,\biv\b|intraven|\bivpb\b|iv push|\bivp\b|ivdrip|piggy|\bradiv\b|\bpca\b|central|periph|\btlc\b|\bij\b,iv,intravenous
+70,\bpo\b|oral|tube|\bngt?\b|\bog\b|gastric|\bpeg\b|dobhoff|\bft\b|\btf\b|chewed|\bng-|\bj-|\bg-|jtube|gtube|ngtube,enteral,"oral, gastric or enteral tube"
+90,.,unknown,"unspecified (misc, device, injection, pyxis, '.route')"

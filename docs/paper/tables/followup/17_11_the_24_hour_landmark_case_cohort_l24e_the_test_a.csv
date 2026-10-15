@@ -1,0 +1,8 @@
+Endpoint,Database,Z0,Z1,F1,Z1+R,F1+R,F1+S,F1's map
+ICU death,RICD,1.48,1.43,1.09,0.86,0.71,0.66,"intercept, slope"
+In-hospital death,RICD,1.71,1.60,0.87,0.77,0.65,0.69,"intercept, slope"
+ICU stay > 7 days,RICD,3.60,3.36,1.11,1.01,0.97,0.97,"intercept, slope"
+ICU death,zigongICU,0.56,0.56,1.04,1.02,1.06,1.08,"intercept, slope"
+In-hospital death,zigongICU,0.64,0.63,0.98,0.91,0.97,1.03,"intercept, slope"
+ICU stay > 7 days,zigongICU,1.41,1.25,0.71,0.89,0.85,0.85,"intercept, slope"
+"Decompensation, 24 h",zigongICU,0.32,0.32,1.39,1.15,1.24,1.18,"intercept, slope"

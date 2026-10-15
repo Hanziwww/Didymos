@@ -1,0 +1,7 @@
+priority,pattern,target,category,provenance
+10,^mechanical ventilation$|^intubation$,respiratory_support,imv,ordered and charted invasive ventilation
+20,^non-invasive ventilation$|initiate cpap/bipap,respiratory_support,nippv,
+30,^hemodialysis$,intermittent_dialysis,,
+40,^do not resuscitate \(dnr\)$,code_status,dnr,
+50,^intubation$,airway_placed,ett,
+60,^extubation / decannulation$,airway_removed,ett,

@@ -1,0 +1,8 @@
+itemid,label,med_category,provenance
+227536,KCl (CRRT),potassium_repletion,"d_items 'Medications' (01-Drips, mEq/hour); not in CLIF-MIMIC's mapping; local continuous extension"
+227525,Calcium Gluconate (CRRT),ext_calcium,"d_items 'Medications' (01-Drips, grams/hour); not in CLIF-MIMIC's mapping"
+229618,Calcium Chloride,ext_calcium,"d_items 'Medications'; drip records only (its '05-Med Bolus' pushes are eMAR doses)"
+227529,ACD-A Citrate (1000ml),ext_sodium_citrate,"d_items 'Medications' (Continuous IV, mL/hour): CRRT regional citrate anticoagulation"
+227528,ACD-A Citrate (500ml),ext_sodium_citrate,"d_items 'Medications' (Continuous IV, mL/hour): CRRT regional citrate anticoagulation"
+227530,IV Immune Globulin (IVIG),ext_immunoglobulin,"d_items 'Blood Products/Colloids' (Continuous IV, mL/hour): a plasma-derived medication, not intake (removed from input_items.csv)"
+227692,Isuprel,isoproterenol,"d_items 'Medications' (01-Drips): CLIF 3.0 continuous category; CLIF-MIMIC's mapping lists it as NOT AVAILABLE"

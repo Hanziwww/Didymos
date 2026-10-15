@@ -1,0 +1,7 @@
+ethnicity,race_category,ethnicity_category,provenance
+Caucasian,white,non_hispanic,CLIF-MIMIC: WHITE -> White / Non-Hispanic
+African American,black_or_african_american,non_hispanic,CLIF-MIMIC: BLACK/AFRICAN AMERICAN -> Black / Non-Hispanic
+Asian,asian,non_hispanic,CLIF-MIMIC: ASIAN -> Asian / Non-Hispanic
+Native American,american_indian_or_alaska_native,non_hispanic,CLIF-MIMIC: AMERICAN INDIAN/ALASKA NATIVE -> Non-Hispanic
+Hispanic,other,hispanic,CLIF-MIMIC: HISPANIC OR LATINO -> Other / Hispanic
+Other/Unknown,unknown,unknown,combined other/unknown value

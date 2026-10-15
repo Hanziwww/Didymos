@@ -1,0 +1,40 @@
+source_table,label,clif_column,transform,provenance
+respiratoryCharting,FiO2,fio2_set,fio2,ricu fio2 (respiratorycharting FiO2)
+respiratoryCharting,FIO2 (%),fio2_set,fio2,ricu fio2
+respiratoryCharting,O2 Percentage,fio2_set,fio2,
+respiratoryCharting,PEEP,peep_set,identity,ricu peep
+respiratoryCharting,PEEP/CPAP,peep_set,identity,
+respiratoryCharting,CPAP,peep_set,identity,CPAP level = end-expiratory pressure
+respiratoryCharting,Vent Rate,resp_rate_set,identity,
+respiratoryCharting,Adult Con Setting Set RR,resp_rate_set,identity,
+respiratoryCharting,Tidal Volume (set),tidal_volume_set,identity,ricu tidal_vol_set
+respiratoryCharting,Adult Con Setting Set Vt,tidal_volume_set,identity,
+respiratoryCharting,LPM O2,lpm_set,identity,
+respiratoryCharting,Oxygen Flow Rate,lpm_set,identity,
+respiratoryCharting,Pressure Support,pressure_support_set,identity,
+respiratoryCharting,PS,pressure_support_set,identity,
+respiratoryCharting,PS above PEEP,pressure_support_set,identity,
+respiratoryCharting,Pressure Control,pressure_control_set,identity,
+respiratoryCharting,Peak Flow,flow_rate_set,identity,
+respiratoryCharting,Peak Insp. Pressure,peak_inspiratory_pressure_obs,identity,ricu pip
+respiratoryCharting,Mean Airway Pressure,mean_airway_pressure_obs,identity,
+respiratoryCharting,Plateau Pressure,plateau_pressure_obs,identity,
+respiratoryCharting,Exhaled MV,minute_vent_obs,identity,ricu minute_vol
+respiratoryCharting,MVe,minute_vent_obs,identity,
+respiratoryCharting,Measured Ve,minute_vent_obs,identity,
+respiratoryCharting,Adult Con Pt/Vent MinuteVentil,minute_vent_obs,identity,
+respiratoryCharting,Exhaled TV (machine),tidal_volume_obs,identity,ricu tidal_vol
+respiratoryCharting,Exhaled TV (patient),tidal_volume_obs,identity,
+respiratoryCharting,Exhaled Vt,tidal_volume_obs,identity,
+respiratoryCharting,Tidal Volume Observed (VT),tidal_volume_obs,identity,
+respiratoryCharting,Total RR,resp_rate_obs,identity,
+respiratoryCharting,Resp Rate Total,resp_rate_obs,identity,
+respiratoryCharting,f Total,resp_rate_obs,identity,
+lab,FiO2,fio2_set,fio2,FiO2 recorded with the blood gas
+lab,PEEP,peep_set,identity,ventilator setting recorded with the blood gas
+lab,TV,tidal_volume_set,identity,ventilator setting recorded with the blood gas
+lab,Vent Rate,resp_rate_set,identity,ventilator setting recorded with the blood gas
+lab,Pressure Support,pressure_support_set,identity,ventilator setting recorded with the blood gas
+lab,Pressure Control,pressure_control_set,identity,ventilator setting recorded with the blood gas
+lab,LPM O2,lpm_set,identity,O2 flow recorded with the blood gas
+lab,Peak Airway/Pressure,peak_inspiratory_pressure_obs,identity,recorded with the blood gas

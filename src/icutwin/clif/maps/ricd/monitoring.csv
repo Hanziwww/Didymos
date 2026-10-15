@@ -1,0 +1,32 @@
+parameter,target,category,meas_site_name,output_group,provenance
+heart rate,vitals,heart_rate,,,beats/min ('pulse' from the oximeter duplicates it at the same minutes and is not mapped)
+saturation (SpO2),vitals,spo2,,,%
+respiratory rate,vitals,respiratory_rate,,,breaths/min
+temperature,vitals,temp_c,,,degrees C (the unit text is mis-encoded in the release)
+systolic BP,vitals,sbp,cuff,,"mmHg; site not recorded: charted hourly (median 1 per hour, against 6 for heart rate), as non-invasive measurements"
+diastolic BP,vitals,dbp,cuff,,mmHg; site not recorded (as systolic BP)
+mean AP,vitals,map,cuff,,mmHg; site not recorded (as systolic BP)
+body mass,vitals,weight_kg,,,kg
+diuresis,output,urinary_other,,urine,urine volume (mL); the collection method is not recorded
+stool/stoma,output,stool,,gi,stool or stoma output (mL)
+nasogastric tube/vomitus,output,orogastric_nasogastric_tube,,gi,nasogastric drainage or vomitus (mL)
+gastrostoma,output,gastrostomy,,gi,gastrostomy output (mL)
+left nephrostomy,output,nephrostomy,,urine,nephrostomy output (mL)
+right nephrostomy,output,nephrostomy,,urine,nephrostomy output (mL)
+cystostomy,output,suprapubic_catheter,,urine,suprapubic cystostomy output (mL)
+left pleural drainage,output,chest_tube_temporary,,drains,pleural drain (mL)
+right pleural drainage,output,chest_tube_temporary,,drains,pleural drain (mL)
+left thoracic drainage,output,chest_tube_temporary,,drains,thoracic drain (mL)
+right thoracic drainage,output,chest_tube_temporary,,drains,thoracic drain (mL)
+mediastinal drainage,output,chest_tube_temporary,,drains,mediastinal drain (mL)
+bile drainage,output,biliary_drain,,drains,biliary drain (mL)
+left drainage,output,procedural_drain_other,,drains,drain without a stated site (mL)
+right drainage,output,procedural_drain_other,,drains,drain without a stated site (mL)
+left abdominal drainage,output,procedural_drain_other,,drains,abdominal drain (mL)
+right abdominal drainage,output,procedural_drain_other,,drains,abdominal drain (mL)
+pelvic drainage,output,procedural_drain_other,,drains,pelvic drain (mL)
+right neck drainage,output,procedural_drain_other,,drains,neck drain (mL)
+right upper quadrant drainage,output,procedural_drain_other,,drains,abdominal drain (mL)
+right lower quadrant drainage,output,procedural_drain_other,,drains,abdominal drain (mL)
+liquor,output,other,,other,cerebrospinal fluid drainage (mL)
+other output,output,other,,other,other output (mL)

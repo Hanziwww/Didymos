@@ -1,0 +1,74 @@
+# Post-crosswalk fixes for values emitted by reference ETLs that clifpy's official 2.1->3.0 crosswalk
+# cannot resolve. Applied in S2b after the crosswalk; anything still outside CLIF 3.0 + extensions.yaml
+# fails harmonization. A fix is either {to, why} or an ordered list of {to, why, when_regex: {col: re}}
+# (first matching condition wins; regexes are DuckDB/RE2; all column fixes see the original row).
+# Table-level rules: `_drop_rows` (list of {when_regex, why}) removes rows; `_scale` (list of
+# {column, multiply, when_regex, value_max, why}) rescales values. Every rule's row count is reported.
+adt:
+  location_type:
+    cvicu_icu: {to: mixed_cardiothoracic_icu, why: "MIMIC CVICU admits both cardiac-surgical and cardiovascular medical patients"}
+labs:
+  _drop_rows:
+    - when_regex: {lab_category: '^carbon_dioxide$', lab_name: '^9992: '}
+      why: >-
+        CLIF-AmsterdamUMCdb emits AUMC item 9992 'Act.HCO3 (bloed)' twice, as bicarbonate/blood_gas and as
+        carbon_dioxide/bmp; the carbon_dioxide copy is an exact duplicate of the blood-gas bicarbonate
+  _scale:
+    - column: lab_value_numeric
+      multiply: 100
+      value_max: 1.0
+      when_regex: {lab_category: '^so2_(arterial|venous|mixed_venous|central_venous)$'}
+      why: >-
+        oxygen saturations reported as fractions (CLIF-AmsterdamUMCdb item 12311 'O2-Saturatie (bloed)' =
+        0.98) under unit '%'; a saturation of <= 1 % is not physiological, so values <= 1 are fractions
+  lab_category:
+    pt:
+      - to: inr
+        when_regex: {lab_name: '^6789: '}
+        why: >-
+          AUMC item 6789 'Protrombinetijd' holds INR values (median 1.3, like items 11893/11894 that
+          CLIF-AmsterdamUMCdb maps to inr), not seconds
+  reference_unit:
+    sec:
+      - to: (no units)
+        when_regex: {lab_name: '^6789: '}
+        why: "unit of the AUMC item 6789 INR values (see lab_category fix)"
+medication_admin_continuous:
+  med_category:
+    magnesium: {to: magnesium_sulfate, why: "CLIF-MIMIC 'magnesium' infusion rows are magnesium sulfate"}
+    aminocaproic: {to: aminocaproic_acid, why: "spelling of the CLIF 3.0 category"}
+    albumin_infusion:
+      - {to: albumin_25, when_regex: {med_name: '(^|[^0-9])25 ?%'}, why: "CLIF 3.0 splits albumin by concentration (med_name 'Albumin 25%')"}
+      - {to: albumin_5, when_regex: {med_name: '(^|[^0-9])5 ?%'}, why: "CLIF 3.0 splits albumin by concentration (med_name 'Albumin 5%')"}
+    albumin:
+      - {to: albumin_25, when_regex: {med_name: '(^|[^0-9])25 ?%'}, why: "CLIF 3.0 splits albumin by concentration"}
+      - {to: ext_albumin_20, when_regex: {med_name: '(^|[^0-9])20 ?%'}, why: "20% albumin (European hyperoncotic product) has no CLIF 3.0 category"}
+      - {to: albumin_5, when_regex: {med_name: '(^|[^0-9])5 ?%'}, why: "CLIF 3.0 splits albumin by concentration"}
+medication_admin_intermittent:
+  _scale:
+    - column: med_dose
+      multiply: 0.16666666666666666
+      when_regex: {med_category: '^trimethoprim_sulfamethoxazole$', med_name: '^(8394|9052): '}
+      why: >-
+        AUMC items 8394 Co-Trimoxazol (IV) and 9052 Co-trimoxazol forte (enteral, found at full scale) record the
+        combined dose (480 / 960 / 1920 mg = trimethoprim 80 / 160 /
+        320 mg + 5x sulfamethoxazole); the canonical dose of the combination is its trimethoprim component, as
+        in CLIF-MIMIC, HiRID, NWICU and most SICdb rows (S3 QA median-ratio flag)
+  med_category:
+    imipenem_cilastatin: {to: imipenem, why: "CLIF 'imipenem' denotes the imipenem/cilastatin product"}
+    penicillin_g: {to: penicillin, why: "CLIF 'penicillin' covers benzylpenicillin (penicillin G)"}
+    flucloxacillin: {to: ext_flucloxacillin, why: "no CLIF 3.0 category; declared extension"}
+    magnesium: {to: magnesium_repletion, why: "CLIF 3.0 intermittent category for magnesium boluses"}
+patient_procedures:
+  procedure_code_format:
+    ICD9: {to: ICD9PCS, why: "MIMIC ICD-9-CM volume 3 procedure codes (pre-Oct-2015); declared in extensions.yaml"}
+respiratory_support:
+  device_category:
+    hfnc:
+      - to: face_mask
+        when_regex: {device_name: '^High flow neb$'}
+        why: >-
+          CLIF-MIMIC maps MIMIC O2 delivery device 'High flow neb' (a large-volume aerosol nebulizer giving
+          humidified high-flow oxygen by mask) to 'High Flow NC'; its mapping marks the row "not covered by mCIDE
+          mapping, to be further discussed". It is not a nasal cannula (mimic-code ventilation: supplemental
+          oxygen); the aerosol mask is CLIF's face_mask

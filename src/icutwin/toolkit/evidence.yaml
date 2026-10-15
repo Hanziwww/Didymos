@@ -1,0 +1,114 @@
+# The paper evidence behind each toolkit output (Paper P: docs/paper/results_current.md, tables under
+# docs/paper/tables). The numbers are the paper's aggregates, quoted so that every output carries its caveats; they
+# change only with the paper's results (a new amendment), never per patient.
+
+forecast:
+  refs:
+    - "A1: prediction on real held-out anchors (tables/results/a1_*)"
+    - "F1-F3: 128 rollouts, E2 hazards, mortality (tables/followup/f1_* to f3_*)"
+    - "Amendment 10: every clinical score and learned baseline (results_current section 1b)"
+  claim: >-
+    With 128 rollouts and E2, the Twin is level with or ahead of the best of 13 learned models and of every clinical
+    score on A1's endpoints (exceptions: TabPFN-3.5 for ICU death at 24 h, 0.932 against 0.924).
+  e2:
+    refs: ["F2 (tables/followup/f2_*)"]
+    claim: "E2 AUROC 0.886-0.960 at 128 rollouts (0.81-0.91 with a single rollout); self-check O/E 0.99-1.01."
+  calibration:          # observed over expected of the raw Twin (above 1: under-predicted), results_current section 2
+    decompensation@1440: {oe: 1.77, source: "E2, R128"}
+    imv_onset@1440: {oe: 0.55, source: "E2, R128"}
+    vasopressor_onset@1440: {oe: 0.46, source: "E2, R128"}
+    rrt_onset@2880: {oe: 0.56, source: "E2, R128"}
+    aki_2@2880: {oe: 0.65, source: "E0, R128"}
+    hypotension@240: {oe: 0.96, source: "E0, R128"}
+    hyperkalemia_top@1440: {oe: 0.76, source: "E0, R128"}
+    thrombocytopenia@2880: {oe: 0.79, source: "E0, R128"}
+    icu_death@-1: {oe: 0.99, source: "E0 with 4x caps (L24x); 1.10-1.38 at A1's caps"}
+    hospital_death@0: {oe: 1.10, source: "L24x"}
+    remaining_los_gt_7d: {oe: 0.97, source: "L24x"}
+  caveats:
+    - "Raw treatment starts are over-predicted about two-fold (O/E 0.46-0.56 on R128) until recalibrated."
+    - "Death within 24 h is under-predicted (O/E 1.77 on R128): generation delays deaths (F3)."
+    - "Value forecasts' 80% intervals cover about 0.70 of real values (F5): they are too narrow."
+    - "A rollout that reaches its token cap is censored; ICU death needs about 4x the 168-h caps to be calibrated (F1)."
+    - "Evidence is population-level discrimination and calibration on held-out stays, not validated individual decisions."
+
+whatif:
+  refs:
+    - "C1: what-if rollouts (tables/results/c1_01_*)"
+    - "F5: the A/A null and the observational contrasts (tables/followup/f5_01 to f5_04)"
+  framing: "Observationally faithful simulation within the twin world, not causal effect estimation."
+  null: "Two withhold arms with different seeds share the expected sign in 0.40-0.55 of prefixes; every mean's interval covers 0 (F5)."
+  timing: "The faithful case is a prompt cut shortly before a real start (F5: cut 1 minute before, norepinephrine raises MAP); cut 0.5-6 h earlier, contrasts inherit confounding by indication (C1)."
+  responses:            # F5's propensity-matched pairs: the observational contrast and the Twin's
+    norepinephrine:
+      map: {status: reproduced, observational: -3.3, twin: -3.6}
+    fluid_bolus:
+      map: {status: reproduced, observational: -5.8, twin: -4.3}
+      urine_output: {status: unresolved, observational: -8.0, twin: -108.0}
+    furosemide:
+      urine_output: {status: reproduced, observational: 337.0, twin: 403.0}
+    imv:
+      fio2_charted: {status: reproduced, observational: 2.8, twin: 3.1}
+      spo2: {status: reproduced, observational: 1.1, twin: 1.2}
+    crrt:
+      potassium: {status: reproduced, observational: 0.24, twin: 0.44}
+      creatinine_24h: {status: reproduced, observational: 0.50, twin: 1.04}
+    insulin:
+      glucose: {status: not_reproduced, observational: 38.0, twin: 0.0}
+  caveats:
+    - "Effects hold within the twin world and inherit the data's confounding by indication."
+    - "Insulin's glucose response is not reproduced (F5: observational +38 mg/dL, Twin about 0)."
+    - "Outputs computed from real stays stay on the approved host (the data-use agreements)."
+    - "Only the start of a treatment at the prompt's end and its withholding throughout the continuation were validated."
+
+explain:
+  refs:
+    - "C2: attribution (tables/results/c2_*)"
+    - "F4: against the generator (tables/followup/f4_*)"
+    - "Amendment 9: attention methods (tables/followup/amendment_9_*)"
+  methods:
+    edit: {status: primary, sanity: "-0.06 to 0.00", generator_agreement: "0.12-0.20 (split-half ceiling 0.48-0.54)"}
+    knockout: {status: reported, sanity: "-0.02", agreement_with_editing: "0.71 (0.53-0.80)"}
+    rollout: {status: fails, sanity: "0.96-0.97", note: "attention rollout ranks groups by the causal mask's geometry and their sizes; not offered"}
+  caveats:
+    - "Attributions explain the model's estimate (the Twin probe on its state), not the patient's physiology."
+    - "Per patient they are noisy: the generator's own effects are reproduced only moderately (split-half ceilings 0.13-0.54 at 48 rollouts)."
+    - "Knockout's agreement with editing is partly expected (both remove a group's information); it was not checked against the generator."
+
+similar:
+  refs:
+    - "C4: patient similarity (tables/results/c4_01_*)"
+    - "F7: neighbours as a predictor (tables/followup/f7_*)"
+  claim: "Leave-one-out kNN on the model's state predicts outcomes about as well as TF-IDF or A1's features, better on 8 of 12 endpoints; a randomly initialized model is clearly worse."
+  caveats:
+    - "Neighbour rates are aggregates of real held-out stays; counts under the minimum cell are suppressed and no neighbour is shown."
+    - "Similarity is the model's representation, not a clinical matching rule."
+
+cohort:
+  refs:
+    - "A3: the privacy gate (tables/results/a3_*)"
+    - "A4 and F8: utility and small-site augmentation (tables/results/a4_*, tables/followup/f8_*)"
+    - "C3 and F6: virtual cohorts and hospitals (tables/results/c3_01_*, tables/followup/f6_01_*)"
+  claim: "Twins match held-out stays in age, sex, treatments, event and lab rates and stay length; train-on-twins gives 0.93-1.03 of train-on-real; 100 real stays plus 100 twins gain +0.038 AUROC (L24)."
+  caveats:
+    - "Deaths are too few in short stays (F3 D4: MIMIC first day 3.9% of twins against 11.5% of real stays)."
+    - "Event-defined cohorts are drawn by rejection: goal blocks barely condition the model."
+    - "DUA-derived synthetic data: internal, kept on the approved hosts, never shared unless cleared."
+
+trial:
+  refs:
+    - "Amendment 11 V4: trial simulations on the kept held-out predictions (results_current, toolkit section)"
+    - "Amendment 10: the clinical scores compared as prognostic scores"
+  caveats:
+    - "Simulated treatment effects are constant relative risks on held-out ICU stays standing in for a trial population."
+    - "Enrichment and covariate adjustment change the population and the analysis, not the treatment's effect; no claim about any treatment."
+
+teach:
+  refs:
+    - "C3: twins' realism (tables/results/c3_01_*)"
+    - "F5: what-if fidelity (tables/followup/f5_*)"
+    - "Clinician study (prepared, docs/p1_paper_protocol.md): visual Turing test and plausibility ratings"
+  caveats:
+    - "Every case is a synthetic patient (a bank twin), internal until cleared."
+    - "Branches beyond the first decision were not validated (a chain of single-step what-ifs)."
+    - "What-if branches are observational simulation, not the effects of the actions."

@@ -1,0 +1,5 @@
+predictor,mean rank (95% CI),firsts,mean AUROC,"Didymos minus, median",Didymos wins/ties/losses,P (Wilcoxon),P (Holm)
+Didymos,1.58 (1.45 to 1.72),102,0.887,-,-,-,-
+LightGBM,2.00 (1.88 to 2.12),44,0.870,0.014,113/0/52,<0.001,<0.001
+Didymos probe,2.84 (2.69 to 2.98),19,0.843,0.050,133/0/32,<0.001,<0.001
+Logistic (L2),3.58 (3.49 to 3.67),0,0.807,0.067,153/0/12,<0.001,<0.001

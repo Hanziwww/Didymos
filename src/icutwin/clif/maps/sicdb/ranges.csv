@@ -1,0 +1,12 @@
+dataid,table,category,provenance
+720,airway,ett,EndotrachealTube
+3041,airway,trach,TrachealCannula
+3045,line,art_line,ArterialLine
+3046,line,cvc,CentralLine
+3047,line,piv,PeripheralLine
+3053,drain,foley,UrinaryCatheter
+3043,drain,chest_tube,ThoracicDrainage
+3042,drain,jp_drain,Redon (closed-suction wound drain)
+3050,drain,ng_tube,GastricTube (route not recorded)
+3051,drain,peg_tube,PEG
+3052,drain,dobhoff,JejunalTube (nasojejunal feeding tube)

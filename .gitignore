@@ -1,0 +1,20 @@
+# raw credentialed data and everything derived from it — never commit
+/dataset/
+/data/
+/runs/
+# tool logs (clifpy validation logs can quote data values)
+/output/
+# environments, caches, temp
+/.venv/
+/.cache/
+/.tmp/
+__pycache__/
+*.pyc
+.pytest_cache/
+.hypothesis/
+# pinned third-party reference checkouts (commits are recorded in refs/REFS.lock)
+/refs/*
+!/refs/REFS.lock
+!/refs/README.md
+# local secrets (API keys) never enter the repository
+/tabpfnapi

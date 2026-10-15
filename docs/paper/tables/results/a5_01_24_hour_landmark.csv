@@ -1,0 +1,44 @@
+Endpoint,Attribute,Value,Anchors,Positives,Twin AUROC,Twin O/E,LightGBM AUROC
+ICU death,sex,female,1182,37,0.878,0.91,0.911
+ICU death,sex,male,1711,65,0.844,1.33,0.917
+ICU death,age_band,1,940,30,0.791,1.26,0.906
+ICU death,age_band,2,1083,34,0.855,1.11,0.904
+ICU death,age_band,3,507,31,0.921,1.05,0.918
+ICU death,admission_type,ed,966,64,0.844,1.14,0.865
+ICU death,race,not recorded,1573,48,0.880,1.20,0.953
+ICU death,race,white,955,42,0.877,1.14,0.861
+In-hospital death,sex,female,1390,127,0.870,1.18,0.867
+In-hospital death,sex,male,2094,217,0.853,1.58,0.869
+In-hospital death,age_band,1,1138,101,0.849,1.69,0.873
+In-hospital death,age_band,2,1333,129,0.844,1.31,0.861
+In-hospital death,age_band,3,594,93,0.864,1.23,0.832
+In-hospital death,dataset,aumc,500,82,0.850,2.25,0.856
+In-hospital death,dataset,eicu,500,39,0.913,1.13,0.838
+In-hospital death,dataset,mimic,500,67,0.857,1.48,0.863
+In-hospital death,dataset,nwicu,500,46,0.896,0.99,0.867
+In-hospital death,dataset,sicdb,500,56,0.869,1.08,0.856
+In-hospital death,admission_type,UNK,801,64,0.877,1.63,0.901
+In-hospital death,admission_type,ed,1144,159,0.867,1.38,0.854
+In-hospital death,admission_type,elective,905,47,0.818,1.52,0.895
+In-hospital death,admission_type,other,485,60,0.801,1.11,0.763
+In-hospital death,race,not recorded,2000,194,0.843,1.61,0.876
+In-hospital death,race,white,1055,97,0.885,1.13,0.860
+ICU stay > 7 days,sex,female,1381,170,0.793,0.79,0.857
+ICU stay > 7 days,sex,male,2068,308,0.813,0.82,0.853
+ICU stay > 7 days,age_band,0,433,60,0.799,0.83,0.853
+ICU stay > 7 days,age_band,1,1128,178,0.836,0.89,0.876
+ICU stay > 7 days,age_band,2,1317,183,0.798,0.80,0.835
+ICU stay > 7 days,age_band,3,587,64,0.769,0.67,0.854
+ICU stay > 7 days,dataset,aumc,500,142,0.846,0.94,0.861
+ICU stay > 7 days,dataset,eicu,500,44,0.673,0.63,0.802
+ICU stay > 7 days,dataset,hirid,499,58,0.727,0.80,0.775
+ICU stay > 7 days,dataset,mimic,499,60,0.825,0.80,0.837
+ICU stay > 7 days,dataset,nwicu,500,67,0.797,0.95,0.806
+ICU stay > 7 days,dataset,sicdb,468,86,0.799,1.13,0.821
+ICU stay > 7 days,admission_type,UNK,788,99,0.735,0.84,0.797
+ICU stay > 7 days,admission_type,direct,144,30,0.825,1.15,0.878
+ICU stay > 7 days,admission_type,ed,1143,175,0.812,0.82,0.826
+ICU stay > 7 days,admission_type,elective,890,90,0.885,0.71,0.926
+ICU stay > 7 days,admission_type,other,479,85,0.756,0.81,0.833
+ICU stay > 7 days,race,not recorded,1966,314,0.824,0.82,0.871
+ICU stay > 7 days,race,white,1055,104,0.765,0.75,0.810

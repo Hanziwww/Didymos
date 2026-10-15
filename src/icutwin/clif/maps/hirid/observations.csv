@@ -1,0 +1,118 @@
+variableid,target,category,factor,reference_unit,lab_order_category,meas_site_name,provenance
+200,vitals,heart_rate,1,,,,ricu hr; HiRID-benchmark vm1
+4000,vitals,spo2,1,,,,ricu spo2; benchmark vm20
+8280,vitals,spo2,1,,,,ricu spo2; benchmark vm20 (second sensor)
+100,vitals,sbp,1,,,arterial,ricu sbp; benchmark vm3 ABPs
+120,vitals,dbp,1,,,arterial,ricu dbp; benchmark vm4 ABPd
+110,vitals,map,1,,,arterial,ricu map; benchmark vm5 ABPm
+600,vitals,sbp,1,,,cuff,benchmark NIBPs
+620,vitals,dbp,1,,,cuff,benchmark NIBPd
+610,vitals,map,1,,,cuff,ricu map; benchmark NIBPm
+410,vitals,temp_c,1,,,core,ricu temp (Temp Kern)
+400,vitals,temp_c,1,,,axillary,ricu temp (Temp Axillar)
+7100,vitals,temp_c,1,,,rectal,ricu temp (Rectal)
+300,vitals,respiratory_rate,1,,,,ricu resp (Atemfrequenz)
+510,vitals,intracranial_pressure,1,,,,benchmark ICP (monitored)
+15001597,vitals,intracranial_pressure,1,,,,benchmark ICP (manual left)
+15004303,vitals,intracranial_pressure,1,,,,benchmark ICP (manual right)
+10000400,vitals,weight_kg,1,,,,ricu weight
+10000450,vitals,height_cm,1,,,,ricu height
+2010,resp,fio2_set,0.01,,,,ricu fio2 (%); CLIF fraction
+2600,resp,peep_set,1,,,,benchmark peep (s)
+2610,resp,peep_obs,1,,,,benchmark peep (m)
+2400,resp,tidal_volume_set,1,,,,benchmark TV(s)
+2410,resp,tidal_volume_obs,1,,,,benchmark TV(m) (expiratory tidal volume)
+3110,resp,peak_inspiratory_pressure_obs,1,,,,benchmark Spitzendruck
+3200,resp,plateau_pressure_obs,1,,,,benchmark Plateaudruck
+3000,resp,mean_airway_pressure_obs,1,,,,benchmark AWPmean
+320,resp,resp_rate_set,1,,,,benchmark RR set
+310,resp,resp_rate_obs,1,,,,benchmark RRsp(m) (ventilator-measured rate)
+15001552,resp_airway,,1,,,,ricu mech_vent (Ventilator Airway Code); see vent_codes.csv
+3845,resp_mode,,1,,,,benchmark Servoi Mode; see vent_codes.csv
+15001525,resp_o2_nasal,,1,,,,benchmark supplemental oxygen (nasal cannula; ordinal flow codes)
+15001555,resp_o2_mask,,1,,,,benchmark supplemental oxygen (mask; l/min)
+10000300,assessments,gcs_eye,1,,,,ricu egcs (ordinal code = score)
+10000200,assessments,gcs_motor,1,,,,ricu mgcs
+10000100,assessments,gcs_verbal,1,,,,ricu vgcs
+15001565,assessments,rass,1,,,,ricu rass (floored)
+7887,assessments,tof,1,,,,benchmark TOF (train-of-four count)
+700,hemodynamics,cvp,1,,,,ricu cvp; benchmark ZVD
+960,hemodynamics,cvp,1,,,,benchmark ZVD (RAPm)
+15001441,hemodynamics,cvp,1,,,,benchmark ZVD (manual)
+150,hemodynamics,pa_systolic,1,,,,benchmark PAPs
+170,hemodynamics,pa_diastolic,1,,,,benchmark PAPd
+160,hemodynamics,pa_mean,1,,,,benchmark PAPm
+800,hemodynamics,pcwp,1,,,,benchmark PCWP
+1000,hemodynamics,cco,1,,,,benchmark CO (monitored stream = continuous cardiac output)
+10020000,output,urinary_other,1,ml/h,,,"benchmark vm24 OUTurine/h: a derived urine RATE (ml/h; route not recorded); volume = rate x hours since the previous rate record (max 12 h; 1 h for the first)"
+10010020,output,procedural_drain_other,1,,,,benchmark Liquor (CSF drainage)
+10010070,output,procedural_drain_other,1,,,,benchmark Liquor Rechts
+10010071,output,procedural_drain_other,1,,,,benchmark Liquor Links
+10010072,output,procedural_drain_other,1,,,,benchmark Liquor Spinal
+10002508,crrt,,1,,,,benchmark Haemofiltration (prisma; 1 = running)
+24000605,labs,albumin,0.1,g/dl,lft,,ricu alb (g/L x0.1)
+20002700,labs,alkaline_phosphatase,1,u/l,lft,,ricu alp
+20002600,labs,alt,1,u/l,lft,,ricu alt
+24000330,labs,ast,1,u/l,lft,,ricu ast
+20001300,labs,ext_base_excess,1,mmol/l,blood_gas,,ricu be
+20004200,labs,bicarbonate,1,mmol/l,blood_gas,,ricu bicar (arterial blood gas HCO3)
+20004300,labs,bilirubin_total,0.058467,mg/dl,lft,,ricu bili (umol/L -> mg/dL)
+24000560,labs,bilirubin_conjugated,0.058467,mg/dl,lft,,ricu bili_dir (umol/L -> mg/dL)
+20004100,labs,bun,2.8,mg/dl,bmp,,ricu bun (urea mmol/L x2.8 -> BUN mg/dL)
+20005100,labs,calcium_total,4.008,mg/dl,bmp,,ricu ca (mmol/L -> mg/dL)
+24000522,labs,calcium_ionized,4.008,mg/dl,misc,,ricu cai (mmol/L) -> CLIF mg/dl
+24000210,labs,ext_creatine_kinase,1,u/l,misc,,ricu ck
+20000600,labs,creatinine,0.011312,mg/dl,bmp,,ricu crea (umol/L -> mg/dL)
+20002200,labs,crp,1,mg/l,misc,,ricu crp
+24000439,labs,chloride,1,mmol/l,bmp,,ricu cl
+24000521,labs,chloride,1,mmol/l,bmp,,ricu cl
+24000536,labs,fibrinogen,100,mg/dl,coags,,ricu fgn (g/L x100 -> mg/dL)
+20005110,labs,glucose_serum,18.016,mg/dl,bmp,,ricu glu; benchmark vm174 serum glucose (mmol/L -> mg/dL)
+24000523,labs,glucose_serum,18.016,mg/dl,bmp,,ricu glu; benchmark vm174
+24000585,labs,glucose_serum,18.016,mg/dl,bmp,,ricu glu; benchmark vm174
+24000548,labs,hemoglobin,0.1,g/dl,cbc,,ricu hgb (arterial; g/L x0.1)
+20000900,labs,hemoglobin,0.1,g/dl,cbc,,ricu hgb (g/L x0.1)
+24000836,labs,hemoglobin,0.1,g/dl,cbc,,ricu hgb (g/L x0.1)
+24000567,labs,inr,1,(no units),coags,,ricu inr_pt
+24000524,labs,lactate,1,mmol/l,misc,,ricu lact (arterial)
+24000732,labs,lactate,1,mmol/l,misc,,benchmark vm146 lactate venous
+24000485,labs,lactate,1,mmol/l,misc,,benchmark vm146 lactate venous
+24000556,labs,neutrophils_percent,1,%,cbc,,segmented neutrophils (%)
+24000550,labs,neutrophils_absolute,1,10^3/ul,cbc,,"'Neutr': an absolute count in G/L, not % as LOINC and ricu neut say (same-time Neutr/WBC median 0.86, IQR 0.79-0.92)"
+24000557,labs,ext_bands_percent,1,%,cbc,,ricu bnd (band neutrophils %)
+24000230,labs,magnesium,2.431,mg/dl,misc,,ricu mg (mmol/L -> mg/dL)
+20002500,labs,phosphate,3.097521,mg/dl,misc,,ricu phos (mmol/L -> mg/dL)
+20000110,labs,platelet_count,1,10^3/ul,cbc,,ricu plt (G/L = 10^3/uL)
+20000700,labs,wbc,1,10^3/ul,cbc,,ricu wbc (G/L = 10^3/uL)
+24000220,labs,ckmb,1,ng/ml,cardiac,,ricu ckmb (ug/L = ng/mL); lymphocytes 24000480 not used (values 0-0.7% of same-time WBC)
+20000500,labs,potassium,1,mmol/l,bmp,,ricu k
+24000520,labs,potassium,1,mmol/l,bmp,,ricu k
+24000833,labs,potassium,1,mmol/l,bmp,,ricu k
+24000867,labs,potassium,1,mmol/l,bmp,,ricu k
+20000400,labs,sodium,1,mmol/l,bmp,,ricu na
+24000519,labs,sodium,1,mmol/l,bmp,,ricu na
+24000658,labs,sodium,1,mmol/l,bmp,,ricu na
+24000835,labs,sodium,1,mmol/l,bmp,,ricu na
+24000866,labs,sodium,1,mmol/l,bmp,,ricu na
+20000300,labs,ph_arterial,1,(no units),blood_gas,,ricu ph
+20001200,labs,pco2_arterial,1,mmhg,blood_gas,,ricu pco2
+20000200,labs,po2_arterial,1,mmhg,blood_gas,,ricu po2
+20000800,labs,so2_arterial,1,%,blood_gas,,ricu sao2
+20001000,labs,so2_central_venous,1,%,blood_gas,,benchmark central venous saturation
+24000737,labs,so2_central_venous,1,%,blood_gas,,benchmark central venous saturation
+24000526,labs,ext_carboxyhemoglobin,1,%,blood_gas,,ricu hbco
+24000549,labs,ext_methemoglobin,1,%,blood_gas,,ricu methb
+24000806,labs,troponin_t,1,ng/l,misc,,ricu tnt (high-sensitivity; ng/L)
+24000538,labs,troponin_t,1,ng/l,misc,,benchmark Troponin-T (ng/L)
+24000370,labs,ext_ggt,1,u/l,lft,,benchmark gamma-GT
+20004410,labs,ptt,1,sec,coags,,ricu ptt
+24000427,labs,amylase,1,u/l,misc,,benchmark AMYL-S
+24000555,labs,lipase,1,u/l,misc,,benchmark Lipase
+24000568,labs,ext_ammonia,1,umol/l,misc,,benchmark Ammoniak
+24000570,labs,procalcitonin,1,ng/ml,misc,,benchmark procalcitonin (ug/L = ng/mL)
+24000569,labs,nt_pro_bnp,1,pg/ml,cardiac,,LOINC name: natriuretic peptide B prohormone N-terminal
+24000664,labs,tsh,1,miu/l,tft,,benchmark TSH (mU/L)
+24000678,labs,ferritin,1,ng/ml,misc,,benchmark Ferritin (ug/L = ng/mL)
+24000668,labs,esr,1,mm/hour,misc,,ricu esr
+30005075,input_cumulative,iv_crystalloid,1,,,,"benchmark INcrys/c: cumulative crystalloid infusion volume (ml), derived; volume = positive increments (ricu-style differences: resets ignored, first value kept)"
+30005080,input_cumulative,iv_colloid,1,,,,"benchmark INcolloid/c: cumulative colloid infusion volume (ml), derived; volume = positive increments"

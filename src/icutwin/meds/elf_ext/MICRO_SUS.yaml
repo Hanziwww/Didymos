@@ -1,0 +1,10 @@
+# CLIF 3.0 microbiology_susceptibility: one event per organism and antimicrobial at the culture's result
+# time; the table holds neither time nor stay, so both come from the culture row (organism_id).
+elf_version: "icutwin-ext-0.1.0"
+subject_id_col: patient_id
+join: {table: microbiology_culture, key: organism_id}
+
+microbiology_susceptibility:
+  result:
+    code: [MICRO_SUS, col(organism_category), col(antimicrobial_category), col(susceptibility_category)]
+    time: col(result_dttm)

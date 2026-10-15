@@ -1,0 +1,15 @@
+Test,Members,Non-members,AUC or rate (95% CI),TPR at 1% FPR (95% CI),Status
+"(a) loss, pooled",15024,15027,0.531 (0.524 to 0.537),0.013 (0.011 to 0.017),PASS
+"(a) loss, MIMIC-IV",3000,3000,0.529 (0.515 to 0.543),0.012 (0.009 to 0.020),PASS
+"(a) loss, AmsterdamUMCdb",1365,1368,0.550 (0.528 to 0.572),0.016 (0.007 to 0.025),PASS
+"(a) loss, eICU",2997,2998,0.540 (0.525 to 0.554),0.017 (0.007 to 0.026),PASS
+"(a) loss, HiRID",2031,2035,0.555 (0.538 to 0.573),0.017 (0.010 to 0.027),PASS
+"(a) loss, SICdb",2087,2086,0.538 (0.521 to 0.556),0.008 (0.004 to 0.015),PASS
+"(a) loss, NWICU",2753,2750,0.534 (0.518 to 0.549),0.012 (0.006 to 0.021),PASS
+"(a) loss, INSPIRE",791,790,0.568 (0.538 to 0.597),0.018 (0.009 to 0.039),INCONCLUSIVE
+(b) extraction: first 32 tokens,,,0.000 vs 0.000 (difference 0.000),,PASS
+(b) extraction: event Jaccard,1041,1039,0.516 (0.493 to 0.540),,PASS
+(c) intervened: first 32 tokens,,,0.000 vs 0.000 (difference 0.000),,PASS
+(c) intervened: event Jaccard,100,100,0.482 (0.400 to 0.553),,PASS
+Control: copying generator,,,difference 1.000,,FAIL
+Control: private reference (loss),7513,7514,0.493 (0.483 to 0.502),0.013 (0.009 to 0.017),PASS

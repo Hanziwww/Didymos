@@ -1,0 +1,50 @@
+# The factory's episode configuration (plan Phase F; the study lead's Q&A decisions 2026-10-07). Shares are of episodes.
+version: 1
+seed: 0
+families:                      # the study lead's label mix: groups of program families
+  clinical: {share: 0.45, families: [F1, F2, F3, F4, F5]}
+  threshold: {share: 0.25, families: [F6]}
+  values: {share: 0.15, families: [F7, FC]}
+  functional: {share: 0.15, families: [FH]}
+cadence:                       # Q&A 3: monitoring-weighted
+  hourly: 0.35
+  six_hourly: 0.25
+  event: 0.15
+  landmark: 0.20
+  daily: 0.05
+landmarks: [1440, 2880]        # minutes after ICU admission
+event_triggers: [vasopressor_start, lab_result]
+context_policy: {random: 0.5, stratified: 0.25, retrieved: 0.25}     # Q&A 4
+descriptor_shown: 0.5          # Q&A 11
+anonymize: 0.25
+zero_context: 0.05             # Q&A 15: only where the descriptor is shown or the task is a forecast
+min_positive_context: {stratified: 2, random: 1, retrieved: 1}   # positive context trajectories of a binary task:
+                               # a natural (random, retrieved) context needs one case, a stratified one two
+min_context_values: 5          # valid context labels of a regression or ordinal task
+max_tries: 50
+cohort: {base: 512, positives: 16, max: 4096}   # an episode's labels are computed on a cohort of its site's stays (by
+                               # weight): base size, raised to expect `positives` positive stays, at most max
+rare_policy: {to: stratified, below: 0.5}   # a random or retrieved context of a binary task expecting under half a
+                               # case is outcome-stratified instead (a rare outcome's natural context shows none)
+as_drawn: 1.0                  # with the descriptor shown (the bedside regime), the share of natural contexts of an
+                               # event task taken as drawn: no case required and no rare_policy, so the context shows
+                               # its site's base rate (study lead 2026-10-07: the model reads base rates from its
+                               # context); a hidden task's context still needs cases, so its label function can be read
+fresh_share: 0.5             # functional heads drawn fresh rather than from the pool ("Label sampling" 5)
+sites: {plain: 0.45, virtual: 0.30, label_shift: 0.15, cross_site: 0.10}   # Q&A 13: one site variant per episode
+virtual: {case_mix: 0.4, thinning: 0.3, rounding: 0.15, label_noise: 0.15}
+realism: {share: 0.5, max_transforms: 2, mcar: [0.05, 0.20], noise: [0.02, 0.10], delay: [30, 240],
+          outliers: [0.002, 0.01]}
+difficulty: {cap: 0.10}        # a virtual site or realism costing a probe more AUROC is drawn again, weaker
+ramp_episodes: 0               # the curriculum: episodes below this index get halved shares and low strengths
+stages:                        # provisional budgets (Q&A 14); the architecture round fixes them
+  1: {context: [4, 32], events_per_trajectory: 4096, context_events: 65536, queries: [1, 8], times: 16,
+      query_events: 16384, labels: [binary, tte, ordinal, regression, hosp_death, forecast], forecast_max_min: 1440}
+  2: {context: [16, 128], events_per_trajectory: 8192, context_events: 262144, queries: [1, 16], times: 64,
+      query_events: 32768, labels: [binary, tte, ordinal, regression, hosp_death, forecast, multihorizon],
+      forecast_max_min: 10080}
+  3: {context: [16, 512], events_per_trajectory: 16384, context_events: 1048576, queries: [1, 16], times: 64,
+      query_events: 65536, labels: [binary, tte, ordinal, regression, hosp_death, forecast, multihorizon],
+      forecast_max_min: 10080}
+# query_events: a query trajectory's own budget. Thinning a query up to its last prediction time is not causal (QA
+# #129), so it is set where it almost never applies; the model's cost is linear in a query's events.

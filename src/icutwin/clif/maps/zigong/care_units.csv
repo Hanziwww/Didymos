@@ -1,0 +1,13 @@
+priority,pattern,location_category,location_type,is_icu,provenance
+10,(?i)neurology critical nicu,icu,neuro_icu,1,Department of Neurology critical NICU
+11,(?i)neurosurgery severe nicu,icu,neurosurgical_icu,1,Neurosurgery severe NICU
+12,(?i)ricu|respiratory intensive care,icu,medical_icu,1,Respiratory intensive care unit RICU
+13,(?i)vascular surgery icu,icu,surgical_icu,1,Vascular Surgery ICU
+14,(?i)\bsicu\b,icu,surgical_icu,1,SICU (admitting department)
+15,(?i)eicu,icu,general_icu,1,"EICU: the emergency intensive care unit (EICU headquarters, EICU Huidong, Emergency department ward (EICU), Eicu-b ward)"
+16,(?i)intensive care unit \(icu\),icu,general_icu,1,"Intensive care unit (ICU), wards a and B"
+20,(?i)hemodialysis,dialysis,,0,hemodialysis rooms
+21,(?i)^emergency,ed,,0,emergency wards (not the EICU)
+22,(?i)rehabilitation,rehab,,0,Rehabilitation department
+23,(?i)obstetric,l_and_d,,0,Obstetric ward
+99,.,ward,,0,every other department (medical and surgical wards)

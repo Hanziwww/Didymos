@@ -1,0 +1,8 @@
+Dataset,Anchors,Correlation,Identical,Mean absolute difference,"Median, window","Median, first day"
+AmsterdamUMCdb,500,0.998,0.97,0.03,7.0,7.0
+eICU,499,0.997,0.98,0.04,3.0,3.0
+HiRID,500,0.999,0.99,0.01,4.0,4.0
+INSPIRE,500,0.957,0.80,0.34,4.0,3.0
+MIMIC-IV,500,0.999,0.99,0.02,4.0,4.0
+NWICU,496,0.989,0.97,0.05,1.0,1.0
+SICdb,500,0.992,0.96,0.07,5.0,5.0

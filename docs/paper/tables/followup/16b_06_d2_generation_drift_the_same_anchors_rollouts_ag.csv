@@ -1,0 +1,6 @@
+Subset,Endpoint,Observed,Real futures' summed hazards,Rollouts' summed hazards (mean),Drift ratio
+L48x,"Decompensation, 24 h",57.0,58.4,44.3,0.76
+L48x,"New IMV, 24 h",114.0,145.9,171.6,1.18
+L48x,"New vasopressor, 24 h",195.8,213.0,244.0,1.15
+L48x,"New RRT, 48 h",89.2,144.8,171.4,1.18
+L48x,ICU death,127.0,160.4,109.2,0.68

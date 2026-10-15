@@ -1,0 +1,670 @@
+DIDYMOS - INCLUDED IMAGEGEN PROMPT HISTORY
+
+Built-in imagegen was used for all nine included figures.
+These are exact generation and edit prompts for included figures only.
+Research-timeline prompts are excluded.
+Earlier prompts are historical; final images follow the latest user direction.
+
+========================================================================
+Records to simulated futures [fig1a]
+Selected round: 5
+
+--- Round 1 ---
+Create a NEW fully finished scientific figure for a high-end Nature Methods / Nature Machine Intelligence paper about Didymos, an ICU generative foundation model. This is an ambitious editorial redesign from first principles. Think polished expert scientific illustrator, intelligent spatial information design, visual explanation of computation. A white wide canvas about 2.2:1, highest available resolution. All typography sharp professional Helvetica/Arial, sentence case, dark charcoal. No external figure title, panel letters, watermark, top banner, shadows, gradients, stock hospital art, human figures, brain or robot. Use a sophisticated coordinated palette: deep ink #21384A, muted teal #398D99, cornflower blue #668BC4, lavender #A29AC4; very light tints for grouping; warm ochre #CE9554 for illustrative future events. All geometries flat and precise. Fine connector arrows and rounded corners only where useful. Lots of clear white space. Avoid a conventional chain of big text-filled rounded rectangles. Scientific labels should be integrated into the actual visual mechanism.
+
+COMPOSITION: a strong continuous upper left-to-right stream and a generous lower region dominated by one elegant branching trajectory fan. Four unequal visual zones, read as records, shared token language, one generative model, many futures and uses. A thin light-gray separator can distinguish supporting input strip from the central model-future story. Design a distinctive visual identity with semantic color coding.
+
+Upper-left quarter: exactly seven slender overlapping abstract record sheets as small flat glyphs with sparse horizontal gray event ticks and colored fragments. No individual patient or real clinical values. Above or immediately beneath them, prominent "Seven ICU databases", large "409,297 stays", smaller "five countries". These seven sheets merge through two or three thin drawn paths into a compact structured token matrix. Put label "Harmonized and tokenized", smaller "CLIF, then MEDS" and "25,601 tokens". At upper right, a wide neat two-line strip of individual small token cells:
+row 1: [BOS] | eICU | site 73 | female | age 70–74 | medical ICU | timeline
+row 2: HR q6 | MAP q3 | SpO2 q8 | 5–15 min | norepinephrine start | rate q2 | 1–2 h | lactate q9.
+Context tokens neutral; measurement tokens lavender tint; treatment tokens teal tint; interval tokens white. Keep ALL exact tokens in this exact order, no duplicated or omitted cells. A fine connector goes from the token strip into the Didymos block below, avoiding text.
+
+Lower-left, compact but visually rich: an elegant architectural motif of twelve thin horizontal layer plates inside a light teal rounded capsule, with connecting vertical lines, flat not 3D, and one clear forward arrow. Label "Didymos 1.0" in strong ink, with exact specification lines beside it: "decoder, 12 layers"; "123M parameters"; "context 32,768 tokens"; "trained once,"; "privacy-bounded".
+The model leads into the dominant central visual: a small black continuous history curve, then at a precise dashed now line expands into a large graceful fan of about twelve fine trajectories in teal, blue and lavender. Keep one trajectory dark teal and three small ochre event dots. All futures start at the same history endpoint. Thin x-axis with only "−24 h", "now", "+24 h", labels above "History" and "Simulated futures". Tiny ochre dot key "an event in a future". This is the conceptual hero, substantial width and space, not a tiny chart.
+Upper or right edge of fan feeds TWO compact estimate callouts arranged vertically, distinct from the model:
+"Sampled estimate" / "share of futures with the event"
+"Hazard estimate" / "the model's step hazards," / "summed along each future"
+Use small unnumbered visual motifs: multiple trajectory endpoints for sampled, tiny cumulative step glyph for hazard. These are schematic symbols, no made-up numeric results.
+Far right: a single branching fine line connects both estimate outputs into five evenly spaced application rows. Each row has a tiny precise abstract line glyph and exact label "Forecasts", "What-if", "Synthetic cohorts", "Explanations", "Trial design". No enclosing card around every application. Show shared derivation with connectors, not mere detached text.
+
+Ensure perfect label fidelity, every number exact, no new claims, sophisticated asymmetrical balance, genuinely redrawn structures. Keep detail legible at normal viewing size. This must look like a crafted manuscript methodology figure, not slideware, a corporate infographic, dashboard, or poster.
+
+--- Round 2 ---
+Polish the attached new Didymos figure. Preserve its complete refined multicolor design, exact wording, all numeric labels, content positions and canvas. This targeted revision fixes SCIENTIFIC CONNECTIVITY and counted motifs.
+1. The architectural stack at lower left must have EXACTLY 12 clearly separate plates in one stack, no ellipsis, no extra plates or dots standing for omitted layers. Keep all Didymos specification text unchanged.
+2. In upper token strip recolor "rate q2" with the SAME teal tint as "norepinephrine start"; both are treatment tokens. Preserve every token and its text exactly.
+3. Replace the two separate curly brackets at the right ends of the large future fan with ONE thin full-height bracket covering ALL futures. From its midpoint run a short horizontal trunk that SPLITS into two arrows: one to Sampled estimate mini-glyph, one to Hazard estimate mini-glyph. Both estimates derive from the SAME COMPLETE ensemble, not disjoint subsets. Route connectors so no line passes through words.
+4. From EACH estimate's mini-glyph run a thin outgoing line to a common vertical trunk, and from that trunk branch to all five existing application glyphs. The current version visibly routes only sampled estimate; make hazard estimate's connection equally explicit.
+Keep all labels without omissions including the hazard text. Keep the existing subtle blue/lavender/teal fan, its black history, event dots, time axis. Make event key slightly more legible. Preserve sophisticated white space. Do not add any title, labels, numerical results or new features.
+
+--- Round 3 ---
+Targeted final polish of attached Didymos scientific overview. Preserve the entire sophisticated composition, every exact text label, all 7 source records, complete token strip, history/future fan and correct shared branches to both estimates and 5 uses. Change ONLY the lower-left tall stack motif, which is too visually busy and has a misleading count of layer plates.
+Replace the entire tall twelve-layer capsule illustration (only its graphic, not the adjacent text) with a compact, clean scientific engine symbol: a square field of small flat teal/blue/lavender cells with a triangular causal-attention pattern, enclosed in a fine rounded ink outline. The cells are abstract, no numeric scale, no claim about dimensions. Beneath or within the square use THREE unnumbered thin horizontal accents to imply computation, not countable decoder layers. Keep the adjacent exact text "decoder, 12 layers" to communicate the real layer number. Make the icon occupy about two-thirds of the previous motif height, centered vertically next to the Didymos text; route the existing incoming arrow to its upper edge and outgoing arrow from its right edge. Do not depict individual layer plates at all.
+This should lighten the left side and improve visual balance. Maintain identical size and position of all text; preserve "Didymos 1.0", "123M parameters", "context 32,768 tokens", "trained once,", "privacy-bounded". Do not change trajectories, numbers, colors or scientific connections. Pure white, fine strokes, no 3D, no gradients or shadows.
+
+--- Round 4 ---
+Final concise-content revision of the attached Didymos overview. Preserve its scientific visual story, seven source sheets, token strip, model motif, large fan, two estimator glyphs and five applications. The user wants model parameters and explanatory prose removed.
+
+In lower-left model section DELETE all six existing specification lines: "decoder, 12 layers", "123M parameters", "context 32,768 tokens", "trained once,", "privacy-bounded". Keep ONLY "Didymos 1.0" and one short architectural subtitle "Decoder-only transformer". Place title/subtitle beside the compact engine glyph with balanced spacing; no blank former text column. No parameter count, layer count, context length, training/privacy claim anywhere in model section.
+In upper input stream retain source facts "Seven ICU databases", "409,297 stays", "five countries"; retain "Harmonized and tokenized", "CLIF, then MEDS". Delete the optional "25,601 tokens" vocabulary-size line to reduce specification clutter.
+Preserve EVERY token pill in both rows exactly.
+Simplify estimator labels: replace "Sampled estimate" plus its explanatory sentence with ONLY "Sampled risk". Replace "Hazard estimate" plus its two-line explanatory sentence with ONLY "Hazard risk". Keep the existing corresponding endpoint-fan glyph and cumulative staircase glyph, and their correct shared ensemble inputs and merged use outputs. Labels sit directly above glyphs with no sentences.
+Replace orange event legend "an event in a future" with the one-word key "Event" next to the same ochre dot. Retain History, Simulated futures, −24 h, now, +24 h.
+Keep the five applications exact: Forecasts, What-if, Synthetic cohorts, Explanations, Trial design.
+Rebalance freed space through better alignment and slightly larger meaningful mechanism graphics, not extra words. Keep arrows continuous, same quiet editorial palette and fine strokes, no new title, caption, footnote or metadata.
+
+--- Round 5 ---
+Final visual clarity edit of the attached concise Didymos overview. Keep all existing labels, token strip, data counts, model, history/future fan, correct connectors, five applications and palette unchanged. No model parameter/specification text may return.
+Change ONLY the miniature glyph beneath "Sampled risk": the current small trajectory fan repeats the big simulated-futures fan and does not clearly communicate event counting. Replace this small fan with a compact orderly matrix of small circles, some filled ochre and the others hollow with thin ink outlines, representing event occurrence across sampled futures. Use roughly three rows of five circles, no printed counts or fractions. It is an illustrative motif, not a claim about sample size. Keep "Sampled risk" above, with the SAME incoming branch from the complete future ensemble and outgoing collection toward uses. Do not move or alter the separate "Hazard risk" staircase glyph.
+Reduce the ochre dot beside the "Event" legend to match the size of actual event dots on the large fan. Retain the single word "Event", no explanation.
+Maintain the refined open composition, crisp thin lines and all existing exact text. Do not add captions or numerical probabilities.
+
+========================================================================
+Constrained sampling [fig1c]
+Selected round: 5
+
+--- Round 1 ---
+Create a finished high-end Nature Methods / Nature Machine Intelligence manuscript schematic, redesigned from first principles with sophisticated scientific editorial design. Pure white background, crisp precise flat geometry, elegantly routed thin arrows, sharp Helvetica/Arial, dark ink #21384A for text and structure, muted teal #398D99, blue #668BC4, lavender #A29AC4, warm ochre #CE9554 for event markers, very pale tints only where useful. Confident typography and intentional white space, meaningful visual mechanisms instead of walls of rounded text boxes. No external figure title, panel letters, generic header, watermarks, gradients, shadows, stock hospital icons, people, brains, robots, fake data, gratuitous decoration, or poster style. All provided scientific text and numbers must remain exact and legible. Illustrative motifs may be redrawn freely. Highest available resolution.
+Landscape aspect 2.1:1. Redesign constrained token sampling as a sophisticated BEFORE / MASK / AFTER visual probability table with eight rows. This is an illustrative explanatory diagram, not real results. Left large column contains readable token names. Then slim lavender horizontal MODEL probability bars, middle mask-reason column, then teal AFTER probability bars. A tiny header-level arrow leads from Model through constraints to After. Every row is on the same baseline and the two probability axes have identical 0–0.4 scales.
+Exact row labels and illustrative numbers:
+MAP q4: model 0.24, after 0.30
+HR q5: model 0.16, after 0.20
+5–15 min: model 0.16, after 0.20
+norepinephrine rate up: model 0.08, masked, reason "grammar", after 0
+ventilator PEEP: model 0.08, masked, reason "not recorded here", after 0
+lactate q3: model 0.12, after 0.15
+[END] block: model 0.04, masked, reason "grammar", after 0
+SpO2 q9: model 0.12, after 0.15.
+Show each probability number crisply to the right of its bar. Masked model bars have a subtle diagonal hatch over their lavender fill, and the final column has a small gray zero dot with numeric 0; no positive teal bar in masked rows. The middle column shows reasons only on those three masked rows, ochre text; other rows a thin pale connecting line. No green/red stoplights or check marks.
+Column titles exact: "Model"; "Grammar and database support"; "After masking, renormalized". Make the middle header wrap to two lines. Bottom of both probability columns slim axis with labelled ticks "0", "0.2", "0.4". Caption centered underneath: "Next-token probability (illustrative)".
+Below the main table add a restrained small explanatory equation strip with text "Masked total = 0.20" then arrow then "Remaining total = 0.80" then arrow then "Renormalize: p / 0.80". This explicitly confirms after probabilities sum to 1. These numbers are illustrative.
+Small centered legend: lavender outline swatch "Model", teal swatch "After masking, renormalized", hatched gray swatch "Masked". Keep wide gaps to prevent crowding. Emphasize the disappearing masked mass and the rescaled valid distribution with systematic geometry. All probabilities must match the listed numbers and relative bar lengths. Do not use a conventional overlapping-bars-only layout.
+
+--- Round 2 ---
+Refine the attached probability-mask scientific figure. Keep its successful before/mask/after layout, exact eight token names, all numerical labels, reasons, formula strip, legend, muted lavender and teal palette. Polish precise quantitative geometry and spacing.
+The two probability axes MUST have exactly the same drawn width and identical scale 0 to 0.4. On BOTH axes, 0.2 must be exactly halfway between 0 and 0.4. Model bars start at the left axis zero; after bars start at the right axis zero.
+Using 100% as the width of either 0–0.4 axis, set MODEL bar lengths, in row order, EXACTLY to: 60%, 40%, 40%, 20%, 20%, 30%, 10%, 30%. Keep numerical labels 0.24, 0.16, 0.16, 0.08, 0.08, 0.12, 0.04, 0.12.
+Set AFTER bar lengths: 75%, 50%, 50%, 0%, 0%, 37.5%, 0%, 37.5%. Keep numerical labels 0.30, 0.20, 0.20, 0, 0, 0.15, 0, 0.15. Zero dots must center on zero, not be shifted into positive probabilities.
+Make axes and their bars flat solid colors with no mottling or gradients. Use thinner bar outlines and slightly slimmer bars for a more elegant paper figure.
+Slightly reduce the overlarge gap occupied by middle arrows, give the left-label column 5% more space so "norepinephrine rate up" comfortably clears its model bar. Normalize all row baselines and legend swatch heights.
+Preserve the exact formula "Masked total = 0.20", "Remaining total = 0.80", "Renormalize: p / 0.80", and caption "Next-token probability (illustrative)". No new title, no omitted text. Keep overall wide aspect and highest resolution.
+
+--- Round 3 ---
+Redesign the quantitative glyphs of the attached constrained-sampling diagram while keeping its before/mask/after visual explanation and refined palette. The exact numerical values are primary. Replace LENGTH-ENCODED probability bars with EQUAL-SIZE probability cells to avoid any misleading numerical geometry. This is a rigorous scientific probability transformation diagram, not a measured bar plot.
+
+Retain the same wide composition: left row-name column, "Model" probability column in lavender, central "Grammar and database support", and "After masking, renormalized" probability column in teal. Eight rows aligned perfectly. Model and After columns each use one compact rectangular probability tile per row, every tile IDENTICAL size; no quantitative length or area encoding. Large crisp numbers centered in each tile. Model lavender pale tiles; accepted After teal pale tiles. Masked rows model tiles have sparse fine diagonal gray hatching, after tiles are white with gray border and exact zero "0". Gray thin connecting arrows across middle; ochre reason labels on only masked rows.
+Exact complete rows:
+"MAP q4" | "0.24" | no reason | "0.30"
+"HR q5" | "0.16" | no reason | "0.20"
+"5–15 min" | "0.16" | no reason | "0.20"
+"norepinephrine rate up" | "0.08" | "grammar" | "0"
+"ventilator PEEP" | "0.08" | "not recorded here" | "0"
+"lactate q3" | "0.12" | no reason | "0.15"
+"[END] block" | "0.04" | "grammar" | "0"
+"SpO2 q9" | "0.12" | no reason | "0.15".
+These model numbers sum to 1.00; masked mass is 0.20; valid after numbers sum to 1.00. Do not change them.
+Remove BOTH old horizontal probability axes, their ticks and all 0/0.2/0.4 axis labels entirely. They are unnecessary for equal-size probability cells. Retain the standalone caption "Next-token probability (illustrative)".
+At bottom preserve compact equation strip exactly: "Masked total = 0.20" → "Remaining total = 0.80" → "Renormalize: p / 0.80".
+Preserve tiny three-part legend with equal-size swatches: "Model", "After masking, renormalized", "Masked". Make legend compact, give probability table center stage. Width can become about 1.9:1 to reduce middle empty space. All eight rows exact, all text readable, fine lines and precise typographic alignment. The progression through masking should be immediately obvious. No title or extra explanation.
+
+--- Round 4 ---
+Final concise editorial polish of the attached probability transformation. The probabilities, token labels and masking reasons are correct. Preserve ALL eight rows, every numeric cell and the three reason tags exactly. Keep equal-size cells within each column; there must be no quantitative length axis or variable-width probability bars.
+Remove repetitive explanatory elements: DELETE the entire bottom three-swatch legend, because the column colors and mask hatching already convey these roles. DELETE the long bottom formula strip with three phrases and arrows. Replace it with ONE compact centered equation line "p′ = p / 0.80" and a small adjacent label "Masked mass: 0.20". Do not add explanatory sentences.
+Change the lower caption "Next-token probability (illustrative)" to the short label "Illustrative probabilities".
+Keep the top column labels but shorten the last from "After masking, renormalized" to "Renormalized". Keep "Model" and "Grammar and database support".
+Make left and right probability cells the SAME compact width and height, with large clear centered numbers. Current right cells are too wide: narrow them and reduce the broad middle gap so the overall figure feels balanced and concise. Exact values stay:
+Model .24,.16,.16,.08,.08,.12,.04,.12 (all printed with leading zero);
+Renormalized .30,.20,.20,0,0,.15,0,.15.
+All eight token labels unchanged: MAP q4, HR q5, 5–15 min, norepinephrine rate up, ventilator PEEP, lactate q3, [END] block, SpO2 q9. Reasons grammar, not recorded here, grammar. Thin hatch and fine arrows, subdued lavender/teal/ochre.
+Tighten canvas around content, white margins, no additional title, text, axis or illustration.
+
+--- Round 5 ---
+Final polish of this constrained-sampling diagram. All token names, eight original probabilities, eight renormalized probabilities, three mask reasons, colors and arrows are correct; preserve them exactly.
+DELETE the entire bottom equation/mass footer: remove "p′ = p / 0.80", the vertical divider and "Masked mass: 0.20". Do not add an alternative equation or any explanation. Keep ONLY the short bottom label "Illustrative probabilities". This removes redundant prose and avoids an unqualified formula being applied to masked rows.
+Tighten the bottom margin after deletion, with balanced whitespace all around. Give the longest row label "norepinephrine rate up" slightly more breathing space before its probability cell; make no layout change that distorts any values. All cells within each column remain equal size, not quantitative bar lengths.
+Keep the exact top headers "Model", "Grammar and database support", "Renormalized". Five allowed rows retain their teal nonzero outputs; the three masked rows retain exact zero and their reason labels. No model parameters, external title, legend or extra notes. Fine manuscript typography and crisp flat fills.
+
+========================================================================
+What-if validation [fig4a]
+Selected round: 2
+
+--- Round 1 ---
+Create a finished high-end Nature Methods / Nature Machine Intelligence manuscript schematic, redesigned from first principles with sophisticated scientific editorial design. Pure white background, crisp precise flat geometry, elegantly routed thin arrows, sharp Helvetica/Arial, dark ink #21384A for text and structure, muted teal #398D99, blue #668BC4, lavender #A29AC4, warm ochre #CE9554 for event markers, very pale tints only where useful. Confident typography and intentional white space, meaningful visual mechanisms instead of walls of rounded text boxes. No external figure title, panel letters, generic header, watermarks, gradients, shadows, stock hospital icons, people, brains, robots, fake data, gratuitous decoration, or poster style. All provided scientific text and numbers must remain exact and legible. Illustrative motifs may be redrawn freely. Highest available resolution.
+Wide landscape 3:1, a compelling experimental-design schematic with asymmetric composition. Replace the old three-lines-in-a-box layout with a clear visual story: detailed observed event timeline entering a precise cutoff, then three distinct simulation lanes with an aligned response horizon. The curves are illustrative, so do not add any numerical y axis.
+Left 32%: a tapered stack of three or four sparse horizontal event tracks embedded in a single wide clinical record ribbon, dark ink event ticks and a few teal/lavender small blocks. This represents one real ICU record, not multiple patients. Label exact "Real ICU record up to the cut". All observations stop at one ink dashed vertical boundary.
+Boundary near x35%: header "Cut", and smaller annotation "1 min before recorded start" (the cut really is one minute before treatment). No observations from after cutoff enter the record.
+Right 60%: one very light blue rectangular time window begins at cutoff and extends to a common right boundary. A top bracket spans it, labelled "Response window, 6 h". Three separate horizontal lanes vertically spaced, all branch from a common origin at cutoff using slim elbow connectors. In each lane four or five fine trajectories start exactly at its left origin. Top lane teal curves rise modestly and spread; middle lane blue-gray curves near-flat; bottom lavender-gray DASHED curves near-flat, subtly different because of a different seed. Keep middle and lower response differences small so the null arm does not appear a systematically different treatment.
+Direct labels at far right exact, clear and left-aligned:
+"Give: the recorded start" (teal bold)
+"Withhold" (ink)
+"Null arm: second withhold" (lavender)
+Below the null label, small "another seed".
+Add a small teal treatment-start tick just after cutoff ONLY in Give lane. All three run the same 6-hour horizon. A shared thin time-direction arrow below the lanes is unlabeled. No treatment checkmark/cross symbol, no propensity-matched additional patient, no claim of benefit, no numeric effect sizes.
+Balance visual sophistication with scientific clarity; precise line weight, airy whitespace, richly composed yet minimal.
+
+--- Round 2 ---
+Refine the attached experimental-design diagram. Keep its new scientific editorial style, event-record tracks, exact treatment-arm labels, palette and wide aspect. Correct ONE structural weakness: the dashed "Cut" line and the beginning of the 6-hour response window must coincide at exactly the same x coordinate.
+Move the dashed vertical cutoff line rightward to the existing left edge of the blue response window, directly through all three colored start dots. Move "Cut" and "1 min before recorded start" together above this line. Move the left end of the bracket "Response window, 6 h" to this SAME line, so the bracket and all trajectories begin at the cutoff. Extend the observed record tracks so their ticks end just before this line. Remove the current three curved colored branches between the old cut and the three dots. Instead use one very fine ink vertical shared-state spine just LEFT of the cutoff, with short horizontal arrows feeding each of the three start dots, making shared starting state explicit. Keep all observed ticks to the left of the line.
+Preserve original labels: "Real ICU record up to the cut"; track labels "Vitals", "Labs", "Medications", "Procedures"; top "Give: the recorded start"; middle "Withhold"; lower "Null arm: second withhold" and "another seed". Keep "Response window, 6 h". Exact same right endpoint for all three lanes.
+Remove the broad colored uncertainty-band fills around the trajectories, leaving just four or five fine visible lines per lane within the single very pale response-window background. These are sample futures, not confidence intervals. Teal give, slate-blue withhold, dashed lavender null, same endpoint horizon. Preserve fine treatment-start tick only in Give. No new labels, no numerical outcome data. Improve crispness and optical spacing while correcting alignment.
+
+========================================================================
+Didymos toolkit [fig7a]
+Selected round: 3
+
+--- Round 1 ---
+Create a finished high-end Nature Methods / Nature Machine Intelligence manuscript schematic, redesigned from first principles with sophisticated scientific editorial design. Pure white background, crisp precise flat geometry, elegantly routed thin arrows, sharp Helvetica/Arial, dark ink #21384A for text and structure, muted teal #398D99, blue #668BC4, lavender #A29AC4, warm ochre #CE9554 for event markers, very pale tints only where useful. Confident typography and intentional white space, meaningful visual mechanisms instead of walls of rounded text boxes. No external figure title, panel letters, generic header, watermarks, gradients, shadows, stock hospital icons, people, brains, robots, fake data, gratuitous decoration, or poster style. All provided scientific text and numbers must remain exact and legible. Illustrative motifs may be redrawn freely. Highest available resolution.
+Landscape aspect 2.5:1. Redesign a toolkit overview into an elegant central-engine-to-seven-capabilities scientific atlas. The structure must express one model feeding SEVEN PARALLEL tools, each yielding documented output. Use a central branching spine and seven visual mini-mechanisms with exact labels, not seven generic icon cards.
+Left quarter: two small complementary input glyphs, a sparse event ribbon and a small cohort specification table, feed a single precise engine motif of stacked layers. Label input "A record at an hour or a cohort specification". Label model with bold large "Didymos 1.0", body "simulated futures under the grammar and support masks".
+From model a slim branching connector enters the main seven-tool region: FOUR equal modules in upper row, THREE centered in lower row. No module connected to another module; they are parallel.
+Each module has a tiny expertly drawn scientific glyph, a bold title, compact description, and quieter small cross-reference. Provide complete exact text:
+1. "Forecast" / "risks and curves" / "Figs 2, 3". Glyph small branching curves.
+2. "What-if" / "give or withhold" / "Fig. 4". Glyph two contrasting branches from one point.
+3. "Explain" / "editing, knockout" / "Fig. 6". Glyph feature bars with one hollow removed bar.
+4. "Similar patients" / "nearest stays" / "Supplementary". Glyph a few points and two linked nearest neighbors, no numeric axis.
+5. "Cohort synthesizer" / "audited synthetic cohorts" / "Fig. 5". Glyph small matrix of varied abstract record rows.
+6. "Trial designer" / "adjustment and enrichment" / "panels b, c". Glyph two matched rows and a highlighted subset.
+7. "Teaching cases" / "synthetic decision points" / "panel d". Glyph a three-step decision branch with one open leaf.
+Use subtle small per-module background tints or fine color-coded top rules, not thick rounded boxes. Keep all modules equal hierarchy. Draw a light collector bracket from all seven module groups to a narrow final output area at right with two overlapping schematic document sheets.
+Output text exact "JSON and an HTML card;" / "evidence and caveats each". A small code-brace glyph on one sheet and line blocks on the other, no fake code words.
+No extra headline, no feature ranking, no eighth tool. Clear complete read order, deliberate white space, restrained teal/lavender/blue accents, readable exact text.
+
+--- Round 2 ---
+Edit the attached Didymos toolkit illustration with careful editorial polish. Preserve the seven scientific tool glyphs, the entire layout concept, white background, ink/teal/lavender/blue palette, central model and output documents, exact seven tool names and descriptions. Primary change: remove ALL figure and panel cross-references.
+DELETE these seven strings completely: "Figs 2, 3", "Fig. 4", "Fig. 6", "Supplementary", "Fig. 5", "panels b, c", "panel d". Also remove the small horizontal dividing rules immediately above those references. Collapse the vacant reference rows: make the seven modules shorter and better balanced, with glyph, bold name, description only. Keep 4 modules on top, 3 underneath; normalize padding and vertical spacing.
+Exact seven remaining pairs:
+"Forecast" / "risks and curves"
+"What-if" / "give or withhold"
+"Explain" / "editing, knockout"
+"Similar patients" / "nearest stays"
+"Cohort synthesizer" / "audited synthetic cohorts"
+"Trial designer" / "adjustment and enrichment"
+"Teaching cases" / "synthetic decision points".
+Additional factual corrections:
+- In lower-left "Cohort specification" illustrative table, remove ALL individual field names and field values (Population, Adults, Setting, ICU, Inclusion, Sepsis, Exclusion, Comfort care, Horizon, 72 hours, Granularity, Hourly). Keep ONLY its heading "Cohort specification" with a neat abstract grid of colored small horizontal marks underneath, no readable invented entries.
+- On the upper-left illustrative record timeline remove numerical 0h/24h/48h/72h labels; retain its colored events and header "A record at an hour or a cohort specification". Fix spacing in "at an".
+- The arrow immediately to the RIGHT of the Didymos layer symbol currently points left toward the model. REVERSE IT: the model generates outputs, so it must clearly point RIGHT from model into the branching tool spine. Keep inputs pointing into the model from the left.
+- All tools are parallel: preserve outgoing branches to both rows and a collector to the document output.
+Keep exact model text "Didymos 1.0" and "simulated futures under the grammar and support masks". Keep exact output "JSON and an HTML card; evidence and caveats each". No new words, no new figure numbers anywhere.
+Finish with crisper lettering, less excessive vertical padding, a balanced clean manuscript figure. Same wide aspect, highest available resolution.
+
+--- Round 3 ---
+Polish this toolkit illustration into a concise architecture-only overview. User wants explanatory prose removed. Keep the seven beautiful capability glyphs, the four-over-three arrangement, central model, input glyphs and output documents. Keep all names exactly.
+Text that may remain ONLY:
+"Record at cutoff" above upper-left record glyph
+"Cohort specification" above lower-left abstract grid
+"Didymos 1.0"
+"Forecast"
+"What-if"
+"Explain"
+"Similar patients"
+"Cohort synthesizer"
+"Trial designer"
+"Teaching cases"
+"JSON + HTML"
+"Evidence + caveats".
+DELETE all seven descriptive subtitles ("risks and curves", "give or withhold", "editing, knockout", "nearest stays", "audited synthetic cohorts", "adjustment and enrichment", "synthetic decision points"). DELETE the model paragraph "simulated futures under the grammar and support masks". Replace long upper-left header with "Record at cutoff". Replace output sentence with the two allowed short lines. No Fig., panel or Supplementary references, no parameter count or technical specifications.
+Rebalance module heights after deletion: compact refined cards with glyph above one bold name, controlled whitespace, seven equal visual weights. Slightly reduce heavy colored top rules and use pale flat fills. Align the central model and inputs with visual midline. Correct the small rough connector to the right of the model: one clean thin RIGHTWARD arrow from model into the branching spine, no left-pointing arrow or stray stub. Inputs → model → all seven parallel tools → output. No direct tool-to-tool arrows.
+Preserve the established palette and all meaningful graphics; never introduce new content, data, icons or words.
+
+========================================================================
+Cohorts and evaluation [supp1]
+Selected round: 4
+
+--- Round 1 ---
+Create a finished high-end Nature Methods / Nature Machine Intelligence manuscript schematic, redesigned from first principles with sophisticated scientific editorial design. Pure white background, crisp precise flat geometry, elegantly routed thin arrows, sharp Helvetica/Arial, dark ink #21384A for text and structure, muted teal #398D99, blue #668BC4, lavender #A29AC4, warm ochre #CE9554 for event markers, very pale tints only where useful. Confident typography and intentional white space, meaningful visual mechanisms instead of walls of rounded text boxes. No external figure title, panel letters, generic header, watermarks, gradients, shadows, stock hospital icons, people, brains, robots, fake data, gratuitous decoration, or poster style. All provided scientific text and numbers must remain exact and legible. Illustrative motifs may be redrawn freely. Highest available resolution.
+Landscape aspect 1.55:1, very high detail and sharp typography. A new scientific cohort-and-evaluation map with clear hierarchy and subtle diagrammatic motifs, no giant uniform gray boxes. At top a small seven-record glyph and a centered header:
+"Seven ICU databases in five countries"
+"409,297 adult ICU stays, harmonized and tokenized".
+Beneath, one horizontal allocation strip has three contiguous segments width 80%, 5%, 15% in blue, lavender, teal. This is the train/tuning/held-out allocation. Fine leaders connect strip segments to THREE equal-width content regions across page. Each region has a small colored rule, a bold heading, exact supporting text, and generous white space.
+Left:
+"Train: 327,662 stays (80%)"
+"Didymos's training (no task labels);"
+"comparators' training: up to 5,000 per database".
+Center:
+"Tuning: 20,453 stays (5%)"
+"model selection, early stopping;"
+"recalibration (100 rolling anchors per database)".
+Right:
+"Held-out: 61,182 stays (15%)"
+"evaluation only: a test store of"
+"2,000 stays per database (14,000)".
+Only HELD-OUT continues downward, with a clearly routed thin orthogonal connector into a single very pale teal evaluation region spanning page. Do NOT connect train or tuning to evaluation, and do NOT misrepresent the three anchor sets as a disjoint split.
+Inside region upper row THREE clean anchor-set modules, evenly aligned, each with a tiny simple event-timeline glyph, followed by bold exact heading and complete text:
+"Rolling anchors: 3,500"
+"500 per database at random ICU hours,"
+"enriched for events (inclusion weights);"
+"32 simulated futures each".
+"24-hour landmark: 3,500"
+"up to 500 per database, in the ICU"
+"and alive at 24 h;"
+"32 simulated futures each".
+"48-hour landmark: 3,500"
+"up to 500 per database, in the ICU"
+"and alive at 48 h;"
+"32 simulated futures each".
+Each module gets its own connector from the held-out branch, not sequential arrows.
+Below rolling and 24-hour only, slim vertical subset arrows lead to TWO distinguished light-teal follow-up blocks with fine teal rules:
+"Rolling anchors, follow-up: 1,050"
+"150 per database of the rolling anchors;"
+"128 simulated futures each".
+"24-hour landmark, follow-up: 700"
+"every in-hospital death (346) and 354 others,"
+"weighted (a case-cohort sample);"
+"128 simulated futures each".
+No follow-up under 48-hour. Use the rightmost free lower space as WHITE SPACE, no invented note, icon or data. Bottom blocks may be slightly wider than upper modules for all text. All labels must be exact, no omissions, words and counts large enough to read. Balanced typography, prominent counts, tiny schematic glyphs, precise connectors and a clear evaluation boundary.
+
+--- Round 2 ---
+Repair the attached scientific cohort map while preserving its attractive modular design and every supplied scientific label and count below the icons.
+CRITICAL: At top remove ALL seven invented country labels "US", "UK", "France", "Germany", "Spain", "Italy", "Australia". Keep exactly seven small unlabeled database icons only. Do NOT replace them with other countries or names. Keep the actual headline "Seven ICU databases in five countries" and "409,297 adult ICU stays, harmonized and tokenized" exactly.
+CRITICAL: Remove the entire misleading continuous horizontal 80%/5%/15% allocation bar. Its widths are inaccurate. Replace it with ONE thin clean orthogonal branching connector from the top cohort headline to the three existing colored column rules. It should branch independently to Train, Tuning and Held-out, no width-encoded quantities. Remove the percentages inside the old strip only; preserve all percentages in the three bold headings. Use the vertical space saved to give the three exact train/tuning/held-out summaries more comfortable leading.
+Preserve EXACT numerical facts in every label: 409,297; 327,662 (80%); 20,453 (5%); 61,182 (15%); up to 5,000 per database; 100 rolling anchors per database; 2,000 stays per database (14,000); all three 3,500 anchor sets; 500 per database; 24 h and 48 h; 32 simulated futures each; follow-up 1,050 and 150 per database; follow-up 700 with 346 and 354; 128 simulated futures each.
+Preserve only HELD-OUT linking into all THREE evaluation modules, and only rolling and 24-hour linking to their corresponding follow-up modules. No evaluation connection from train or tuning.
+Reduce repeated heavy top rules to fine lines. Remove the two redundant timeline glyphs in the two lower follow-up boxes, retaining every text line; this gives those dense labels breathing room and makes main anchor vs follow-up hierarchy clearer. Keep the useful timeline glyphs in the three upper anchor modules. Maintain balanced margins and pale evaluation grouping region. No invented data or notes.
+
+--- Round 3 ---
+Simplify the attached cohort-and-evaluation map into a precise VISUAL STUDY ARCHITECTURE. User explicitly wants explanatory prose deleted. Preserve correct flow and data counts, remove all full-sentence supporting text and long sample descriptions. Reflow boxes and make numbers easy to scan; no need to keep old box sizes.
+Use ONLY the following concise labels:
+top "409,297 ICU stays" / "7 databases · 5 countries", with seven small unlabelled source glyphs.
+Three first-level outputs:
+"Train" / "327,662" / "80%"
+"Tuning" / "20,453" / "5%"
+"Held-out" / "61,182" / "15%".
+Only Held-out leads into a small "Test store" / "14,000" badge, then branches into THREE evaluation modules:
+"Rolling anchors" / "3,500" / "32 futures"
+"24-hour landmark" / "3,500" / "32 futures"
+"48-hour landmark" / "3,500" / "32 futures".
+Keep useful tiny time-ribbon glyphs in these three modules: random anchor, 24 h, 48 h, respectively. The two landmark glyphs may label "24 h" and "48 h".
+Below first two only:
+"Rolling follow-up" / "1,050" / "128 futures"
+"24-hour follow-up" / "700" / "128 futures".
+No lower follow-up from 48-hour.
+Delete ALL other sentences including comparator training, recalibration, event enrichment, sample weighting, case-cohort descriptions and database-specific sample quantities. No additional explanatory note. Source details are recorded elsewhere, not in the picture.
+Use a subtle shared pale evaluation region, three distinct color rules for Train/Tuning/Held-out, clear orthogonal connectors and comfortable alignment. Header → three splits; Held-out → test store → three anchor sets; two follow-up subset arrows. No proportional-width ribbons. Reduce empty dead space by making lower two follow-up modules more compact and centering them under their parents. Prefer clean whitespace to more prose. Highest resolution, elegant landscape about 1.5:1.
+
+--- Round 4 ---
+Final editorial styling refinement of this concise cohort architecture. Preserve ALL text, exact counts, percentages and the complete correct branching graph. The numbers and architecture are accepted; improve the visual maturity.
+Thin all colored box borders by about half; reduce corner radii. Use flat near-white tints, no gradients or soft shadows. Replace the filled pill-shaped percentage badges in Train/Tuning/Held-out with simple colored text "80%", "5%", "15%" on the white/tinted card, no filled capsule. Keep numbers bold but slightly reduce overly heavy heading weight.
+Make the top cohort card quieter with a fine outline and slightly smaller headline, preserve "409,297 ICU stays" and "7 databases · 5 countries". Keep exactly seven small unlabelled source glyphs.
+Use delicate teal rules at top of the three anchor modules and a very pale outer evaluation background. Preserve all tiny timelines and 24 h/48 h markers. Follow-up boxes should be small and light, their parent connections unmistakable. Keep all facts: 327,662;20,453;61,182;14,000;three 3,500 sets;32 futures;1,050 and700;128 futures.
+No explanatory text may be added. No proportional-width ribbons, no new labels. Aim for a refined scientific manuscript flow diagram, not a dashboard or presentation slide.
+
+========================================================================
+Model architecture [supp15a_architecture]
+Selected round: 6
+
+--- Round 1 ---
+Create a finished high-end Nature Methods / Nature Machine Intelligence manuscript schematic, redesigned from first principles with sophisticated scientific editorial design. Pure white background, crisp precise flat geometry, elegantly routed thin arrows, sharp Helvetica/Arial, dark ink #21384A for text and structure, muted teal #398D99, blue #668BC4, lavender #A29AC4, warm ochre #CE9554 for event markers, very pale tints only where useful. Confident typography and intentional white space, meaningful visual mechanisms instead of walls of rounded text boxes. No external figure title, panel letters, generic header, watermarks, gradients, shadows, stock hospital icons, people, brains, robots, fake data, gratuitous decoration, or poster style. All provided scientific text and numbers must remain exact and legible. Illustrative motifs may be redrawn freely. Highest available resolution.
+Aspect 1:1.15, near-square portrait. A beautifully crafted transformer architecture plate with two columns: about 62% width for the complete network, 34% for training and parameter notes. Strong visual hierarchy and compact architecture symbolism; avoid an unbroken tower of oversized text boxes. All text below must be included verbatim, line breaks flexible.
+
+LEFT MAIN NETWORK, top to bottom:
+A small colored token strip above text "Input: one ICU stay as a token sequence" / "up to 32,768 tokens; vocabulary of 25,601 tokens".
+Then shallow embedding band: "Token embedding, 25,601 × 768" / "(shared with the output head)".
+Then large pale blue/teal enclosing region titled "Decoder block × 12". Only one block drawn; multiplication marker means repeated 12 times. Inside:
+thin normalization bar "RMSNorm (pre-norm)";
+teal attention mechanism block with a small triangular causal-attention grid and abstract grouped connector motif (don't attempt individually countable head icons). Exact readable text:
+"Grouped-query self-attention, causal"
+"12 query heads, 4 key-value heads, head dimension 64"
+"rotary positions (base 1,000,000); per-head q/k RMSNorm"
+"full attention over the whole context".
+Then circular plus node labelled "Add".
+Thin normalization bar "RMSNorm".
+Lavender feed-forward block with a small widen-and-narrow channel motif and text "SwiGLU feed-forward" / "768 → 3,072 → 768".
+Then circular plus node labelled "Add".
+A dashed residual bypass goes from block input BEFORE first norm around left side directly to first Add, labelled "residual". A second separate bypass goes from first Add BEFORE second norm around left side to second Add, labelled "residual". BOTH bypasses have correct forward arrowheads. Neither skip bypasses the whole transformer.
+Below enclosing region: thin "Final RMSNorm" band, then "Output head, 768 → 25,601" / "(the shared embedding)", then small unnumbered probability-bar glyph labelled "Next-token probabilities" / "softmax over the vocabulary".
+Make all forward arrows vertically aligned, no arrow through text. No change in architecture.
+
+RIGHT COLUMN, aligned with top of decoder: parameter note with bold "123.5 million parameters" and exact supporting line "embedding 19.7M; decoder body 103.8M", which may wrap.
+Below a tidy three-part vertical training dossier headed "Training, once". Small abstract unlabelled motifs help navigate, but all text must be exact:
+First:
+"Data: the train split of all seven databases"
+"Objective: next-token cross-entropy"
+"(goal and ICU-day clock blocks are inputs, not targets)".
+Second:
+"Optimizers: Muon on hidden matrices; AdamW on embeddings and norms"
+"learning rate 6e-4, warm-up then cosine decay"
+"1,990 steps of 524,288 tokens: 997.5M tokens".
+Third:
+"Passes per database set so that membership-inference AUC"
+"stays near 0.555: from 1.59 (MIMIC-IV) to 3.05 (AmsterdamUMCdb)".
+Use slim arrows between training dossier sections. Training is a separate side panel, not placed inline in the inference graph. Keep exact numbers including 123.5 and 997.5M as supplied.
+Crisp magazine-quality scientific art, neat non-crossing residuals, strong visual reading path, all labels comfortably fitted, no fake equations or invented optimizer details.
+
+--- Round 2 ---
+Refine the attached transformer architecture figure. Preserve EVERY exact architecture/training label, number, operation order, palette, all modules and two-column layout. Targeted correction of RESIDUAL CONNECTIONS plus visual hierarchy:
+Erase the existing two dashed residual curves entirely. Redraw TWO clean distinct orthogonal dashed skip paths in the left gutter of the decoder container.
+First residual STARTS at a small branch dot on the central vertical arrow BETWEEN token embedding and first "RMSNorm (pre-norm)", ABOVE the norm bar. It runs horizontally left in free whitespace below the container title, then vertically down the left gutter, then horizontally right with one arrowhead INTO the first circular Add. Do NOT point a residual arrow into the norm. The only arrowhead on this skip is at first Add. Place "residual" beside vertical dashed segment.
+Second residual STARTS at a branch dot on the central vertical connector AFTER first Add but BEFORE the second RMSNorm bar. Route left through whitespace, down the same left gutter below first skip, then right with one arrowhead INTO the second circular Add. Again no arrowhead at its origin and no connection into a norm bar. Label "residual".
+Each skip bypasses exactly one normalized sublayer. Main vertical flow remains embedding → pre-norm → attention → Add → RMSNorm → SwiGLU → Add → final norm → head → probabilities. Dashed lines must not overlap words or graphics.
+Improve visual balance of right column: remove the decorative microchip icon by parameter heading and gear icons by optimizer text; reduce "123.5 million parameters" font about 25%, still semibold, and put "embedding 19.7M; decoder body 103.8M" comfortably under it with proper margins and wrapping. Training heading may be 15% smaller. Keep the three training text groups large and readable, use thin colored side rules instead of big decorative icons. Keep EVERY text line and every numeric fact unchanged, including objective, excluded targets, optimizer details, 6e-4, 1,990, 524,288, 997.5M, 0.555, 1.59 and 3.05.
+No new content or panel label. Maintain sharp small text and exact methods semantics.
+
+--- Round 3 ---
+Make a surgical technical correction to the attached architecture diagram, with every word, number, block and right-hand training column unchanged.
+The current dashed residual wiring is WRONG. Completely ERASE ALL dashed paths and both "residual" labels in the decoder block, including the dangling horizontal segment near the "Decoder block × 12" title and the arrow pointing into the first norm. Preserve solid central arrows.
+Then draw two new clean dashed orthogonal residual bypasses on the RIGHT SIDE of the decoder blocks, not left. Use the source image coordinates approximately (image 1170 wide × 1345 high):
+FIRST skip: start dot at (384, 328) on central input wire above the first norm. Dashed path goes RIGHT to (700,328), DOWN to (700,685), LEFT to (414,685), ending with a LEFTWARD arrowhead INTO the first Add circle. ONLY ONE arrowhead, at Add. Write small "residual" above the upper horizontal segment near (600,315). No arrow points into any norm.
+SECOND skip: start dot at (384,720) on central wire below first Add and above second RMSNorm. Dashed path goes RIGHT to (700,720), DOWN to (700,984), LEFT to (414,984), ending with a LEFTWARD arrowhead INTO second Add circle. ONLY ONE arrowhead, at Add. Write "residual" above its upper horizontal segment near (600,706).
+The bypass lines run just outside the right edges of attention/feedforward blocks, which end near x690, and inside decoder container right edge x708. Make a little extra right gutter if necessary by narrowing attention/feedforward rectangles only, without shrinking text. Do not let wiring cross any text.
+The two residual paths must be continuous from their central source dot all the way to the corresponding plus circle. No dangling segments, no path into a norm, no arrow at origin. This is standard pre-norm transformer x+Attention(Norm(x)), then x+FFN(Norm(x)).
+Do not write equations. Keep every existing scientific label and numeric value, final norm/head/softmax and training content unchanged. White background and fine precise strokes.
+
+--- Round 4 ---
+Transform the attached transformer figure into a CONCISE architecture plate. User wants architecture, not explanatory prose. Entire right-column training paragraphs and optimizer/pass-count descriptions must be DELETED, not rewritten elsewhere. Recompose to a compact portrait-ish 0.9:1 or square canvas with one central architecture spine and a small parameter badge. Keep professional white/ink/teal/lavender scientific style.
+
+ONLY the following text may appear:
+"ICU token sequence"
+"L ≤ 32,768"
+"Vocabulary 25,601"
+"Token embedding"
+"25,601 × 768"
+"Decoder block × 12"
+"RMSNorm"
+"Causal GQA"
+"12 Q / 4 KV; head 64"
+"RoPE 10^6; Q/K RMSNorm"
+"Full-context attention"
+"SwiGLU"
+"768 → 3,072 → 768"
+"Final RMSNorm"
+"Tied output head"
+"768 → 25,601"
+"Softmax"
+"Next-token probabilities"
+"123.5M parameters"
+"19.7M embedding"
+"103.8M decoder"
+"residual" twice.
+Plus symbols at addition nodes, no other prose, no training section, no gears or chip icon. Use concise labels exactly; don't add an external title.
+
+Architecture should be unmistakable:
+token strip → embedding → repeated decoder container → final norm → tied head → softmax probability glyph.
+Inside decoder, use TWO generous SUBLAYER CARDS so residual routing is easy:
+upper teal card includes a thin RMSNorm strip AT ITS TOP, then Causal GQA motif and the three short attention specification labels in its body. Below this entire card, outside it, a circular plus node.
+lower lavender card includes another thin RMSNorm strip AT ITS TOP, then SwiGLU motif and 768 → 3,072 → 768. Below this entire card, outside it, second plus node.
+FIRST residual branches from the central wire BEFORE entering upper card (and before its internal RMSNorm), bypasses the WHOLE upper card, enters first plus.
+SECOND residual branches from central wire AFTER first plus but BEFORE entering lower card (and before its internal RMSNorm), bypasses the WHOLE lower card, enters second plus.
+Use separate thin orthogonal dashed bypass paths in the RIGHT gutter with arrowheads ONLY at the plus nodes. A source branch dot ABOVE each full card, never inside or below its norm. No return loops. All main arrows downward.
+Make the parameter badge small and quiet at upper right of canvas, not a huge typographic headline. Use the freed space for clean wiring, strong grouping and crisp readable labels. Pure architecture, no sentences.
+
+--- Round 5 ---
+Edit this transformer architecture to remove ALL numerical model specifications, as explicitly requested by the user. Preserve the correct central computation and the two pre-norm residual bypasses. No parameter totals, layer counts, context lengths, vocabulary sizes, widths, head counts, head dimensions or RoPE base numbers may remain.
+
+DELETE the entire upper-right parameter badge (123.5M,19.7M,103.8M), the line "L ≤ 32,768 | Vocabulary 25,601", embedding "25,601 × 768", multiplier "× 12", "12 Q / 4 KV; head 64", number 10^6, FFN dimensions "768 → 3,072 → 768", and output dimensions "768 → 25,601". Do not replace any with new numeric specifications. Close the empty space and re-center/crop composition to a compact portrait architecture, about 0.75:1; no large white area where badge was.
+Allowed labels ONLY:
+"ICU token sequence"
+"Token embedding"
+"Decoder stack"
+"RMSNorm" twice
+"Causal grouped-query attention"
+"RoPE"
+"Q/K RMSNorm"
+"SwiGLU"
+"Final RMSNorm"
+"Tied output head"
+"Softmax"
+"Next-token probabilities"
+"residual" twice
+and two plus signs.
+Change existing "Causal GQA" to the full module name above. Put RoPE and Q/K RMSNorm as two small module tags, not a sentence. Remove "Full-context attention" prose because the mechanism is already shown.
+Upper sublayer card includes RMSNorm and attention motif; first skip begins before entering entire upper card and joins first plus. Lower sublayer card includes RMSNorm and SwiGLU; second skip begins after first plus but before entering lower card and joins second plus. Keep these correct paths exactly. Maintain tiny branch dots and arrowheads at plus nodes, no skip inside normalization.
+Tighten cards to concise labels, slightly enlarge meaningful causal-mask and feed-forward glyphs, normalize margins. Clean flat white/teal/lavender/ink manuscript design, no giant title or new footer.
+
+--- Round 6 ---
+Final technical-visual refinement of the attached concise transformer architecture. Preserve all text, all correct pre-norm residual paths, modules, geometry and white space. No model parameters or numerical specifications may be added.
+Change ONLY the small grouped-query motif to the right of the triangular causal mask. The current motif shows one-to-one teal-to-purple pairs, which does not illustrate shared keys/values. Replace those pairs with TWO representative groups: each group has three small teal query squares along the upper row, converging through three fine curved lines onto ONE lavender key/value square below. Thus six teal squares above two lavender squares, grouped three-to-one. Include a small ellipsis to the right to indicate this is a representative repeating motif, not the complete head count. Do not label counts or add Q/K/V words; existing "Causal grouped-query attention" is sufficient. Use tidy spacing and avoid lines through text.
+Keep the triangular mask, RoPE and Q/K RMSNorm tags, SwiGLU motif, both additions, final norm, tied head and softmax unchanged. Slightly mute the overly bright cyan container outlines toward the same restrained teal as the embedding band. No other change, no additional text.
+
+========================================================================
+Simulation and risk estimates [supp15b_simulation]
+Selected round: 4
+
+--- Round 1 ---
+Create a finished high-end Nature Methods / Nature Machine Intelligence manuscript schematic, redesigned from first principles with sophisticated scientific editorial design. Pure white background, crisp precise flat geometry, elegantly routed thin arrows, sharp Helvetica/Arial, dark ink #21384A for text and structure, muted teal #398D99, blue #668BC4, lavender #A29AC4, warm ochre #CE9554 for event markers, very pale tints only where useful. Confident typography and intentional white space, meaningful visual mechanisms instead of walls of rounded text boxes. No external figure title, panel letters, generic header, watermarks, gradients, shadows, stock hospital icons, people, brains, robots, fake data, gratuitous decoration, or poster style. All provided scientific text and numbers must remain exact and legible. Illustrative motifs may be redrawn freely. Highest available resolution.
+Portrait aspect 0.75:1. An elegant precise generative-simulation methods diagram, designed as a computational cycle feeding a future ensemble and two estimators. This must be visually richer than a stack of plain boxes. All text below exact, no omissions.
+At top two adjacent input regions:
+solid-outline larger one "Prompt" / "the stay's record up to the prediction time:" / "prefix, header and timeline; no outcomes;" / "fields documented later set to unknown".
+smaller dashed-outline optional input "What-if, optional" / "a treatment start written at the cutoff," / "or the treatment's tokens never drawn".
+Both feed one compact teal model band: "Didymos" / "next-token probabilities".
+Below a rounded very pale gray enclosing region titled "Constrained sampling". It holds FOUR numbered stations in vertical order; large small circled step numbers are navigational only, not scientific counts. Each station has exact left-aligned text and a tiny candidate-token motif at its right, visually reducing/masking candidate cells. Modest teal/lavender highlights, thin separators:
+1. "Grammar automaton, at every step"
+"block order; each field once;"
+"intervals only between time groups;"
+"canonical order; infusion state".
+2. "Database support"
+"only tokens the prompt's database records".
+3. "Budget and liveness"
+"the end block always fits;"
+"every state can reach the end".
+4. "Renormalize, then draw"
+"temperature 1; no top-k or top-p"
+"append the token; repeat to the end".
+A thin clearly visible looping arrow from the final station runs up OUTSIDE the container and returns into the Didymos model, indicating each appended token prompts another next-token prediction. Avoid arrow overlapping words.
+From final station a downward completion arrow leads to a graceful fan of blue/teal/lavender sampled paths, each beginning at one shared origin. Label "Simulated futures" / "32 or 128 per prediction time". Small ochre event markers may occur along some paths, no numeric axes.
+From the COMPLETE fan use one full-height collector and branch into TWO equally important estimate regions side by side:
+"Sampled estimate" / "share of futures with the event" / "by the horizon".
+"Hazard estimate" / "each future's step hazards of the event," / "accumulated while at risk:" / "the same risk with less Monte Carlo variance".
+Small unnumbered endpoint motif for sampled and staircase cumulative-risk motif for hazard. Do not send one subset of futures to each estimator; both use the full ensemble.
+Both estimator outputs merge into final quiet white region with exact three lines "Forecasts, what-if contrasts," / "synthetic patients, explanations," / "trial design".
+No large headline, panel letter, extra claims. Prioritize crisp long text, logical arrows and balanced white space; no giant decorative illustrations.
+
+--- Round 2 ---
+Polish the attached generative-simulation figure, preserving ALL scientific explanatory text, the four stages, optional what-if input, full loop into Didymos, future fan, both estimates and merged uses. The content is otherwise accepted.
+Remove invented readable text inside the tiny illustrative token glyphs at the RIGHT of the constraint rows. Delete all glyph strings "<BOS>", "time", "vital", "lab", "<EOS>", "A", "B", "C", "D", "E", "med", "end". Replace with EMPTY colored token cells, and gray/dashed empty cells for masked candidates. Do not remove explanatory paragraphs on the left. The tiny word "sample" over the arrow in row 4 may remain because it describes drawing. Do not invent new token names. The graphics are schematic, the paragraphs define the real grammar.
+Make the FOUR numbered stations explicitly sequential by adding small thin downward arrows in the narrow left gutter between stage rows. They must run 1→2→3→4, never connect back upward; existing repeat loop returns from 4 to the model as before.
+Reduce border weight of top input regions and bottom uses region; change the large solid dark teal Didymos band to a very pale teal fill with dark ink "Didymos" and "next-token probabilities". Keep its tiny network motif subtle, no glossy fill.
+Improve the lower two estimator panels: give the long hazard-estimate text a little more width, shrink its staircase motif by 15% and right-align it so ALL text has generous clear space. Keep exact sentence "the same risk with less Monte Carlo variance".
+Preserve both estimates deriving from the ENTIRE future ensemble, sample count "32 or 128 per prediction time", exact "temperature 1; no top-k or top-p", and both inputs. Do not alter any scientific label, count or meaning. Flat near-white backgrounds, crisp line weights and professional manuscript finish.
+
+--- Round 3 ---
+Make the attached generative-simulation illustration radically more concise. Remove all explanatory sentences and replace the text ONLY with the short architectural labels listed below. Preserve the clear scientific flow, semantic palette and miniature process glyphs, but shrink containers around concise content. The result should be a beautiful computational architecture diagram, not a page of paragraphs.
+
+Allowed exact labels:
+"Observed history"
+"Optional what-if"
+"Didymos"
+"Next-token distribution"
+"Constrained sampling"
+"Grammar"
+"Database support"
+"Budget & liveness"
+"Renormalize & draw"
+"Temperature 1"
+"repeat"
+"Simulated futures"
+"32 or 128 samples"
+"Sampled risk"
+"Event frequency"
+"Hazard risk"
+"At-risk hazard accumulation"
+"Forecasts"
+"What-if"
+"Synthetic cohorts"
+"Explanations"
+"Trial design".
+No other written content, no numbered explanatory paragraphs, no outcomes/privacy caveats, no narrative sentence. Top optional input remains dashed. Empty token glyphs only, no invented token strings.
+
+Composition: two small inputs at top merge into compact Didymos model. Under it, the FOUR constraint operations are clearly connected in sequence, using a neat 2×2 folded route or four slim stacked lanes, each with one short label and meaningful token/filter/probability glyph. A thin outside loop from Renormalize & draw returns to the Didymos model, labelled "repeat". A separate completion branch proceeds down to the future ensemble.
+Give the future fan more visual space than before: elegant teal/blue/lavender trajectories with a few ochre event dots, all originate at one point. Clear label 32 or 128 samples.
+ONE collector for the entire ensemble splits into two equal compact outputs: Sampled risk with a small event-count dot matrix, Hazard risk with a small cumulative staircase. Short sublabels as listed.
+Both outputs connect into one slim bottom row of five uses, with tiny abstract glyphs and the exact five application names. No big wordy uses box.
+Use all canvas efficiently, aspect about 0.9:1, reduce excessive border frames, maintain clear arrows and comfortable readable type. Meaning carried primarily by visual structure.
+
+--- Round 4 ---
+Final mechanism-focused refinement of this concise simulation architecture. Preserve all existing short labels, all connectors, optional input, Didymos loop, future fan, risk estimators and the five use names. No explanatory paragraphs or model specifications.
+Replace the four large decorative circular gear/database/clock/bar icons at the left of the four constraint rows with SMALL plain numbered circles "1", "2", "3", "4", using their current semantic colors. Add thin downward arrows BETWEEN these numbered circles so the order Grammar → Database support → Budget & liveness → Renormalize & draw is explicit. Keep row glyphs to the right as blank token cells and probability glyphs.
+Remove "Temperature 1" text above the row-4 arrow: a numerical sampler configuration is not needed here. Keep the arrow alone.
+Replace the bottom "Trial design" FLASK icon (wrong visual association) with a tiny paired-arm trial schematic: two parallel short rows of abstract record cells with a simple grouping bracket, no labels or numerical outcomes. Replace bottom "Synthetic cohorts" people icon with a small matrix of abstract record rows. Replace bottom "Explanations" generic document icon with a few horizontal feature bars, one hollow. Retain all three exact use names under their glyphs. Forecasts and What-if glyphs can remain.
+Keep the entire ensemble feeding both Sampled risk and Hazard risk. Normalize icon line weights and scale so none dominates. White/pale teal/lavender/blue, fine borders, no new data or words.
+
+========================================================================
+Data processing [supp16a_data_processing]
+Selected round: 4
+
+--- Round 1 ---
+Create a finished high-end Nature Methods / Nature Machine Intelligence manuscript schematic, redesigned from first principles with sophisticated scientific editorial design. Pure white background, crisp precise flat geometry, elegantly routed thin arrows, sharp Helvetica/Arial, dark ink #21384A for text and structure, muted teal #398D99, blue #668BC4, lavender #A29AC4, warm ochre #CE9554 for event markers, very pale tints only where useful. Confident typography and intentional white space, meaningful visual mechanisms instead of walls of rounded text boxes. No external figure title, panel letters, generic header, watermarks, gradients, shadows, stock hospital icons, people, brains, robots, fake data, gratuitous decoration, or poster style. All provided scientific text and numbers must remain exact and legible. Illustrative motifs may be redrawn freely. Highest available resolution.
+Landscape aspect 1.3:1. Design a detailed but beautifully clear data-engineering scientific workflow. High-resolution sharp labels; quiet paper aesthetic, precise routing, small schematic table/event glyphs. At top a row of SEVEN small database glyphs, each with the following EXACT database/version/country label, no other names:
+"MIMIC-IV 3.1" / "(USA)"
+"eICU-CRD 2.0" / "(USA, 208 hospitals)"
+"HiRID 1.1.1" / "(Switzerland)"
+"AmsterdamUMCdb 1.0.2" / "(Netherlands)"
+"SICdb 1.0.8" / "(Austria)"
+"NWICU 0.1.0" / "(USA)"
+"INSPIRE 1.4.2" / "(South Korea)".
+Above row small descriptive line "Seven ICU databases, credentialed access". Allow Amsterdam label two lines so text never truncates. Connect all seven glyphs into one collector, then down into a CENTRAL spine of stages occupying the middle 60% width. Put narrow side-note columns on either side near Stage 4. Do not create giant box-in-box frames.
+Five process stages and one split step in this EXACT order:
+"Stage 1: staging"
+"native layouts; Parquet mirror with row-count parity".
+"Stage 2: CLIF tables per database"
+"official ETLs for MIMIC-IV and AmsterdamUMCdb;"
+"mapping-table adapters for the other five; normalized to CLIF 3.0".
+"Stage 3: quality assurance"
+"schema and vocabulary validation; cross-database distribution checks;"
+"reconciliation with the community MEDS pipelines".
+"Stage 4: harmonized MEDS"
+"one subject per adult ICU stay, from 48 h before ICU admission to ICU discharge;"
+"common event codes; canonical units".
+"Splits within each database, grouped by patient"
+"train 80%, tuning 5%, held-out 15%".
+"Stage 5: tokenization"
+"vocabulary fitted on the train split: 25,601 tokens;"
+"value deciles per event code; 12 interval tokens;"
+"the grammar accepts all 409,297 stays; lossless round trip".
+Stage 4 teal tint, Stage 5 lavender tint. Others white with thin colored left rule, minimal light-gray dividers, small exact stage numbers integrated into headings. Add tiny unlabelled Parquet grid, aligned table and token-ribbon glyphs only where useful. ALL text included, size consistent.
+
+LEFT note next to Stage 4, dotted arrow INTO Stage 4:
+"Uniform rules"
+"hourly medians for monitor streams; one row per infusion rate change;"
+"doses only with weights charted before them;"
+"fields documented later masked until documented".
+RIGHT note, arrow FROM Stage 4:
+"Derived concepts, used as labels only"
+"KDIGO AKI stage; ventilation, vasopressor and RRT episodes;"
+"norepinephrine equivalents; first-day SOFA; Adult Sepsis Event".
+Long notes may be tall and narrow with careful word wrapping.
+
+At bottom three evenly spaced output regions with exact labels:
+"Train: 327,662 stays"
+"Didymos's training, without task labels;"
+"comparators' training, with labels".
+"Tuning: 20,453 stays"
+"model selection, recalibration".
+"Held-out: 61,182 stays"
+"a test store of 2,000 per database".
+All THREE outputs connect from Stage 5, with no arrows among outputs.
+From Derived concepts note, two thin dotted routes labelled "labels" travel in external gutters to Train's comparator-training line and to Held-out, NOT to Tuning and NOT to Didymos's task-free training.
+All arrows must connect correct nodes; splitting precedes fitting vocabulary. Preserve exact stage text, counts and versions. No invented quality scores, example patient data, extra countries or metrics. Use full canvas well, long scientific labels readable, never place connectors behind text.
+
+--- Round 2 ---
+Polish the attached Didymos data-processing figure. Preserve the full new design and ALL exact database names/versions/countries, five stages, split step, side-note text, output counts and all numbers. Correct TWO weak points.
+1. In Stage 5's decorative token ribbon, erase invented token strings "[CLS]", "LAB", "12.4", "[Δt]", "MED". Keep only EMPTY small teal/blue/lavender token cells and the existing ellipsis. No numerical or named fake example tokens. All real vocabulary descriptions on left remain unchanged.
+2. Correct the TWO dotted "labels" arrows. BOTH must originate from the SAME "Derived concepts, used as labels only" side-note box. The existing dotted train arrow misleadingly starts near Stage 5; erase it entirely. Redraw this exact topology with one shared dotted trunk: from BOTTOM of Derived concepts box, go vertically down in the right outer gutter to the horizontal whitespace immediately above output boxes; branch one short dotted arrow straight down into HELD-OUT, and extend the other dotted path LEFT in that whitespace BELOW Stage 5, then down into the TRAIN box at its "comparators' training, with labels" text region. The left branch is continuous back to the Derived concepts box and must NOT touch Stage 5 or the solid train/tuning/heldout branching line. If needed make 30 pixels extra vertical gap under Stage 5 so dotted labels trunk and solid output trunk are on separate horizontal tracks. No dotted link to Tuning or to the Didymos without-labels line.
+Each dotted branch labelled small "labels" once. Thin light ink dashes, tiny solid arrowhead at destination. Main solid flow: databases → stages 1–4 → patient-grouped split → Stage 5 → all three outputs.
+For polish, reduce decorative database cylinder size slightly to give labels more breathing room; thin heavy output box borders; keep long side notes comfortably wrapped and no text touched by arrows.
+Do not alter any label, number, factual content or add new claims. No cross-references or panel letters.
+
+--- Round 3 ---
+Edit the attached scientific data pipeline into a concise ARCHITECTURAL schematic. The user explicitly wants explanatory text removed. Delete all implementation paragraphs, field lists, claims, testing prose and descriptions from the diagram. Do not paraphrase them into new paragraphs. Keep meaningful icons, module names, data provenance and essential cohort counts. Recompose with the freed space so the result is visually balanced and readable, landscape about 1.5:1.
+
+ONLY these labels may appear:
+top "7 ICU databases" and "409,297 stays".
+Seven source glyph labels:
+"MIMIC-IV 3.1"
+"eICU-CRD 2.0"
+"HiRID 1.1.1"
+"AmsterdamUMCdb 1.0.2"
+"SICdb 1.0.8"
+"NWICU 0.1.0"
+"INSPIRE 1.4.2".
+Remove countries and hospital count for compactness.
+Main vertical sequence:
+"Staging" → "CLIF 3.0" → "Quality checks" → "Harmonized MEDS" → "Patient-level split" / "80% / 5% / 15%" → "Tokenization".
+No extra Stage numbers or descriptions.
+Two short side modules:
+"Temporal rules" with dotted arrow INTO Harmonized MEDS.
+"Outcome labels" with arrow FROM Harmonized MEDS.
+Bottom outputs:
+"Train" / "327,662" / "Didymos: no task labels" / "Comparators: with labels".
+"Tuning" / "20,453".
+"Held-out" / "61,182" / "Test store: 2,000 per database".
+Two dotted arrows labelled "labels" must both originate from Outcome labels. One goes to TRAIN's Comparators line; one to Held-out. None to Tuning or Didymos's training. Keep the source of the dotted lines unambiguous; route in separate gutters outside central stages. Solid arrows from Tokenization split into all three outputs.
+Keep attractive abstract tables, record and token motifs, but make them compact and meaningful; NO readable token examples or invented data. Preserve key ordering: split BEFORE tokenization. Pure white and pale teal/blue/lavender, thin rules, generous space, clear labels. Do not add summaries, captions, notes, legends, parameters, or decorative paragraphs.
+
+--- Round 4 ---
+Final editorial simplification of attached concise data architecture. Preserve all seven source names/versions, all main stages, patient-level split percentages, output counts and palette.
+Remove BOTH long dotted vertical arrows labelled "labels" that lead into Train and Held-out. Delete both small "labels" words. Do not replace them with any new routes. These explanatory transfer lines clutter and confuse the main architecture.
+Keep "Outcome labels" as a TERMINAL side-output box, connected only by its existing solid arrow FROM Harmonized MEDS. It has NO outgoing arrows.
+Keep "Temporal rules" as a side input connected only by its existing short dotted arrow INTO Harmonized MEDS. It has NO downward arrow and NO connection to any dataset output.
+Simplify Train text to ONLY "Train" and "327,662": remove "Didymos: no task labels" and "Comparators: with labels". Keep Tuning 20,453 and Held-out 61,182. In held-out retain short "Test store: 2,000 per database".
+Remove the short vertical stem between the top "7 ICU databases" title and the Amsterdam database glyph; top title is a group heading, not an eighth source. All seven existing sources still join the collector BELOW the icons and then feed Staging.
+Main chain must remain Staging → CLIF 3.0 → Quality checks → Harmonized MEDS → Patient-level split (80%,5%,15%) → Tokenization → Train/Tuning/Held-out. No source is removed, no count changes.
+Add a comfortable white margin under bottom boxes (they currently touch image edge), normalize their widths and baseline. Reduce border weight slightly, keep pure flat white/pale tints. No new explanatory text, model parameters, footers or long arrows across output cards.
+
+========================================================================
+Token sequence [supp16b_sequence]
+Selected round: 4
+
+--- Round 1 ---
+Create a finished high-end Nature Methods / Nature Machine Intelligence manuscript schematic, redesigned from first principles with sophisticated scientific editorial design. Pure white background, crisp precise flat geometry, elegantly routed thin arrows, sharp Helvetica/Arial, dark ink #21384A for text and structure, muted teal #398D99, blue #668BC4, lavender #A29AC4, warm ochre #CE9554 for event markers, very pale tints only where useful. Confident typography and intentional white space, meaningful visual mechanisms instead of walls of rounded text boxes. No external figure title, panel letters, generic header, watermarks, gradients, shadows, stock hospital icons, people, brains, robots, fake data, gratuitous decoration, or poster style. All provided scientific text and numbers must remain exact and legible. Illustrative motifs may be redrawn freely. Highest available resolution.
+Landscape aspect 2:1. A polished modern scientific token-grammar diagram: three horizontal bands, each with its own subtly colored left-side phase label. Use precisely drawn slim token modules, color coding and nested mini-cells to explain sequence syntax. Hierarchy and beautiful alignment matter. Do not make a huge grid of text-filled equal boxes. No numerical data invented. Every supplied label below included exactly; ellipsis only where specified.
+TOP band phase label "Before the timeline". Sequence from left to right:
+small ink-outline start token "[BOS]" →
+neutral prefix module "Prefix" / "dataset, site, sex, 5-year age band," / "era, race, ethnicity" / "270 tokens" →
+neutral header module "Header" / "ICU unit type, admission source," / "surgical status, diagnosis group," / "admission type, prior ICU stays" / "96 tokens" →
+dashed lavender optional module "Goal, optional" / "outcomes to condition on" / "50 tokens; never a target".
+Use tiny neutral token tabs at lower edge of prefix and header, no invented readable examples. Connect top band into middle band with a short thin orthogonal arrow routed at right edge, no reading-order reversal.
+
+MIDDLE band phase label "Timeline". Chronological left-to-right sequence:
+small "[TL]" module with body "from 48 h before ICU admission" / "to ICU discharge" →
+largest teal time-group module "Time group" / "events within 1 minute," / "in canonical order:" / "event code with value decile" / "19,774 event tokens" →
+narrow blue interval module "Interval" / "one of 12 bins," / "1-5 min to 7 d+" →
+smaller teal module "Time group" (no added body) →
+neutral-lavender clock module "ICU-day clock" / "day number and each" / "treatment's status;" / "written by the grammar" / "40 tokens" →
+ellipsis "...".
+Use small event cells inside time-group motif and a restrained clock-ring mark for clock, no numerical clock-face labels. Intervals are BETWEEN time groups, never inside time groups.
+
+BOTTOM band phase "After the timeline": "[END] end block" / "hospital discharge, death," / "billing diagnoses" / "500 tokens" → small "[EOS]". A thin orthogonal connector leads FROM the END of the middle band to the START of this bottom sequence in outer whitespace. It must not leap from an unrelated middle block.
+To the right of bottom band's end modules, a carefully integrated white note with thin gray side rule contains exact text:
+"Longer stays continue in further windows of up to 32,768 tokens"
+"that repeat the prefix and header and open with a state summary."
+"Diagnoses and procedures use 3,057 sub-tokens."
+Keep all counts exact: 270, 96, 50, 19,774, 12, 40, 500, 32,768, 3,057. Brackets MUST be square [ ], not < >.
+Muted color coding for context / events / intervals / clock, pale backgrounds, fine outlines and connectors, balanced readable typography. Compact but legible, professional methods figure, no title or panel letter.
+
+--- Round 2 ---
+Correct and polish the attached token-sequence figure while preserving every label, token count, color, module and three-band layout.
+CRITICAL: The current arrow from "Goal, optional" points downward into "ICU-day clock". This is wrong. DELETE that entire right-side arrow from Goal to clock.
+Replace with a proper RETURN PATH from the END of the top band to the START of the middle band:
+From Goal's RIGHT edge go a short distance right into whitespace, then down only to the horizontal GAP BETWEEN the top and middle bands (about y290 in the 887-high source). Turn LEFT and run through that empty gap across the page to directly ABOVE the [TL] module (near x330). Then turn DOWN with one arrowhead into the TOP of [TL]. No line or arrow goes into the ICU-day clock from above. This long return path stays entirely between bands, never behind text.
+Make Goal truly optional: change the short Header→Goal connector to a dotted arrow, and add a short solid drop from Header's BOTTOM edge down to JOIN that same horizontal return path. Thus Header can continue to [TL] directly, or optionally via Goal; both paths join before [TL]. Goal outline stays dashed and its exact text remains.
+Preserve middle band left-to-right [TL] → Time group → Interval → Time group → ICU-day clock → ellipsis. Preserve the existing correct return from middle ellipsis to [END] then [EOS]. No shortcut into another time block.
+Visual polish: reduce the large left-hand phase-label panels' font size by about 12%, retaining readable "Before the timeline", "Timeline", "After the timeline", and thin the main module borders to reduce visual heaviness. Keep all other typography and generous spacing. Bottom explanatory note remains complete.
+Check all exact counts intact: 270, 96, 50, 19,774, 12 bins, 40, 500, 32,768, 3,057. Square brackets only. No new examples, names, results or title.
+
+--- Round 3 ---
+Edit the attached scientific token architecture into a MUCH MORE CONCISE structural diagram. User explicitly wants all explanatory prose deleted, especially the ENTIRE three-line bottom note about longer stays, 32,768-token windows, repeated prefix/header and 3,057 sub-tokens. DELETE that entire note and its vertical gray rule; do not move, paraphrase or replace it elsewhere.
+
+Keep the semantic sequence and corrected return arrows, but remove all long field descriptions inside modules. ONLY use the following exact concise labels:
+phase "Context":
+"[BOS]" → "Prefix" / "270 tokens" → "Header" / "96 tokens" → dashed "Goal, optional" / "50 tokens" / "input only".
+There is a solid Header bypass into the next phase, plus dotted Header→Goal and a return from Goal joining the same path before [TL].
+phase "Timeline":
+"[TL]" / "−48 h to ICU discharge" →
+"Time group" / "≤1 min" / "19,774 event tokens" →
+"Interval" / "12 bins" / "1–5 min to 7 d+" →
+"Time group" →
+"ICU-day clock" / "40 tokens" →
+"...".
+phase "Termination":
+"[END]" / "500 tokens" → "[EOS]".
+DELETE every other field enumeration and descriptive sentence: no dataset/site/sex lists, no header admission-field lists, no outcome-conditioning explanation, no canonical-order paragraph, no treatment-status paragraph, no discharge/death/billing list. Those details belong outside the architecture image.
+Replace the three oversized left phase-label panels with SMALL understated phase labels and thin colored rules. Shrink all boxes to the concise content, retain small abstract token motifs, no invented token names. Make the overall canvas tighter, landscape about 2.4:1, with three compact horizontal bands and well-balanced white space. The bottom termination row should be a short centered chain, not a large blank region where the note was.
+Ensure top return joins [TL], never ICU-day clock. The middle-row ellipsis connects to [END], then [EOS]. Preserve correct optional goal bypass. All square brackets exact; no extra title, legend, footer or narrative sentence. Crisp ink/teal/lavender/blue typography and fine arrows, architecture first.
+
+--- Round 4 ---
+Final surgical refinement of attached concise token architecture. Preserve every current concise label, count, optional Goal bypass, context-to-TL return path, token motifs and colors. No explanatory note or model specifications may reappear.
+Fix the BOTTOM return path: currently the arrow from the middle-row ellipsis points into the word "Termination", treating a phase label like a process node. Delete that downward arrow into the phase word AND the horizontal arrow from that phase word into END.
+Instead route the middle-row ellipsis down into the inter-band gap, horizontally left only as far as the CENTER of the [END] box, then directly DOWN with an arrowhead into the TOP EDGE of [END]. This connection must never touch a phase heading. Preserve [END] → [EOS].
+Move the "Termination" phase label and its short ochre vertical rule to the far left, exactly aligned with "Context" and "Timeline". No arrows connect to any phase label. Keep bottom END/EOS chain compact and balanced.
+All counts remain exact: Prefix 270, Header 96, Goal 50 input only, events 19,774 and ≤1 min, interval 12 bins/1–5 min to 7 d+, clock 40, END 500. Keep "−48 h to ICU discharge". Same clean wide manuscript style, no new text.

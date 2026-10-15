@@ -1,0 +1,22 @@
+source,itemid,specimen,unit_in,lab_category,factor,reference_unit,lab_order_category,lab_specimen_category,provenance
+labevents,51221,,%,hematocrit,1,%,cbc,plasma_blood,d_labitems 51221 Hematocrit (Blood/Hematology); mimic-code complete_blood_count
+labevents,50810,,%,hematocrit,1,%,cbc,plasma_blood,"d_labitems 50810 Hematocrit, Calculated (Blood Gas); mimic-code bg"
+labevents,50802,,mEq/L,ext_base_excess,1,mmol/L,blood_gas,plasma_blood,d_labitems 50802 Base Excess (Blood Gas); mimic-code bg baseexcess
+labevents,50805,,%,ext_carboxyhemoglobin,1,%,blood_gas,plasma_blood,d_labitems 50805 Carboxyhemoglobin (Blood Gas); mimic-code bg
+labevents,50814,,%,ext_methemoglobin,1,%,blood_gas,plasma_blood,d_labitems 50814 Methemoglobin (Blood Gas); mimic-code bg
+labevents,50821,MIX.,mm Hg,po2_mixed_venous,1,mmHg,blood_gas,plasma_blood,d_labitems 50821 pO2 with specimen MIX. (itemid 52033); CLIF-MIMIC patch 0002 removes it from po2_arterial
+labevents,51214,,mg/dL,fibrinogen,1,mg/dL,coags,plasma_blood,"d_labitems 51214 Fibrinogen, Functional; mimic-code coagulation"
+labevents,51196,,ng/mL FEU,d_dimer,0.001,ug/mL,coags,plasma_blood,d_labitems 51196 D-Dimer (ng/mL FEU); mimic-code coagulation (50915 is not used there)
+labevents,50956,,IU/L,lipase,1,U/L,misc,plasma_blood,d_labitems 50956 Lipase
+labevents,50867,,IU/L,amylase,1,U/L,misc,plasma_blood,d_labitems 50867 Amylase; mimic-code enzyme
+labevents,50866,,umol/L,ext_ammonia,1,umol/L,misc,plasma_blood,d_labitems 50866 Ammonia
+labevents,50910,,IU/L,ext_creatine_kinase,1,U/L,misc,plasma_blood,d_labitems 50910 Creatine Kinase (CK); mimic-code enzyme ck_cpk
+labevents,50911,,ng/mL,ckmb,1,ng/mL,cardiac,plasma_blood,"d_labitems 50911 Creatine Kinase, MB Isoenzyme; mimic-code cardiac_marker"
+labevents,50963,,pg/mL,nt_pro_bnp,1,pg/mL,cardiac,plasma_blood,d_labitems 50963 NTproBNP; mimic-code cardiac_marker
+labevents,50993,,uIU/mL,tsh,1,mIU/L,tft,plasma_blood,d_labitems 50993 Thyroid Stimulating Hormone (uIU/mL = mIU/L)
+labevents,50995,,ng/dL,free_t4,1,ng/dL,tft,plasma_blood,"d_labitems 50995 Thyroxine (T4), Free"
+labevents,51144,,%,ext_bands_percent,1,%,cbc,plasma_blood,d_labitems 51144 Bands; mimic-code blood_differential
+labevents,50927,,IU/L,ext_ggt,1,U/L,lft,plasma_blood,d_labitems 50927 Gamma Glutamyltransferase; mimic-code enzyme
+labevents,50907,,mg/dL,cholesterol,1,mg/dL,misc,plasma_blood,"d_labitems 50907 Cholesterol, Total"
+labevents,51000,,mg/dL,triglycerides,1,mg/dL,misc,plasma_blood,d_labitems 51000 Triglycerides
+chartevents,225664,,*,glucose,1,mg/dL,poc,plasma_blood,d_items 225664 Glucose finger stick (range 70-100); point-of-care glucose (no unit charted; mg/dL)

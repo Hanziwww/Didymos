@@ -1,0 +1,102 @@
+# Canonical lab conventions enforced in S2b for every dataset (reference ETLs and our adapters alike).
+#
+# The ELF code LAB//<lab_category>//<reference_unit>//<lab_order_category> must not change with a site's
+# panel conventions or unit spelling, otherwise one analyte becomes several codes. Therefore:
+#  * reference_unit := the CLIF 3.0 reference unit (clifpy labs schema `lab_reference_units`; `unit` of
+#    declared ext_ categories in extensions.yaml). The source unit must be that unit or one of clifpy's
+#    `allowed_unit_variants` for it (plus `equivalent_units` below), otherwise harmonization fails;
+#  * lab_order_category := `order_category` below, except values listed in `keep_order_categories`, which
+#    encode a genuine method difference and are kept when the source provides them.
+order_category:
+  # --- CLIF mCIDE labs/clif_lab_categories.csv (2.1), with clifpy's 2.1->3.0 renames ---
+  albumin: lft
+  alkaline_phosphatase: lft
+  alt: lft
+  ast: lft
+  basophils_percent: cbc
+  basophils_absolute: cbc
+  bicarbonate: bmp
+  bilirubin_total: lft
+  bilirubin_conjugated: lft
+  bilirubin_unconjugated: lft
+  bun: bmp
+  calcium_total: bmp
+  calcium_ionized: misc
+  chloride: bmp
+  creatinine: bmp
+  crp: misc
+  eosinophils_percent: cbc
+  eosinophils_absolute: cbc
+  esr: misc
+  ferritin: misc
+  glucose_serum: bmp
+  hemoglobin: cbc
+  phosphate: misc
+  inr: coags
+  lactate: misc
+  ldh: misc
+  lymphocytes_percent: cbc
+  lymphocytes_absolute: misc
+  magnesium: misc
+  monocytes_percent: cbc
+  monocytes_absolute: cbc
+  neutrophils_percent: cbc
+  neutrophils_absolute: cbc
+  pco2_arterial: blood_gas
+  po2_arterial: blood_gas
+  pco2_venous: blood_gas
+  ph_arterial: blood_gas
+  ph_venous: blood_gas
+  platelet_count: cbc
+  potassium: bmp
+  procalcitonin: misc
+  pt: coags
+  ptt: coags
+  so2_arterial: blood_gas
+  so2_mixed_venous: blood_gas
+  so2_central_venous: blood_gas
+  sodium: bmp
+  total_protein: lft
+  troponin_i: misc
+  troponin_t: misc
+  wbc: cbc
+  # --- declared here: CLIF 3.0 categories the 2.1 mCIDE file does not list ---
+  glucose: poc                     # 3.0 rename of glucose_fingerstick; 3.0 adds the poc order category
+  hematocrit: cbc
+  bilirubin: lft
+  ckmb: cardiac
+  bnp: cardiac
+  nt_pro_bnp: cardiac
+  probnp: cardiac
+  fibrinogen: coags
+  d_dimer: coags
+  co2: bmp
+  triglycerides: misc
+  cholesterol: misc
+  tsh: tft
+  free_t4: tft
+  free_t3: tft
+  lipase: misc
+  amylase: misc
+  po2_mixed_venous: blood_gas      # as so2_mixed_venous in mCIDE
+  cystatin_c: misc
+  interleukin_06: misc
+  # --- declared ext_ categories (extensions.yaml) ---
+  ext_base_excess: blood_gas
+  ext_methemoglobin: blood_gas
+  ext_carboxyhemoglobin: blood_gas
+  ext_creatine_kinase: misc
+  ext_ggt: lft
+  ext_ammonia: misc
+  ext_bands_percent: cbc
+keep_order_categories:
+  # serum total CO2 from the chemistry panel vs HCO3 calculated by the blood-gas analyser
+  bicarbonate: [bmp, blood_gas]
+equivalent_units:
+  # mEq/L = mmol/L for monovalent ions only (not for Mg/Ca, whose mEq/L differ by the valence factor)
+  mmol/l:
+    categories: [sodium, potassium, chloride, bicarbonate, co2, ext_base_excess]
+    units: [meq/l]
+  ng/ml:
+    categories: [ckmb]
+    units: [ug/l, mcg/l]

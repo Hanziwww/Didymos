@@ -1,0 +1,4 @@
+Endpoint,Groups
+"AKI stage >= 2, 48 h","vitals|0-6h (0.51, 0.53); fluids_output|0-6h (0.28, 0.37); statics (0.24, -0.01); labs|0-6h (0.23, 0.28); labs|6-24h (0.20, 0.17); fluids_output|>24h (0.19, 0.37)"
+"Hypotension, 4 h","vitals|0-6h (0.80, 1.55); fluids_output|0-6h (0.23, 0.22); other|0-6h (0.21, 0.20); vitals|6-24h (0.21, 0.18); other_meds|0-6h (0.20, 0.17); labs|0-6h (0.17, -0.00)"
+"New IMV, 24 h","vitals|0-6h (0.39, 0.24); labs|0-6h (0.32, 0.38); other|0-6h (0.28, 0.29); fluids_output|0-6h (0.26, 0.41); statics (0.26, 0.04); other_meds|0-6h (0.23, 0.32)"

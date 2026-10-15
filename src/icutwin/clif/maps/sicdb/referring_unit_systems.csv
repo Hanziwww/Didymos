@@ -1,0 +1,29 @@
+referring_unit,system,provenance
+Unfallchirurgie,trauma,trauma surgery department (non-operative trauma)
+Unknown,,
+Herzchirurgie,cardiovascular,cardiac surgery department
+Allgemeinchirurgie,,general surgery: no organ system
+Gefäßchirurgie,cardiovascular,vascular surgery department
+Neurologie,neurologic,neurology
+HNO,other,ear-nose-throat
+Orthopädie,musculoskeletal_skin,orthopaedics
+Kieferchirurgie,other,maxillofacial surgery
+2. Medizin,,internal medicine department: no organ system
+3. Medizin,,internal medicine department: no organ system
+Zentrale Notaufnahme,,emergency department
+Urologie,genitourinary,urology
+1. Medizin,,internal medicine department: no organ system
+Dermatologie,musculoskeletal_skin,dermatology (APACHE musculoskeletal/skin)
+Gynäkologie,gynecologic,gynaecology (a medical admission: genitourinary)
+Pneumologie,respiratory,pulmonology
+Externes Krankenhaus,,external hospital
+Zentralambulanz (ZANE) CDK,,central outpatient clinic
+Externe Intensivstation,,external ICU
+Intensivstation 2. Medizin,,internal medicine ICU
+Neurochirurgie,neurologic,neurosurgery department (non-operative)
+Psychiatrie,,psychiatry: no organ system
+Angiologie,cardiovascular,angiology
+Augenheilkunde,other,ophthalmology
+Kinderchirurgie,,paediatric surgery
+Pädiatrie,,paediatrics
+Endokrinologie,metabolic_endocrine,endocrinology

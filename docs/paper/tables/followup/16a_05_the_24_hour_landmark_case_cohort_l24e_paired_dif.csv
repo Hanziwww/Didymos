@@ -1,0 +1,8 @@
+Endpoint,Database,"minus LightGBM, transferred","minus LightGBM, local",minus TabPFN-3.5,Best clinical score (AUROC; the sampled estimate minus it)
+In-hospital death,RICD,-0.060 (-0.109 to -0.012),-0.107 (-0.148 to -0.066),-0.081 (-0.124 to -0.037),RICD's recorded SOFA: 0.714; sampled minus it -0.054 (-0.102 to -0.007)
+ICU death,RICD,0.015 (-0.037 to 0.066),-0.089 (-0.128 to -0.053),-0.025 (-0.075 to 0.022),RICD's recorded SOFA: 0.752; sampled minus it -0.065 (-0.114 to -0.020)
+ICU stay > 7 days,RICD,0.027 (-0.064 to 0.110),-0.218 (-0.282 to -0.149),0.040 (-0.051 to 0.122),OASIS: 0.665; sampled minus it -0.095 (-0.160 to -0.027)
+"Decompensation, 24 h",zigongICU,0.064 (0.020 to 0.115),0.117 (0.049 to 0.188),0.019 (-0.019 to 0.056),SAPS II: 0.727; sampled minus it 0.067 (0.003 to 0.137)
+In-hospital death,zigongICU,0.022 (-0.011 to 0.053),0.008 (-0.027 to 0.048),-0.004 (-0.030 to 0.022),SAPS II: 0.664; sampled minus it 0.054 (0.012 to 0.095)
+ICU death,zigongICU,0.044 (0.011 to 0.075),-0.020 (-0.052 to 0.014),0.010 (-0.014 to 0.036),SAPS II: 0.677; sampled minus it 0.085 (0.041 to 0.126)
+ICU stay > 7 days,zigongICU,-0.072 (-0.130 to -0.012),-0.101 (-0.160 to -0.044),-0.068 (-0.129 to -0.008),OASIS: 0.593; sampled minus it 0.011 (-0.061 to 0.086)

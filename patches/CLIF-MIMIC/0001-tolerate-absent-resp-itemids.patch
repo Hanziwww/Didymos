@@ -1,0 +1,17 @@
+diff --git a/src/tables/respiratory_support.py b/src/tables/respiratory_support.py
+index 84d2d08..419494a 100644
+--- a/src/tables/respiratory_support.py
++++ b/src/tables/respiratory_support.py
+@@ -262,6 +262,12 @@ def pivoted_wider_and_coalesced(
+         .rename_axis(None, axis=1)
+     )
+     resp_wider_in_ids = convert_and_sort_datetime(resp_wider_in_ids)
++    # icutwin patch: small (subset) extracts may lack rare itemids; add them as empty columns so the
++    # coalescing below behaves exactly as on the full data, where every referenced itemid exists.
++    for _itemid in (220339, 223834, 223849, 224421, 224422, 224685, 224686, 224688, 224690, 224691,
++                    225448, 226237, 227287, 227577, 227579, 227581, 227582, 229314):
++        if _itemid not in resp_wider_in_ids.columns:
++            resp_wider_in_ids[_itemid] = float("nan")
+     # implement the coalease logic
+     resp_wider_in_ids["tracheostomy"] = resp_wider_in_ids[225448].fillna(
+         resp_wider_in_ids[226237]

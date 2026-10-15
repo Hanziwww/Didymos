@@ -1,0 +1,2 @@
+Endpoint,Anchors,Deletion drop: editing,IG,Attention rollout,Attention x grad,Random,IG vs editing (rho / top-3),Rollout vs editing,Attn x grad vs editing,IG completeness error
+ICU death,200,1.883,0.815,0.673,0.165,0.079,0.16 / 0.37,0.13 / 0.35,0.05 / 0.31,0.03

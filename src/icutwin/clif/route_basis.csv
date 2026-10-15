@@ -1,0 +1,15 @@
+dataset,table,med_route_name,basis,why
+mimic,medication_admin_intermittent,re:^[0-9]{2}-,reported_class,"an inputevents record's MetaVision order category, which CLIF-MIMIC maps to a route ('Non IV' to im)"
+mimic,medication_admin_intermittent,*,reported,the eMAR route
+mimic,medication_admin_continuous,*,reported_class,"the MetaVision order category (drips, fluids, parenteral nutrition: intravenous)"
+aumc,medication_admin_intermittent,*,reported_class,"the order category: 'Injecties ...' covers intravenous, subcutaneous and intramuscular injections, 'Niet iv ...' every non-intravenous route"
+eicu,medication_orders,*,reported,the order's route
+hirid,medication_admin_intermittent,*,reported,the pharma record's route
+inspire,medication_admin_intermittent,iv,reported_class,'iv' covers every parenteral injection (subcutaneous and intramuscular too)
+inspire,medication_admin_intermittent,po,reported,oral
+nwicu,medication_admin_intermittent,Injection,inferred,"'Injection' states no route: subcutaneous (CLIF im) for insulin and heparin up to 7,500 units, intravenous otherwise (adapters/nwicu.py)"
+nwicu,medication_admin_intermittent,*,reported,the prescription's route
+ricd,medication_admin_intermittent,*,reported,the prescription's route
+ricd,medication_admin_continuous,*,reported,the prescription's route (intravenous)
+zigong,medication_admin_intermittent,<none>,inferred,"the prescription states no route: the product's form in its name (injection, tablet, capsule, inhalation), subcutaneous (CLIF im) for insulin and the low-molecular-weight heparins (adapters/zigong.py)"
+*,*,<none>,assumed,the source states no route: an infusion record is taken as intravenous

@@ -1,0 +1,287 @@
+panel,series,subset,program,auroc,n,events
+matrix,"Didymos, hazard estimate",R128,decompensation@1440,0.9600876445984622,1045,221
+matrix,"Didymos, hazard estimate",R128,imv_onset@1440,0.8862647123826524,744,77
+matrix,"Didymos, hazard estimate",R128,vasopressor_onset@1440,0.9030691501694188,802,107
+matrix,"Didymos, hazard estimate",R128,rrt_onset@2880,0.9589636925725856,979,96
+matrix,"Didymos, hazard estimate",L24x,icu_death@-1,0.9241340645201517,500,104
+matrix,"Didymos, hazard estimate",L24x,decompensation@1440,0.9818573318527049,698,48
+matrix,"Didymos, sampled estimate",R128,decompensation@1440,0.9174649589764524,1045,221
+matrix,"Didymos, sampled estimate",R128,imv_onset@1440,0.8548533433337236,742,77
+matrix,"Didymos, sampled estimate",R128,vasopressor_onset@1440,0.9061134109864811,802,107
+matrix,"Didymos, sampled estimate",R128,rrt_onset@2880,0.9506380293304721,976,94
+matrix,"Didymos, sampled estimate",R128,aki_2@2880,0.8877067746857511,884,188
+matrix,"Didymos, sampled estimate",R128,sepsis_ase@1440,0.965970906823514,1045,8
+matrix,"Didymos, sampled estimate",R128,hypotension@240,0.8741892801259711,914,70
+matrix,"Didymos, sampled estimate",R128,hyperkalemia_top@1440,0.83139435702114,923,92
+matrix,"Didymos, sampled estimate",R128,thrombocytopenia@2880,0.9324501635777896,890,42
+matrix,"Didymos, sampled estimate",L24x,icu_death@-1,0.910680675523276,500,104
+matrix,"Didymos, sampled estimate",L24x,hospital_death@0,0.8825805819535614,700,346
+matrix,"Didymos, sampled estimate",L24x,remaining_los_gt_7d,0.8638034231771972,696,148
+matrix,"Didymos, sampled estimate",L24x,decompensation@1440,0.9806106050012338,698,48
+matrix,Didymos probe,R128,decompensation@1440,0.9540019437429175,1045,221
+matrix,Didymos probe,R128,imv_onset@1440,0.7878626372139865,742,77
+matrix,Didymos probe,R128,vasopressor_onset@1440,0.7381971499021558,802,107
+matrix,Didymos probe,R128,rrt_onset@2880,0.9280549644129256,976,94
+matrix,Didymos probe,R128,aki_2@2880,0.8155663743920379,884,188
+matrix,Didymos probe,R128,sepsis_ase@1440,0.9519871098564835,1045,8
+matrix,Didymos probe,R128,hypotension@240,0.8611278506696154,914,70
+matrix,Didymos probe,R128,hyperkalemia_top@1440,0.7460433621005197,923,92
+matrix,Didymos probe,R128,thrombocytopenia@2880,0.8647155526834666,890,42
+matrix,Didymos probe,L24x,icu_death@-1,0.9031218767952294,500,104
+matrix,Didymos probe,L24x,hospital_death@0,0.8672642957447508,700,346
+matrix,Didymos probe,L24x,remaining_los_gt_7d,0.8521905578989692,696,148
+matrix,Didymos probe,L24x,decompensation@1440,0.9743207274272698,698,48
+matrix,LightGBM,R128,decompensation@1440,0.955739856966347,1045,221
+matrix,LightGBM,R128,imv_onset@1440,0.8050633310381531,742,77
+matrix,LightGBM,R128,vasopressor_onset@1440,0.8461339052457453,802,107
+matrix,LightGBM,R128,rrt_onset@2880,0.9324282863224091,976,94
+matrix,LightGBM,R128,aki_2@2880,0.8347958305649512,884,188
+matrix,LightGBM,R128,sepsis_ase@1440,0.9512148227892081,1045,8
+matrix,LightGBM,R128,hypotension@240,0.8995037463267139,914,70
+matrix,LightGBM,R128,hyperkalemia_top@1440,0.8121045426256812,923,92
+matrix,LightGBM,R128,thrombocytopenia@2880,0.9176557632116523,890,42
+matrix,LightGBM,L24x,icu_death@-1,0.913962178160465,500,104
+matrix,LightGBM,L24x,hospital_death@0,0.8578753143267697,700,346
+matrix,LightGBM,L24x,remaining_los_gt_7d,0.850330656104878,696,148
+matrix,LightGBM,L24x,decompensation@1440,0.9566357174193189,698,48
+matrix,LightGBM per database,R128,decompensation@1440,0.9418048531292498,1045,221
+matrix,LightGBM per database,R128,imv_onset@1440,0.7916388629417682,742,77
+matrix,LightGBM per database,R128,vasopressor_onset@1440,0.8278777892988073,802,107
+matrix,LightGBM per database,R128,rrt_onset@2880,0.9048511643008806,976,94
+matrix,LightGBM per database,R128,aki_2@2880,0.8385526929730684,884,188
+matrix,LightGBM per database,R128,sepsis_ase@1440,0.6997530851164999,300,8
+matrix,LightGBM per database,R128,hypotension@240,0.8525857139429497,764,70
+matrix,LightGBM per database,R128,hyperkalemia_top@1440,0.8161979797938664,923,92
+matrix,LightGBM per database,R128,thrombocytopenia@2880,0.905898110906757,890,42
+matrix,LightGBM per database,L24x,icu_death@-1,0.8961170260098843,500,104
+matrix,LightGBM per database,L24x,hospital_death@0,0.8462493060318088,700,346
+matrix,LightGBM per database,L24x,remaining_los_gt_7d,0.8201037271916769,696,148
+matrix,Logistic (L2),R128,decompensation@1440,0.9407159913145278,1045,221
+matrix,Logistic (L2),R128,imv_onset@1440,0.7535093966382159,742,77
+matrix,Logistic (L2),R128,vasopressor_onset@1440,0.824657195629358,802,107
+matrix,Logistic (L2),R128,rrt_onset@2880,0.880066907479314,976,94
+matrix,Logistic (L2),R128,aki_2@2880,0.8231345676449863,884,188
+matrix,Logistic (L2),R128,sepsis_ase@1440,0.9403320067291818,1045,8
+matrix,Logistic (L2),R128,hypotension@240,0.8664176779662465,914,70
+matrix,Logistic (L2),R128,hyperkalemia_top@1440,0.7224662546234724,923,92
+matrix,Logistic (L2),R128,thrombocytopenia@2880,0.9257973658636848,890,42
+matrix,Logistic (L2),L24x,icu_death@-1,0.8572899344955581,500,104
+matrix,Logistic (L2),L24x,hospital_death@0,0.8247934424088049,700,346
+matrix,Logistic (L2),L24x,remaining_los_gt_7d,0.7588403635557955,696,148
+matrix,Logistic (L2),L24x,decompensation@1440,0.8634432494310548,698,48
+matrix,TabPFN-3.5,R128,decompensation@1440,0.9554550337039948,1045,221
+matrix,TabPFN-3.5,R128,imv_onset@1440,0.7974659665805578,742,77
+matrix,TabPFN-3.5,R128,vasopressor_onset@1440,0.8423435737673183,802,107
+matrix,TabPFN-3.5,R128,rrt_onset@2880,0.9317341902828188,976,94
+matrix,TabPFN-3.5,R128,aki_2@2880,0.8346262714141761,884,188
+matrix,TabPFN-3.5,R128,sepsis_ase@1440,0.9587795008706014,1045,8
+matrix,TabPFN-3.5,R128,hypotension@240,0.8943253633784691,914,70
+matrix,TabPFN-3.5,R128,hyperkalemia_top@1440,0.806746464674185,923,92
+matrix,TabPFN-3.5,R128,thrombocytopenia@2880,0.9104040065861471,890,42
+matrix,TabPFN-3.5,L24x,icu_death@-1,0.9324647923452857,500,104
+matrix,TabPFN-3.5,L24x,hospital_death@0,0.8762858822376803,700,346
+matrix,TabPFN-3.5,L24x,remaining_los_gt_7d,0.8639026398691185,696,148
+matrix,TabPFN v2,R128,decompensation@1440,0.957115922653246,1045,221
+matrix,TabPFN v2,R128,imv_onset@1440,0.7570616878366268,742,77
+matrix,TabPFN v2,R128,vasopressor_onset@1440,0.846984481913114,802,107
+matrix,TabPFN v2,R128,rrt_onset@2880,0.9120627501859134,976,94
+matrix,TabPFN v2,R128,aki_2@2880,0.8178322308998155,884,188
+matrix,TabPFN v2,R128,sepsis_ase@1440,0.9532405099801389,1045,8
+matrix,TabPFN v2,R128,hypotension@240,0.8839274025349186,914,70
+matrix,TabPFN v2,R128,hyperkalemia_top@1440,0.7959548032057404,923,92
+matrix,TabPFN v2,R128,thrombocytopenia@2880,0.9215899557837921,890,42
+matrix,TabPFN v2,L24x,icu_death@-1,0.9109131849712082,500,104
+matrix,TabPFN v2,L24x,hospital_death@0,0.867386760719768,700,346
+matrix,TabPFN v2,L24x,remaining_los_gt_7d,0.8340549991282215,696,148
+matrix,Logistic (L1),R128,decompensation@1440,0.9431773879191726,1045,221
+matrix,Logistic (L1),R128,imv_onset@1440,0.7815902713966169,742,77
+matrix,Logistic (L1),R128,vasopressor_onset@1440,0.8400717913742,802,107
+matrix,Logistic (L1),R128,rrt_onset@2880,0.8745213469298725,976,94
+matrix,Logistic (L1),R128,aki_2@2880,0.8161018666938038,884,188
+matrix,Logistic (L1),R128,sepsis_ase@1440,0.9462947237446298,1045,8
+matrix,Logistic (L1),R128,hypotension@240,0.8638812015907897,914,70
+matrix,Logistic (L1),R128,hyperkalemia_top@1440,0.7376363362399062,923,92
+matrix,Logistic (L1),R128,thrombocytopenia@2880,0.942082870530781,890,42
+matrix,Logistic (L1),L24x,icu_death@-1,0.8949295271827413,500,104
+matrix,Logistic (L1),L24x,hospital_death@0,0.8532379739394537,700,346
+matrix,Logistic (L1),L24x,remaining_los_gt_7d,0.7910930973811794,696,148
+matrix,Logistic (L1),L24x,decompensation@1440,0.9342084121630879,698,48
+matrix,Logistic (elastic net),R128,decompensation@1440,0.9415323482784228,1045,221
+matrix,Logistic (elastic net),R128,imv_onset@1440,0.7660478964101392,742,77
+matrix,Logistic (elastic net),R128,vasopressor_onset@1440,0.8296337539801164,802,107
+matrix,Logistic (elastic net),R128,rrt_onset@2880,0.9014787348132812,976,94
+matrix,Logistic (elastic net),R128,aki_2@2880,0.8152277845605412,884,188
+matrix,Logistic (elastic net),R128,sepsis_ase@1440,0.9401777248561176,1045,8
+matrix,Logistic (elastic net),R128,hypotension@240,0.8476758636119801,914,70
+matrix,Logistic (elastic net),R128,hyperkalemia_top@1440,0.744894130928834,923,92
+matrix,Logistic (elastic net),R128,thrombocytopenia@2880,0.9421640248344365,890,42
+matrix,Logistic (elastic net),L24x,icu_death@-1,0.8937444686549055,500,104
+matrix,Logistic (elastic net),L24x,hospital_death@0,0.8519643381992754,700,346
+matrix,Logistic (elastic net),L24x,remaining_los_gt_7d,0.8228014663194412,696,148
+matrix,Logistic (elastic net),L24x,decompensation@1440,0.9221516067560523,698,48
+matrix,Decision tree,R128,decompensation@1440,0.8636962025083003,1045,221
+matrix,Decision tree,R128,imv_onset@1440,0.6426357262844267,742,77
+matrix,Decision tree,R128,vasopressor_onset@1440,0.765670420441157,802,107
+matrix,Decision tree,R128,rrt_onset@2880,0.8000821700561681,976,94
+matrix,Decision tree,R128,aki_2@2880,0.7971053559244248,884,188
+matrix,Decision tree,R128,sepsis_ase@1440,0.8640525407058179,1045,8
+matrix,Decision tree,R128,hypotension@240,0.8750992444971509,914,70
+matrix,Decision tree,R128,hyperkalemia_top@1440,0.7246970027573629,923,92
+matrix,Decision tree,R128,thrombocytopenia@2880,0.9032681061261161,890,42
+matrix,Decision tree,L24x,icu_death@-1,0.799256760499265,500,104
+matrix,Decision tree,L24x,hospital_death@0,0.7748767185918161,700,346
+matrix,Decision tree,L24x,remaining_los_gt_7d,0.7513248179238662,696,148
+matrix,Decision tree,L24x,decompensation@1440,0.8148215534260098,698,48
+matrix,Random forest,R128,decompensation@1440,0.9494010213249547,1045,221
+matrix,Random forest,R128,imv_onset@1440,0.7759169764065874,742,77
+matrix,Random forest,R128,vasopressor_onset@1440,0.8124598046866025,802,107
+matrix,Random forest,R128,rrt_onset@2880,0.9170535020266775,976,94
+matrix,Random forest,R128,aki_2@2880,0.8176196850401701,884,188
+matrix,Random forest,R128,sepsis_ase@1440,0.9255181227124544,1045,8
+matrix,Random forest,R128,hypotension@240,0.8808477827071983,914,70
+matrix,Random forest,R128,hyperkalemia_top@1440,0.8106715751291101,923,92
+matrix,Random forest,R128,thrombocytopenia@2880,0.8887422415367452,890,42
+matrix,Random forest,L24x,icu_death@-1,0.9141338125450621,500,104
+matrix,Random forest,L24x,hospital_death@0,0.8572466607883482,700,346
+matrix,Random forest,L24x,remaining_los_gt_7d,0.8443119107507396,696,148
+matrix,Random forest,L24x,decompensation@1440,0.9428635765402643,698,48
+matrix,Extra trees,R128,decompensation@1440,0.9467699643063474,1045,221
+matrix,Extra trees,R128,imv_onset@1440,0.7945058774544305,742,77
+matrix,Extra trees,R128,vasopressor_onset@1440,0.8074118346820266,802,107
+matrix,Extra trees,R128,rrt_onset@2880,0.8818749801261639,976,94
+matrix,Extra trees,R128,aki_2@2880,0.8091643978691013,884,188
+matrix,Extra trees,R128,sepsis_ase@1440,0.9470119535588399,1045,8
+matrix,Extra trees,R128,hypotension@240,0.9065896286232102,914,70
+matrix,Extra trees,R128,hyperkalemia_top@1440,0.7670244480814524,923,92
+matrix,Extra trees,R128,thrombocytopenia@2880,0.8806990347905278,890,42
+matrix,Extra trees,L24x,icu_death@-1,0.8941261201163004,500,104
+matrix,Extra trees,L24x,hospital_death@0,0.8466248652885281,700,346
+matrix,Extra trees,L24x,remaining_los_gt_7d,0.8308192777767909,696,148
+matrix,Extra trees,L24x,decompensation@1440,0.9481273134819436,698,48
+matrix,Naive Bayes,R128,decompensation@1440,0.7742736634645401,1045,221
+matrix,Naive Bayes,R128,imv_onset@1440,0.6923973507307205,742,77
+matrix,Naive Bayes,R128,vasopressor_onset@1440,0.7244064343054881,802,107
+matrix,Naive Bayes,R128,rrt_onset@2880,0.8353362343519595,976,94
+matrix,Naive Bayes,R128,aki_2@2880,0.7478012926744252,884,188
+matrix,Naive Bayes,R128,sepsis_ase@1440,0.8629139738526076,1045,8
+matrix,Naive Bayes,R128,hypotension@240,0.7445631304607492,914,70
+matrix,Naive Bayes,R128,hyperkalemia_top@1440,0.6584304597394438,923,92
+matrix,Naive Bayes,R128,thrombocytopenia@2880,0.8002270457339732,890,42
+matrix,Naive Bayes,L24x,icu_death@-1,0.733214117460648,500,104
+matrix,Naive Bayes,L24x,hospital_death@0,0.6991076385487082,700,346
+matrix,Naive Bayes,L24x,remaining_los_gt_7d,0.700769832882697,696,148
+matrix,Naive Bayes,L24x,decompensation@1440,0.8055470785007264,698,48
+matrix,k-nearest neighbours,R128,decompensation@1440,0.8810787247127516,1045,221
+matrix,k-nearest neighbours,R128,imv_onset@1440,0.6238754533437102,742,77
+matrix,k-nearest neighbours,R128,vasopressor_onset@1440,0.7391986260026678,802,107
+matrix,k-nearest neighbours,R128,rrt_onset@2880,0.7691777387877515,976,94
+matrix,k-nearest neighbours,R128,aki_2@2880,0.800710244995943,884,188
+matrix,k-nearest neighbours,R128,sepsis_ase@1440,0.9090207276485922,1045,8
+matrix,k-nearest neighbours,R128,hypotension@240,0.8386549978055305,914,70
+matrix,k-nearest neighbours,R128,hyperkalemia_top@1440,0.7240088106433953,923,92
+matrix,k-nearest neighbours,R128,thrombocytopenia@2880,0.8557220781979401,890,42
+matrix,k-nearest neighbours,L24x,icu_death@-1,0.8304222958759631,500,104
+matrix,k-nearest neighbours,L24x,hospital_death@0,0.7905971392181845,700,346
+matrix,k-nearest neighbours,L24x,remaining_los_gt_7d,0.8122058286585575,696,148
+matrix,k-nearest neighbours,L24x,decompensation@1440,0.8661809725535342,698,48
+matrix,Multilayer perceptron,R128,decompensation@1440,0.9256902075248961,1045,221
+matrix,Multilayer perceptron,R128,imv_onset@1440,0.8095585657051557,742,77
+matrix,Multilayer perceptron,R128,vasopressor_onset@1440,0.8126440617076776,802,107
+matrix,Multilayer perceptron,R128,rrt_onset@2880,0.7971117097043817,976,94
+matrix,Multilayer perceptron,R128,aki_2@2880,0.7733208745840812,884,188
+matrix,Multilayer perceptron,R128,sepsis_ase@1440,0.9629471608037351,1045,8
+matrix,Multilayer perceptron,R128,hypotension@240,0.8696253511071198,914,70
+matrix,Multilayer perceptron,R128,hyperkalemia_top@1440,0.7029063161367114,923,92
+matrix,Multilayer perceptron,R128,thrombocytopenia@2880,0.8749583372602401,890,42
+matrix,Multilayer perceptron,L24x,icu_death@-1,0.8902857700207465,500,104
+matrix,Multilayer perceptron,L24x,hospital_death@0,0.8255853825805823,700,346
+matrix,Multilayer perceptron,L24x,remaining_los_gt_7d,0.8082561336022654,696,148
+matrix,Multilayer perceptron,L24x,decompensation@1440,0.9347544624496169,698,48
+matrix,SOFA,R128,decompensation@1440,0.7468915126177237,1041,220
+matrix,SOFA,R128,imv_onset@1440,0.6811746164290822,739,76
+matrix,SOFA,R128,vasopressor_onset@1440,0.6610511404191991,798,107
+matrix,SOFA,R128,rrt_onset@2880,0.8074193774702508,972,94
+matrix,SOFA,R128,aki_2@2880,0.6531460843364648,880,188
+matrix,SOFA,R128,sepsis_ase@1440,0.5226388713117232,1041,8
+matrix,SOFA,R128,hypotension@240,0.6959383662348348,910,70
+matrix,SOFA,R128,hyperkalemia_top@1440,0.6422509437819155,919,92
+matrix,SOFA,R128,thrombocytopenia@2880,0.7854607017748212,886,42
+matrix,SOFA,L24x,icu_death@-1,0.7029365672759873,500,104
+matrix,SOFA,L24x,hospital_death@0,0.6901799418699586,700,346
+matrix,SOFA,L24x,remaining_los_gt_7d,0.7032915571174579,696,148
+matrix,SOFA,L24x,decompensation@1440,0.7956342025170685,698,48
+matrix,NEWS,R128,decompensation@1440,0.8773177693912204,1045,221
+matrix,NEWS,R128,imv_onset@1440,0.7481725601359964,742,77
+matrix,NEWS,R128,vasopressor_onset@1440,0.748858534192372,802,107
+matrix,NEWS,R128,rrt_onset@2880,0.6788413396025222,976,94
+matrix,NEWS,R128,aki_2@2880,0.6070384174950638,884,188
+matrix,NEWS,R128,sepsis_ase@1440,0.66017015294832,1045,8
+matrix,NEWS,R128,hypotension@240,0.7449125305719525,914,70
+matrix,NEWS,R128,hyperkalemia_top@1440,0.602966837210629,923,92
+matrix,NEWS,R128,thrombocytopenia@2880,0.6852527300898209,890,42
+matrix,NEWS,L24x,icu_death@-1,0.803447889432422,500,104
+matrix,NEWS,L24x,hospital_death@0,0.7154689592109991,700,346
+matrix,NEWS,L24x,remaining_los_gt_7d,0.651109468039958,696,148
+matrix,NEWS,L24x,decompensation@1440,0.8480125819143977,698,48
+matrix,MEWS,R128,decompensation@1440,0.8548784800852458,1045,221
+matrix,MEWS,R128,imv_onset@1440,0.6191373186297869,742,77
+matrix,MEWS,R128,vasopressor_onset@1440,0.6868639114048609,802,107
+matrix,MEWS,R128,rrt_onset@2880,0.6117382524388352,976,94
+matrix,MEWS,R128,aki_2@2880,0.5994242292801711,884,188
+matrix,MEWS,R128,sepsis_ase@1440,0.7193491703204591,1045,8
+matrix,MEWS,R128,hypotension@240,0.7098987639507764,914,70
+matrix,MEWS,R128,hyperkalemia_top@1440,0.5882348715572576,923,92
+matrix,MEWS,R128,thrombocytopenia@2880,0.6624098075211264,890,42
+matrix,MEWS,L24x,icu_death@-1,0.792158251404856,500,104
+matrix,MEWS,L24x,hospital_death@0,0.6970257339734169,700,346
+matrix,MEWS,L24x,remaining_los_gt_7d,0.6151893062715567,696,148
+matrix,MEWS,L24x,decompensation@1440,0.8618349339201007,698,48
+matrix,qSOFA,R128,decompensation@1440,0.7955946816049797,1045,221
+matrix,qSOFA,R128,imv_onset@1440,0.6042905954937668,742,77
+matrix,qSOFA,R128,vasopressor_onset@1440,0.6925603495585148,802,107
+matrix,qSOFA,R128,rrt_onset@2880,0.6019001078671213,976,94
+matrix,qSOFA,R128,aki_2@2880,0.581815610670627,884,188
+matrix,qSOFA,R128,sepsis_ase@1440,0.5771531720334164,1045,8
+matrix,qSOFA,R128,hypotension@240,0.7398948642193861,914,70
+matrix,qSOFA,R128,hyperkalemia_top@1440,0.5282120443574188,923,92
+matrix,qSOFA,R128,thrombocytopenia@2880,0.6716685343498232,890,42
+matrix,qSOFA,L24x,icu_death@-1,0.725302913028792,500,104
+matrix,qSOFA,L24x,hospital_death@0,0.6521627314588027,700,346
+matrix,qSOFA,L24x,remaining_los_gt_7d,0.6114485965282332,696,148
+matrix,qSOFA,L24x,decompensation@1440,0.7738708323051191,698,48
+matrix,SIRS,R128,decompensation@1440,0.712763072098739,1045,221
+matrix,SIRS,R128,imv_onset@1440,0.6392524226310646,742,77
+matrix,SIRS,R128,vasopressor_onset@1440,0.6564265857844793,802,107
+matrix,SIRS,R128,rrt_onset@2880,0.6000083215871347,976,94
+matrix,SIRS,R128,aki_2@2880,0.5358382921387401,884,188
+matrix,SIRS,R128,sepsis_ase@1440,0.6765946625348239,1045,8
+matrix,SIRS,R128,hypotension@240,0.5464820621730059,914,70
+matrix,SIRS,R128,hyperkalemia_top@1440,0.5800865740466251,923,92
+matrix,SIRS,R128,thrombocytopenia@2880,0.6859774624727928,890,42
+matrix,SIRS,L24x,icu_death@-1,0.7108600867066718,500,104
+matrix,SIRS,L24x,hospital_death@0,0.657812448972927,700,346
+matrix,SIRS,L24x,remaining_los_gt_7d,0.5858892009932779,696,148
+matrix,SIRS,L24x,decompensation@1440,0.7233591415096927,698,48
+matrix,SAPS II,L24x,icu_death@-1,0.7797237441198248,500,104
+matrix,SAPS II,L24x,hospital_death@0,0.7504449560758956,700,346
+matrix,SAPS II,L24x,remaining_los_gt_7d,0.6622458310233698,696,148
+matrix,SAPS II,L24x,decompensation@1440,0.8839241794850705,698,48
+matrix,OASIS,L24x,icu_death@-1,0.7309198293954596,500,104
+matrix,OASIS,L24x,hospital_death@0,0.7087048104242188,700,346
+matrix,OASIS,L24x,remaining_los_gt_7d,0.6911503326829551,696,148
+matrix,OASIS,L24x,decompensation@1440,0.8451862438649886,698,48
+matrix,KDIGO stage,R128,rrt_onset@2880,0.8208401656459162,976,94
+matrix,KDIGO stage,R128,aki_2@2880,0.6197873386732572,884,188
+matrix,Creatinine,R128,rrt_onset@2880,0.8825173141884032,976,94
+matrix,Creatinine,R128,aki_2@2880,0.5903426108974992,884,188
+matrix,MAP (lower),R128,vasopressor_onset@1440,0.6773025832334943,802,107
+matrix,MAP (lower),R128,hypotension@240,0.838536660713974,914,70
+matrix,ROX (lower),R128,imv_onset@1440,0.6447400516355611,742,77
+matrix,Shock index,R128,decompensation@1440,0.7561621375368187,1045,221
+matrix,Shock index,R128,vasopressor_onset@1440,0.693658017080222,802,107
+matrix,Shock index,L24x,decompensation@1440,0.7162938704724295,698,48
+matrix,Lactate,R128,decompensation@1440,0.700534162369551,1045,221
+matrix,Lactate,R128,sepsis_ase@1440,0.3937202750048515,1045,8
+matrix,Lactate,L24x,decompensation@1440,0.7414736365879737,698,48
+matrix,Potassium,R128,hyperkalemia_top@1440,0.7883580910636273,923,92
+matrix,Platelets (lower),R128,thrombocytopenia@2880,0.9093523082540721,890,42

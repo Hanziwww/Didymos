@@ -1,0 +1,43 @@
+file,section,subsection,line_before,rows
+a1_01_24_hour_landmark.csv,A1. Prediction by sampling (held-out split),24-hour landmark (`runs/paper/a1/test_L24`),3500 anchors x 32 rollouts; 21.6% of rollouts end at the token cap; alignment control (bin-edge programs) 1.000.,3
+a1_02_24_hour_landmark_twin_auroc_by_dataset.csv,A1. Prediction by sampling (held-out split),24-hour landmark (`runs/paper/a1/test_L24`),Twin AUROC by dataset:,3
+a1_03_24_hour_landmark_auroc_against_the_number_of_rol.csv,A1. Prediction by sampling (held-out split),24-hour landmark (`runs/paper/a1/test_L24`),AUROC against the number of rollouts:,3
+a1_04_24_hour_landmark_regression_and_time_to_event_pr.csv,A1. Prediction by sampling (held-out split),24-hour landmark (`runs/paper/a1/test_L24`),Regression and time-to-event programs (Twin ensembles):,9
+a1_05_24_hour_landmark_label_efficiency_lightgbm_per_d.csv,A1. Prediction by sampling (held-out split),24-hour landmark (`runs/paper/a1/test_L24`),"Label efficiency: LightGBM per dataset trained on n train stays, against the Twin (zero-shot):",21
+a1_06_48_hour_landmark.csv,A1. Prediction by sampling (held-out split),48-hour landmark (`runs/paper/a1/test_L48`),3500 anchors x 32 rollouts; 29.1% of rollouts end at the token cap; alignment control (bin-edge programs) 1.000.,3
+a1_07_48_hour_landmark_twin_auroc_by_dataset.csv,A1. Prediction by sampling (held-out split),48-hour landmark (`runs/paper/a1/test_L48`),Twin AUROC by dataset:,3
+a1_08_48_hour_landmark_auroc_against_the_number_of_rol.csv,A1. Prediction by sampling (held-out split),48-hour landmark (`runs/paper/a1/test_L48`),AUROC against the number of rollouts:,3
+a1_09_48_hour_landmark_regression_and_time_to_event_pr.csv,A1. Prediction by sampling (held-out split),48-hour landmark (`runs/paper/a1/test_L48`),Regression and time-to-event programs (Twin ensembles):,9
+a1_10_48_hour_landmark_label_efficiency_lightgbm_per_d.csv,A1. Prediction by sampling (held-out split),48-hour landmark (`runs/paper/a1/test_L48`),"Label efficiency: LightGBM per dataset trained on n train stays, against the Twin (zero-shot):",21
+a1_11_rolling_times_enriched_weighted.csv,A1. Prediction by sampling (held-out split),"rolling times (enriched, weighted) (`runs/paper/a1/test_R`)",3500 anchors x 32 rollouts; 36.1% of rollouts end at the token cap; alignment control (bin-edge programs) 1.000.,9
+a1_12_rolling_times_enriched_weighted_twin_auroc_by_da.csv,A1. Prediction by sampling (held-out split),"rolling times (enriched, weighted) (`runs/paper/a1/test_R`)",Twin AUROC by dataset:,9
+a1_13_rolling_times_enriched_weighted_auroc_against_th.csv,A1. Prediction by sampling (held-out split),"rolling times (enriched, weighted) (`runs/paper/a1/test_R`)",AUROC against the number of rollouts:,9
+a1_14_rolling_times_enriched_weighted_regression_and_t.csv,A1. Prediction by sampling (held-out split),"rolling times (enriched, weighted) (`runs/paper/a1/test_R`)",Regression and time-to-event programs (Twin ensembles):,8
+a1_15_rolling_times_enriched_weighted_label_efficiency.csv,A1. Prediction by sampling (held-out split),"rolling times (enriched, weighted) (`runs/paper/a1/test_R`)","Label efficiency: LightGBM per dataset trained on n train stays, against the Twin (zero-shot):",57
+a2_01_24_hour_landmark.csv,A2. Calibration and uncertainty,24-hour landmark,,3
+a2_02_48_hour_landmark.csv,A2. Calibration and uncertainty,48-hour landmark,,3
+a2_03_rolling_times_enriched_weighted.csv,A2. Calibration and uncertainty,"rolling times (enriched, weighted)",,9
+a2_04_teacher_forced_against_rollout_calibration_expos.csv,A2. Calibration and uncertainty,Teacher-forced against rollout calibration (exposure bias),,4
+a3_01_p1_membership_inference_of_muc32_main_gate_pass.csv,A3. Privacy: the gate and the fit-privacy frontier (`runs/paper/a3/a3.json`),,P1 membership inference of MUC32_main (gate PASS):,8
+a3_02_checkpoints_the_frontier.csv,A3. Privacy: the gate and the fit-privacy frontier (`runs/paper/a3/a3.json`),,Checkpoints (the frontier):,9
+a3_03_rank_correlation_across_checkpoints_per_dataset.csv,A3. Privacy: the gate and the fit-privacy frontier (`runs/paper/a3/a3.json`),,"Rank correlation across checkpoints, per dataset:",7
+a4_01_24_hour_landmark.csv,A4. Utility of synthetic data (`baselines.json` per design),24-hour landmark,,3
+a4_02_24_hour_landmark_small_site_augmentation_auroc_o.csv,A4. Utility of synthetic data (`baselines.json` per design),24-hour landmark,Small-site augmentation (AUROC on that dataset's held-out anchors):,6
+a4_03_48_hour_landmark.csv,A4. Utility of synthetic data (`baselines.json` per design),48-hour landmark,,3
+a4_04_48_hour_landmark_small_site_augmentation_auroc_o.csv,A4. Utility of synthetic data (`baselines.json` per design),48-hour landmark,Small-site augmentation (AUROC on that dataset's held-out anchors):,3
+a4_05_rolling_times_enriched_weighted.csv,A4. Utility of synthetic data (`baselines.json` per design),"rolling times (enriched, weighted)",,9
+a4_06_rolling_times_enriched_weighted_small_site_augme.csv,A4. Utility of synthetic data (`baselines.json` per design),"rolling times (enriched, weighted)",Small-site augmentation (AUROC on that dataset's held-out anchors):,18
+a5_01_24_hour_landmark.csv,A5. Subgroups (`compare.json` per design),24-hour landmark,,43
+a5_02_48_hour_landmark.csv,A5. Subgroups (`compare.json` per design),48-hour landmark,,49
+a5_03_rolling_times_enriched_weighted.csv,A5. Subgroups (`compare.json` per design),"rolling times (enriched, weighted)",,134
+b2_01_unknown_site.csv,B2. Unknown site (`runs/paper/a1/test_L24/compare.json`),,,3
+b3_01_ablations_across_checkpoints_inference_only.csv,B3. Ablations across checkpoints (inference only),,,8
+c1_01_what_if_rollouts.csv,C1. What-if rollouts (`runs/paper/c1/c1.json`),,,9
+c2_01_24_hour_landmark.csv,C2. Attribution (`runs/paper/c2/test_<design>/c2.json`),24-hour landmark,,1
+c2_02_24_hour_landmark_groups_most_often_among_the_top.csv,C2. Attribution (`runs/paper/c2/test_<design>/c2.json`),24-hour landmark,"Groups most often among the top 3 (share of anchors, mean edit effect on the probe's logit):",1
+c2_03_24_hour_landmark.csv,C2. Attribution (`runs/paper/c2/test_<design>/c2.json`),24-hour landmark,,1
+c2_04_rolling_times_enriched_weighted.csv,C2. Attribution (`runs/paper/c2/test_<design>/c2.json`),"rolling times (enriched, weighted)",,3
+c2_05_rolling_times_enriched_weighted_groups_most_ofte.csv,C2. Attribution (`runs/paper/c2/test_<design>/c2.json`),"rolling times (enriched, weighted)","Groups most often among the top 3 (share of anchors, mean edit effect on the probe's logit):",3
+c2_06_rolling_times_enriched_weighted.csv,C2. Attribution (`runs/paper/c2/test_<design>/c2.json`),"rolling times (enriched, weighted)",,3
+c3_01_virtual_cohorts.csv,C3. Virtual cohorts (`runs/paper/c3/c3.json`),,,21
+c4_01_patient_similarity.csv,C4. Patient similarity (`runs/paper/c4/c4.json`),,,3

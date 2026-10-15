@@ -1,0 +1,8 @@
+priority,pattern,mode_category,niv,provenance
+10,SIMV|SMIV,simv,0,"SIMV with any support or control (SIMV+PS, SIMV+PC, SIMV(PRVC), SIMV+压力支持, SIMV+容量控制; the misspelling SMIV)"
+20,PRVC,prvc,0,"pressure-regulated volume control (PRVC, PRVC+压力支持, PRVC/PS)"
+30,^\W*(IPPV|V/C|V-C|VC|A/C|AC)\b|容量控制,acvc,0,"volume control and assist control (IPPV, V/C, VC, V-C, A/C, AC, 容量控制 'volume control'; V/C+PS): CLIF-MIMIC CMV/ASSIST -> ACVC"
+40,^\W*(PC|P/C|PCV)\b|压力控制,pressure_control,0,"pressure control (PC, P/C, PCV, 压力控制 'pressure control'; PC/CPAP)"
+50,BIPAP|BIBAP|^\W*S/T|^\W*ST\s*$|^\W*IPAP,other,1,"bilevel positive airway pressure (BIPAP, BiPAP, BIBAP, BIPAPA, S/T, ST, IPAP): CLIF-MIMIC BiPAP S/T -> Other; non-invasive without an airway"
+60,PSV|^\W*PS\b|压力支持|CPAP\W*PS|PS\W*CPAP,ps_or_cpap,1,"pressure support (PSV, PS, PS/CPAP, CPAP/PS, CPAP+PS, PS+CPAP, 压力支持 'pressure support'): non-invasive without an airway"
+70,^\W*CPAP\s*$,ps_or_cpap,2,"continuous positive airway pressure (CPAP): CPAP without an airway"

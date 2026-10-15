@@ -1,0 +1,16 @@
+design,database,program,endpoint,comparison,estimate,events/n,estimate (95% CI),P,P (Holm)
+L24e,ricd,hospital_death@0,In-hospital death,twin_sampled minus ricd_recorded_sofa,sampled,231/461,-0.054 (-0.102 to -0.007),0.024,0.24
+L24e,ricd,icu_death@-1,ICU death,twin_sampled minus ricd_recorded_sofa,sampled,191/461,-0.065 (-0.114 to -0.020),0.0074,0.096
+L24e,ricd,remaining_los_gt_7d,ICU stay > 7 days,twin_sampled minus oasis_prob,sampled,507/700,-0.095 (-0.160 to -0.027),0.008,0.096
+L24e,zigong,decompensation@1440,Death within 24 h,twin_sampled minus sapsii_prob,sampled,77/700,0.067 (0.003 to 0.137),0.038,0.31
+L24e,zigong,hospital_death@0,In-hospital death,twin_sampled minus sapsii_prob,sampled,350/700,0.054 (0.012 to 0.095),0.0076,0.096
+L24e,zigong,icu_death@-1,ICU death,twin_sampled minus sapsii_prob,sampled,274/700,0.085 (0.041 to 0.126),<0.001,<=0.0030
+L24e,zigong,remaining_los_gt_7d,ICU stay > 7 days,twin_sampled minus oasis_prob,sampled,184/700,0.011 (-0.061 to 0.086),0.75,1.00
+R,ricd,aki_2@2880,"AKI stage >= 2, 48 h",twin_sampled minus news,sampled,43/419,-0.119 (-0.253 to 0.131),0.31,1.00
+R,ricd,decompensation@1440,Death within 24 h,twin_sampled minus ricd_recorded_sofa,sampled,46/207,0.036 (-0.009 to 0.091),0.18,0.92
+R,ricd,hyperkalemia_top@1440,"Hyperkalaemia (top bin), 24 h",twin_sampled minus mews,sampled,26/435,-0.187 (-0.284 to -0.030),0.027,0.24
+R,ricd,vasopressor_onset@1440,"New vasopressor, 24 h",twin_sampled minus sofa,sampled,30/425,-0.093 (-0.199 to 0.006),0.091,0.64
+R,zigong,decompensation@1440,Death within 24 h,twin_sampled minus mews,sampled,171/498,0.147 (0.088 to 0.205),<0.001,<=0.0030
+R,zigong,hyperkalemia_top@1440,"Hyperkalaemia (top bin), 24 h",twin_sampled minus sofa,sampled,23/452,0.102 (-0.109 to 0.357),0.51,1.00
+R,zigong,thrombocytopenia@2880,"Thrombocytopenia, 48 h",twin_sampled minus sofa,sampled,21/445,0.153 (-0.050 to 0.332),0.15,0.92
+R,zigong,vasopressor_onset@1440,"New vasopressor, 24 h",twin_sampled minus mews,sampled,56/434,0.023 (-0.103 to 0.148),0.69,1.00

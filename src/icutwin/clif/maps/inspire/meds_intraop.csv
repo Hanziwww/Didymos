@@ -1,0 +1,12 @@
+item_name,clif_table,med_category,med_dose_unit,mar_action_category,provenance
+nepi,continuous,norepinephrine,mcg/kg/min,dose_change,INSPIRE vitals rate ug/kg/min
+epii,continuous,epinephrine,mcg/kg/min,dose_change,INSPIRE vitals rate ug/kg/min
+dopai,continuous,dopamine,mcg/kg/min,dose_change,INSPIRE vitals rate ug/kg/min
+dobui,continuous,dobutamine,mcg/kg/min,dose_change,INSPIRE vitals rate ug/kg/min
+mlni,continuous,milrinone,mcg/kg/min,dose_change,INSPIRE vitals rate ug/kg/min
+ntgi,continuous,nitroglycerin,mcg/kg/min,dose_change,INSPIRE vitals rate ug/kg/min
+pepi,continuous,phenylephrine,mcg/hr,dose_change,INSPIRE vitals rate ug/h
+ftn,intermittent,fentanyl,mcg,bolus,INSPIRE vitals injected dose ug
+mdz,intermittent,midazolam,mg,bolus,INSPIRE vitals injected dose mg
+ppf,intermittent,propofol,mg,bolus,INSPIRE vitals injected dose mg
+epi,intermittent,epinephrine,mcg,bolus,INSPIRE vitals injected dose ug

@@ -1,0 +1,8 @@
+Dataset,AUC vs member/non-member NLL gap,AUC vs held-out NLL
+aumc,1.00,-0.88
+eicu,1.00,-0.97
+hirid,1.00,-0.97
+inspire,1.00,-0.95
+mimic,0.98,-0.93
+nwicu,1.00,-0.85
+sicdb,1.00,-0.88

@@ -1,0 +1,45 @@
+# The label sampler's target attribute distribution (plan Phase F, "Label sampling" 1): P_clin per axis, proposals
+# from the clinical catalog, the task anchors (YAIB, HiRID-ICU-Benchmark, MEDS-DEV, EHRSHOT, FLAIR, ICareFM) and the
+# aims of 494 ICU AI studies (van de Sande 2021), revisited after the first alignment-diversity frontier report.
+# P* = (1 - eps) * tempered(P_clin, alpha) + eps * uniform; the study lead set the start at the knee (Q&A 12).
+alpha: 0.7
+eps: 0.15
+caps: [0.02, 5.0]             # bounded raking: weights within [0.02, 5] x their base (an abundant cell can be
+                              # weighted down; a thin one is filled, never weighted up past 5)
+min_ess: 30                   # a cell with target mass below this effective size is filled, never weighted up
+anchor_floor: 0.0005          # a catalog program in a generated group keeps at least this share of the group's mass
+axes:
+  label:                      # where the family leaves the label type free
+    binary: 0.55
+    tte: 0.15
+    ordinal: 0.08
+    regression: 0.12
+    multihorizon: 0.10
+    forecast: 0.10             # the values group's forecasts of the patient's own values
+  domain:
+    global: 0.20
+    circulatory: 0.18
+    respiratory: 0.16
+    renal: 0.14
+    metabolic: 0.10
+    infection: 0.08
+    hematologic: 0.06
+    neurologic: 0.05
+    hepatic: 0.03
+  horizon:
+    "<=2h": 0.10
+    "2-6h": 0.15
+    "6-12h": 0.20
+    "12-24h": 0.22
+    "24-48h": 0.18
+    "48h-7d": 0.10
+    "end": 0.05
+  prevalence:                 # per prediction time, binary programs on the rolling panel
+    "<0.5%": 0.08
+    "0.5-1%": 0.10
+    "1-2%": 0.15
+    "2-5%": 0.22
+    "5-10%": 0.17
+    "10-15%": 0.10
+    "15-30%": 0.10
+    "30-60%": 0.08

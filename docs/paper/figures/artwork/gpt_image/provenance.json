@@ -1,0 +1,100 @@
+{
+ "credit": "GPT-image",
+ "generator": "GPT-image (OpenAI), native PNG outputs as received",
+ "received": "2026-10-11",
+ "package": "Didymos_figures_EN_no_timeline.zip",
+ "package_sha256": "500e3d652ba635fda17619ef7facbba28fc7e4e63db24324e09683231d7d656a",
+ "authors_statement": "The authors confirm the accuracy and scientific validity of these images and assume full responsibility for them (stated by the authors, 2026-10-11).",
+ "images": {
+  "fig1a": {
+   "package_file": "images/01_fig1a.png",
+   "file": "original/fig1a.png",
+   "width_px": 1860,
+   "height_px": 846,
+   "mode": "RGB",
+   "bytes": 1536383,
+   "sha256": "e1e12688f49b0a4d7d1e07117098c23c1f6d8f50aa325f6f5e76721186b54341",
+   "c2pa_chunk": true
+  },
+  "fig1c": {
+   "package_file": "images/02_fig1c.png",
+   "file": "original/fig1c.png",
+   "width_px": 1478,
+   "height_px": 1064,
+   "mode": "RGB",
+   "bytes": 1528533,
+   "sha256": "1c2c72bb371219151ac570f446cb7ba05ec61f052c6618b6c142f0a7efac9489",
+   "c2pa_chunk": true
+  },
+  "fig4a": {
+   "package_file": "images/04_fig4a.png",
+   "file": "original/fig4a.png",
+   "width_px": 2172,
+   "height_px": 724,
+   "mode": "RGB",
+   "bytes": 1345039,
+   "sha256": "83101065b9f9ee386e431b62da1a7863665d35d32adc55adeb7fd8dc64238d19",
+   "c2pa_chunk": true
+  },
+  "fig7a": {
+   "package_file": "images/05_fig7a.png",
+   "file": "original/fig7a.png",
+   "width_px": 1983,
+   "height_px": 793,
+   "mode": "RGB",
+   "bytes": 1280556,
+   "sha256": "4dbcae10c6ecccbbc9506f3e3512f81782d3751c22416bf008be41ef33309ae0",
+   "c2pa_chunk": true
+  },
+  "supp3": {
+   "package_file": "images/06_supp1.png",
+   "file": "original/supp3.png",
+   "width_px": 1536,
+   "height_px": 1024,
+   "mode": "RGB",
+   "bytes": 1238213,
+   "sha256": "9c7bc5e346412b3b5b7777b7ba8047fa218c6db01c1a4ca6033b36326616b067",
+   "c2pa_chunk": true
+  },
+  "supp2a": {
+   "package_file": "images/07_supp15a_architecture.png",
+   "file": "original/supp2a.png",
+   "width_px": 1086,
+   "height_px": 1448,
+   "mode": "RGB",
+   "bytes": 1486544,
+   "sha256": "6069f0a542553dd538937024cb55b0a7acf01dba91f2b1c6e6600b94ca27c75a",
+   "c2pa_chunk": true
+  },
+  "supp2b": {
+   "package_file": "images/08_supp15b_simulation.png",
+   "file": "original/supp2b.png",
+   "width_px": 1199,
+   "height_px": 1312,
+   "mode": "RGB",
+   "bytes": 1538609,
+   "sha256": "020a8cccc6a3ed071b020056d70413b5dd2f09ba8b9fcd80d05aca45570cf244",
+   "c2pa_chunk": true
+  },
+  "supp1a": {
+   "package_file": "images/09_supp16a_data_processing.png",
+   "file": "original/supp1a.png",
+   "width_px": 1536,
+   "height_px": 1024,
+   "mode": "RGB",
+   "bytes": 1236961,
+   "sha256": "a458f8fbef463e75d66bb90215c77f42284a31071e01d36d1d893cc97ae3f572",
+   "c2pa_chunk": true
+  },
+  "supp1b": {
+   "package_file": "images/10_supp16b_sequence.png",
+   "file": "original/supp1b.png",
+   "width_px": 1942,
+   "height_px": 809,
+   "mode": "RGB",
+   "bytes": 1533588,
+   "sha256": "ac9fe9d06d40d6b7a5f8aa63c6ee5c9378483a37caefe3939beba38e7c349c29",
+   "c2pa_chunk": true
+  }
+ }
+}

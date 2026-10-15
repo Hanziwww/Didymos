@@ -1,0 +1,58 @@
+dataid,target,category,factor,meas_site_name,provenance
+707,vitals,heart_rate,1,,HeartRateECG
+708,vitals,heart_rate,1,,ricu hr (HeartRateSPO2)
+724,vitals,heart_rate,1,,HeartRateABP
+710,vitals,spo2,1,,ricu spo2
+709,vitals,temp_c,1,,ricu temp
+701,vitals,sbp,1,arterial,ricu sbp
+702,vitals,dbp,1,arterial,ricu dbp
+703,vitals,map,1,arterial,ricu map
+704,vitals,sbp,1,cuff,ricu sbp (non-invasive)
+705,vitals,dbp,1,cuff,ricu dbp (non-invasive)
+706,vitals,map,1,cuff,ricu map (non-invasive)
+2274,vitals,respiratory_rate,1,,RespRateEKG (impedance respiratory rate)
+2018,hemodynamics,cvp,1,,CentralVenousPressure
+2275,hemodynamics,pa_systolic,1,,PAPSystolic
+2276,hemodynamics,pa_diastolic,1,,PAPDiastolic
+2277,hemodynamics,pa_mean,1,,PAPMEan
+2283,resp,fio2_set,0.01,,ricu fio2 (%)
+2278,resp,peep_set,1,,PEEP setting (mbar = cmH2O within 2%)
+2282,resp,resp_rate_set,1,,RespRate (setting)
+2284,resp,pressure_support_set,1,,PressureSupport
+3040,resp,pressure_control_set,1,,PressureOverPeep (inspiratory pressure above PEEP)
+715,resp,peak_inspiratory_pressure_obs,1,,pPeak
+2279,resp,mean_airway_pressure_obs,1,,pMean
+712,resp,mean_airway_pressure_obs,1,,Mean Airway Pressure
+718,resp,tidal_volume_obs,1,,TV (exp)
+713,resp,minute_vent_obs,1,,MV (exp) (L/min)
+719,resp,resp_rate_obs,1,,RespRate (measured on the ventilator)
+3143,resp_hfnc,lpm_set,1,,Optiflow Flow (l/min); device hfnc
+3142,resp_hfnc,fio2_set,0.01,,Optiflow O2 (%); device hfnc
+3141,resp_o2,lpm_set,1,,Oxyflow Flow (l/min); device not recorded
+3140,resp_o2,fio2_set,0.01,,Oxyflow O2 (%); device not recorded
+3144,resp_o2,lpm_set,1,,O2 Flow (l/min); device not recorded
+3123,assessments,rass,1,,RASS - Richmond Agitation-Sedation Scale
+3122,assessments,nrs,1,,NRS - Numeric Rating Scale
+725,output,urinary_other,1,,ricu urine (Urine (c): hourly volume)
+726,output,orogastric_nasogastric_tube,1,,GastricTube
+2309,output,chest_tube_temporary,1,,ThoraxDrain1
+2310,output,chest_tube_temporary,1,,ThoraxDrain2
+2311,output,chest_tube_temporary,1,,ThoraxDrain3
+2312,output,chest_tube_temporary,1,,ThoraxDrain4
+2313,output,chest_tube_temporary,1,,ThoraxDrain5
+2314,output,procedural_drain_other,1,,Drain1
+2315,output,procedural_drain_other,1,,Drain2
+2316,output,procedural_drain_other,1,,Drain3
+2317,output,procedural_drain_other,1,,Drain4
+2318,output,procedural_drain_other,1,,Drain5
+2319,output,procedural_drain_other,1,,Drain6
+2320,output,procedural_drain_other,1,,Drain7
+2321,output,procedural_drain_other,1,,Drain8
+723,crrt,blood_flow_rate,1,,CRRT Bloodflow (ml/min)
+730,crrt,dialysate_flow_rate,1,,CRRT DialysateFlow (ml/h)
+731,crrt,pre_filter_replacement_fluid_rate,1,,CRRT SubstitutePrae (ml/h)
+732,crrt,post_filter_replacement_fluid_rate,1,,CRRT SubstitutePost (ml/h)
+2022,crrt,ultrafiltration_out,1,,CRRT Withdrawal (ml/h)
+2024,ecmo,flow,1,,ECMO BloodFlow (l/min)
+2023,ecmo,rpm,1,,ECMO PumpSpeed
+2025,ecmo,fdo2,0.01,,ECMO FI (%); CLIF fdo2 is a fraction

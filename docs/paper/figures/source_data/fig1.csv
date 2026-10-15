@@ -1,0 +1,10 @@
+panel,series,file,credit,crop_px,width_mm,height_mm,printed_dpi,pixels,stays,train,tuning,held_out,country
+a,artwork,docs/paper/figures/artwork/gpt_image/original/fig1a.png,GPT-image,"19,11,1849,787",180.0,76.33,600,4252x1803,,,,,
+b,eicu,,,,,,,,199120,159293,9896,29931,USA
+b,mimic,,,,,,,,89201,71434,4544,13223,USA
+b,hirid,,,,,,,,33896,27194,1691,5011,Switzerland
+b,nwicu,,,,,,,,27680,22178,1402,4100,USA
+b,sicdb,,,,,,,,27179,21708,1373,4098,Austria
+b,aumc,,,,,,,,18383,14748,888,2747,Netherlands
+b,inspire,,,,,,,,13838,11107,659,2072,South Korea
+c,artwork,docs/paper/figures/artwork/gpt_image/original/fig1c.png,GPT-image,"59,47,1378,950",86.0,58.88,600,2031x1390,,,,,

@@ -1,0 +1,22 @@
+service,system,provenance
+CMED,cardiovascular,MIMIC-IV services: cardiac medical
+CSURG,cardiovascular,cardiac surgery
+VSURG,cardiovascular,vascular surgery
+TSURG,respiratory,thoracic surgery
+NMED,neurologic,neurologic medical
+NSURG,neurologic,neurosurgical
+TRAUM,trauma,trauma (operative status from the surgical services as mimic-code OASIS)
+GU,genitourinary,genitourinary
+GYN,gynecologic,gynecological
+OBS,gynecologic,obstetrics (a medical admission is genitourinary)
+ORTHO,musculoskeletal_skin,orthopaedic
+PSURG,musculoskeletal_skin,plastic surgery (skin and soft tissue)
+ENT,other,ear nose throat
+EYE,other,ophthalmologic
+DENT,other,dental
+MED,,general medicine: no organ system
+SURG,,general surgery: no organ system
+OMED,,oncologic medicine: no organ system
+PSYCH,,psychiatric: no organ system
+NB,,newborn
+NBB,,newborn baby

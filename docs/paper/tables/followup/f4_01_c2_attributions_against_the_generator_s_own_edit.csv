@@ -1,0 +1,5 @@
+Endpoint,Anchors,Reliability (split half),Ceiling (Spearman-Brown),Probe editing: rho / top-3,IG,Attention rollout,Attention x grad,"Sign agreement, editing",IG
+"AKI stage >= 2, 48 h",40,0.37,0.54,0.20 / 0.30,0.08 / 0.32,0.08 / 0.34,0.14 / 0.26,0.66 (n=98),0.58 (n=95)
+"Decompensation, 24 h",40,0.32,0.48,0.19 / 0.32,-0.10 / 0.21,-0.03 / 0.25,-0.09 / 0.24,0.64 (n=56),0.51 (n=55)
+"Hypotension, 4 h",40,0.07,0.13,0.07 / 0.29,0.04 / 0.21,-0.06 / 0.16,-0.06 / 0.30,0.61 (n=41),0.56 (n=39)
+"New IMV, 24 h",40,0.32,0.48,0.12 / 0.33,-0.01 / 0.27,-0.11 / 0.20,-0.02 / 0.23,0.61 (n=61),0.38 (n=61)

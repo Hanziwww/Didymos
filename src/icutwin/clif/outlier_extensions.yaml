@@ -1,0 +1,77 @@
+# Outlier ranges for categories that clifpy's official outlier_config.yaml (2.1-era) does not cover:
+# CLIF 3.0 categories, our declared ext_ categories, CLIF 3.0 invasive_hemodynamics, and the 3.0 ICP vital.
+# Same structure and semantics as the official file: a value outside [min, max] is set to NULL (never
+# clamped). Entries only fill gaps; a key that also exists in the official config is an error
+# (tests/test_clif_outliers.py), so the official ranges always win.
+#
+# Policy, as in the official file: bounds drop impossible or artifact values only, never extreme but real
+# physiology. Sources, in order of preference: the official range of the 2.1 name of a renamed 3.0
+# category; an official range of an analogous category; ricu 0.6.3 concept-dict plausibility bounds where
+# they are not narrower than documented physiological extremes; otherwise an icutwin physiological bound
+# (marked "icutwin").
+tables:
+  labs:
+    lab_value_numeric:
+      glucose: {min: 0.0, max: 2000.0}                # official glucose_fingerstick (2.1 name of 3.0 POC glucose)
+      hematocrit: {min: 6.0, max: 75.0}               # official hemoglobin 2-25 g/dL x 3 (Hct ~ 3 Hb); ricu 15-60 drops real severe anaemia
+      co2: {min: 0.0, max: 50.0}                      # official bicarbonate (serum total CO2 ~ HCO3)
+      po2_mixed_venous: {min: 0.0, max: 700.0}        # official po2_arterial
+      ext_base_excess: {min: -50.0, max: 50.0}        # icutwin; ricu -25..25 drops real severe acidosis (BE -30 occurs)
+      ext_methemoglobin: {min: 0.0, max: 100.0}       # ricu methb
+      ext_carboxyhemoglobin: {min: 0.0, max: 100.0}   # percentage of haemoglobin
+      fibrinogen: {min: 0.0, max: 1500.0}             # ricu fgn
+      ext_creatine_kinase: {min: 0.0, max: 1000000.0} # ricu ck (min 0, no max); rhabdomyolysis reaches 1e5-1e6 U/L
+      ckmb: {min: 0.0, max: 10000.0}                  # ricu ckmb (min 0, no max); max as official troponins
+      ext_bands_percent: {min: 0.0, max: 100.0}       # percentage
+      ext_ggt: {min: 0.0, max: 20000.0}               # official alt/ast (liver enzymes)
+      lipase: {min: 0.0, max: 100000.0}               # icutwin
+      amylase: {min: 0.0, max: 100000.0}              # icutwin
+      ext_ammonia: {min: 0.0, max: 2000.0}            # icutwin (umol/L)
+      triglycerides: {min: 0.0, max: 20000.0}         # icutwin (mg/dL; chylomicronaemia exceeds 10000)
+      cholesterol: {min: 0.0, max: 2000.0}            # icutwin (mg/dL)
+      tsh: {min: 0.0, max: 1000.0}                    # icutwin (mIU/L)
+      free_t4: {min: 0.0, max: 50.0}                  # icutwin (ng/dL)
+      free_t3: {min: 0.0, max: 100.0}                 # icutwin (pg/mL)
+      bnp: {min: 0.0, max: 100000.0}                  # icutwin (pg/mL)
+      nt_pro_bnp: {min: 0.0, max: 100000.0}           # icutwin (pg/mL; assay ceilings are 35000-70000)
+      d_dimer: {min: 0.0, max: 1000.0}                # icutwin (ug/mL FEU)
+      interleukin_06: {min: 0.0, max: 1000000.0}      # icutwin (pg/mL)
+      cystatin_c: {min: 0.0, max: 20.0}               # icutwin (mg/L)
+  vitals:
+    vital_value:
+      intracranial_pressure: {min: -20.0, max: 150.0} # icutwin (mmHg)
+  invasive_hemodynamics:
+    measurement_value:                                # icutwin physiological bounds (pressures in mmHg)
+      cvp: {min: -10.0, max: 50.0}
+      rv_systolic: {min: 0.0, max: 150.0}
+      rv_diastolic: {min: -10.0, max: 50.0}
+      pa_systolic: {min: 0.0, max: 150.0}
+      pa_diastolic: {min: 0.0, max: 100.0}
+      pa_mean: {min: 0.0, max: 120.0}
+      pcwp: {min: 0.0, max: 60.0}
+      cco: {min: 0.0, max: 30.0}                      # L/min
+      cardiac_output_thermodilution: {min: 0.0, max: 30.0}
+      cardiac_output_fick: {min: 0.0, max: 30.0}
+      cardiac_index: {min: 0.0, max: 15.0}            # L/min/m2
+      stroke_volume: {min: 0.0, max: 300.0}           # mL
+      svi: {min: 0.0, max: 200.0}                     # mL/m2
+      svv: {min: 0.0, max: 100.0}                     # %
+      ppv: {min: 0.0, max: 100.0}                     # %
+      ef: {min: 0.0, max: 100.0}                      # %
+      svr: {min: 0.0, max: 10000.0}                   # dyn s cm-5
+      svri: {min: 0.0, max: 20000.0}                  # dyn s cm-5 m2
+      evlw: {min: 0.0, max: 5000.0}                   # mL
+      evlwi: {min: 0.0, max: 100.0}                   # mL/kg
+      gedv: {min: 0.0, max: 5000.0}                   # mL
+      itbi: {min: 0.0, max: 5000.0}                   # mL/m2
+      lvswi: {min: 0.0, max: 200.0}                   # g m/m2
+      do2: {min: 0.0, max: 5000.0}                    # mL/min
+      tfc: {min: 0.0, max: 200.0}                     # 1/kOhm
+      tfcd0: {min: 0.0, max: 200.0}                   # 1/kOhm
+  mcs:
+    setting_value:                                    # official ecmo_mcs ranges (2.1, keyed by device) re-keyed to
+      rpm: {min: 0.0, max: 15000.0}                   # 3.0 setting categories: union over devices (CentriMag 0-5500 .. HMII 6000-15000)
+      flow: {min: 0.5, max: 10.0}                     # L/min; Impella/TandemHeart/CentriMag 0.5-10, ECMO/durable 1.0-10
+      sweep: {min: 0.5, max: 20.0}                    # L/min; ECMO
+      fdo2: {min: 0.21, max: 1.0}                     # fraction; ECMO
+      performance: {min: 0.0, max: 9.0}               # Impella P-level P0-P9

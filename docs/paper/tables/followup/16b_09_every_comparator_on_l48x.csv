@@ -1,0 +1,8 @@
+Endpoint,Anchors,Positives,"Didymos, 128 (sampled)",Didymos E2,LightGBM,TabPFN-3.5,Didymos probe,Best of the 8 learners,Best clinical score
+ICU death,505,127,0.912,0.910,0.915 (-0.003),0.925 (-0.012),0.919 (-0.007),Elastic-net logistic: 0.917 (-0.005),SAPS II: 0.812 (0.101)
+In-hospital death,809,455,0.861,-,0.861 (-0.001),0.864 (-0.004),0.857 (0.004),Elastic-net logistic: 0.840 (0.020),SAPS II: 0.754 (0.107)
+ICU stay > 7 days,796,219,0.860,-,0.837 (0.023),0.841 (0.019),0.816 (0.044),Elastic-net logistic: 0.833 (0.027),OASIS: 0.673 (0.187)
+"Decompensation, 24 h",808,57,0.946,0.948,0.915 (0.031),0.943 (0.003),0.928 (0.018),Elastic-net logistic: 0.940 (0.006),NEWS: 0.869 (0.077)
+"New IMV, 24 h",509,38,0.859,0.847,0.683 (0.177),-,0.704 (0.155),-,NEWS: 0.736 (0.123)
+"New vasopressor, 24 h",597,59,0.940,0.938,0.837 (0.103),-,0.844 (0.097),-,SOFA: 0.699 (0.242)
+"New RRT, 48 h",758,37,0.941,0.946,0.954 (-0.013),-,0.936 (0.005),-,SOFA: 0.877 (0.064)

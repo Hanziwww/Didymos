@@ -1,0 +1,11 @@
+itemid,target,category,factor,offset,meas_site_name,provenance
+320045,vitals,heart_rate,1,0,,PULSE (bpm)
+320277,vitals,spo2,1,0,,PULSE OXIMETRY (%)
+320210,vitals,respiratory_rate,1,0,,RESPIRATIONS
+320179,vitals,sbp,1,0,cuff,BP SYSTOLIC (non-invasive)
+320180,vitals,dbp,1,0,cuff,BP DIASTOLIC (non-invasive)
+320050,vitals,sbp,1,0,arterial,R ARTERIAL LINE BLOOD PRESSURE (systolic component; median 118)
+320051,vitals,dbp,1,0,arterial,R ARTERIAL LINE BLOOD PRESSURE (diastolic component; median 55)
+323761,vitals,temp_c,0.5555555555555556,-32,,TEMPERATURE (degF): (F - 32) / 1.8
+326531,vitals,weight_kg,0.028349523125,0,,WEIGHT/SCALE (ounce -> kg)
+326707,vitals,height_cm,2.54,0,,HEIGHT (inch -> cm)

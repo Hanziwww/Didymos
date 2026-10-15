@@ -1,0 +1,30 @@
+specimen,specimen_class,provenance
+Art.,arterial,freetextitems 11646 Afname (bloed); dictionary: Arterial blood specimen
+ART.,arterial,freetextitems 11646; Arterial blood specimen
+art.,arterial,freetextitems 11646; Arterial blood specimen
+Arterieel,arterial,listitems 7432 Afnameplaats (pre-2010 blood gases)
+Ven.,venous,freetextitems 11646; Venous blood specimen
+VEN.,venous,freetextitems 11646; Venous blood specimen
+Veneus,venous,freetextitems 11646; Venous blood specimen
+Perifeer veneus,venous,listitems 7432 (peripheral venous)
+Centrale lijn,central_venous,listitems 7432 (central venous line)
+GEM.VEN.,mixed_venous,freetextitems 11646; Mixed venous blood specimen
+Gem. ven.,mixed_venous,freetextitems 11646; Mixed venous blood specimen
+PAP,mixed_venous,listitems 7432 (pulmonary artery catheter sample)
+CAP.,capillary,freetextitems 11646; Capillary blood specimen
+Cap.,capillary,freetextitems 11646; Capillary blood specimen
+volgt,unknown,freetextitems 11646 (pending)
+ZIE-OPM,unknown,freetextitems 11646 (see remark)
+Gestold,invalid,freetextitems 11646 (specimen clotted)
+gestold,invalid,freetextitems 11646 (specimen clotted)
+Vervalt,invalid,freetextitems 11646 (cancelled)
+vervalt,invalid,freetextitems 11646 (cancelled)
+Inhoud verwijderd,invalid,freetextitems 11646 (content removed)
+Niet afgenomen door afd/arts,invalid,freetextitems 11646 (not drawn)
+Niet afg,invalid,freetextitems 11646 (not drawn)
+T.W.M,invalid,freetextitems 11646 (insufficient material)
+T.W.M.,invalid,freetextitems 11646 (insufficient material)
+mislukt,invalid,freetextitems 11646 (unsuccessful phlebotomy)
+Niet te beoordelen,invalid,freetextitems 11646 (inconclusive)
+Verkeerd geidentificeerd materiaal,invalid,freetextitems 11646 (misidentified specimen)
+MBO,invalid,freetextitems 11646 (fetal blood)

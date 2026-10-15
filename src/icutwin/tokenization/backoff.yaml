@@ -1,0 +1,40 @@
+# Paper P amendment 17 (Z1): the opt-in code back-off for databases outside the vocabulary's training data.
+# A timeline event whose code the frozen vocabulary lacks is rewritten, before encoding, to the nearest code it keeps;
+# every other event is untouched. Off unless ICUTWIN_BACKOFF names this file (tokenization.backoff), so the seven
+# training databases encode byte-identically. Rules in order of preference; the first that yields a kept code wins.
+
+version: 1
+
+# units within one family convert by these factors to the family's base unit
+unit_families:
+  mass:   {g: 1.0, mg: 1.0e-3, mcg: 1.0e-6, ng: 1.0e-9}
+  volume: {l: 1000.0, ml: 1.0}
+  molar:  {mol: 1000.0, mmol: 1.0}
+  units:  {u: 1.0, ku: 1000.0}
+
+# drug-specific conversions between families: 1 <from> = factor <to>
+drug_conversions:
+  ext_enoxaparin:      {u: {mcg: 10.0}}            # enoxaparin: 100 anti-Xa IU = 1 mg
+  potassium_repletion: {mcg: {mmol: 1.3414e-5},    # potassium chloride: 74.55 mg per mmol
+                        mg: {mmol: 1.3414e-2},
+                        meq: {mmol: 1.0}}           # monovalent: 1 mEq = 1 mmol
+  sodium_chloride:     {mg: {g: 1.0e-3}}            # within the mass family (kept for clarity)
+
+# an infusion without a recorded rate (unit UNK): the kept unit of the same drug and route, first in this order; the
+# rate becomes not recorded (start, going) and a stop keeps its zero
+infusion_units: [ml/hr, mg/hr, mcg/kg/min, mcg/min, mg/min, mcg/kg/hr, mcg/hr, u/hr, u/kg/hr, g/hr, mg/kg/hr,
+                 mmol/hr, meq/hr, ml/min, mmol/min, meq/min, u/min, g/min, ml/kg/hr, ng/kg/min, g/day]
+
+# an intermittent dose whose unit cannot be converted: the kept unit of the same drug and route, first in this order,
+# the dose not recorded
+dose_units: [UNK, mg, mcg, g, ml, u, mmol, meq, dose, tab, cap, puff, neb]
+
+# routes tried after the recorded one
+route_fallback: [UNK]
+
+codes:                                                # whole-code substitutions (provenance in the comment)
+  OUTPUT//stool: OUTPUT//gi_output_other              # CLIF 'stool' has no kept code; GI output, other
+  ADT//TRANSFER_IN//rehab//UNK: ADT//TRANSFER_IN//ward//UNK      # rehabilitation unit: an inpatient ward
+  ADT//TRANSFER_OUT//rehab//UNK: ADT//TRANSFER_OUT//ward//UNK
+  ADT//TRANSFER_IN//dialysis//UNK: ADT//TRANSFER_IN//procedural//UNK   # haemodialysis room: a procedural area
+  ADT//TRANSFER_OUT//dialysis//UNK: ADT//TRANSFER_OUT//procedural//UNK

@@ -1,0 +1,59 @@
+itemid,unit_in,lab_category,factor,reference_unit,lab_order_category,gas,specimen_source,sign_tag,provenance
+9990,mmHg,pco2_arterial,1,mmHg,blood_gas,pco2,freetext,,pCO2 (bloed); tool item re-emitted with specimen routing (freetextitems 11646)
+21213,kPa,pco2_arterial,7.50062,mmHg,blood_gas,pco2,freetext,,PCO2 (bloed) - kPa; ricu pco2 (kPa -> mmHg)
+6846,mmHg,pco2_arterial,1,mmHg,blood_gas,pco2,list,,PCO2 (pre-2010); tool item re-emitted with specimen routing (listitems 7432)
+9996,mmHg,po2_arterial,1,mmHg,blood_gas,po2,freetext,,PO2 (bloed); tool item re-emitted with specimen routing
+21214,kPa,po2_arterial,7.50062,mmHg,blood_gas,po2,freetext,,PO2 (bloed) - kPa; ricu po2 (kPa -> mmHg)
+7433,mmHg,po2_arterial,1,mmHg,blood_gas,po2,list,,PO2 (pre-2010); tool item re-emitted with specimen routing
+12310,Geen,ph_arterial,1,(no units),blood_gas,ph,freetext,,pH (bloed); tool item re-emitted with specimen routing
+6848,*,ph_arterial,1,(no units),blood_gas,ph,list,,PH (pre-2010; no unit); tool item re-emitted with specimen routing
+12311,Geen,so2_arterial,100,%,blood_gas,so2,freetext,,O2-Saturatie (bloed) reported as a fraction (x100); tool item re-emitted with specimen routing
+8903,*,so2_arterial,1,%,blood_gas,so2,list,,SO2 (pre-2010 blood gas; islabresult; ricu files it under o2sat)
+9994,mmol/l,ext_base_excess,1,mmol/L,blood_gas,,,tag,B.E. (bloed); ricu be (aumc_bxs: tag '-' marks a negative value)
+6807,mmol/l,ext_base_excess,1,mmol/L,blood_gas,,,tag,B.E. (pre-2010); ricu be (aumc_bxs)
+6810,mmol/l,bicarbonate,1,mmol/L,blood_gas,,,,HCO3 (pre-2010 blood gas); ricu bicar
+11690,Geen,ext_carboxyhemoglobin,1,%,blood_gas,,,,CO-Hb (bloed) (percent); ricu hbco
+11692,Geen,ext_methemoglobin,1,%,blood_gas,,,,Met-Hb (bloed); ricu methb
+14412,Geen,ext_methemoglobin,1,%,blood_gas,,,,Met-Hb  (bloed) (blood-gas panel code; never co-occurs with 11692)
+9553,mmol/l,hemoglobin,1.611344,g/dL,cbc,,,,CtHB Astrup (pre-2010 blood gas); ricu hgb
+9561,mmol/l,calcium_ionized,4.008,mg/dL,misc,,,,CA++(7.4) Astrup; ricu cai; pH-7.4-adjusted like the tool's 10267 (actual 9560 not used: same sample)
+8915,mmol/l,calcium_ionized,4.008,mg/dL,misc,,,,CA++(7.4) (pre-2010); ricu cai
+9558,mmol/l,chloride,1,mmol/L,bmp,,,,Chloor Astrup (blood-gas analyser)
+9580,mmol/l,lactate,1,mmol/L,misc,,,,Laktaat Astrup; ricu lact
+6837,mmol/l,lactate,1,mmol/L,misc,,,,Laktaat (pre-2010); ricu lact
+11545,Geen,hematocrit,100,%,cbc,,,,Ht(v.Bgs) (bloed) (blood gas; L/L); ricu hct (x100)
+9937,g/l,albumin,0.1,g/dL,lft,,,,Alb.Chem (bloed); ricu alb
+9930,mmol/l,chloride,1,mmol/L,bmp,,,,Chloor (bloed) (chemistry); ricu cl
+6819,mmol/l,chloride,1,mmol/L,bmp,,,,Chloor (pre-2010)
+6813,µmol,bilirubin_total,0.058467,mg/dL,lft,,,,Bili Totaal (pre-2010; umol/L); ricu bili
+6812,µmol,bilirubin_conjugated,0.058467,mg/dL,lft,,,,Bilirubine geconjugeerd (pre-2010; umol/L); ricu bili_dir
+18361,µmol/l,bilirubin_conjugated,0.058467,mg/dL,lft,,,,Gecon.Bili  (bloed) (umol/L)
+11586,Geen,ext_bands_percent,1,%,cbc,,,,Staaf % (bloed); ricu bnd
+11998,E/l,ext_creatine_kinase,1,U/L,misc,,,,CK (bloed); ricu ck
+6822,IE/l,ext_creatine_kinase,1,U/L,misc,,,,CK (pre-2010); ricu ck
+10413,µg/l,ckmb,1,ng/mL,cardiac,,,,MB-Massa (bloed) (CK-MB mass; ricu's 6824 is an activity in IE/l and not convertible)
+9967,10^9/l,eosinophils_absolute,1,10^3/uL,cbc,,,,Eo app (bloed); ricu eos (as a count; CLIF has an absolute category)
+11790,Geen,eosinophils_percent,1,%,cbc,,,,Eo % (bloed)
+6773,*,eosinophils_percent,1,%,cbc,,,,Eosinofielen (pre-2010; dictionary unit %); ricu eos
+6786,*,neutrophils_percent,1,%,cbc,,,,Neutrofielen (pre-2010; dictionary unit %); ricu neut
+6808,mm,esr,1,mm/hour,misc,,,,Bezinking (pre-2010; mm after 1 h); ricu esr
+6776,g/l,fibrinogen,100,mg/dL,coags,,,,Fibrinogeen (pre-2010); ricu fgn (g/L x 100)
+9989,g/l,fibrinogen,100,mg/dL,coags,,,,Fibrinogeen (bloed); ricu fgn
+10175,g/l,fibrinogen,100,mg/dL,coags,,,,Fibrinogeen  (bloed); ricu fgn
+6777,l,hematocrit,100,%,cbc,,,,Hematocriet (pre-2010; L/L); ricu hct (x100)
+11423,Geen,hematocrit,100,%,cbc,,,,Ht (bloed) (L/L); ricu hct (x100)
+6797,10^9/l,platelet_count,1,10^3/uL,cbc,,,,Thrombocyten (pre-2010); ricu plt
+6779,10^9/l,wbc,1,10^3/uL,cbc,,,,Leucocyten (pre-2010); ricu wbc
+12071,E/l,ext_ggt,1,U/L,lft,,,,Y-GT (bloed)
+6831,E/l,ext_ggt,1,U/L,lft,,,,Gamma GT (pre-2010)
+11986,E/l,amylase,1,U/L,misc,,,,Amylase (bloed)
+6845,E/l,amylase,1,U/L,misc,,,,Plasma Amylase (pre-2010)
+12043,E/l,lipase,1,U/L,misc,,,,Lipase (bloed)
+14249,ng/l,nt_pro_bnp,1,pg/mL,cardiac,,,,NT-proBNP (bloed) (ng/L = pg/mL)
+11925,mE/l,tsh,1,mIU/L,tft,,,,TSH (bloed) (mE/L = mIU/L)
+10187,pmol/l,free_t4,0.0777,ng/dL,tft,,,,Vrij-T4 (bloed) (1 ng/dL = 12.87 pmol/L)
+10201,pmol/l,free_t3,0.651,pg/mL,tft,,,,Vrij-T3 (bloed) (1 pg/mL = 1.536 pmol/L)
+10052,µmol/l,ext_ammonia,1,umol/L,misc,,,,Ammoniak (bloed)
+10393,mg/l,d_dimer,1,ug/mL,coags,,,,D-dimeren (bloed) (mg/L = ug/mL)
+9954,mmol/l,cholesterol,38.67,mg/dL,misc,,,,Cholesterol (bloed) (1 mmol/L = 38.67 mg/dL)
+9956,mmol/l,triglycerides,88.57,mg/dL,misc,,,,Triglyceriden (bloed) (1 mmol/L = 88.57 mg/dL)

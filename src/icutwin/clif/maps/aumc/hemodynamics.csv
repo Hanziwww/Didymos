@@ -1,0 +1,16 @@
+itemid,unit_in,measurement_category,provenance
+20926,mmHg,cvp,CVDm-gekoppeld (monitor-coupled mean central venous pressure)
+6655,mmHg,cvp,CVD (central venous pressure)
+6644,mmHg,pa_systolic,PAP systolisch
+6646,mmHg,pa_diastolic,PAP diastolisch
+6645,mmHg,pa_mean,PAP gemiddeld
+6657,mmHg,pcwp,PCWP wedge
+6656,l/min,cco,Cardiac Output (PA catheter; charted near-hourly like continuous CO)
+14062,l/min,cco,PiCCO PCCO (calibrated pulse-contour continuous cardiac output)
+14060,l/min,cardiac_output_thermodilution,PiCCO mean CO (mean of a transpulmonary thermodilution series; single boluses 13151 not used)
+13154,Geen,svv,PiCCO SVV (Slagvolumevariatie) (%)
+13155,Geen,ppv,PiCCO PPV (Polsdrukvariatie) (%)
+14064,Geen,ef,PiCCO GEF (global ejection fraction) (%)
+14074,dynes.sec.cm-5,svr,PiCCO SVRX
+14071,ml,evlw,PiCCO mean EVLW (single boluses 14070 not used)
+14067,ml,gedv,PiCCO mean GEDV (single boluses 14066 not used)

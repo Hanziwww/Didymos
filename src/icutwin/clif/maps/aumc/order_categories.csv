@@ -1,0 +1,9 @@
+ordercategory,target,input_category,provenance
+2. Spuitpompen,continuous,,syringe pumps: continuous drug infusions
+Infuus - Crystalloid,continuous,,crystalloids as continuous medications (CLIF-MIMIC convention; HiRID / SICdb adapters)
+Voeding Parenteraal,continuous,,parenteral nutrition as continuous 'tpn' (CLIF-MIMIC convention)
+Infuus - Bloedproducten,input,blood_products,blood products
+Infuus - Colloid,input,iv_colloid,colloids
+Voeding Enteraal ,input,enteral_nutrition,enteral (tube) feeding
+Voeding Enteraal oud,input,enteral_nutrition,enteral (tube) feeding (pre-2010 order category)
+Voeding Drinken,input,po_intake,oral fluids

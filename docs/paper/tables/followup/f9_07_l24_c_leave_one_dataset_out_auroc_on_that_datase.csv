@@ -1,0 +1,15 @@
+Endpoint,Dataset,Positives,LightGBM within,pooled,without the dataset,Probe pooled,Probe without,Twin (zero-shot)
+ICU death,AmsterdamUMCdb,82,0.867,0.868,0.839,0.841,0.817,0.875
+ICU death,eICU,19,0.828,0.898,0.900,0.843,0.846,0.939
+ICU death,HiRID,29,0.872,0.920,0.910,0.831,0.850,0.877
+ICU death,INSPIRE,7,0.913,0.918,0.866,0.888,0.781,0.998
+ICU death,MIMIC-IV,45,0.852,0.883,0.890,0.858,0.886,0.843
+ICU death,NWICU,31,0.881,0.868,0.824,0.835,0.802,0.761
+ICU death,SICdb,24,0.898,0.911,0.917,0.867,0.848,0.786
+In-hospital death,AmsterdamUMCdb,82,0.867,0.856,0.840,0.853,0.833,0.850
+In-hospital death,eICU,39,0.818,0.838,0.822,0.829,0.774,0.913
+In-hospital death,HiRID,29,0.870,0.907,0.888,0.831,0.825,0.847
+In-hospital death,INSPIRE,27,0.755,0.824,0.774,0.742,0.601,0.731
+In-hospital death,MIMIC-IV,67,0.850,0.863,0.853,0.821,0.827,0.857
+In-hospital death,NWICU,46,0.852,0.867,0.840,0.830,0.801,0.896
+In-hospital death,SICdb,56,0.832,0.856,0.850,0.846,0.820,0.869

@@ -1,0 +1,18 @@
+gas,specimen_class,lab_category,provenance
+pco2,arterial,pco2_arterial,
+pco2,unknown,pco2_arterial,no specimen recorded: arterial (the tool's and CLIF-MIMIC's default)
+pco2,venous,pco2_venous,
+pco2,central_venous,pco2_venous,
+pco2,mixed_venous,pco2_venous,
+ph,arterial,ph_arterial,
+ph,unknown,ph_arterial,no specimen recorded: arterial
+ph,venous,ph_venous,
+ph,central_venous,ph_venous,
+ph,mixed_venous,ph_venous,
+po2,arterial,po2_arterial,
+po2,unknown,po2_arterial,no specimen recorded: arterial
+po2,mixed_venous,po2_mixed_venous,
+so2,arterial,so2_arterial,
+so2,unknown,so2_arterial,no specimen recorded: arterial
+so2,central_venous,so2_central_venous,
+so2,mixed_venous,so2_mixed_venous,

@@ -1,0 +1,28 @@
+specialty,adm,provenance
+Cardiochirurgie,surg,ricu 0.6.3 concept adm (aumc apply_map)
+Cardiologie,med,ricu 0.6.3 concept adm
+ders,other,ricu 0.6.3 concept adm ('Anders' truncated in the source)
+Gynaecologie,other,ricu 0.6.3 concept adm
+Heelkunde Gastro-enterologie,surg,ricu 0.6.3 concept adm
+Heelkunde Longen/Oncologie,surg,ricu 0.6.3 concept adm
+Heelkunde Oncologie,surg,ricu 0.6.3 concept adm
+Hematologie,med,ricu 0.6.3 concept adm
+Intensive Care Volwassenen,other,ricu 0.6.3 concept adm
+Inwendig,med,ricu 0.6.3 concept adm
+"Keel, Neus & Oorarts",surg,ricu 0.6.3 concept adm
+Longziekte,med,ricu 0.6.3 concept adm
+"Maag-,Darm-,Leverziekten",med,ricu 0.6.3 concept adm
+Mondheelkunde,surg,ricu 0.6.3 concept adm
+Nefrologie,med,ricu 0.6.3 concept adm
+Neurochirurgie,surg,ricu 0.6.3 concept adm
+Neurologie,med,ricu 0.6.3 concept adm
+Obstetrie,other,ricu 0.6.3 concept adm
+Oncologie Inwendig,med,ricu 0.6.3 concept adm
+Oogheelkunde,surg,ricu 0.6.3 concept adm
+Orthopedie,surg,ricu 0.6.3 concept adm
+Plastische chirurgie,surg,ricu 0.6.3 concept adm
+Reumatologie,med,ricu 0.6.3 concept adm
+Traumatologie,surg,ricu 0.6.3 concept adm
+Urologie,surg,ricu 0.6.3 concept adm
+Vaatchirurgie,surg,ricu 0.6.3 concept adm
+Verloskunde,other,ricu 0.6.3 concept adm

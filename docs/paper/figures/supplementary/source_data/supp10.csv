@@ -1,0 +1,18 @@
+panel,series,anchors,mae_didymos_h,mae_predicting_the_mean_h,crps_h,nominal,observed,design,c_index,events
+a,24-hour landmark,2904,41.746349801945684,58.55993081125175,34.47702688133175,,,,,
+a,48-hour landmark,2643,54.82624549436236,73.38256496873241,45.399616495460066,,,,,
+b,24-hour landmark,,,,,0.5,0.4404269972451791,,,
+b,24-hour landmark,,,,,0.8,0.696625344352617,,,
+b,24-hour landmark,,,,,0.95,0.8212809917355371,,,
+b,48-hour landmark,,,,,0.5,0.41430192962542567,,,
+b,48-hour landmark,,,,,0.8,0.6609912977676883,,,
+b,48-hour landmark,,,,,0.95,0.7900113507377979,,,
+c,Death,3499,,,,,,Rolling anchors,0.8336493411111205,1132
+c,New IMV,2454,,,,,,Rolling anchors,0.7580191356772387,347
+c,New vasopressor,2743,,,,,,Rolling anchors,0.7463739781612515,490
+c,Death,3500,,,,,,24-hour landmark,0.8543802727860657,237
+c,New IMV,2758,,,,,,24-hour landmark,0.7953577209740825,174
+c,New vasopressor,2948,,,,,,24-hour landmark,0.8274835764333531,255
+c,Death,3500,,,,,,48-hour landmark,0.789719905431927,319
+c,New IMV,2598,,,,,,48-hour landmark,0.7816357539557791,228
+c,New vasopressor,2946,,,,,,48-hour landmark,0.8089064883041472,332

@@ -1,0 +1,16 @@
+design,database,program,endpoint,comparison,estimate,events/n,estimate (95% CI),P,P (Holm)
+L24e,ricd,hospital_death@0,In-hospital death,twin minus lgbm_local,sampled,350/700,-0.107 (-0.148 to -0.066),<0.001,<=0.0030
+L24e,ricd,icu_death@-1,ICU death,twin minus lgbm_local,hazard (E2),289/700,-0.089 (-0.128 to -0.053),<0.001,<=0.0030
+L24e,ricd,remaining_los_gt_7d,ICU stay > 7 days,twin minus lgbm_local,sampled,507/700,-0.218 (-0.282 to -0.149),<0.001,<=0.0030
+L24e,zigong,decompensation@1440,Death within 24 h,twin minus lgbm_local,hazard (E2),77/700,0.117 (0.049 to 0.188),<0.001,0.0044
+L24e,zigong,hospital_death@0,In-hospital death,twin minus lgbm_local,sampled,350/700,0.008 (-0.027 to 0.048),0.69,1.00
+L24e,zigong,icu_death@-1,ICU death,twin minus lgbm_local,hazard (E2),274/700,-0.020 (-0.052 to 0.014),0.28,1.00
+L24e,zigong,remaining_los_gt_7d,ICU stay > 7 days,twin minus lgbm_local,sampled,184/700,-0.101 (-0.160 to -0.044),0.0012,0.012
+R,ricd,aki_2@2880,"AKI stage >= 2, 48 h",twin minus lgbm_local,sampled,43/419,-0.190 (-0.385 to 0.052),0.25,1.00
+R,ricd,decompensation@1440,Death within 24 h,twin minus lgbm_local,hazard (E2),103/500,-0.001 (-0.034 to 0.028),0.97,1.00
+R,ricd,hyperkalemia_top@1440,"Hyperkalaemia (top bin), 24 h",twin minus lgbm_local,sampled,26/435,-0.314 (-0.420 to -0.070),0.008,0.072
+R,ricd,vasopressor_onset@1440,"New vasopressor, 24 h",twin minus lgbm_local,hazard (E2),31/490,-0.017 (-0.139 to 0.116),0.80,1.00
+R,zigong,decompensation@1440,Death within 24 h,twin minus lgbm_local,hazard (E2),171/498,-0.004 (-0.041 to 0.035),0.83,1.00
+R,zigong,hyperkalemia_top@1440,"Hyperkalaemia (top bin), 24 h",twin minus lgbm_local,sampled,23/455,-0.016 (-0.127 to 0.094),0.76,1.00
+R,zigong,thrombocytopenia@2880,"Thrombocytopenia, 48 h",twin minus lgbm_local,sampled,21/448,-0.068 (-0.187 to 0.047),0.20,1.00
+R,zigong,vasopressor_onset@1440,"New vasopressor, 24 h",twin minus lgbm_local,hazard (E2),56/445,-0.191 (-0.272 to -0.099),<0.001,<=0.0030

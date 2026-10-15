@@ -1,0 +1,25 @@
+priority,pattern,fluid_category,provenance
+5,catheter tip|cath\.? tip,catheter_tip,CLIF example: CULTURE CATHETER TIP
+6,fluid received in blood culture|fluid culture in bottles,other_unspecified,body fluid inoculated into blood-culture bottles: the source fluid is not recorded
+8,anorectal/vaginal|vagin|cervi|genital|urethr|penile,genital_area,CLIF example: ENDOCERVICAL
+9,rectal swab|\brectal\b|cre screen|cipro resistant screen,gastrointestinal_tract,"CLIF example: RECTAL SWAB (MIMIC CRE and ciprofloxacin-resistance screens are rectal swabs)"
+10,\bcsf\b|spinal fluid|cerebrospinal,meninges_csf,"CLIF example: CULTURE & STAIN, CSF"
+10,pleural,pleural_cavity_fluid,
+10,peritoneal|ascit|dialysis fluid|dialysate,peritoneum,peritoneal fluid incl. peritoneal-dialysis effluent
+10,\bbile\b|biliary|gallbladder|pancrea,gallbladder_billary_pancreas,
+10,joint|synovial,joints,
+10,bone marrow,bone_marrow,CLIF example: CULTURE BONE MARROW
+10,pericard,cardiac,CLIF example: PERICARDIAL EFFUSION
+11,respiratory viral|nasophar|\bnp\b|nares|nasal|\bnose\b|mrsa screen|staph aureus swab|influenza,nasopharynx_upperairway,"CLIF example: CULTURE NASAL (MRSA screens are nares swabs)"
+12,bronch|lavage|\bbal\b|sputum|trache|endotrach|\blung\b,respiratory_tract_lower,bronchoalveolar lavage / washings / brush; sputum; tracheal aspirate
+13,throat|pharyn|\boral\b|mouth|tongue|thrush,oropharynx_tongue_oralcavity,CLIF example: CULTURE FUNGAL THROAT
+13,urine|urinary|bladder|foley|kidney|suprapubic,genito_urinary_tract,CLIF example: CULTURE URINE
+13,stool|feces|fecal|\bvre\b|c\.? ?diff,feces_stool,CLIF example: ENTEROCOCCUS VA R SCREEN
+13,\beye\b|cornea|conjunctiv,eyes,"CLIF example: CULTURE, FUNGAL EYE"
+13,\bear\b|\botic\b,ears,CLIF example: CULTURE FUNGAL EAR
+13,skin|\bnail|\bhair\b|scraping,skin_unspecified,
+13,abscess|pustul,skin_rash_pustules_abscesses,
+13,wound|drain|ulcer|decubitus|foot culture|surgical site,woundsite,CLIF example: CULTURE & STAIN WOUND DRAINAGE
+15,blood|bacteremia,blood_buffy,"CLIF example: AFB/FUNGAL BLOOD CULTURE"
+15,respirat,respiratory_tract,"CLIF example: HP CULTURE & STAIN, RESPIRATORY"
+90,.,other_unspecified,"site not stated (tissue, biopsy, foreign body, swab, other fluid)"

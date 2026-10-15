@@ -1,0 +1,5 @@
+Event,"Teacher-forced O/E after 24 h (pooled, masked)",Rollout endpoint,Rollout O/E (R)
+imv,0.76,"New IMV, 24 h",0.69
+vasopressor,0.59,"New vasopressor, 24 h",0.49
+rrt,0.44,"New RRT, 48 h",0.66
+icu_death,0.97,"Decompensation, 24 h",1.83

@@ -1,0 +1,17 @@
+# MIMIC-IV 3.1 — PhysioNet layout (hosp/, icu/ with .csv.gz); CLIF-MIMIC reads {hosp,icu}/<table>.csv.gz
+name: mimic
+archive: mimic/MIMIC-IV-3.1.tar.zst
+strip_prefix: MIMIC-IV-3.1/
+out_compression: gzip
+anchor:
+  member: hosp/patients.csv
+  patient_col: subject_id
+rules:
+  - {pattern: "hosp/d_*.csv", action: copy}
+  - {pattern: "hosp/provider.csv", action: copy}
+  - {pattern: "icu/d_items.csv", action: copy}
+  - {pattern: "icu/caregiver.csv", action: copy}
+  - {pattern: "hosp/*.csv", action: filter, key_col: subject_id, key: patient}
+  - {pattern: "icu/*.csv", action: filter, key_col: subject_id, key: patient}
+  - {pattern: "*SHA256SUMS.txt", action: checksums}
+  - {pattern: "*", action: copy}

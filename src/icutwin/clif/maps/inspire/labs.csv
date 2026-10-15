@@ -1,0 +1,38 @@
+item_name,lab_category,factor,reference_unit,lab_order_category,lab_specimen_category,provenance
+albumin,albumin,1,g/dl,lft,plasma_blood,INSPIRE g/dL = CLIF g/dl
+alp,alkaline_phosphatase,1,u/l,lft,plasma_blood,INSPIRE IU/L = u/l
+alt,alt,1,u/l,lft,plasma_blood,INSPIRE IU/L = u/l
+aptt,ptt,1,sec,coags,plasma_blood,INSPIRE sec
+ast,ast,1,u/l,lft,plasma_blood,INSPIRE IU/L = u/l
+be,ext_base_excess,1,mmol/l,blood_gas,plasma_blood,INSPIRE ABGA base excess mmol/L (no CLIF 3.0 concept)
+bun,bun,1,mg/dl,bmp,plasma_blood,INSPIRE mg/dL
+calcium,calcium_total,1,mg/dl,bmp,plasma_blood,INSPIRE mg/dL
+chloride,chloride,1,mmol/l,bmp,plasma_blood,INSPIRE mmol/L
+ck,ext_creatine_kinase,1,u/l,misc,plasma_blood,INSPIRE IU/L (no CLIF 3.0 concept)
+ckmb,ckmb,1,ng/ml,cardiac,plasma_blood,INSPIRE ug/L = ng/ml
+creatinine,creatinine,1,mg/dl,bmp,plasma_blood,INSPIRE mg/dL
+crp,crp,10,mg/l,misc,plasma_blood,INSPIRE mg/dL x10 -> mg/l
+d_dimer,d_dimer,1,ug/ml,coags,plasma_blood,INSPIRE mg/L FEU = ug/ml
+fibrinogen,fibrinogen,1,mg/dl,coags,plasma_blood,INSPIRE mg/dL
+glucose,glucose_serum,1,mg/dl,bmp,plasma_blood,INSPIRE laboratory glucose mg/dL (CLIF 3.0 glucose_serum; 'glucose' is point-of-care)
+hb,hemoglobin,1,g/dl,cbc,plasma_blood,INSPIRE g/dL
+hco3,bicarbonate,1,mmol/l,blood_gas,plasma_blood,INSPIRE ABGA HCO3 mmol/L
+hct,hematocrit,1,%,cbc,plasma_blood,INSPIRE %
+ica,calcium_ionized,4.008,mg/dl,misc,plasma_blood,INSPIRE mmol/L x4.008 -> mg/dl (Ca 40.08 g/mol)
+lacate,lactate,1,mmol/l,misc,plasma_blood,INSPIRE item is spelled 'lacate'; mmol/L
+lymphocyte,lymphocytes_percent,1,%,cbc,plasma_blood,INSPIRE %
+paco2,pco2_arterial,1,mmhg,blood_gas,plasma_blood,INSPIRE ABGA mmHg
+pao2,po2_arterial,1,mmhg,blood_gas,plasma_blood,INSPIRE ABGA mmHg
+ph,ph_arterial,1,(no units),blood_gas,plasma_blood,INSPIRE ABGA pH
+phosphorus,phosphate,1,mg/dl,misc,plasma_blood,INSPIRE mg/dL
+platelet,platelet_count,1,10^3/ul,cbc,plasma_blood,INSPIRE /nL = 10^3/ul
+potassium,potassium,1,mmol/l,bmp,plasma_blood,INSPIRE mmol/L
+ptinr,inr,1,(no units),coags,plasma_blood,INSPIRE INR
+sao2,so2_arterial,1,%,blood_gas,plasma_blood,INSPIRE ABGA %
+seg,neutrophils_percent,1,%,cbc,plasma_blood,INSPIRE segmented neutrophils %
+sodium,sodium,1,mmol/l,bmp,plasma_blood,INSPIRE mmol/L
+total_bilirubin,bilirubin_total,1,mg/dl,lft,plasma_blood,INSPIRE mg/dL
+total_protein,total_protein,1,g/dl,lft,plasma_blood,INSPIRE g/dL
+troponin_i,troponin_i,1000,ng/l,misc,plasma_blood,INSPIRE ug/L x1000 -> ng/l
+troponin_t,troponin_t,1000,ng/l,misc,plasma_blood,INSPIRE ug/L x1000 -> ng/l
+wbc,wbc,1,10^3/ul,cbc,plasma_blood,INSPIRE /nL = 10^3/ul

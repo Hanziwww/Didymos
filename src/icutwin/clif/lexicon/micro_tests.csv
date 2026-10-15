@@ -1,0 +1,6 @@
+priority,pattern,method_category,provenance
+1,chromosome|karyotype|fish analysis|cytogenetic|additional cells|focused analysis|stool hold|isolate for mic|tissue culture-(lymphocyte|cvs|bone marrow)|tissue culture for,__skip__,cytogenetics and laboratory workflow entries: not microbiology results
+2,gram stain,gram_stain,CLIF method example: GRAM STAIN ONLY
+3,pcr|nucleic acid|probe|amplif|antigen|antibody|serolog|\big[gm]\b|viral load|reagin|\brpr\b|treponemal|monospot|\baso\b|toxin|genotype|\bdfa\b|immunofluoresc|virus identification|\bmtd\b,__nonculture__,"non-culture test (PCR, antigen, serology, viral load): never a culture result; PCR tests of the CLIF 3.0 panel are mapped per dataset into microbiology_nonculture"
+4,smear|stain|preparation|\bprep\b|potassium hydroxide|\bkoh\b|o&p|ova \+ parasites|macroscopic exam,smear,"CLIF method example: SMEAR (incl. KOH / saline preparations, ova and parasites)"
+5,culture|bottle|screen|\br/o\b|sonication|postmortem|^tissue$,culture,"CLIF method example: BLOOD CULTURE, CULTURE URINE"

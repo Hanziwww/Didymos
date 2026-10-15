@@ -1,0 +1,15 @@
+# AmsterdamUMCdb 1.0.2 — plain .csv at archive root (CLIF-AmsterdamUMCdb reads <table>.csv);
+# patient key = patientid, row key = admissionid.
+name: aumc
+archive: amsterdamUMCdb/amsterdamUMCdb-1.0.2.tar.zst
+strip_prefix: ""
+out_compression: none
+encoding: latin-1         # AmsterdamUMCdb CSVs are Latin-1 (e.g. 'Crèmes'), not UTF-8
+anchor:
+  member: admissions.csv
+  patient_col: patientid
+  derived_keys: {admission: admissionid}
+rules:
+  - {pattern: "admissions.csv", action: filter, key_col: patientid, key: patient}
+  - {pattern: "*.csv", action: filter, key_col: admissionid, key: admission}
+  - {pattern: "*", action: copy}

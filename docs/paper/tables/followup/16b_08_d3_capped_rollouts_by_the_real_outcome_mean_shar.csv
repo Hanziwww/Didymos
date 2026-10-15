@@ -1,0 +1,4 @@
+Subset,Endpoint,Real outcome 0,Real outcome 1
+L48x,In-hospital death,0.050,0.135
+L48x,ICU death,0.022,0.050
+L48x,"Decompensation, 24 h",0.098,0.088

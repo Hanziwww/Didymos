@@ -1,0 +1,48 @@
+priority,pattern,direction,category,group_name,provenance
+10,\|output \(ml\)\|.*(count|occurrence|number of|total|24 ?h|8 hr),output,__skip__,,counts and running totals are not volumes
+11,\|output \(ml\)\|.*(stool|bowel|\bbm\b|diaper|incontinen|variance|balance),output,__skip__,,eICU stool rows mix occurrence counts and volumes; balances are not outputs
+20,\|output \(ml\)\|.*suprapubic,output,suprapubic_catheter,urine,CLIF-MIMIC: Suprapubic -> suprapubic_catheter
+21,\|output \(ml\)\|.*nephrostomy,output,nephrostomy,urine,CLIF-MIMIC: Nephrostomy -> nephrostomy
+22,\|output \(ml\)\|.*(urostomy|ileal conduit|ileoconduit),output,urostomy,urine,CLIF-MIMIC: Ileoconduit -> urostomy
+23,\|output \(ml\)\|.*(external (urinary )?catheter|condom|texas cath|purewick),output,external_urinary_catheter,urine,CLIF-MIMIC: Condom Cath -> external_urinary_catheter
+24,\|output \(ml\)\|.*(straight cath|in ?and ?out|intermittent cath),output,urethral,urine,CLIF-MIMIC: Straight Cath -> urethral
+25,\|output \(ml\)\|.*void,output,urethral,urine,CLIF-MIMIC: Void -> urethral
+26,\|output \(ml\)\|(urine catheter$|.*(indwelling|foley|urethral catheter)),output,indwelling_urinary_catheter,urine,ricu urine (URINE CATHETER; catheter output); CLIF-MIMIC: Foley -> indwelling_urinary_catheter
+30,\|output \(ml\)\|(ct|.*(chest ?tube|pleural|mediastin|pigtail)),output,chest_tube_temporary,drains,
+31,\|output \(ml\)\|.*pericard,output,pericardial_drain,drains,
+32,\|output \(ml\)\|.*(evd|ventric|lumbar drain|csf),output,procedural_drain_other,drains,CSF drains
+33,\|output \(ml\)\|.*(biliary|t-?tube|cholecyst),output,biliary_drain,drains,
+34,\|output \(ml\)\|.*(peritoneal|ascit),output,peritoneal_drain,drains,
+35,\|output \(ml\)\|.*paracentesis,output,paracentesis,procedure,
+36,\|output \(ml\)\|.*thoracentesis,output,thoracentesis,procedure,
+37,\|output \(ml\)\|.*(\bjp\b|jackson|bulb|blake|hemovac|wound|surgical drain),output,wound_drain,drains,
+38,\|output \(ml\)\|.*drain,output,procedural_drain_other,drains,
+40,\|output \(ml\)\|.*(emesis|vomit),output,emesis,gi,
+41,\|output \(ml\)\|.*residual,output,gi_output_other,gi,gastric residual discarded
+42,\|output \(ml\)\|.*(gastrostomy|g[ -]?tube|\bpeg\b),output,gastrostomy,gi,
+43,\|output \(ml\)\|.*(jejunostomy|j[ -]?tube),output,jejunostomy,gi,
+44,\|output \(ml\)\|.*(nasojejunal|\bnj\b),output,orogjejunal_nasojejunal_tube,gi,
+45,\|output \(ml\)\|.*(nasogastric|orogastric|gastric|\bng\b|\bog\b|ngt|ogt),output,orogastric_nasogastric_tube,gi,
+46,\|output \(ml\)\|.*ileostomy,output,ileostomy,gi,
+47,\|output \(ml\)\|.*colostomy,output,colostomy,gi,
+48,\|output \(ml\)\|.*ostomy,output,ostomy_gi_other,gi,
+49,\|output \(ml\)\|.*(rectal tube|flexi-?seal|fecal management),output,rectal_tube,gi,
+50,\|output \(ml\)\|.*(blood loss|\bebl\b|hemorrhage),output,blood_loss,blood_loss,
+51,\|output \(ml\)\|.*(fluid remov|ultrafiltrat|hemofiltrat|\buf\b|crrt|cvvh|dialysis),output,ultrafiltration,ultrafiltration,
+60,\|output \(ml\)\|(urine|.*urine|.*ureteral|.*catheter.+output|.*output.+catheter),output,urinary_other,urine,ricu urine (Urine; catheter output); route not recorded; CLIF-MIMIC: Ureteral Stent -> urinary_other
+70,\|output \(ml\)\|.*(other|generic|misc|aspirat),output,other,other,
+80,\|dialysis \(ml\)\|out$,output,ultrafiltration,ultrafiltration,eICU dialysis I/O column (fluid removed)
+81,\|dialysis \(ml\)\|in$,input,renal_replacement_fluids,renal_replacement_fluids,eICU dialysis I/O column (fluid given)
+110,\|intake \(ml\)\|.*total,input,__skip__,,running totals are not volumes
+115,\|intake \(ml\)\|.*(plasma-?lyte|normosol),input,iv_crystalloid,iv_fluids,
+120,\|intake \(ml\)\|(blood products \(ml\)\||.*(prbc|packed|\brbc|\bffp\b|fresh frozen|plasma|platelet|cryo|whole blood|autotransf|cell saver)),input,blood_products,blood_products,
+125,\|intake \(ml\)\|(colloids \(ml\)\||.*(albumin|hetastarch|hespan|voluven|dextran|plasmanate)),input,iv_colloid,iv_fluids,
+130,\|intake \(ml\)\|.*(\btpn\b|\bppn\b|parenteral|lipid|clinimix),input,parenteral_nutrition,nutrition,
+135,\|intake \(ml\)\|.*((tube|enteral|feeding|\bpeg\b|\bng\b|\bog\b).*(flush|water)|free water|water bolus),input,enteral_water,nutrition,water given via feeding tube
+136,\|intake \(ml\)\|.*(bladder|\bcbi\b|gu irrig),input,flush_irrigation_urine,flush_irrigation,
+137,\|intake \(ml\)\|.*(flush|irrigat),input,flush_irrigation_other,flush_irrigation,
+140,\|intake \(ml\)\|.*(enteral|tube feed|feeding|\btf\b|formula|nutren|pivot|jevity|osmolite|peptamen|glucerna|vital|impact|replete|promote|novasource|nepro|isosource|fibersource|ng/og|nasogastric|orogastric|nasoduodenal|g[ -]?tube|j[ -]?tube|\bpeg\b),input,enteral_nutrition,nutrition,
+145,\|intake \(ml\)\|.*(p\.o\.|\bpo\b|oral|by mouth),input,po_intake,nutrition,
+150,\|intake \(ml\)\|.*(norepi|epineph|phenyleph|vasopres|dopamine|dobutamine|milrinone|propofol|fentanyl|midazolam|lorazepam|dexmed|precedex|ketamine|morphine|hydromorph|dilaudid|insulin|heparin|argatroban|bivalirudin|amiodarone|diltiazem|esmolol|labetalol|nicardipine|nitroglycerin|\bntg\b|nitroprusside|cisatracurium|nimbex|vecuronium|rocuronium|pantoprazole|protonix|octreotide|furosemide|lasix|bumetanide|\bmeds\b|medication|ivpb|piggyback|electrolyte|potassium|magnesium|calcium|phosph|antibiotic|\babx\b|vanco|zosyn|cefazolin|ceftriaxone|cefepime|meropenem|levofloxacin|metronidazole|acyclovir|fluconazole),input,iv_medication,medication_fluids,carrier volume of IV medications
+160,\|intake \(ml\)\|(crystalloids \(ml\)\||.*(\bns\b|\bnss\b|saline|sodium chloride|nacl|\blr\b|lactated|ringer|d5|d10|dextrose|\bivf\b|i\.v\.|\biv\b|bicarb|maintenance|\bmivf\b|\bkvo\b|bolus|crystalloid|1/2 ?ns|\.45)),input,iv_crystalloid,iv_fluids,
+170,\|intake \(ml\)\|,input,other,other,intake of unrecorded type

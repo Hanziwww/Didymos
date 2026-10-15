@@ -1,0 +1,28 @@
+CLIF 00b1c68c1199623a28119f814034a812340f4b62 https://github.com/Common-Longitudinal-ICU-data-Format/CLIF
+clifpy 39cabd6351c4fc70c67bed814f9523e48dee0c70 https://github.com/Common-Longitudinal-ICU-data-Format/clifpy
+CLIF-MIMIC afc89f0f548b31401bc2cdaf7073094c93b29aa2 https://github.com/Common-Longitudinal-ICU-data-Format/CLIF-MIMIC
+CLIF_MEDS a3428a0fce7a3cf28631c4e5661b24b4e6cb849d https://github.com/Common-Longitudinal-ICU-data-Format/CLIF_MEDS
+ELF 44128790504b5f6c803e5b3f7d051ff257c24c57 https://github.com/Common-Longitudinal-ICU-data-Format/ELF
+CLIF-AmsterdamUMCdb be10606c048144a73ce861617df3c62167b58514 https://github.com/Common-Longitudinal-ICU-data-Format/CLIF-AmsterdamUMCdb
+flair_baseline 62a7019076c8d0e73848a5fffc69a35c58405b5d https://github.com/Common-Longitudinal-ICU-data-Format/flair_baseline
+synthetic_clif d009e22d284a5dfe41f11c379a393175e9f56458 https://github.com/Common-Longitudinal-ICU-data-Format/synthetic_clif
+ricu c0efac720dbe72caaf63b361b6978a24383835bf https://github.com/eth-mds/ricu
+BlendedICU 5d3a68f381634a9581636ddcf36238cb153c02d5 https://github.com/USM-CHU-FGuyon/BlendedICU
+ethos-ares 2d54383997318eb52f3d47b5969a66fc166b71ff https://github.com/ipolharvard/ethos-ares
+tabicl 0dbff3ec8fc68c123c87af77b0ea8b25cd2d23f3 https://github.com/soda-inria/tabicl
+MEDS-DEV 60b678c4b19c5075c6f134dee28ec4d4896ce703 https://github.com/Medical-Event-Data-Standard/MEDS-DEV
+MIMIC_IV_MEDS 7a2b35c608a4671d06e4c3fdf5f656feeaa41a9e https://github.com/Medical-Event-Data-Standard/MIMIC_IV_MEDS
+INSPIRE_MEDS 8002aa88cfc804bd4ecd42939f7f7cda2c5245cc https://github.com/rvandewater/inspire_meds
+SICdb_MEDS d3ef9b9f2c418879dc13dc1b6297d7af02f21b35 https://github.com/rvandewater/SICdb_MEDS
+AmsterdamUMCdb 5422b94dbaba6c1d9b7c301f059c425ca1fc13ce https://github.com/AmsterdamUMC/AmsterdamUMCdb
+	files/fake_data/observation_tables/part-0.parquet
+	files/fake_data/pharma_records/part-0.parquet
+HIRID-ICU-Benchmark bee770094bf8389920bc09823895b87e09a563dd https://github.com/ratschlab/HIRID-ICU-Benchmark
+YAIB 0d1d39a131a65f453aeb019828394396d6bfd171 https://github.com/rvandewater/YAIB
+AMSTEL 9e91acc04cba52a713713be933435cdca683730d https://github.com/AmsterdamUMC/AMSTEL
+MEDS-DEV-dev 67368f1b7a551f10a69ec0b18c9fbf5a86eddb8e https://github.com/Medical-Event-Data-Standard/MEDS-DEV (branch dev)
+eICU_MEDS d42deb031b78b3ca5c69a9f7e97dd67b59fa88ca https://github.com/Medical-Event-Data-Standard/eICU_MEDS
+mimic-code 303d26c623dcc9c49cc0f204468d4acc2f063797 https://github.com/MIT-LCP/mimic-code (sparse: mimic-iv/concepts, concepts_duckdb, concepts_postgres)
+NWICU_MEDS f637178e1c012654b6ef2c444a010d821ba8ba01 https://github.com/rvandewater/NWICU_MEDS
+HiRID_MEDS 5e1a21c8f2479ab0cab9272e3116f75412294922 https://github.com/rvandewater/HiRID_MEDS
+AUMCdb_MEDS 209b521597f8163dee5597981cd0f07dd0bb321d https://github.com/rvandewater/AUMCdb_MEDS

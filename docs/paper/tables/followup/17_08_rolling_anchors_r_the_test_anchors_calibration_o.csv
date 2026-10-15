@@ -1,0 +1,9 @@
+Endpoint,Database,Z0,Z1,F1,Z1+R,F1+R,F1+S,F1's map
+"Decompensation, 24 h",RICD,1.18,1.07,1.95,0.54,0.66,0.87,"intercept, slope"
+"New vasopressor, 24 h (descriptive)",RICD,0.02,0.02,0.22,0.72,0.41,0.19,"intercept, slope"
+"AKI stage >= 2, 48 h",RICD,0.15,0.15,0.45,0.35,0.35,0.34,"intercept, slope"
+"Hyperkalaemia (top bin), 24 h",RICD,0.13,0.14,0.34,0.33,0.28,0.26,"intercept, slope"
+"Decompensation, 24 h",zigongICU,0.88,0.89,2.34,1.23,1.16,1.16,"intercept, slope"
+"New vasopressor, 24 h",zigongICU,0.27,0.25,0.54,0.95,0.92,0.65,"intercept, slope"
+"Hyperkalaemia (top bin), 24 h (descriptive)",zigongICU,0.23,0.27,0.49,0.32,0.32,0.27,"intercept, slope"
+"Thrombocytopenia, 48 h",zigongICU,0.30,0.33,0.47,1.00,1.18,1.47,"intercept, slope"

@@ -1,0 +1,7 @@
+# Accelerate launch config for the server (M9): DDP, bf16, one process per GPU (models up to M fit a GPU).
+# The AutoDL host has 4 GPUs (RTX PRO 6000 Blackwell, 96 GB).
+compute_environment: LOCAL_MACHINE
+distributed_type: MULTI_GPU
+mixed_precision: bf16
+num_machines: 1
+num_processes: 4

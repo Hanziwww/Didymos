@@ -1,0 +1,31 @@
+# Group columns are functions of their category column. Canonical CLIF derives every group from one mapping
+# for all datasets (reference ETLs assign their own, e.g. CLIF-MIMIC's 2.1-era medication groups):
+#   schema_mapping: the CLIF 3.0 schema's category -> group mapping (clifpy schemas);
+#   values: mappings CLIF publishes outside the schema (mCIDE CSVs);
+# plus the groups of our declared extension categories (extensions.yaml). A category without a group in
+# CLIF has a NULL group.
+medication_admin_continuous:
+  med_group: {category_column: med_category, schema_mapping: med_category_to_group_mapping}
+  mar_action_group:
+    category_column: mar_action_category
+    # CLIF mCIDE clif_medication_admin_continuous_action_categories.csv
+    values: {start: administered, dose_change: administered, going: administered, verify: administered,
+             stop: not_administered, other: other}
+medication_admin_intermittent:
+  med_group: {category_column: med_category, schema_mapping: med_category_to_group_mapping}
+  mar_action_group:
+    category_column: mar_action_category
+    # CLIF mCIDE clif_medication_admin_intermittent_action_categories.csv
+    values: {given: administered, bolus: administered, not_given: not_administered, other: other}
+medication_orders:
+  med_group: {category_column: med_category, schema_mapping: med_category_to_group_mapping}
+patient_assessments:
+  assessment_group: {category_column: assessment_category, schema_mapping: assessment_category_to_group_mapping}
+input:
+  input_group: {category_column: input_category, schema_mapping: input_category_to_group_mapping}
+microbiology_nonculture:
+  organism_group:
+    category_column: organism_category
+    # CLIF mCIDE clif_microbiology_nonculture_organism_category.csv (the categories it lists with a group)
+    values: {clostridium_difficile: clostridium_difficile, sars_cov2: viral_other,
+             respiratory_syncytial_virus: respiratory_syncytial_virus}

@@ -1,0 +1,98 @@
+[project]
+name = "icutwin"
+version = "0.1.0"
+description = "Didymos: a generative ICU digital-twin model (event-stream GPT over CLIF-harmonized MEDS), its evaluation and toolkit"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "The Didymos authors" }]
+requires-python = ">=3.12,<3.13"
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    # data engineering
+    "numpy>=2.1",
+    "pandas>=2.2",
+    "polars>=1.30",
+    "pyarrow>=19",
+    "duckdb>=1.3",
+    "zstandard>=0.23",
+    # config / cli
+    "hydra-core>=1.3.2",
+    "omegaconf>=2.3",
+    "pydantic>=2.8",
+    "pyyaml>=6",
+    "tqdm>=4.66",
+    "rich>=13",
+    # standards & reference tooling
+    "meds>=0.4.1",
+    "es-aces>=0.7",
+    "clifpy>=2.1.0",
+    # modeling (torch pinned to the version vLLM 0.30.0 requires, so one lockfile serves both)
+    "torch==2.13.0",
+    "transformers>=5.10",
+    "accelerate>=1.10",
+    "datasets>=4",
+    "safetensors>=0.4",
+    # evaluation / factory
+    "scikit-learn>=1.5",
+    "scipy>=1.13",
+    "statsmodels>=0.15",
+    "lightgbm>=4.5",
+    "matplotlib>=3.9",
+    "datasketch>=1.6",
+    "psutil>=5.9",
+]
+
+[project.optional-dependencies]
+# independent CFG oracle for differential tests of the grammar FSM
+oracle = ["xgrammar>=0.2.1"]
+# TabICL (classifier, regressor, forecaster): the zero-shot learnability tools and the contract test
+icl = ["tabicl[forecast]>=2.2"]
+# high-throughput sampling on the Linux server / WSL2
+serve = ["vllm==0.30.0; sys_platform == 'linux'"]
+
+[project.scripts]
+icutwin_stage = "icutwin.stage.cli:main"
+icutwin_clif = "icutwin.clif.cli:main"
+icutwin_meds = "icutwin.meds.cli:main"
+icutwin_tokenize = "icutwin.tokenization.cli:main"
+icutwin_train = "icutwin.model.cli:main"
+icutwin_toolkit = "icutwin.toolkit.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "hypothesis>=6.100", "pytest-timeout>=2.3"]
+
+[build-system]
+requires = ["hatchling>=1.27"]   # PEP 639 licence metadata
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/icutwin"]
+
+[tool.uv]
+# Windows: CUDA wheels come from the PyTorch index; Linux: PyPI torch 2.13.0 is already a CUDA 13 build.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu130", marker = "sys_platform == 'win32'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+timeout = 600
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = ["E501"]   # prose in docstrings and tables may run past the line length

@@ -1,0 +1,27 @@
+# eICU_MEDS at d42deb031b78b3ca5c69a9f7e97dd67b59fa88ca: environment of the validated run (2026-10-04T15:21:30+00:00, exit 0)
+# WSL2 Ubuntu 24.04.4, CPython 3.12.3, uv 0.11.2; generated from `uv pip freeze` (icutwin.clif.community)
+# use: installed exactly (uv pip sync) before the ETL itself (--no-deps)
+antlr4-python3-runtime==4.9.3
+attrs==26.1.0
+beautifulsoup4==4.15.0
+certifi==2026.7.22
+charset-normalizer==3.5.2
+filelock==4.0.10
+hydra-core==1.3.7
+idna==3.20
+jsonschema-specifications==2025.9.1
+jsonschema==4.26.0
+meds-transforms==0.2.4
+meds==0.3.3
+numpy==2.5.3
+omegaconf==2.3.1
+packaging==26.3
+polars==1.26.0
+pyarrow==25.0.1
+pyyaml==6.0.3
+referencing==0.37.0
+requests==2.34.2
+rpds-py==2026.6.3
+soupsieve==2.10
+typing-extensions==4.16.0
+urllib3==2.8.0

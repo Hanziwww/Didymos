@@ -1,0 +1,77 @@
+# The clinical label catalog (plan Phase F, Factory design 4; "Label sampling" 2): declarative F1-F7 programs with
+# their definition variants, one program per horizon (minutes; -1: before the ICU discharge). Targets as in
+# factory/programs.py; a `cross` threshold names its clinical value and resolves to the channel's nearest decile edge
+# (exact under both decodes); `cross_value` keeps a clinical cut point inside a bin (flagged clinical_cut: the
+# decoder decides it there). Sources of definitions and horizons: the task anchors of the plan (YAIB, HiRID-ICU-
+# Benchmark, MEDS-DEV, EHRSHOT, FLAIR, ICareFM). Cadence is not part of a program: the episode sampler draws it.
+map_low_art: &map_low_art [cross, VITAL//map//arterial, below, 65, 0, 120]
+map_low_cuff: &map_low_cuff [cross, VITAL//map//cuff, below, 65, 0, 120]
+lactate_high: &lactate_high [cross, LAB//lactate//mmol/l//misc, above, 2.0, 0, 720]
+programs:
+  # F1 mortality
+  - {name: decompensation, family: F1, target: [death], horizons: [1440], eligibility: [in_icu]}
+  - {name: icu_death, family: F1, target: [death], horizons: [-1], eligibility: [in_icu]}
+  - {name: hospital_death, family: F1, target: [death], label: hosp_death, eligibility: [in_icu]}
+  # F2 organ failure onsets (masked while in the event)
+  - name: circulatory_failure
+    family: F2
+    target: [and, *lactate_high, [or, [or, *map_low_art, *map_low_cuff], [event, vasopressor]]]
+    horizons: [480, 720]
+  - {name: hypoxemia, family: F2, target: [cross, VITAL//spo2, below, 90, 30, 120], horizons: [240, 720]}
+  - {name: aki_1, family: F2, target: [stage, kdigo, 1], horizons: [1440, 2880]}
+  - {name: aki_2, family: F2, target: [stage, kdigo, 2], horizons: [1440, 2880]}
+  - {name: aki_3, family: F2, target: [stage, kdigo, 3], horizons: [2880]}
+  - {name: aki_2_creatinine, family: F2, target: [stage, kdigo_creat, 2], horizons: [1440, 2880]}
+  - {name: aki_2_urine, family: F2, target: [stage, kdigo_uo, 2], horizons: [720, 1440]}
+  - {name: liver_dysfunction, family: F2, target: [cross, LAB//bilirubin_total//mg/dl//lft, above, 2.0, 0, 1440], horizons: [2880]}
+  - {name: hyperglycaemia, family: F2, target: [cross, LAB//glucose//mg/dl//poc, above, 180, 0, 360], horizons: [720]}
+  - name: hypoglycaemia
+    family: F2
+    target: [cross_value, LAB//glucose//mg/dl//poc, below, 70, 0, 360]
+    horizons: [720, 1440]
+    flags: [clinical_cut]
+  # F3 deterioration (Sepsis-3-like where cultures and antibiotics exist: the ASE onset)
+  - {name: sepsis_ase, family: F3, target: [point, ase_onset], horizons: [720, 1440]}
+  - {name: sepsis_ase_wo_lactate, family: F3, target: [point, ase_onset_wo_lactate], horizons: [1440]}
+  # F4 intervention onsets
+  - {name: imv_onset, family: F4, target: [event, imv], horizons: [240, 720, 1440]}
+  - {name: vasopressor_onset, family: F4, target: [event, vasopressor], horizons: [240, 720, 1440]}
+  - {name: rrt_onset, family: F4, target: [event, rrt], horizons: [1440, 2880]}
+  - {name: nippv_onset, family: F4, target: [event, nippv], horizons: [720, 1440]}
+  - {name: ventilatory_support, family: F4, target: [or, [event, imv], [event, nippv]], horizons: [720]}
+  # F5 event-triggered outcomes (the trigger is the episode's cadence: extubation = the end of an IMV episode)
+  - {name: extubation_failure, family: F5, target: [or, [event, imv], [death]], horizons: [1440, 2880], eligibility: [in_icu]}
+  - {name: discharge_alive, family: F5, target: [discharge], horizons: [1440, 2880], eligibility: [in_icu]}
+  # F6 clinical threshold crossings (lab severity, vital-sign abnormalities)
+  - {name: hypotension, family: F6, target: [or, [cross, VITAL//map//arterial, below, 65, 30, 120], [cross, VITAL//map//cuff, below, 65, 30, 120]], horizons: [60, 240, 720]}
+  - {name: tachycardia, family: F6, target: [cross, VITAL//heart_rate, above, 100, 30, 120], horizons: [240, 720]}
+  - {name: tachypnea, family: F6, target: [cross, VITAL//respiratory_rate, above, 24, 0, 120], horizons: [240, 720]}
+  - {name: fever, family: F6, target: [cross, VITAL//temp_c, above, 38.0, 0, 240], horizons: [720]}
+  - {name: fever_383, family: F6, target: [cross_value, VITAL//temp_c, above, 38.3, 0, 240], horizons: [720], flags: [clinical_cut]}
+  - {name: low_gcs, family: F6, target: [cross, PA//gcs_total, below, 9, 0, 720], horizons: [720]}
+  - {name: lactate_rise, family: F6, target: [cross, LAB//lactate//mmol/l//misc, above, 4.0, 0, 720], horizons: [720]}
+  - {name: acidemia, family: F6, target: [cross, LAB//ph_arterial//(no units)//blood_gas, below, 7.30, 0, 720], horizons: [720]}
+  - {name: hyperkalemia_top, family: F6, target: [cross, LAB//potassium//mmol/l//bmp, above, 5.5, 0, 1440], horizons: [720, 1440]}
+  - {name: hyperkalemia_55, family: F6, target: [cross_value, LAB//potassium//mmol/l//bmp, above, 5.5, 0, 1440], horizons: [1440], flags: [clinical_cut]}
+  - {name: hyponatremia, family: F6, target: [cross, LAB//sodium//mmol/l//bmp, below, 130, 0, 1440], horizons: [1440]}
+  - {name: thrombocytopenia, family: F6, target: [cross, LAB//platelet_count//10^3/ul//cbc, below, 50, 0, 1440], horizons: [1440, 2880]}
+  - {name: anemia, family: F6, target: [cross, LAB//hemoglobin//g/dl//cbc, below, 7.0, 0, 1440], horizons: [1440]}
+  - {name: leukocytosis, family: F6, target: [cross, LAB//wbc//10^3/ul//cbc, above, 12.0, 0, 1440], horizons: [1440]}
+  # F7 values and time to event
+  - {name: remaining_los, family: F7, target: [los], label: regression, eligibility: [in_icu]}
+  # no urine-output volume target: OUTPUT channels are rates, volumes or cumulative counters depending on the source
+  # (HiRID counters), so sums across them mean nothing; urine output enters through KDIGO's criterion (aki_2_urine)
+  - {name: creatinine_24h, family: F7, target: [value, [LAB//creatinine//mg/dl//bmp], last, 1080, 1440, null], label: regression, eligibility: [in_icu]}
+  - {name: creatinine_change_48h, family: F7, target: [value, [LAB//creatinine//mg/dl//bmp], last, 2160, 2880, 1440], label: regression, eligibility: [in_icu]}
+  - {name: lactate_max_12h, family: F7, target: [value, [LAB//lactate//mmol/l//misc], max, 0, 720, null], label: regression, eligibility: [in_icu]}
+  - {name: map_min_6h, family: F7, target: [value, [VITAL//map//arterial, VITAL//map//cuff], min, 0, 360, null], label: regression, eligibility: [in_icu]}
+  - {name: heart_rate_next_1h, family: F7, target: [value, [VITAL//heart_rate], last, 0, 60, null], label: regression, eligibility: [in_icu]}
+  - {name: imv_time, family: F7, target: [event, imv], label: tte}
+  - {name: vasopressor_time, family: F7, target: [event, vasopressor], label: tte}
+  - {name: death_time, family: F7, target: [death], label: tte, eligibility: [in_icu]}
+  # ordinal (multiclass) bands
+  - {name: kdigo_max_48h, family: F7, target: [stage_max, kdigo, 0, 2880], label: ordinal, bands: [1, 2, 3], eligibility: [in_icu]}
+  - {name: potassium_band_24h, family: F6, target: [value, [LAB//potassium//mmol/l//bmp], last, 1080, 1440, null], label: ordinal, bands: [3.5, 4.1, 4.9], eligibility: [in_icu]}
+  - {name: sodium_band_24h, family: F6, target: [value, [LAB//sodium//mmol/l//bmp], last, 1080, 1440, null], label: ordinal, bands: [132, 137, 141, 146], eligibility: [in_icu]}
+  - {name: platelet_band_24h, family: F6, target: [value, [LAB//platelet_count//10^3/ul//cbc], last, 1080, 1440, null], label: ordinal, bands: [71, 135, 210], eligibility: [in_icu]}
+  - {name: remaining_los_band, family: F7, target: [los], label: ordinal, bands: [24, 48, 96, 168], eligibility: [in_icu]}

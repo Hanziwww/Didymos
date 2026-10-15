@@ -1,0 +1,13 @@
+# NWICU 0.1.0 — MIMIC-like layout data/{nw_hosp,nw_icu}/ with .csv.gz; patient key = subject_id.
+name: nwicu
+archive: NWICU/NWICU-0.1.0.tar.zst
+strip_prefix: NWICU-0.1.0/
+out_compression: gzip
+anchor:
+  member: data/nw_hosp/patients.csv
+  patient_col: subject_id
+rules:
+  - {pattern: "data/*/d_*.csv", action: copy}
+  - {pattern: "data/*.csv", action: filter, key_col: subject_id, key: patient}
+  - {pattern: "*SHA256SUMS.txt", action: checksums}
+  - {pattern: "*", action: copy}

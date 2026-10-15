@@ -1,0 +1,14 @@
+Measure,Median (IQR)
+"Rollout, trained against random (group sums: F4's check)",0.97 (0.95 to 0.98)
+... with the groups' token counts held fixed (partial),0.96 (0.92 to 0.98)
+"Rollout, trained against random, token level",0.94 (0.93 to 0.95)
+Trained rollout against the structural null (group sums),0.97 (0.95 to 0.98)
+Random rollout against the structural null (group sums),1.00 (1.00 to 1.00)
+"Total variation from the null, trained / random rollout",0.19 (0.15 to 0.23) / 0.02 (0.02 to 0.03)
+"Rollout against the groups' token counts, trained / random",0.67 (0.54 to 0.75) / 0.58 (0.47 to 0.70)
+"Rollout mass on the first token ([BOS], in no group), trained / random",0.35 (0.27 to 0.44) / 0.38 (0.32 to 0.45)
+"Rollout mass on the statics, trained / random / null",0.18 (0.16 to 0.19) / 0.24 (0.22 to 0.24) / 0.24 (0.23 to 0.25)
+"Largest over smallest group, in tokens",84 (38 to 157)
+"Last layer's attention, trained against random: tokens / group sums / group means",0.03 / 0.78 / 0.01
+"Last token's attention entropy per head (share of the maximum), range over the 12 layers: trained / random",0.68-0.81 / 0.92-0.95
+Probe editing (the reference) against the token counts: signed / absolute,0.02 (-0.15 to 0.18) / 0.29 (0.10 to 0.44)

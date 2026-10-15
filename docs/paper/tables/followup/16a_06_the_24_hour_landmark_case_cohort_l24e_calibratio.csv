@@ -1,0 +1,8 @@
+Endpoint,Database,Didymos O/E,after recalibration,Didymos AUROC after,LightGBM (transferred) O/E,after recalibration
+In-hospital death,RICD,1.63,0.99,0.638,2.28,0.99
+ICU death,RICD,1.40,0.99,0.680,3.09,1.00
+ICU stay > 7 days,RICD,3.46,1.00,0.549,4.14,1.00
+"Decompensation, 24 h",zigongICU,0.29,1.00,0.787,4.41,0.99
+In-hospital death,zigongICU,0.67,1.00,0.716,2.02,1.00
+ICU death,zigongICU,0.55,1.00,0.761,4.29,1.00
+ICU stay > 7 days,zigongICU,1.36,1.00,0.592,1.35,1.00

@@ -1,0 +1,9 @@
+column,vital_category,meas_site_name,factor,provenance
+temperature,temp_c,,1,nursing chart temperature (degrees C)
+heart_rate,heart_rate,,1,nursing chart heart rate (/min)
+breathing,respiratory_rate,,1,nursing chart breathing (/min)
+Blood_oxygen_saturation,spo2,,1,nursing chart SpO2 (%)
+Blood_pressure_high,sbp,cuff,1,nursing chart non-invasive systolic pressure (mmHg)
+Blood_pressure_low,dbp,cuff,1,nursing chart non-invasive diastolic pressure (mmHg)
+Invasive_SBP,sbp,arterial,1,nursing chart invasive systolic pressure (mmHg)
+Invasive_diastolic_blood_pressure,dbp,arterial,1,nursing chart invasive diastolic pressure (mmHg)

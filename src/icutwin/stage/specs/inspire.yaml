@@ -1,0 +1,16 @@
+# INSPIRE 1.4.2 — flat layout; every data table carries subject_id; dictionaries copied whole.
+name: inspire
+archive: INSPIRE/INSPIRE-1.4.2.tar.zst
+strip_prefix: INSPIRE-1.4.2/
+out_compression: gzip
+anchor:
+  member: operations.csv
+  patient_col: subject_id
+rules:
+  - {pattern: "department.csv", action: copy}
+  - {pattern: "parameters.csv", action: copy}
+  - {pattern: "schema.csv", action: copy}
+  - {pattern: "icd10_excluded.csv", action: copy}
+  - {pattern: "*.csv", action: filter, key_col: subject_id, key: patient}
+  - {pattern: "*SHA256SUMS.txt", action: checksums}
+  - {pattern: "*", action: copy}

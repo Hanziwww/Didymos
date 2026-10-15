@@ -1,0 +1,76 @@
+laboratoryid,lab_category,factor,reference_unit,lab_order_category,provenance
+656,glucose_serum,1,mg/dl,bmp,Glukose (BGA) mg/dl; ricu glu (blood-gas analyser glucose grouped with laboratory glucose as for HiRID)
+348,glucose_serum,1,mg/dl,bmp,Glukose (ZL); ricu glu
+655,calcium_ionized,4.008,mg/dl,misc,Calcium (i) (BGA) mmol/L -> mg/dl; ricu cai
+457,calcium_total,4.008,mg/dl,bmp,Calcium (ZL) mmol/L; ricu ca
+658,hemoglobin,1,g/dl,cbc,Haemoglobin (BGA); ricu hgb
+289,hemoglobin,1,g/dl,cbc,Haemoglobin (ZL); ricu hgb
+666,bicarbonate,1,mmol/l,blood_gas,HCO3 act (BGA); ricu bicar
+456,bicarbonate,1,mmol/l,bmp,Bicarbonat (ZL); ricu bicar
+668,ext_base_excess,1,mmol/l,blood_gas,BE (B) (BGA); ricu be
+685,potassium,1,mmol/l,bmp,Kalium (BGA); ricu k
+463,potassium,1,mmol/l,bmp,Kalium (ZL); ricu k
+686,sodium,1,mmol/l,bmp,Natrium (BGA); ricu na
+469,sodium,1,mmol/l,bmp,Natrium (ZL); ricu na
+683,chloride,1,mmol/l,bmp,Chlorid (BGA); ricu cl
+450,chloride,1,mmol/l,bmp,Chlorid (ZL); ricu cl
+657,lactate,1,mmol/l,misc,Lactat (BGA); ricu lact
+465,lactate,1,mmol/l,misc,Lactat (ZL); ricu lact
+687,pco2_arterial,1,mmhg,blood_gas,PCO2 (BGA); ricu pco2
+689,po2_arterial,1,mmhg,blood_gas,PO2 (BGA); ricu po2
+688,ph_arterial,1,(no units),blood_gas,PH (BGA); ricu ph
+697,ph_venous,1,(no units),blood_gas,PH (BGA) ven
+699,po2_mixed_venous,1,mmhg,blood_gas,PO2 (BGA) gemV (mixed venous); venous 694 and capillary 695/698 have no CLIF category
+690,so2_arterial,1,%,blood_gas,SO2 (BGA); ricu sao2
+660,ext_carboxyhemoglobin,1,%,blood_gas,CO-Haemoglobin (BGA)
+661,ext_methemoglobin,1,%,blood_gas,Met-Haemoglobin (BGA)
+682,hematocrit,1,%,cbc,Haematokrit (BGA); ricu hct
+217,hematocrit,1,%,cbc,Haematokrit (ZL); ricu hct
+301,wbc,1,10^3/ul,cbc,Leukocyten (ZL) G/L; ricu wbc
+314,platelet_count,1,10^3/ul,cbc,Thrombocyten (ZL) G/L; ricu plt
+367,creatinine,1,mg/dl,bmp,Kreatinin (ZL); ricu crea
+355,bun,0.467,mg/dl,bmp,Harnstoff (ZL) urea mg/dl x0.467 -> BUN; ricu bun
+341,crp,10,mg/l,misc,C-reaktives Protein (ZL) mg/dl x10
+3128,inr,1,(no units),coags,PT / INR
+597,ptt,1,sec,coags,APTT (ZL); ricu ptt
+344,fibrinogen,1,mg/dl,coags,Fibrinogen (ZL); ricu fgn
+468,magnesium,2.431,mg/dl,misc,Magnesium (ZL) mmol/L; ricu mg
+471,phosphate,3.097521,mg/dl,misc,Phosphor (ZL) mmol/L; ricu phos
+617,alt,1,u/l,lft,GPT (ZL); ricu alt
+616,ast,1,u/l,lft,GOT (ZL); ricu ast
+609,alkaline_phosphatase,1,u/l,lft,Alkalische Phosphatase (ZL); ricu alp
+614,ext_ggt,1,u/l,lft,Gamma-GT (ZL)
+333,bilirubin_total,1,mg/dl,lft,Bilirubin gesamt (ZL); ricu bili
+332,bilirubin_conjugated,1,mg/dl,lft,Bilirubin direkt (ZL); ricu bili_dir
+294,total_protein,1,g/dl,lft,Total-Protein (ZL)
+287,albumin,1,g/dl,lft,Serum-Albumin (ZL); ricu alb
+611,ext_creatine_kinase,1,u/l,misc,Creatinkinase (ZL); ricu ck
+253,ckmb,1,ng/ml,cardiac,CK-MB-Massenkonzentration (ZL) ug/L = ng/mL; ricu ckmb
+481,troponin_t,1,ng/l,misc,hs Troponin T (ZL) ng/L; ricu tnt
+622,ldh,1,u/l,misc,LDH (ZL)
+608,amylase,1,u/l,misc,Amylase (ZL)
+623,lipase,1,u/l,misc,Lipase (ZL)
+263,procalcitonin,1,ng/ml,misc,Procalcitonin (ZL) ug/L = ng/mL
+571,nt_pro_bnp,1,pg/ml,cardiac,NT-proBNP (ZL)
+259,ferritin,1,ng/ml,misc,Ferritin (ZL) ug/L = ng/mL
+385,triglycerides,1,mg/dl,misc,Triglyceride (ZL)
+338,cholesterol,1,mg/dl,misc,Cholesterin (ZL)
+479,tsh,1,miu/l,tft,TSH (ZL) mU/L
+576,free_t4,1,ng/dl,tft,"Freies Thyroxin (ZL): values are ng/dL (median 1.3, LOINC 3024-7 is a mass concentration), although the dictionary says pmol/L (S3 QA median-ratio flag)"
+575,free_t3,0.651,pg/ml,tft,Freies Trijodthyronin (ZL) pmol/L x0.651 -> pg/mL (T3 650.98 g/mol)
+402,d_dimer,1,ug/ml,coags,D-Dimer (ZL) mg/L = ug/mL
+569,interleukin_06,1,pg/ml,misc,Interleukin 6 (ZL)
+279,ext_ammonia,1,umol/l,misc,Ammoniak (ZL)
+442,esr,1,mm/hour,misc,Blutsenkung 1 Std. (ZL)
+401,cystatin_c,1,mg/l,misc,Cystatin C (ZL)
+230,neutrophils_percent,1,%,cbc,Neutrophile Granulocyten (ZL); ricu neut
+223,lymphocytes_percent,1,%,cbc,Lymphocyten (ZL); ricu lymph
+227,monocytes_percent,1,%,cbc,Monocyten (ZL)
+197,eosinophils_percent,1,%,cbc,Eosinophile (ZL); ricu eos
+174,basophils_percent,1,%,cbc,Basophile (ZL); ricu basos
+308,neutrophils_absolute,1,10^3/ul,cbc,Neutr. Granulocyten abs (ZL) G/L
+302,lymphocytes_absolute,1,10^3/ul,misc,Lymphocyten absolut (ZL) G/L
+305,monocytes_absolute,1,10^3/ul,cbc,Monocyten absolut (ZL) G/L
+299,eosinophils_absolute,1,10^3/ul,cbc,Eosinophile absolut (ZL) G/L
+295,basophils_absolute,1,10^3/ul,cbc,Basophile absolut (ZL) G/L
+240,ext_bands_percent,1,%,cbc,Stabkernige Handdiff. (ZL)

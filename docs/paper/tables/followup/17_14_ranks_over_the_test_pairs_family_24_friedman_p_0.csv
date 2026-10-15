@@ -1,0 +1,15 @@
+Comparator,F1 higher / lower / tied,Median AUROC difference (F1 minus),P (Holm)
+Z0,9 / 4 / 0,0.043,0.279
+Z1,9 / 4 / 0,0.052,0.279
+F1S,2 / 11 / 0,-0.007,0.020
+lgbm_pooled,8 / 5 / 0,0.047,0.279
+logistic_pooled,13 / 0 / 0,0.116,0.003
+tabpfn_v3_5,8 / 5 / 0,0.032,0.279
+sofa,12 / 1 / 0,0.086,0.007
+news,13 / 0 / 0,0.100,0.003
+mews,13 / 0 / 0,0.111,0.003
+qsofa,13 / 0 / 0,0.116,0.003
+sirs,13 / 0 / 0,0.168,0.003
+lgbm_label,10 / 3 / 0,0.030,0.279
+lgbm_ftlabel,6 / 7 / 0,-0.002,1.000
+lgbm_local,7 / 6 / 0,0.001,1.000

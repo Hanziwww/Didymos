@@ -1,0 +1,10 @@
+Checkpoint,Optimizer,Tuning NLL,P1 AUC pooled,"P1 AUC, worst dataset",P1 status
+MUH32_main,muon,1.5092,0.564,0.623,FAIL
+MU32_main,muon,1.5274,0.554,0.604,INCONCLUSIVE
+MUF32_main,muon,1.5388,0.549,0.573,INCONCLUSIVE
+MUC32_main,muon,1.5525,0.538,0.555,PASS
+M32_main,adamw,1.5611,0.530,0.561,PASS
+ML32_main,adamw,1.5631,0.539,0.577,PASS
+MC32_main,adamw,1.5636,0.530,0.560,PASS
+M_main,adamw,1.5820,0.542,0.650,FAIL
+MCN32_main,adamw,1.6067,0.521,0.547,PASS

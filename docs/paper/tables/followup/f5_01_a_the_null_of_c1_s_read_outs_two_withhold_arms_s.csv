@@ -1,0 +1,10 @@
+Treatment,Response,Prefixes,Share of 'expected sign' (null 0.5),Mean (null 0),95% CI,SD across prefixes
+norepinephrine,map,172,0.51,0.030,-0.658 to 0.749,4.702
+insulin,glucose,200,0.51,0.493,-7.779 to 7.986,57.145
+crrt,potassium,200,0.55,-0.047,-0.105 to 0.014,0.425
+crrt,creatinine_24h,200,0.50,-0.004,-0.148 to 0.128,1.048
+furosemide,urine_output,103,0.52,12.595,-37.909 to 64.189,262.039
+imv,fio2_charted,200,0.49,0.042,-0.021 to 0.109,0.485
+imv,spo2,190,0.52,-0.053,-0.170 to 0.058,0.804
+fluid_bolus,map,193,0.40,-0.317,-0.931 to 0.320,4.448
+fluid_bolus,urine_output,185,0.46,-31.263,-70.923 to 6.955,262.907

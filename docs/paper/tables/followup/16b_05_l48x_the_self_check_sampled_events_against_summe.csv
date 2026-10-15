@@ -1,0 +1,6 @@
+Endpoint,Sampled events,Summed hazards,Ratio
+"Decompensation, 24 h",15626,15647.6,0.999
+"New IMV, 24 h",44224,44294.9,0.998
+"New vasopressor, 24 h",24363,24274.0,1.004
+"New RRT, 48 h",12880,12852.5,1.002
+ICU death,15626,15647.6,0.999

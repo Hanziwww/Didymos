@@ -1,0 +1,58 @@
+itemid,lab_category,factor,reference_unit,lab_order_category,provenance
+100001,glucose_serum,1,mg/dl,bmp,Glucose (mg/dL)
+100045,glucose_serum,1,mg/dl,bmp,Glucose (second item; mg/dL)
+100010,sodium,1,mmol/l,bmp,Sodium (mEq/L = mmol/L)
+100050,sodium,1,mmol/l,bmp,"Sodium, Whole Blood"
+100011,potassium,1,mmol/l,bmp,Potassium
+100047,potassium,1,mmol/l,bmp,"Potassium, Whole Blood"
+100002,creatinine,1,mg/dl,bmp,Creatinine
+100003,calcium_total,1,mg/dl,bmp,"Calcium, Total"
+100044,calcium_ionized,4.008,mg/dl,misc,Free Calcium (mmol/L -> mg/dl)
+100013,bicarbonate,1,mmol/l,bmp,Total CO2 of the chemistry panel (CLIF mCIDE: bicarbonate from BMP is often reported as CO2)
+100012,chloride,1,mmol/l,bmp,Chloride
+100004,bun,1,mg/dl,bmp,Urea Nitrogen
+100007,hemoglobin,1,g/dl,cbc,Hemoglobin
+100006,hematocrit,1,%,cbc,Hematocrit
+100014,platelet_count,1,10^3/ul,cbc,Platelet Count (K/uL)
+100016,wbc,1,10^3/ul,cbc,White Blood Cells (K/uL)
+100009,magnesium,1,mg/dl,misc,Magnesium
+100015,phosphate,1,mg/dl,misc,Phosphate
+100021,albumin,1,g/dl,lft,Albumin
+100032,ast,1,u/l,lft,AST
+100042,alt,1,u/l,lft,ALT
+100020,bilirubin_total,1,mg/dl,lft,"Bilirubin, Total"
+100049,bilirubin_conjugated,1,mg/dl,lft,"Bilirubin, Direct"
+100033,alkaline_phosphatase,1,u/l,lft,Alkaline Phosphatase
+100027,total_protein,1,g/dl,lft,"Protein, Total"
+100022,neutrophils_percent,1,%,cbc,Neutrophils
+100023,lymphocytes_percent,1,%,cbc,Lymphocytes
+100026,monocytes_percent,1,%,cbc,Monocytes
+100024,eosinophils_percent,1,%,cbc,Eosinophils
+100025,basophils_percent,1,%,cbc,Basophils
+100038,neutrophils_absolute,1,10^3/ul,cbc,Absolute Neutrophil Count
+100037,lymphocytes_absolute,1,10^3/ul,misc,Absolute Lymphocyte Count
+100039,monocytes_absolute,1,10^3/ul,cbc,Absolute Monocyte Count
+100036,eosinophils_absolute,1,10^3/ul,cbc,Absolute Eosinophil Count
+100035,basophils_absolute,1,10^3/ul,cbc,Absolute Basophil Count
+100034,pt,1,sec,coags,PT (seconds)
+100046,ptt,1,sec,coags,PTT (seconds)
+100031,lactate,1,mmol/l,misc,Lactate
+100053,crp,1,mg/l,misc,C-Reactive Protein (mg/L)
+100251,crp,1,mg/l,misc,High-Sensitivity CRP (mg/L)
+100048,fibrinogen,1,mg/dl,coags,"Fibrinogen, Functional"
+100052,ferritin,1,ng/ml,misc,Ferritin
+100056,triglycerides,1,mg/dl,misc,Triglycerides
+100088,cholesterol,1,mg/dl,misc,"Cholesterol, Total"
+100091,lipase,1,u/l,misc,Lipase
+100137,amylase,1,u/l,misc,Amylase
+100092,tsh,1,miu/l,tft,TSH (uIU/mL = mIU/L)
+100103,free_t4,1,ng/dl,tft,"Thyroxine (T4), Free"
+100071,nt_pro_bnp,1,pg/ml,cardiac,NTproBNP
+100059,troponin_i,1000,ng/l,misc,Troponin I (ng/mL x1000)
+100057,troponin_t,1000,ng/l,misc,Troponin T (ng/mL x1000; sentinel values are nulled by the outlier ranges)
+100099,ckmb,1,ng/ml,cardiac,"Creatine Kinase, MB Isoenzyme"
+100085,ext_creatine_kinase,1,u/l,misc,Creatine Kinase (CK)
+100161,ext_ggt,1,u/l,lft,Gamma Glutamyltransferase
+100095,ext_ammonia,1,umol/l,misc,Ammonia
+100145,ext_methemoglobin,1,%,blood_gas,Methemoglobin
+100075,d_dimer,0.001,ug/ml,coags,D-Dimer (ng/mL D-DU x0.001 -> ug/mL)

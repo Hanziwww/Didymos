@@ -1,0 +1,23 @@
+Group,Predictor,ICU death,In-hospital death,ICU stay > 7 days
+Twin,"Twin (A1: 32 rollouts, share)",0.882,0.830,0.797
+Tabular foundation models,TabPFN-3.5,0.913,0.858,0.835
+Tabular foundation models,TabPFN v2,0.907,0.847,0.829
+Gradient boosting,"LightGBM, pooled",0.903,0.859,0.834
+Gradient boosting,"LightGBM, per dataset",0.873,0.831,0.810
+Other trees,Random forest,0.892,0.837,0.821
+Other trees,Extra trees,0.891,0.824,0.820
+Other trees,Decision tree (CART),0.795,0.757,0.791
+Linear,"Logistic regression, L2",0.864,0.798,0.791
+Linear,"Logistic regression, L1 (LASSO)",0.899,0.831,0.821
+Linear,"Logistic regression, elastic net",0.902,0.835,0.823
+Linear,"Twin probe (linear, frozen states)",0.919,0.848,0.825
+Other learners,Naive Bayes,0.717,0.694,0.683
+Other learners,k-nearest neighbours,0.844,0.792,0.782
+Other learners,Multilayer perceptron,0.881,0.823,0.789
+Clinical scores,SOFA,0.727,0.697,0.661
+Clinical scores,SAPS II,0.804,0.747,0.629
+Clinical scores,OASIS,0.773,0.702,0.659
+Clinical scores,NEWS,0.785,0.675,0.615
+Clinical scores,MEWS,0.764,0.633,0.545
+Clinical scores,qSOFA,0.709,0.612,0.565
+Clinical scores,SIRS,0.663,0.609,0.553

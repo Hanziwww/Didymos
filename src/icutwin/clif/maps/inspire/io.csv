@@ -1,0 +1,15 @@
+source_table,item_name,direction,category,group_name,factor,provenance
+vitals,ns,input,iv_crystalloid,iv_fluids,1,INSPIRE normal saline mL
+vitals,hs,input,iv_crystalloid,iv_fluids,1,INSPIRE Hartmann's solution mL
+vitals,psa,input,iv_crystalloid,iv_fluids,1,INSPIRE plasma solution A (balanced crystalloid) mL
+vitals,hns,input,iv_crystalloid,iv_fluids,1,INSPIRE half normal saline mL
+vitals,d5w,input,iv_crystalloid,iv_fluids,1,INSPIRE dextrose 5% water mL
+vitals,d10w,input,iv_crystalloid,iv_fluids,1,INSPIRE dextrose 10% water mL
+vitals,d50w,input,iv_crystalloid,iv_fluids,1,INSPIRE dextrose 50% water mL
+vitals,ds,input,iv_crystalloid,iv_fluids,1,INSPIRE dextrose saline mL
+vitals,alb5,input,iv_colloid,iv_fluids,1,INSPIRE albumin 5% mL
+vitals,alb20,input,iv_colloid,iv_fluids,1,INSPIRE albumin 20% mL
+vitals,hes,input,iv_colloid,iv_fluids,1,INSPIRE hydroxyethyl starch mL
+vitals,uo,output,indwelling_urinary_catheter,urine,1,INSPIRE intra-op urine output mL
+vitals,ebl,output,blood_loss,blood_loss,1,INSPIRE estimated blood loss mL
+ward_vitals,uo,output,urinary_other,urine,1,INSPIRE ward/ICU urine output mL (collection device not recorded)

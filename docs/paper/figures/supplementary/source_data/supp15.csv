@@ -1,0 +1,145 @@
+panel,series,program,neighbours,auroc
+panel,Didymos state,decompensation@1440,5,0.8218747306323189
+panel,Didymos state,decompensation@1440,10,0.8608297342699005
+panel,Didymos state,decompensation@1440,25,0.8853331339588717
+panel,Didymos state,decompensation@1440,50,0.8905281102569199
+panel,Tabular features,decompensation@1440,5,0.8034691618938765
+panel,Tabular features,decompensation@1440,10,0.840666480365132
+panel,Tabular features,decompensation@1440,25,0.8730598271461794
+panel,Tabular features,decompensation@1440,50,0.8860850431558538
+panel,TF-IDF of events,decompensation@1440,5,0.8130487530075672
+panel,TF-IDF of events,decompensation@1440,10,0.8449860716612332
+panel,TF-IDF of events,decompensation@1440,25,0.8661295160049964
+panel,TF-IDF of events,decompensation@1440,50,0.8636871725891866
+panel,Untrained model,decompensation@1440,5,0.6064084717525973
+panel,Untrained model,decompensation@1440,10,0.6280885553899577
+panel,Untrained model,decompensation@1440,25,0.6582943590898765
+panel,Untrained model,decompensation@1440,50,0.6739152961435283
+panel,Didymos state,imv_onset@1440,5,0.6244550789129594
+panel,Didymos state,imv_onset@1440,10,0.6404634272852198
+panel,Didymos state,imv_onset@1440,25,0.683515457800311
+panel,Didymos state,imv_onset@1440,50,0.6856422216850354
+panel,Tabular features,imv_onset@1440,5,0.5378685089523974
+panel,Tabular features,imv_onset@1440,10,0.6378184682124546
+panel,Tabular features,imv_onset@1440,25,0.6689693243268645
+panel,Tabular features,imv_onset@1440,50,0.691676380033828
+panel,TF-IDF of events,imv_onset@1440,5,0.609039913708227
+panel,TF-IDF of events,imv_onset@1440,10,0.6680368862368039
+panel,TF-IDF of events,imv_onset@1440,25,0.6643788755985472
+panel,TF-IDF of events,imv_onset@1440,50,0.6261138637248007
+panel,Untrained model,imv_onset@1440,5,0.5386181701446132
+panel,Untrained model,imv_onset@1440,10,0.5003686192922462
+panel,Untrained model,imv_onset@1440,25,0.5497091301873116
+panel,Untrained model,imv_onset@1440,50,0.550651531031869
+panel,Didymos state,vasopressor_onset@1440,5,0.6552807303335685
+panel,Didymos state,vasopressor_onset@1440,10,0.6513390816886744
+panel,Didymos state,vasopressor_onset@1440,25,0.720506554295237
+panel,Didymos state,vasopressor_onset@1440,50,0.7143723105743143
+panel,Tabular features,vasopressor_onset@1440,5,0.6343997813241893
+panel,Tabular features,vasopressor_onset@1440,10,0.6609566683892577
+panel,Tabular features,vasopressor_onset@1440,25,0.6884942603496704
+panel,Tabular features,vasopressor_onset@1440,50,0.7210886238646419
+panel,TF-IDF of events,vasopressor_onset@1440,5,0.6025904494935794
+panel,TF-IDF of events,vasopressor_onset@1440,10,0.6425047888033348
+panel,TF-IDF of events,vasopressor_onset@1440,25,0.6848611957263111
+panel,TF-IDF of events,vasopressor_onset@1440,50,0.671666984679828
+panel,Untrained model,vasopressor_onset@1440,5,0.5659886608199882
+panel,Untrained model,vasopressor_onset@1440,10,0.5580636131898593
+panel,Untrained model,vasopressor_onset@1440,25,0.6300454500838354
+panel,Untrained model,vasopressor_onset@1440,50,0.6228708882620008
+panel,Didymos state,rrt_onset@2880,5,0.7554784254868784
+panel,Didymos state,rrt_onset@2880,10,0.8454321715852714
+panel,Didymos state,rrt_onset@2880,25,0.8647005119072406
+panel,Didymos state,rrt_onset@2880,50,0.8738267304725714
+panel,Tabular features,rrt_onset@2880,5,0.6776879253840941
+panel,Tabular features,rrt_onset@2880,10,0.7604580175217169
+panel,Tabular features,rrt_onset@2880,25,0.8323235184266193
+panel,Tabular features,rrt_onset@2880,50,0.8426741054901913
+panel,TF-IDF of events,rrt_onset@2880,5,0.7093720043250482
+panel,TF-IDF of events,rrt_onset@2880,10,0.7761269508792624
+panel,TF-IDF of events,rrt_onset@2880,25,0.836945264055731
+panel,TF-IDF of events,rrt_onset@2880,50,0.858032747508228
+panel,Untrained model,rrt_onset@2880,5,0.6163088977091367
+panel,Untrained model,rrt_onset@2880,10,0.6658626794510178
+panel,Untrained model,rrt_onset@2880,25,0.731689101863882
+panel,Untrained model,rrt_onset@2880,50,0.7800210000032284
+panel,Didymos state,aki_2@2880,5,0.6885604704002191
+panel,Didymos state,aki_2@2880,10,0.7218699495606065
+panel,Didymos state,aki_2@2880,25,0.7394235519338894
+panel,Didymos state,aki_2@2880,50,0.7524496746510102
+panel,Tabular features,aki_2@2880,5,0.6992818215898184
+panel,Tabular features,aki_2@2880,10,0.7214881585857322
+panel,Tabular features,aki_2@2880,25,0.7447205312552101
+panel,Tabular features,aki_2@2880,50,0.7593223083890193
+panel,TF-IDF of events,aki_2@2880,5,0.6453974576381716
+panel,TF-IDF of events,aki_2@2880,10,0.6743773970454549
+panel,TF-IDF of events,aki_2@2880,25,0.7268202719198601
+panel,TF-IDF of events,aki_2@2880,50,0.743763540806446
+panel,Untrained model,aki_2@2880,5,0.6428209836358022
+panel,Untrained model,aki_2@2880,10,0.6645334930675479
+panel,Untrained model,aki_2@2880,25,0.700817141947331
+panel,Untrained model,aki_2@2880,50,0.6969465186015819
+panel,Didymos state,sepsis_ase@1440,5,0.5425994951020884
+panel,Didymos state,sepsis_ase@1440,10,0.5922570349217445
+panel,Didymos state,sepsis_ase@1440,25,0.7435248354265148
+panel,Didymos state,sepsis_ase@1440,50,0.8515984607026634
+panel,Tabular features,sepsis_ase@1440,5,0.548918984376665
+panel,Tabular features,sepsis_ase@1440,10,0.6550896316026935
+panel,Tabular features,sepsis_ase@1440,25,0.7851684465794513
+panel,Tabular features,sepsis_ase@1440,50,0.8773350420286887
+panel,TF-IDF of events,sepsis_ase@1440,5,0.5108537486592499
+panel,TF-IDF of events,sepsis_ase@1440,10,0.49478903022514453
+panel,TF-IDF of events,sepsis_ase@1440,25,0.6511491572058457
+panel,TF-IDF of events,sepsis_ase@1440,50,0.7742123673830169
+panel,Untrained model,sepsis_ase@1440,5,0.4943467893817522
+panel,Untrained model,sepsis_ase@1440,10,0.510840328525614
+panel,Untrained model,sepsis_ase@1440,25,0.6095400836987376
+panel,Untrained model,sepsis_ase@1440,50,0.7622902204384768
+panel,Didymos state,hypotension@240,5,0.6427127644264432
+panel,Didymos state,hypotension@240,10,0.7065888298442203
+panel,Didymos state,hypotension@240,25,0.7458348055406123
+panel,Didymos state,hypotension@240,50,0.7604268723927229
+panel,Tabular features,hypotension@240,5,0.643319016163419
+panel,Tabular features,hypotension@240,10,0.6916065563669213
+panel,Tabular features,hypotension@240,25,0.7460823049317772
+panel,Tabular features,hypotension@240,50,0.7750997310100883
+panel,TF-IDF of events,hypotension@240,5,0.633569412104747
+panel,TF-IDF of events,hypotension@240,10,0.7109669628392878
+panel,TF-IDF of events,hypotension@240,25,0.7661012208277572
+panel,TF-IDF of events,hypotension@240,50,0.7732440798048209
+panel,Untrained model,hypotension@240,5,0.6199064538293837
+panel,Untrained model,hypotension@240,10,0.6635720415474444
+panel,Untrained model,hypotension@240,25,0.6448889729282244
+panel,Untrained model,hypotension@240,50,0.6573760835279288
+panel,Didymos state,hyperkalemia_top@1440,5,0.6419739381460983
+panel,Didymos state,hyperkalemia_top@1440,10,0.6329598779343131
+panel,Didymos state,hyperkalemia_top@1440,25,0.7040885342362313
+panel,Didymos state,hyperkalemia_top@1440,50,0.6947431453923002
+panel,Tabular features,hyperkalemia_top@1440,5,0.5870557962730255
+panel,Tabular features,hyperkalemia_top@1440,10,0.5707968889473141
+panel,Tabular features,hyperkalemia_top@1440,25,0.5957664055290323
+panel,Tabular features,hyperkalemia_top@1440,50,0.5889566240968015
+panel,TF-IDF of events,hyperkalemia_top@1440,5,0.6185338275065765
+panel,TF-IDF of events,hyperkalemia_top@1440,10,0.6472380716655073
+panel,TF-IDF of events,hyperkalemia_top@1440,25,0.6324998336769113
+panel,TF-IDF of events,hyperkalemia_top@1440,50,0.6792040013533074
+panel,Untrained model,hyperkalemia_top@1440,5,0.5351180661911531
+panel,Untrained model,hyperkalemia_top@1440,10,0.5653223726563936
+panel,Untrained model,hyperkalemia_top@1440,25,0.612310194069083
+panel,Untrained model,hyperkalemia_top@1440,50,0.6055793257209885
+panel,Didymos state,thrombocytopenia@2880,5,0.702539998844146
+panel,Didymos state,thrombocytopenia@2880,10,0.7495320941307417
+panel,Didymos state,thrombocytopenia@2880,25,0.8041595804389343
+panel,Didymos state,thrombocytopenia@2880,50,0.8142267957285072
+panel,Tabular features,thrombocytopenia@2880,5,0.6544314381052593
+panel,Tabular features,thrombocytopenia@2880,10,0.712949697410026
+panel,Tabular features,thrombocytopenia@2880,25,0.7859139301216794
+panel,Tabular features,thrombocytopenia@2880,50,0.7942337672995782
+panel,TF-IDF of events,thrombocytopenia@2880,5,0.6642842284315714
+panel,TF-IDF of events,thrombocytopenia@2880,10,0.7022137397026383
+panel,TF-IDF of events,thrombocytopenia@2880,25,0.768960845822734
+panel,TF-IDF of events,thrombocytopenia@2880,50,0.7751490956038303
+panel,Untrained model,thrombocytopenia@2880,5,0.5805936908956948
+panel,Untrained model,thrombocytopenia@2880,10,0.6031843206331027
+panel,Untrained model,thrombocytopenia@2880,25,0.5857760490230451
+panel,Untrained model,thrombocytopenia@2880,50,0.6381080164879512

@@ -1,0 +1,29 @@
+program,endpoint,map,statistic,estimate (95% CI),P,P (Holm)
+aki_2@2880,"AKI stage >= 2, 48 h",isotonic,oe_raw,0.668 (0.550 to 0.787),<0.001,<=0.0014
+aki_2@2880,"AKI stage >= 2, 48 h",isotonic,oe_recalibrated,0.821 (0.681 to 0.968),0.016,0.078
+aki_2@2880,"AKI stage >= 2, 48 h",isotonic,oe_change,0.153 (0.124 to 0.189),<0.001,<=0.0014
+aki_2@2880,"AKI stage >= 2, 48 h",isotonic,ece_change,-0.034 (-0.039 to -0.007),0.011,0.061
+decompensation@1440,Death within 24 h,isotonic,oe_raw,1.714 (1.367 to 2.103),<0.001,<=0.0014
+decompensation@1440,Death within 24 h,isotonic,oe_recalibrated,0.749 (0.611 to 0.913),0.006,0.042
+decompensation@1440,Death within 24 h,isotonic,oe_change,-0.965 (-1.226 to -0.735),<0.001,<=0.0014
+decompensation@1440,Death within 24 h,isotonic,ece_change,0.001 (-0.009 to 0.013),0.85,1.00
+hyperkalemia_top@1440,"Hyperkalaemia (top bin), 24 h",isotonic,oe_raw,0.820 (0.564 to 1.092),0.21,0.43
+hyperkalemia_top@1440,"Hyperkalaemia (top bin), 24 h",isotonic,oe_recalibrated,0.667 (0.454 to 0.887),0.0066,0.042
+hyperkalemia_top@1440,"Hyperkalaemia (top bin), 24 h",isotonic,oe_change,-0.153 (-0.207 to -0.103),<0.001,<=0.0014
+hyperkalemia_top@1440,"Hyperkalaemia (top bin), 24 h",isotonic,ece_change,0.014 (0.006 to 0.018),0.01,0.061
+hypotension@240,"Hypotension, 4 h",isotonic,oe_raw,0.977 (0.697 to 1.284),0.87,0.87
+hypotension@240,"Hypotension, 4 h",isotonic,oe_recalibrated,0.900 (0.643 to 1.167),0.47,1.00
+hypotension@240,"Hypotension, 4 h",isotonic,oe_change,-0.078 (-0.128 to -0.030),<0.001,<=0.0014
+hypotension@240,"Hypotension, 4 h",isotonic,ece_change,0.003 (-0.009 to 0.011),0.52,1.00
+imv_onset@1440,"New IMV, 24 h",logistic,oe_raw,0.554 (0.341 to 0.825),0.0042,0.013
+imv_onset@1440,"New IMV, 24 h",logistic,oe_recalibrated,1.433 (0.892 to 2.123),0.14,0.57
+imv_onset@1440,"New IMV, 24 h",logistic,oe_change,0.878 (0.548 to 1.302),<0.001,<=0.0014
+imv_onset@1440,"New IMV, 24 h",logistic,ece_change,-0.019 (-0.033 to 0.003),0.11,0.34
+rrt_onset@2880,"New RRT, 48 h",logistic,oe_raw,0.546 (0.386 to 0.743),<0.001,<=0.0014
+rrt_onset@2880,"New RRT, 48 h",logistic,oe_recalibrated,0.927 (0.657 to 1.307),0.69,1.00
+rrt_onset@2880,"New RRT, 48 h",logistic,oe_change,0.381 (0.247 to 0.572),<0.001,<=0.0014
+rrt_onset@2880,"New RRT, 48 h",logistic,ece_change,-0.014 (-0.015 to -0.003),0.0024,0.017
+vasopressor_onset@1440,"New vasopressor, 24 h",logistic,oe_raw,0.455 (0.304 to 0.630),<0.001,<=0.0014
+vasopressor_onset@1440,"New vasopressor, 24 h",logistic,oe_recalibrated,1.020 (0.668 to 1.459),0.95,1.00
+vasopressor_onset@1440,"New vasopressor, 24 h",logistic,oe_change,0.565 (0.360 to 0.831),<0.001,<=0.0014
+vasopressor_onset@1440,"New vasopressor, 24 h",logistic,ece_change,-0.022 (-0.033 to -0.002),0.031,0.13

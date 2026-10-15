@@ -1,0 +1,50 @@
+{
+ "renderer": "mermaid 11.4.1 (https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js), headless msedge",
+ "git": "1a63ffa827cbbe18a8c925379ce14b4cc85d8411",
+ "diagrams": {
+  "supp1a_data_processing": {
+   "source": "docs/paper/manuscript/diagrams/supp1a_data_processing.mmd",
+   "source_sha256": "f99db472f7aca37ab4465442d73d4d7466b02e2f8f37c66388e949090c7b1d25",
+   "svg_sha256": "f6bb16717e0deaa5d9be6da802ef4e976d718eb18e7aa77a3d2d680fc9f7839c",
+   "viewbox": [
+    0.0,
+    8.0,
+    1133.2474365234375,
+    820.0999755859375
+   ]
+  },
+  "supp1b_sequence": {
+   "source": "docs/paper/manuscript/diagrams/supp1b_sequence.mmd",
+   "source_sha256": "a30f4020f273a814e87eb9de4459449655eb8f0e6dc8ae9fa91353f7722a1fe0",
+   "svg_sha256": "a3c139b350a72fe07699044d3bc48934ee396cf95eb1a343f72cae526f08e76d",
+   "viewbox": [
+    0.0,
+    8.0,
+    1352.19921875,
+    645.8999633789062
+   ]
+  },
+  "supp2a_architecture": {
+   "source": "docs/paper/manuscript/diagrams/supp2a_architecture.mmd",
+   "source_sha256": "6d987e5d7e937ba6a42526b0e0b846338c7008104d29f6ce6f552ae0b992a990",
+   "svg_sha256": "bad4774dbb28ab44af6162b7f99bc204f3548e50e16fb14032cd498f2998b8a3",
+   "viewbox": [
+    0.0,
+    8.000001907348633,
+    871.38916015625,
+    1229.9000244140625
+   ]
+  },
+  "supp2b_simulation": {
+   "source": "docs/paper/manuscript/diagrams/supp2b_simulation.mmd",
+   "source_sha256": "61f6600f2a1c9a73cd452e4059243a3ee100fe9039ab9bb7bc23727c826be12d",
+   "svg_sha256": "a72e6c505b538ea57f4a6ff4fe52e428a9c4582649f78805a9d4ca5272004049",
+   "viewbox": [
+    0.0,
+    8.0,
+    637.848876953125,
+    1046.4000244140625
+   ]
+  }
+ }
+}

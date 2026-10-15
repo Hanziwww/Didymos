@@ -1,0 +1,16 @@
+# CLIF 3.0 mcs (long form), replacing ELF ECMO_MCS (which reads the 2.1 wide table): the device state
+# (support, device, configuration) once per time point, and each setting keyed by its support type
+# (an ECMO and an Impella flow or pump speed live on different scales).
+elf_version: "icutwin-ext-0.1.0"
+subject_id_col: patient_id
+
+mcs:
+  device:
+    code: [MCS, col(support_category), col(device_category), col(config_category)]
+    time: col(recorded_dttm)
+    distinct: true
+  setting:
+    code: [MCS, col(support_category), col(setting_category)]
+    time: col(recorded_dttm)
+    numeric_value: setting_value
+    where: setting_category IS NOT NULL

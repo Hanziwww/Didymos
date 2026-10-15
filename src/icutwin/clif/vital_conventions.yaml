@@ -1,0 +1,13 @@
+# Canonical blood-pressure measurement site, enforced in S2b for every dataset.
+#
+# Arterial-line and cuff pressures differ systematically and are sampled differently, so the hourly rule
+# aggregates them separately and meas_site_name of sbp/dbp/map is rewritten to `arterial` or `cuff`.
+# Reference ETLs record the site in different places (CLIF-MIMIC: only in vital_name; CLIF-AmsterdamUMCdb:
+# meas_site_name 'arterial_line[_2]'/'cuff'), so the site is resolved by ordered rules (first match wins;
+# RE2 on the lower-cased column). Rows that match no rule keep a NULL site and are reported.
+bp_categories: [sbp, dbp, map]
+bp_site_rules:
+  - {site: arterial, column: meas_site_name, regex: '^(arterial|arterial_line.*)$'}
+  - {site: cuff, column: meas_site_name, regex: '^cuff$'}
+  - {site: arterial, column: vital_name, regex: 'arterial|^art\b|\babp\b'}
+  - {site: cuff, column: vital_name, regex: 'non[ -]?invasive|niet invasieve|manual|\bnibp\b|cuff'}

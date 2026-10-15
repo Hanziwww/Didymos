@@ -1,0 +1,32 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif", "fontSize": "13px", "primaryColor": "#F0F0F0", "primaryBorderColor": "#4D4D4D", "primaryTextColor": "#000000", "lineColor": "#333333", "clusterBkg": "#FFFFFF", "clusterBorder": "#8C8C8C", "edgeLabelBackground": "#FFFFFF"}, "fontFamily": "Arial, Helvetica, sans-serif", "markdownAutoWrap": false, "htmlLabels": false, "flowchart": {"htmlLabels": false, "wrappingWidth": 480, "subGraphTitleMargin": {"top": 6, "bottom": 10}, "curve": "linear", "nodeSpacing": 28, "rankSpacing": 28}}}%%
+%% Supplementary Fig. 2b: simulating futures under constraints, and the two estimates (sources: architecture.md, src/icutwin/eval/hazards.py)
+flowchart TB
+    PR["Prompt<br/>the stay's record up to the prediction time:<br/>prefix, header and timeline; no outcomes;<br/>fields documented later set to unknown"]
+    WI["What-if, optional<br/>a treatment start written at the cutoff,<br/>or the treatment's tokens never drawn"]
+    M["Didymos<br/>next-token probabilities"]
+    subgraph CS["Constrained sampling"]
+        direction TB
+        G["Grammar automaton, at every step<br/>block order; each field once;<br/>intervals only between time groups;<br/>canonical order; infusion state"]
+        D["Database support<br/>only tokens the prompt's database records"]
+        B["Budget and liveness<br/>the end block always fits;<br/>every state can reach the end"]
+        S["Renormalize, then draw<br/>temperature 1; no top-k or top-p<br/>append the token; repeat to the end"]
+        G --> D --> B --> S
+    end
+    F["Simulated futures<br/>32 or 128 per prediction time"]
+    E0["Sampled estimate<br/>share of futures with the event<br/>by the horizon"]
+    E2["Hazard estimate<br/>each future's step hazards of the event,<br/>accumulated while at risk:<br/>the same risk with less Monte Carlo variance"]
+    USE["Forecasts, what-if contrasts,<br/>synthetic patients, explanations,<br/>trial design"]
+    PR --> M
+    WI -.-> M
+    M --> CS
+    CS --> F
+    F --> E0
+    F --> E2
+    E0 --> USE
+    E2 --> USE
+    classDef accent fill:#E3EEF7,stroke:#0072B2,stroke-width:1.5px,color:#000000;
+    classDef plain fill:#F0F0F0,stroke:#4D4D4D,stroke-width:1px,color:#000000;
+    classDef note fill:#FFFFFF,stroke:#B3B3B3,stroke-width:1px,color:#4D4D4D;
+    class M,F,E2 accent;
+    class PR,G,D,B,S,E0,USE plain;
+    class WI note;

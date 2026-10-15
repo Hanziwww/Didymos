@@ -1,0 +1,78 @@
+labname,unit_in,lab_category,factor,reference_unit,lab_order_category,lab_specimen_category,provenance
+albumin,*,albumin,1,g/dl,lft,plasma_blood,ricu alb (g/dL)
+alkaline phos.,*,alkaline_phosphatase,1,u/l,lft,plasma_blood,ricu alp (Units/L)
+ALT (SGPT),*,alt,1,u/l,lft,plasma_blood,ricu alt (Units/L)
+AST (SGOT),*,ast,1,u/l,lft,plasma_blood,ricu ast (Units/L)
+-basos,iface:%,basophils_percent,1,%,cbc,plasma_blood,ricu basos (%); differential in % by the interface unit; absolute counts ('' or 1000/uL or th/uL: no unit or x10^3/uL) unmapped
+-basos,iface:% wbc,basophils_percent,1,%,cbc,plasma_blood,ricu basos (%); differential in % by the interface unit; absolute counts ('' or 1000/uL or th/uL: no unit or x10^3/uL) unmapped
+-basos,iface:10,basophils_percent,1,%,cbc,plasma_blood,ricu basos (%); differential in % by the interface unit; absolute counts ('' or 1000/uL or th/uL: no unit or x10^3/uL) unmapped
+-bands,iface:%,ext_bands_percent,1,%,cbc,plasma_blood,band neutrophils (%); no CLIF 3.0 category; differential in % by the interface unit; absolute counts ('' or 1000/uL or th/uL: no unit or x10^3/uL) unmapped
+-eos,iface:%,eosinophils_percent,1,%,cbc,plasma_blood,ricu eos (%); differential in % by the interface unit; absolute counts ('' or 1000/uL or th/uL: no unit or x10^3/uL) unmapped
+-eos,iface:% wbc,eosinophils_percent,1,%,cbc,plasma_blood,ricu eos (%); differential in % by the interface unit; absolute counts ('' or 1000/uL or th/uL: no unit or x10^3/uL) unmapped
+-eos,iface:10,eosinophils_percent,1,%,cbc,plasma_blood,ricu eos (%); differential in % by the interface unit; absolute counts ('' or 1000/uL or th/uL: no unit or x10^3/uL) unmapped
+-lymphs,iface:%,lymphocytes_percent,1,%,cbc,plasma_blood,ricu lymph (%); differential in % by the interface unit; absolute counts ('' or 1000/uL or th/uL: no unit or x10^3/uL) unmapped
+-lymphs,iface:% wbc,lymphocytes_percent,1,%,cbc,plasma_blood,ricu lymph (%); differential in % by the interface unit; absolute counts ('' or 1000/uL or th/uL: no unit or x10^3/uL) unmapped
+-lymphs,iface:x 10,lymphocytes_percent,1,%,cbc,plasma_blood,ricu lymph (%); differential in % by the interface unit; absolute counts ('' or 1000/uL or th/uL: no unit or x10^3/uL) unmapped
+-monos,iface:%,monocytes_percent,1,%,cbc,plasma_blood,eICU differential (%); differential in % by the interface unit; absolute counts ('' or 1000/uL or th/uL: no unit or x10^3/uL) unmapped
+-monos,iface:% wbc,monocytes_percent,1,%,cbc,plasma_blood,eICU differential (%); differential in % by the interface unit; absolute counts ('' or 1000/uL or th/uL: no unit or x10^3/uL) unmapped
+-monos,iface:x 10,monocytes_percent,1,%,cbc,plasma_blood,eICU differential (%); differential in % by the interface unit; absolute counts ('' or 1000/uL or th/uL: no unit or x10^3/uL) unmapped
+-polys,iface:%,neutrophils_percent,1,%,cbc,plasma_blood,ricu neut (%); differential in % by the interface unit; absolute counts ('' or 1000/uL or th/uL: no unit or x10^3/uL) unmapped
+Base Excess,*,ext_base_excess,1,mmol/l,blood_gas,plasma_blood,ricu be (mEq/L = mmol/L)
+Base Deficit,*,ext_base_excess,-1,mmol/l,blood_gas,plasma_blood,ricu be (Base Deficit negated)
+bicarbonate,*,bicarbonate,1,mmol/l,bmp,plasma_blood,ricu bicar (chemistry panel)
+HCO3,*,bicarbonate,1,mmol/l,blood_gas,plasma_blood,blood-gas HCO3 (mmol/L); kept apart from BMP via order category
+Total CO2,*,co2,1,mmol/l,bmp,plasma_blood,ricu tco2; CLIF 3.0 co2 (total CO2)
+total bilirubin,*,bilirubin_total,1,mg/dl,lft,plasma_blood,ricu bili
+direct bilirubin,*,bilirubin_conjugated,1,mg/dl,lft,plasma_blood,ricu bili_dir
+BUN,*,bun,1,mg/dl,bmp,plasma_blood,ricu bun
+calcium,mg/dL,calcium_total,1,mg/dl,bmp,plasma_blood,ricu ca
+calcium,mmol/L,calcium_total,4.008,mg/dl,bmp,plasma_blood,Ca 40.08 g/mol (1 mmol/L = 4.008 mg/dL)
+ionized calcium,mg/dL,calcium_ionized,1,mg/dl,misc,plasma_blood,eICU unit mg/dL
+ionized calcium,mmol/L,calcium_ionized,4.008,mg/dl,misc,plasma_blood,ricu cai (mmol/L) -> CLIF mg/dl
+chloride,*,chloride,1,mmol/l,bmp,plasma_blood,ricu cl
+creatinine,*,creatinine,1,mg/dl,bmp,plasma_blood,ricu crea
+glucose,*,glucose_serum,1,mg/dl,bmp,plasma_blood,ricu glu (laboratory glucose); CLIF 3.0 glucose_serum
+bedside glucose,*,glucose,1,mg/dl,poc,plasma_blood,point-of-care glucose; CLIF 3.0 glucose (2.1 glucose_fingerstick)
+magnesium,mg/dL,magnesium,1,mg/dl,misc,plasma_blood,ricu mg
+magnesium,mEq/L,magnesium,1.215,mg/dl,misc,plasma_blood,1 mEq/L Mg = 1.215 mg/dL
+magnesium,mmol/L,magnesium,2.431,mg/dl,misc,plasma_blood,Mg 24.305 g/mol
+phosphate,*,phosphate,1,mg/dl,misc,plasma_blood,ricu phos
+potassium,*,potassium,1,mmol/l,bmp,plasma_blood,ricu k
+sodium,*,sodium,1,mmol/l,bmp,plasma_blood,ricu na
+total protein,*,total_protein,1,g/dl,lft,plasma_blood,eICU g/dL
+Hgb,*,hemoglobin,1,g/dl,cbc,plasma_blood,ricu hgb
+Hct,*,hematocrit,1,%,cbc,plasma_blood,ricu hct
+platelets x 1000,*,platelet_count,1,10^3/ul,cbc,plasma_blood,ricu plt (K/mcL)
+WBC x 1000,*,wbc,1,10^3/ul,cbc,plasma_blood,ricu wbc (K/mcL)
+PT - INR,*,inr,1,(no units),coags,plasma_blood,ricu inr_pt
+PT,*,pt,1,sec,coags,plasma_blood,ricu pt
+PTT,*,ptt,1,sec,coags,plasma_blood,ricu ptt
+fibrinogen,*,fibrinogen,1,mg/dl,coags,plasma_blood,ricu fgn
+lactate,*,lactate,1,mmol/l,misc,plasma_blood,ricu lact
+paCO2,*,pco2_arterial,1,mmhg,blood_gas,plasma_blood,ricu pco2
+paO2,*,po2_arterial,1,mmhg,blood_gas,plasma_blood,ricu po2
+pH,*,ph_arterial,1,(no units),blood_gas,plasma_blood,ricu ph
+O2 Sat (%),*,so2_arterial,1,%,blood_gas,plasma_blood,ricu sao2
+Methemoglobin,*,ext_methemoglobin,1,%,blood_gas,plasma_blood,ricu methb
+Carboxyhemoglobin,*,ext_carboxyhemoglobin,1,%,blood_gas,plasma_blood,ricu hbco
+CPK,*,ext_creatine_kinase,1,u/l,misc,plasma_blood,ricu ck
+CPK-MB,*,ckmb,1,ng/ml,cardiac,plasma_blood,ricu ckmb (ng/mL)
+troponin - I,*,troponin_i,1000,ng/l,misc,plasma_blood,ricu tri (ng/mL) x1000 -> ng/L
+troponin - T,*,troponin_t,1000,ng/l,misc,plasma_blood,ricu tnt (ng/mL) x1000 -> ng/L
+BNP,*,bnp,1,pg/ml,cardiac,plasma_blood,eICU pg/mL
+CRP,iface:mg/dl,crp,10,mg/l,misc,plasma_blood,"ricu crp (mg/dL x10 -> mg/L), by the interface unit; interface 'mg/L' unmapped: three scales by hospital (medians 8, 44-98 and 500-890)"
+CRP-hs,iface:mg/l,crp,1,mg/l,misc,plasma_blood,"high-sensitivity CRP (same analyte; mg/L), by the interface unit; interface 'mg/dL' unmapped: two scales by hospital"
+procalcitonin,*,procalcitonin,1,ng/ml,misc,plasma_blood,eICU ng/mL
+ESR,*,esr,1,mm/hour,misc,plasma_blood,eICU mm/hr
+Ferritin,*,ferritin,1,ng/ml,misc,plasma_blood,eICU ng/mL
+LDH,*,ldh,1,u/l,misc,plasma_blood,eICU Units/L
+lipase,*,lipase,1,u/l,misc,plasma_blood,eICU Units/L
+amylase,*,amylase,1,u/l,misc,plasma_blood,eICU Units/L
+ammonia,iface:umol/l,ext_ammonia,1,umol/l,misc,plasma_blood,"umol/L by the interface unit (the system unit 'mcg/dL' is a label: 86% of results are umol/L, median 42)"
+ammonia,iface:mcm/l,ext_ammonia,1,umol/l,misc,plasma_blood,umol/L (interface spelling)
+ammonia,iface:ug/dl,ext_ammonia,0.5872,umol/l,misc,plasma_blood,"NH3 17.03 g/mol (1 mcg/dL = 0.5872 umol/L); interface 'mcmol/L' unmapped: two scales by hospital (medians 2-4 and 34-94)"
+ammonia,iface:mcg/dl,ext_ammonia,0.5872,umol/l,misc,plasma_blood,NH3 17.03 g/mol (1 mcg/dL = 0.5872 umol/L)
+triglycerides,*,triglycerides,1,mg/dl,misc,plasma_blood,CLIF 3.0 triglycerides
+total cholesterol,*,cholesterol,1,mg/dl,misc,plasma_blood,CLIF 3.0 cholesterol
+TSH,*,tsh,1,miu/l,tft,plasma_blood,mcU/mL = mIU/L
+free T4,*,free_t4,1,ng/dl,tft,plasma_blood,eICU ng/dL

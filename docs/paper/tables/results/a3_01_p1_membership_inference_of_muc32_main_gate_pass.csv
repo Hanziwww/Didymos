@@ -1,0 +1,9 @@
+Group,AUC,95% CI,TPR at 1% FPR,Status
+mimic,0.551,0.536 to 0.565,0.011,PASS
+aumc,0.552,0.537 to 0.568,0.019,PASS
+eicu,0.552,0.538 to 0.566,0.024,PASS
+hirid,0.552,0.537 to 0.566,0.020,PASS
+sicdb,0.555,0.541 to 0.570,0.015,PASS
+nwicu,0.549,0.535 to 0.563,0.010,PASS
+inspire,0.551,0.533 to 0.568,0.011,PASS
+pooled,0.538,0.532 to 0.544,0.015,PASS

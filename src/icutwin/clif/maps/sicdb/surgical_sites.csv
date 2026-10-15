@@ -1,0 +1,41 @@
+site,system,provenance
+Unknown,,site not recorded
+.,,site not recorded
+Extremitäten-Chirurgie,musculoskeletal_skin,limb surgery (APACHE musculoskeletal/skin)
+Kieferchirurgie,other,maxillofacial surgery (APACHE other surgical)
+Abdomen: Unterer GI-Trakt,gastrointestinal,lower GI tract
+"Gefäß: Aortenchirurgie (Dissektion, Atherom, Aneurysma)",cardiovascular,aortic surgery
+HNO,other,ear-nose-throat surgery (APACHE other surgical)
+Abdomen: Oberer GI-Trakt (inkl. Jejunum),gastrointestinal,upper GI tract
+Abdomen: Leber-Chriurgie,gastrointestinal,liver surgery
+Thorax: Andere,respiratory,other thoracic surgery
+Herz: CABG,cardiovascular,CABG
+Gefäß: periphere Gefäße,cardiovascular,peripheral vascular surgery
+Trauma: SHT,trauma,traumatic brain injury (APACHE trauma surgical)
+Andere Eingriffe,other,other procedures
+Gefäß: Karotischirurgie,cardiovascular,carotid surgery (APACHE IV operative cardiovascular: carotid endarterectomy)
+Herz: Klappe mit CABG,cardiovascular,valve and CABG
+Trauma: Polytrauma,trauma,multiple trauma
+Herz: Klappe,cardiovascular,valve surgery
+Herz: Andere,cardiovascular,other cardiac surgery
+Abdomen: Pankreas,gastrointestinal,pancreatic surgery
+Gefäß: große Gefäße (Thorax und Bauch),cardiovascular,great vessels (thorax and abdomen)
+Neurochirurgie: zerebrovaskulär,neurologic,cerebrovascular neurosurgery
+Trauma: Extremitäten,trauma,limb trauma
+Neurochirurgie: Wirbelsäule,neurologic,spine surgery (APACHE neurologic surgical: laminectomy / spinal cord surgery)
+Abdomen: Biliärtrakt,gastrointestinal,biliary tract
+Trauma: Thorax,trauma,chest trauma
+Gefäß: Andere,cardiovascular,other vascular surgery
+Abdomen: endokrine Chirurgie,metabolic_endocrine,endocrine surgery
+Gynäkologischer Eingriff,gynecologic,gynecologic surgery
+Geburtshilfe,gynecologic,obstetric surgery
+Thorax: Lobektomie,respiratory,lobectomy
+Thorax: Pneumonektomie,respiratory,pneumonectomy
+Neurochirurgie: Andere,neurologic,other neurosurgery
+Thorax: Pleura,respiratory,pleural surgery
+Transplantation: Leber,transplant,liver transplantation
+Trauma: Abdomen,trauma,abdominal trauma
+Transplantation: Herz/Lunge,transplant,heart-lung transplantation
+Transplantation: Andere,transplant,other transplantation
+Transplantation: Herz,transplant,heart transplantation
+Neurochirurgie: intrakranieller Tumor,neurologic,intracranial tumour surgery

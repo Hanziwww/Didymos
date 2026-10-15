@@ -1,0 +1,9 @@
+Design,Endpoint,Score,AUROC,O/E,Calibration slope,Brier
+L24,ICU death,SAPS II,0.778,0.24,0.76,0.058
+L24,ICU death,OASIS,0.730,0.39,0.76,0.039
+L24,In-hospital death,SAPS II,0.745,0.54,0.59,0.099
+L24,In-hospital death,OASIS,0.701,0.87,0.57,0.085
+L48,ICU death,SAPS II,0.804,0.44,0.90,0.045
+L48,ICU death,OASIS,0.773,0.68,0.82,0.042
+L48,In-hospital death,SAPS II,0.747,0.90,0.62,0.102
+L48,In-hospital death,OASIS,0.702,1.38,0.54,0.106

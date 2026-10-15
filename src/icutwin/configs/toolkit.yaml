@@ -1,0 +1,64 @@
+# The application toolkit (docs/toolkit.md): one tool per call; results and cards under runs/toolkit/<tool>/<job>.
+#   python -m icutwin.toolkit.cli tool=forecast patient=split:mimic/held_out/<stay id> hours=24 mode=fast
+#   python -m icutwin.toolkit.cli tool=forecast patient=bank:<twin id> hours=[6,12,24,48]       # a rolling trajectory
+#   python -m icutwin.toolkit.cli tool=whatif patient=bank:<twin id> hours=10 treatment=norepinephrine
+#   python -m icutwin.toolkit.cli tool=explain patient=... hours=24 program=icu_death@-1
+#   python -m icutwin.toolkit.cli tool=similar patient=... hours=24 index=test_L24
+#   python -m icutwin.toolkit.cli tool=cohort spec=<cohort.yaml>      # also tool=trial, tool=teach
+#   python -m icutwin.toolkit.cli tool=card result=<result.json>      # a card of any saved result
+#   python -m icutwin.toolkit.cli tool=index name=test_R anchors_dir=<states dir> labels=<predictions.parquet>
+# Sampling runs in vLLM's environment (backend=vllm: vllm_python, default ICUTWIN_VLLM_PYTHON) or with transformers
+# (backend=hf); every sampling call needs the M7 gate PASS for these weights.
+defaults:
+  - paths
+  - _self_
+
+tool: forecast
+run: MUC32_main
+root: ${paths.root}
+tokens: ${paths.data}/tokens/full_r4
+model: ${paths.runs}/train/full/${run}/final/hf
+audit: ${paths.runs}/audit/m7_${run}
+out: ${paths.runs}/toolkit
+paper: ${paths.runs}/paper
+bank: ${paths.data}/bank/${run}_bank
+bank_store: ${paths.data}/factory/stores/bank_dev
+stores:
+  held_out: ${paths.data}/factory/stores/real_test
+  tuning: ${paths.data}/factory/stores/real_dev
+  train: ${paths.data}/factory/stores/real_train
+backend: vllm
+vllm_python: ${oc.env:ICUTWIN_VLLM_PYTHON,null}
+gpu_memory_utilization: 0.85
+engines: 1
+device: cuda
+workers: 2
+seed: 0
+
+# per tool
+patient: null           # split:<dataset>/<split>/<stay id> | bank:<twin id> | meds:<dir>::<split>::<stay id>
+hours: null             # a number or a list (a rolling trajectory)
+unknown_site: null      # prompt with the dataset and site unknown (default: MEDS stays only)
+mode: fast              # forecast: fast (16 rollouts) | standard (128)
+n: null                 # rollouts (overrides the mode; what-if default 16)
+cap_hours: 72           # forecast: the token cap's horizon (what-if: 24)
+cap_mult: 1.0
+observed: false         # forecast: add the patient's own labels (evaluation, teaching)
+treatment: norepinephrine
+program: decompensation@1440
+design: null            # explain/forecast: the paper design whose probes and program set apply (default by hour)
+generator_top: 0        # explain: rollouts for the top groups' edits
+index: null             # similar: an index under runs/toolkit/index (default test_<design>)
+k: 50
+spec: null              # cohort, trial, teach: a YAML file
+result: null            # card: a saved result JSON
+card: true              # write the HTML card beside the result
+name: null              # index: its name
+anchors_dir: null       # index: anchors.parquet (and states.npz)
+labels: null            # index: per-anchor labels (predictions.parquet)
+
+hydra:
+  run:
+    dir: ${paths.runs}/hydra/toolkit/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    chdir: false

@@ -1,0 +1,16 @@
+origin,admission_source,provenance
+Verpleegafdeling zelfde ziekenhuis,ward,admissions.origin (AmsterdamUMCdb dictionary: Inpatient Hospital)
+Verpleegafdeling ander ziekenhuis,other_hospital,admissions.origin (ward of another hospital)
+Eerste Hulp afdeling zelfde ziekenhuis,ed,admissions.origin (Emergency Room - Hospital)
+Eerste Hulp afdeling ander ziekenhuis,other_hospital,admissions.origin (ED of another hospital)
+Operatiekamer vanaf verpleegafdeling zelfde ziekenhuis,or,admissions.origin (operating room after a ward stay)
+Operatiekamer vanaf Eerste Hulp afdeling zelfde ziekenhuis,or,admissions.origin (operating room after the ED)
+Recovery zelfde ziekenhuis (alleen bij niet geplande IC-opname),or,admissions.origin (recovery room; unplanned ICU admission)
+Recovery ander ziekenhuis,other_hospital,admissions.origin (recovery room of another hospital)
+CCU/IC zelfde ziekenhuis,other_icu,admissions.origin (Inpatient Cardiac Care Facility)
+CCU/IC ander ziekenhuis,other_hospital,admissions.origin (CCU/ICU of another hospital)
+Special/Medium care zelfde ziekenhuis,stepdown,admissions.origin (medium care)
+Special/Medium care ander ziekenhuis,other_hospital,admissions.origin (medium care of another hospital)
+"Andere locatie zelfde ziekenhuis, transport per ambulance",other,admissions.origin
+Huis,direct,admissions.origin (home)
+Anders,other,admissions.origin

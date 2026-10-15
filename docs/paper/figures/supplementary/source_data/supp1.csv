@@ -1,0 +1,3 @@
+panel,series,file,credit,crop_px,width_mm,height_mm,printed_dpi,pixels
+a,artwork,docs/paper/figures/artwork/gpt_image/original/supp1a.png,GPT-image,"44,8,1492,1000",180.0,123.31,600,4252x2913
+b,artwork,docs/paper/figures/artwork/gpt_image/original/supp1b.png,GPT-image,"47,95,1899,757",180.0,64.34,600,4252x1520

@@ -1,0 +1,8 @@
+cplgroup,pattern,target,category,provenance
+Ventilation,^ventilated,respiratory_support,imv,care-plan ventilation status (documented state)
+Ventilation,^non-invasive ventilation,respiratory_support,nippv,care-plan ventilation status (documented state)
+Care Limitation,^comfort measures only$,code_status,and,CLIF-MIMIC: Comfort measures only -> AND
+Care Limitation,^(do not resuscitate|no cpr)$,code_status,dnr,flag combined per time point (DNR + DNI -> dnr_or_dni)
+Care Limitation,^no intubation$,code_status,dni_only,flag combined per time point
+Care Limitation,^(no cardioversion|no augmentation of care|no vasopressors/inotropes)$,code_status,other,partial limitation of resuscitative care
+Care Limitation,^full therapy$,code_status,full,

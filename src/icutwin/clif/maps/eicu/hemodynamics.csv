@@ -1,0 +1,17 @@
+source_table,item,measurement_category,provenance
+vitalPeriodic,cvp,cvp,ricu cvp (monitor)
+vitalPeriodic,pasystolic,pa_systolic,monitor PA pressure
+vitalPeriodic,padiastolic,pa_diastolic,monitor PA pressure
+vitalPeriodic,pamean,pa_mean,monitor PA pressure
+vitalAperiodic,paop,pcwp,pulmonary artery occlusion pressure
+vitalAperiodic,svr,svr,
+vitalAperiodic,svri,svri,
+nurseCharting,CVP|CVP,cvp,nurse-validated
+nurseCharting,CVP (mmHg)|Value,cvp,site-specific flowsheet row
+nurseCharting,PA|PA Systolic,pa_systolic,nurse-validated
+nurseCharting,PA|PA Diastolic,pa_diastolic,nurse-validated
+nurseCharting,PA|PA Mean,pa_mean,nurse-validated
+nurseCharting,CI|CI,cardiac_index,nurse-validated
+nurseCharting,SV|SV,stroke_volume,nurse-validated
+nurseCharting,SVR|SVR,svr,nurse-validated
+nurseCharting,SVRI|SVRI,svri,nurse-validated

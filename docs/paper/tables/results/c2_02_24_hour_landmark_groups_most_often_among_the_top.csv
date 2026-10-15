@@ -1,0 +1,2 @@
+Endpoint,Groups
+ICU death,"statics (0.62, 0.65); vitals|6-24h (0.38, 0.26); vitals|0-6h (0.23, -0.09); respiratory|6-24h (0.21, 0.17); other_meds|6-24h (0.18, 0.12); other|6-24h (0.17, 0.04)"

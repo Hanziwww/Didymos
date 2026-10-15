@@ -1,0 +1,134 @@
+# S5 tokenizer and grammar (M4 decisions D3-D5): the single source from which icutwin.tokenization compiles
+# the vocabulary, encoder, decoder, FSM tables and the independent parser. Token strings are made from these
+# names and the fitted codes only; no module keeps its own token list. Changing this file changes the spec
+# hash written with every fitted artifact.
+version: 1
+
+special: ["[PAD]", "[BOS]", "[EOS]", "[CONT]", "[GOAL]", "[/GOAL]", "[STATE]", "[/STATE]", "[TL]", "[END]"]
+
+vocabulary:
+  fit_splits: [train]       # bins, dequantization statistics and the vocabulary see these splits only
+  min_subjects: 10          # a code, sub-token or site seen in fewer train subjects has no token of its own
+  oov: "{domain}//OOV"      # its events become this value-less token of their domain
+
+# [BOS], then one token per field in this order. A field is read from a static or header event of the stay.
+prefix:
+  - {field: dataset, code: "DATASET//{value}"}
+  - {field: site, code: "SITE//{dataset}//{value}", rare: other}   # eICU hospitals; else the dataset itself
+  - {field: sex, code: "PATIENT//sex//{value}"}
+  # years, [a, b), the last band open: the plan's 5-year buckets (the cohort is adult, meds min_age_years; the
+  # first band keeps the tokenizer total without that rule). Binned sources (AmsterdamUMCdb, HiRID, SICdb) are
+  # at their bin midpoint
+  - {field: age, numeric: "HOSP//age_charted",
+     bands: [0, 18, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90]}
+  # admission period as the source releases it (MIMIC/NWICU anchor year group, AmsterdamUMCdb year group, eICU
+  # and SICdb year); HiRID and INSPIRE release none (unknown)
+  - {field: era, code: "ICU//era//{value}"}
+  - {field: race, code: "PATIENT//race//{value}"}
+  - {field: ethnicity, code: "PATIENT//ethnicity//{value}"}
+missing: unknown             # a prefix or header field the stay does not record
+
+# Each field at most once, in any order (training shuffles them); all present before the timeline. Every field
+# describes the stay at ICU admission. available_within_hours: per dataset, how long after ICU admission the
+# field's documentation may be recorded (APACHE-type admission forms; default 0: known at ICU admission); a
+# prospective input with an earlier cutoff gets the field as unknown (encode.prospective)
+header:
+  - {field: unit_type, code: "ICU//admission//{value}"}
+  - {field: admission_source, code: "ICU//admission_source//{value}"}
+  - {field: surgical_status, code: "ICU//surgical_status//{value}",
+     available_within_hours: {eicu: 24, aumc: 24, sicdb: 24, inspire: 1}}
+  - {field: adm_dx_group, code: "ICU//adm_dx_group//{value}",
+     available_within_hours: {eicu: 24, hirid: 24, aumc: 24, sicdb: 24, inspire: 1}}
+  - {field: admission_type, code: "HOSP//admission_type//{value}"}
+  - {field: prior_icu_stays, numeric: "ICU//stay_seq", offset: -1, bands: [0, 1, 2]}     # earlier ICU stays
+  - {field: pre_icu_los, hours_between: [hospital_admission, icu_admission], bands: [0, 1, 24, 72, 168]}
+  - {field: admission_hour, clock_hour: icu_admission, only_if: clock_valid,       # the plan's ADM_HOUR
+     bands: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]}
+
+# Optional, masked unless requested: the stay's outcomes (from MEDS outcome events and derived concepts).
+goal:
+  - {field: icu_outcome, code: "ICU//discharge//{value}"}
+  - {field: icu_los, hours_between: [icu_admission, icu_discharge], bands: [0, 24, 48, 96, 168, 336]}
+  - {field: hosp_outcome, code: "HOSP//discharge_category//{value}"}
+  - {field: imv, episode: imv}
+  - {field: vasopressor, episode: vasopressor}
+  - {field: rrt, episode: rrt}
+  - {field: mcs, domain_events: MCS}
+  - {field: kdigo_max, derived: {file: kdigo, column: aki_stage, how: max_in_icu}, bands: [0, 1, 2, 3]}
+  - {field: sofa_1d, derived: {file: sofa_24h, column: sofa_total, how: value}, bands: [0, 2, 4, 6, 8, 10, 12]}
+
+timeline:
+  # the ICU admission in time; its unit type is the header's
+  marker: {from_code: "ICU//admission//{value}", token: "ICU//admission"}
+  # minutes; interval token k covers [edges[k], edges[k+1]); the last bin, >= 7 days, repeats per 7 days
+  interval_edges: [1, 5, 15, 30, 60, 120, 240, 480, 720, 1440, 4320, 10080]
+  group_minutes: 1          # an event less than this after its group's first event joins the group
+  value_bins: 10            # equal-frequency bins per numeric code (train values of all datasets)
+  exact_max_distinct: 10    # a code with at most this many distinct train values gets one bin per value
+  value_suffix: {bin: "|q{k}", missing: "|na", text: "|text"}
+  # diagnoses and procedures coded in character-hierarchical systems: system token + up to three sub-tokens
+  hierarchical:
+    domains: [HOSP_DX, PT_DX, PROC]
+    systems: [ICD9CM, ICD10CM, ICD9PCS, ICD10PCS]
+    chunks: [3, 1, null]    # characters per sub-token; null = the rest
+  # derivable fields are not tokenized: the decoder derives them
+  derived_not_tokenized:
+    - {code: "PA//gcs_total", when_same_time: ["PA//gcs_eye", "PA//gcs_motor", "PA//gcs_verbal"]}
+
+# After the timeline: hospital outcome, death and billing diagnoses, without times.
+end:
+  - {code: "HOSP//discharge_category//{value}"}
+  - {code: "MEDS_DEATH"}
+  - {domain: HOSP_DX}
+
+# The clinical course made explicit (round 3, docs/m7_refinement.md): treatment onset was over-predicted from the
+# second ICU day on, the model having to infer the elapsed ICU time (a sum of interval tokens) and a treatment's
+# absence across thousands of tokens. After an interval token that takes the ICU clock (the interval tokens' median
+# minutes since the ICU admission marker) into a new ICU day comes a block: the marker, the day (the last one
+# standing for that day and later) and per treatment its state: active, ended (seen before, not active) or never.
+# IMV is active while the last respiratory device is IMV, a vasopressor while a vasoactive infusion runs, RRT while
+# a CRRT or IHD record is less than rrt_active_hours old; the treatments' events are the generation engine's
+# obligation sets. The grammar automaton computes the block, so the encoder and the sampler write the same one; it
+# is conditioning (no loss) and is not written in continuation windows.
+clock:
+  token: "[DAY]"
+  hours: 24
+  max_day: 31
+  treatments: [imv, vasopressor, rrt]
+  states: [never, active, ended]
+  rrt_active_hours: 24
+  device_prefix: "RESP//device_category//"
+  imv_device: imv
+  rrt_domains: [CRRT, IHD]
+  vasoactives: [angiotensin, dobutamine, dopamine, epinephrine, isoproterenol, milrinone, norepinephrine,
+                phenylephrine, vasopressin]
+  vasopressor_actions: [start, going]
+
+# Long stays: windows of at most max_tokens; prefix, header (and goal) pinned, [CONT], a state summary, then
+# the timeline from an event-group boundary. 32,768 (was 8,192 for M_main): at full scale 2.1% of train stays,
+# holding 22% of the train tokens, are longer than 8k (AmsterdamUMCdb 11% of stays and 59% of its tokens), against
+# 0.08% of stays and 2.4% of tokens longer than 32k (docs/m5_training.md, *Context*).
+windows:
+  max_tokens: 32768
+  state:
+    infusions: {domain: MED_CON, key_parts: [1, 2, 4],    # the key: drug, unit, route
+                begins: [start, going],     # actions after which the key runs
+                continues: [dose_change],   # actions only while it runs (a new rate)
+                ends: [stop],               # actions only while it runs, after which it does not
+                # canonical order of one key's events within a time group (token ids follow it); other actions
+                # (verify, other) are allowed whether or not the key runs
+                action_order: [start, going, dose_change, verify, other, stop]}
+    respiratory: ["RESP//device_category//", "RESP//mode_category//"]
+    active_domains: [CRRT, MCS]   # STATE//<domain>//active when the domain was charted within active_hours
+    active_hours: 24
+
+# Grammar rules (D4): enforced only where every real sequence satisfies them; the others are measured.
+grammar:
+  enforce:
+    - block_order           # [BOS] prefix header [GOAL]? ([CONT])? [STATE]? [TL] timeline ([END] end [EOS])?
+    - field_once            # header and goal fields at most once each; prefix in its order
+    - interval_between_groups
+    - group_order           # within a time group events follow (domain, code, value)
+    - infusion_state        # a 'continues' or 'ends' action of an infusion key only while it runs
+  measure:
+    - respiratory_settings_without_device

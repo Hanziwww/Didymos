@@ -1,0 +1,9 @@
+Endpoint,Database,Anchors,Positives,LABEL positives,Z0: 16a,Z1: back-off,F1: adapted,F1+S: stacked,"LightGBM, LABEL","LightGBM, FT+LABEL",TabPFN-3.5
+"Decompensation, 24 h",RICD,232,51,58,0.898,0.883,0.898 (0.836 to 0.953),0.903,0.874,0.891,0.866
+"New vasopressor, 24 h (descriptive)",RICD,228,8,11,0.628,0.810,0.851 (0.709 to 0.958),0.854,0.709,0.826,0.549
+"AKI stage >= 2, 48 h",RICD,226,25,33,0.881,0.857,0.847 (0.727 to 0.917),0.880,0.900,0.756,0.848
+"Hyperkalaemia (top bin), 24 h",RICD,216,12,13,0.779,0.751,0.873 (0.782 to 0.959),0.898,0.501,0.708,0.752
+"Decompensation, 24 h",zigongICU,258,93,77,0.813,0.832,0.834 (0.771 to 0.888),0.841,0.802,0.847,0.848
+"New vasopressor, 24 h",zigongICU,228,28,37,0.620,0.644,0.745 (0.664 to 0.821),0.792,0.748,0.816,0.723
+"Hyperkalaemia (top bin), 24 h (descriptive)",zigongICU,235,9,21,0.702,0.742,0.851 (0.648 to 0.971),0.850,0.775,0.768,0.891
+"Thrombocytopenia, 48 h",zigongICU,233,10,10,0.836,0.793,0.902 (0.827 to 0.975),0.902,0.810,0.770,0.707

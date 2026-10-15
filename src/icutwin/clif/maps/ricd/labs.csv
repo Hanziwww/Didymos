@@ -1,0 +1,79 @@
+parameter,unit,biomaterial,lab_category,factor,reference_unit,lab_order_category,provenance
+Hematocrit (Hct),%,blood,hematocrit,1,%,cbc,%
+Platelets (PLT),×10⁹/L,blood,platelet_count,1,10^3/ul,cbc,10^9/L = 10^3/uL
+Leukocytes (WBC),×10⁹/L,blood,wbc,1,10^3/ul,cbc,10^9/L = 10^3/uL (the urine sediment counts have other units and biomaterials)
+Lymphocytes,%,blood,lymphocytes_percent,1,%,cbc,differential %
+Monocytes,%,blood,monocytes_percent,1,%,cbc,differential %
+Neutrophils,%,blood,neutrophils_percent,1,%,cbc,differential %
+Basophils,%,blood,basophils_percent,1,%,cbc,differential %
+Eosinophils,%,blood,eosinophils_percent,1,%,cbc,differential %
+Band Neutrophils,%,blood,ext_bands_percent,1,%,cbc,band neutrophils %
+Absolute Lymphocyte Count,×10⁹/L,blood,lymphocytes_absolute,1,10^3/ul,cbc,10^9/L = 10^3/uL
+Absolute Neutrophil Count,×10⁹/L,blood,neutrophils_absolute,1,10^3/ul,cbc,10^9/L = 10^3/uL
+Absolute Monocyte Count,×10⁹/L,blood,monocytes_absolute,1,10^3/ul,cbc,10^9/L = 10^3/uL
+Absolute Eosinophil Count,×10⁹/L,blood,eosinophils_absolute,1,10^3/ul,cbc,10^9/L = 10^3/uL
+Absolute Basophil Count,×10⁹/L,blood,basophils_absolute,1,10^3/ul,cbc,10^9/L = 10^3/uL
+Hemoglobin (Hb),g/L,blood,hemoglobin,0.1,g/dl,cbc,g/L -> g/dL
+Hemoglobin (ctHB),g/L,blood,hemoglobin,0.1,g/dl,cbc,blood gas analyser haemoglobin g/L -> g/dL (the calculated ctHB duplicates it and is not mapped)
+Creatinine,µmol/L,blood,creatinine,0.011312,mg/dl,bmp,umol/L -> mg/dL (1/88.4)
+Urea (Blood Urea Nitrogen - BUN),mmol/L,blood,bun,2.801,mg/dl,bmp,urea mmol/L -> BUN mg/dL
+Potassium (K⁺),mmol/L,blood,potassium,1,mmol/l,bmp,serum potassium (the LOINC text names capillary blood; the biomaterial is venous)
+Potassium (cK⁺),mmol/L,blood,potassium,1,mmol/l,bmp,blood gas analyser potassium (grouped with serum potassium as for SICdb)
+Sodium (Na⁺),mmol/L,blood,sodium,1,mmol/l,bmp,serum sodium
+Sodium (cNa⁺),mmol/L,blood,sodium,1,mmol/l,bmp,blood gas analyser sodium
+Chloride (Cl⁻),mmol/L,blood,chloride,1,mmol/l,bmp,serum chloride (the effusion chlorides have the pleural fluid biomaterial)
+Chloride (cCl⁻),mmol/L,blood,chloride,1,mmol/l,bmp,blood gas analyser chloride
+Glucose,mmol/L,Venous blood,glucose_serum,18.016,mg/dl,bmp,laboratory glucose mmol/L -> mg/dL
+Glucose,mmol/L,Capillary blood,glucose,18.016,mg/dl,poc,capillary (point-of-care) glucose mmol/L -> mg/dL
+Glucose,mg/dL,Capillary blood,glucose,1,mg/dl,poc,capillary (point-of-care) glucose mg/dL
+Glucose (cGlu),mmol/L,Venous blood,glucose_serum,18.016,mg/dl,bmp,blood gas analyser glucose mmol/L -> mg/dL (grouped with laboratory glucose as for SICdb)
+Glucose (cGlu),mmol/L,Arterial blood,glucose_serum,18.016,mg/dl,bmp,blood gas analyser glucose mmol/L -> mg/dL
+Glucose (cGlu),mmol/L,Capillary blood,glucose,18.016,mg/dl,poc,capillary blood gas glucose mmol/L -> mg/dL
+Glucose (cGlu),mg/dL,Capillary blood,glucose,1,mg/dl,poc,capillary glucose mg/dL
+Total Calcium,mmol/L,blood,calcium_total,4.008,mg/dl,bmp,mmol/L -> mg/dL ('Urinary Calcium' with a venous biomaterial is ambiguous and not mapped)
+Ionized Calcium (cCa²⁺),mmol/L,blood,calcium_ionized,4.008,mg/dl,misc,ionized calcium mmol/L -> mg/dL (the pH 7.4-corrected value duplicates it and is not mapped)
+Ionized Calcium (Ca²⁺),mmol/L,blood,calcium_ionized,4.008,mg/dl,misc,ionized calcium mmol/L -> mg/dL
+Magnesium (Mg²⁺),mmol/L,blood,magnesium,2.431,mg/dl,misc,mmol/L -> mg/dL
+Inorganic Phosphate,mmol/L,blood,phosphate,3.097,mg/dl,misc,mmol/L -> mg/dL
+Bilirubin,µmol/L,blood,bilirubin_total,0.05847,mg/dl,lft,umol/L -> mg/dL (1/17.1; urine bilirubin has the urine biomaterial)
+Total Bilirubin,µmol/L,blood,bilirubin_total,0.05847,mg/dl,lft,umol/L -> mg/dL
+Direct Bilirubin,µmol/L,blood,bilirubin_conjugated,0.05847,mg/dl,lft,umol/L -> mg/dL
+Indirect Bilirubin,µmol/L,blood,bilirubin_unconjugated,0.05847,mg/dl,lft,umol/L -> mg/dL
+Total Protein,g/L,blood,total_protein,0.1,g/dl,lft,g/L -> g/dL (CSF and effusion protein have their own biomaterials)
+Albumin,g/L,blood,albumin,0.1,g/dl,lft,g/L -> g/dL
+Aspartate Aminotransferase (AST),U/L,blood,ast,1,u/l,lft,U/L
+Alanine Aminotransferase (ALT),U/L,blood,alt,1,u/l,lft,U/L
+Alkaline Phosphatase (ALP),U/L,blood,alkaline_phosphatase,1,u/l,lft,U/L
+Gamma-Glutamyl Transferase (GGT),U/L,blood,ext_ggt,1,u/l,lft,U/L
+Lactate Dehydrogenase (LDH),U/L,blood,ldh,1,u/l,misc,U/L (effusion LDH has the pleural fluid biomaterial)
+Creatine Kinase (CK),U/L,blood,ext_creatine_kinase,1,u/l,misc,U/L (CK-MB is an activity in U/L against CLIF's mass unit and is not mapped)
+α-Amylase,U/L,blood,amylase,1,u/l,misc,U/L ('Urinary α-Amylase' with a venous biomaterial is ambiguous and not mapped)
+C-Reactive Protein (CRP),mg/L,blood,crp,1,mg/l,misc,mg/L
+Procalcitonin (PCT),ng/mL,blood,procalcitonin,1,ng/ml,misc,ng/mL
+Troponin I (TnI),ng/mL,blood,troponin_i,1000,ng/l,misc,ng/mL -> ng/L
+High-Sensitivity Troponin I (hs-TnI),pg/mL,blood,troponin_i,1,ng/l,misc,pg/mL = ng/L
+High-Sensitivity Troponin I (hs-TnI),ng/mL,blood,troponin_i,1000,ng/l,misc,ng/mL -> ng/L
+Ferritin,µg/L,blood,ferritin,1,ng/ml,misc,ug/L = ng/mL
+Thyroid-Stimulating Hormone (TSH),µIU/mL,blood,tsh,1,miu/l,tft,uIU/mL = mIU/L
+Free Triiodothyronine (Free T3),pg/mL,blood,free_t3,1,pg/ml,tft,pg/mL
+Free Thyroxine (Free T4),ng/dL,blood,free_t4,1,ng/dl,tft,ng/dL
+Total Cholesterol,mmol/L,blood,cholesterol,38.67,mg/dl,misc,mmol/L -> mg/dL
+Triglycerides,mmol/L,blood,triglycerides,88.57,mg/dl,misc,mmol/L -> mg/dL
+Erythrocyte Sedimentation Rate (ESR) (Panchenkov Method),mm/h,blood,esr,1,mm/hour,misc,mm/h (Panchenkov method)
+Activated Partial Thromboplastin Time (APTT),sec,blood,ptt,1,sec,coags,seconds
+Prothrombin Time (PT),sec,blood,pt,1,sec,coags,seconds
+International Normalized Ratio (INR),RU,blood,inr,1,(no units),coags,ratio
+International Normalized Ratio (INR),-,blood,inr,1,(no units),coags,ratio
+Fibrinogen (Clauss Method),g/L,blood,fibrinogen,100,mg/dl,coags,g/L -> mg/dL (the PT-derived 'Calculated Fibrinogen' is not mapped)
+D-Dimer,mg/L,blood,d_dimer,1,ug/ml,coags,mg/L = ug/mL
+D-Dimer,µg FEU/mL,blood,d_dimer,1,ug/ml,coags,ug FEU/mL
+pH,-,Arterial blood,ph_arterial,1,(no units),blood_gas,arterial blood gas pH (the LOINC text names urine; the biomaterial is arterial blood); pH(T) duplicates it and is not mapped
+pH,-,Venous blood,ph_venous,1,(no units),blood_gas,venous blood gas pH
+Partial Pressure of O₂ (pO₂),mmHg,Arterial blood,po2_arterial,1,mmhg,blood_gas,arterial pO2 (venous pO2 has no CLIF category)
+Partial Pressure of CO₂ (pCO₂),mmHg,Arterial blood,pco2_arterial,1,mmhg,blood_gas,arterial pCO2
+Partial Pressure of CO₂ (pCO₂),mmHg,Venous blood,pco2_venous,1,mmhg,blood_gas,venous pCO2
+Oxygen Saturation (sO₂),%,Arterial blood,so2_arterial,1,%,blood_gas,arterial sO2 (a venous sample is not stated to be central or mixed venous)
+Actual Bicarbonate (HCO₃⁻ (P)),mmol/L,blood,bicarbonate,1,mmol/l,blood_gas,actual bicarbonate (standard bicarbonate is not mapped)
+Lactate (cLac),mmol/L,blood,lactate,1,mmol/l,misc,lactate
+Standard Base Excess (cBase(Ecf)),mmol/L,blood,ext_base_excess,1,mmol/l,blood_gas,standard base excess (extracellular fluid)
+Standard Base Excess (SBE),mmol/L,blood,ext_base_excess,1,mmol/l,blood_gas,standard base excess

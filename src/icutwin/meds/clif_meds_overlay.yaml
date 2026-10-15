@@ -1,0 +1,52 @@
+# Overlay on CLIF_MEDS's ELF concept configs (refs/CLIF_MEDS/config at the pinned commit).
+# CLIF_MEDS keys medication unit preferences by CLIF-MIMIC's vocabulary and, with allow_other_meds:false,
+# silently drops every other category (on the MIMIC subset: 68k continuous rows incl. all saline/D5W
+# fluids). Canonical CLIF uses CLIF 3.0 names, so preferences are re-keyed and nothing is dropped.
+#
+# ELF `outlier_shaping` CLAMPS values to limits, and ELF 1.0.0-beta's VITAL limit height_cm: [30, 96] is an
+# inch range (on the MIMIC subset 880/882 heights became 96 cm). Canonical CLIF already applies clifpy's
+# official outlier ranges (out of range -> NULL), so shaping is disabled in every domain config.
+_all_:
+  disable_outlier_shaping: true
+MED_CON.yaml:
+  allow_other_meds: true
+  rename:
+    albumin_infusion: [albumin_5, albumin_25]
+    aminocaproic: [aminocaproic_acid]
+    angiotension: [angiotensin]          # typo in the tool's config
+    dextrose: [dextrose_other]
+    dextrose_in_water_d5w: [dextrose_5_water]
+    magnesium: [magnesium_sulfate]
+    "sodium chloride": [sodium_chloride]
+  add:
+    dextrose_10_water: ml/hr
+    sodium_bicarbonate: ml/hr
+    lactated_ringers_solution: ml/hr
+    plasma_lyte: ml/hr
+    ext_albumin_20: ml/hr
+    # medication registry (medication_extensions.csv) infusions dosed by mass or units; volume, mmol and mEq rates
+    # (potassium, phosphate, calcium, citrate, IVIG) keep their recorded unit: clifpy converts mass, volume and units
+    atracurium: mcg/kg/min
+    hydrocortisone: mg/hr
+    valproate: mg/hr
+    ext_clonidine: mcg/hr
+    ext_nimodipine: mg/hr
+    ext_clonazepam: mg/hr
+    ext_phenytoin: mg/min
+    ext_iloprost: ng/kg/min
+    ext_sufentanil: mcg/kg/hr
+    ext_metamizole: mg/hr
+    ext_flucloxacillin: g/hr
+    ext_tranexamic_acid: mg/hr
+    ext_urapidil: mg/hr
+    ext_levosimendan: mcg/kg/min
+MED_INT.yaml:
+  allow_other_meds: true
+  rename:
+    dextrose: [dextrose_other]
+    dextrose_in_water_d5w: [dextrose_5_water]
+    magnesium: [magnesium_repletion]
+    "sodium bicarbonate": [sodium_bicarbonate]
+    "sodium chloride": [sodium_chloride]
+  add:
+    dextrose_10_water: ml

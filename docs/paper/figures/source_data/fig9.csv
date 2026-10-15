@@ -1,0 +1,186 @@
+panel,series,dataset,slice,patients,stays,before,after,change,design,program,auroc,ci_low,ci_high,events,n,descriptive,difference,p_holm,predictor,mean_rank,firsts,mean_auroc,lightgbm_auroc,adapted_auroc
+a,patients,ricd,test,2015,2646,,,,,,,,,,,,,,,,,,,
+a,patients,ricd,ft,1388,1859,,,,,,,,,,,,,,,,,,,
+a,patients,ricd,label,645,877,,,,,,,,,,,,,,,,,,,
+a,patients,zigong,test,1384,1460,,,,,,,,,,,,,,,,,,,
+a,patients,zigong,ft,927,973,,,,,,,,,,,,,,,,,,,
+a,patients,zigong,label,431,466,,,,,,,,,,,,,,,,,,,
+b,next-token loss,ricd,,,,2.0953415722768334,1.3211397584812983,-0.7742018137955351,,,,,,,,,,,,,,,,
+b,next-token loss,zigong,,,,2.103310860411796,0.9568182585249929,-1.1464926018868031,,,,,,,,,,,,,,,,
+b,next-token loss,mimic,,,,1.6775080321541431,1.6891747716746064,0.011666739520463265,,,,,,,,,,,,,,,,
+b,next-token loss,eicu,,,,1.5370535952347189,1.5510487321019744,0.013995136867255509,,,,,,,,,,,,,,,,
+b,next-token loss,hirid,,,,1.696011932962662,1.7143894093935996,0.018377476430937678,,,,,,,,,,,,,,,,
+b,next-token loss,aumc,,,,1.2394025874958141,1.2519939540476934,0.012591366551879313,,,,,,,,,,,,,,,,
+b,next-token loss,sicdb,,,,1.3423539932595168,1.3544999585291382,0.012145965269621417,,,,,,,,,,,,,,,,
+b,next-token loss,nwicu,,,,1.8893655507229887,1.9204826965663953,0.031117145843406524,,,,,,,,,,,,,,,,
+b,next-token loss,inspire,,,,1.5100129539283365,1.5427336210901657,0.0327206671618292,,,,,,,,,,,,,,,,
+c,"Local LightGBM, 50% labelled",ricd,,,,,,,R,decompensation@1440,0.8911896521184728,0.8205994187713375,0.9478583771430533,51,232,False,,,,,,,,
+c,"TabPFN-3.5, transferred",ricd,,,,,,,R,decompensation@1440,0.8658112907449589,0.7910418413661798,0.9388072137769876,51,232,False,,,,,,,,
+c,Adapted + local LightGBM,ricd,,,,,,,R,decompensation@1440,0.9034622178365742,0.8437845907303382,0.9560271839022695,51,232,False,,,,,,,,
+c,"Didymos, zero-shot",ricd,,,,,,,R,decompensation@1440,0.8979860518186632,0.8298091228467416,0.9551332487088756,51,232,False,,,,,,,,
+c,"Didymos, adapted",ricd,,,,,,,R,decompensation@1440,0.8980213233590475,0.8358724741778099,0.9530215149892727,51,232,False,,,,,,,,
+d,adapted minus zero-shot,ricd,,,,,,,R,decompensation@1440,,-0.04169228544252693,0.04028209179347131,,,False,3.527154038429625e-05,1.0,,,,,,
+c,"Local LightGBM, 50% labelled",ricd,,,,,,,R,vasopressor_onset@1440,0.8258060336539234,0.7020578153950902,0.9339883925395114,8,228,True,,,,,,,,
+c,"TabPFN-3.5, transferred",ricd,,,,,,,R,vasopressor_onset@1440,0.5488467741785701,0.381192771197169,0.73897614928028,8,228,True,,,,,,,,
+c,Adapted + local LightGBM,ricd,,,,,,,R,vasopressor_onset@1440,0.8544776179052719,0.7136592490691223,0.9619248442869025,8,228,True,,,,,,,,
+c,"Didymos, zero-shot",ricd,,,,,,,R,vasopressor_onset@1440,0.6276214564730536,0.3916241091283567,0.7756897887582354,8,228,True,,,,,,,,
+c,"Didymos, adapted",ricd,,,,,,,R,vasopressor_onset@1440,0.8511095831216327,0.708919933963103,0.9584259350999362,8,228,True,,,,,,,,
+d,adapted minus zero-shot,ricd,,,,,,,R,vasopressor_onset@1440,,-0.0031061865062561693,0.47312466367889033,,,True,0.2234881266485791,,,,,,,
+c,"Local LightGBM, 50% labelled",ricd,,,,,,,R,aki_2@2880,0.7556641491788051,0.6234588852498908,0.8499176660393912,25,226,False,,,,,,,,
+c,"TabPFN-3.5, transferred",ricd,,,,,,,R,aki_2@2880,0.8475538769711899,0.683212987431417,0.9266194745700305,25,226,False,,,,,,,,
+c,Adapted + local LightGBM,ricd,,,,,,,R,aki_2@2880,0.8803329141331999,0.7710033566204835,0.9387421076944319,25,226,False,,,,,,,,
+c,"Didymos, zero-shot",ricd,,,,,,,R,aki_2@2880,0.8808433410024773,0.712880554259994,0.9545057447165253,21,199,False,,,,,,,,
+c,"Didymos, adapted",ricd,,,,,,,R,aki_2@2880,0.8469476603577878,0.7270772349660156,0.9165894478417097,25,226,False,,,,,,,,
+d,adapted minus zero-shot,ricd,,,,,,,R,aki_2@2880,,-0.11627019404338863,0.11565662403434607,,,False,-0.028795328991003788,1.0,,,,,,
+c,"Local LightGBM, 50% labelled",ricd,,,,,,,R,hyperkalemia_top@1440,0.7082801486998633,0.5198661782039778,0.9029963743256506,12,216,False,,,,,,,,
+c,"TabPFN-3.5, transferred",ricd,,,,,,,R,hyperkalemia_top@1440,0.7523092214242565,0.5426296834777707,0.9448867109810789,12,216,False,,,,,,,,
+c,Adapted + local LightGBM,ricd,,,,,,,R,hyperkalemia_top@1440,0.8977677559434566,0.8228862976663713,0.9645314334925358,12,216,False,,,,,,,,
+c,"Didymos, zero-shot",ricd,,,,,,,R,hyperkalemia_top@1440,0.7792494151021063,0.6331733281885629,0.8987561652441676,12,206,False,,,,,,,,
+c,"Didymos, adapted",ricd,,,,,,,R,hyperkalemia_top@1440,0.8726458355755554,0.7819046634347128,0.9591065328731142,12,216,False,,,,,,,,
+d,adapted minus zero-shot,ricd,,,,,,,R,hyperkalemia_top@1440,,0.016217029699831385,0.21301792885467058,,,False,0.0948932314426949,0.21320000000000003,,,,,,
+c,"Local LightGBM, 50% labelled",zigong,,,,,,,R,decompensation@1440,0.8471483573154523,0.7896348542526989,0.894475839705681,93,258,False,,,,,,,,
+c,"TabPFN-3.5, transferred",zigong,,,,,,,R,decompensation@1440,0.8481069001868036,0.7888569040811103,0.8995968949070345,93,258,False,,,,,,,,
+c,Adapted + local LightGBM,zigong,,,,,,,R,decompensation@1440,0.8412401070211117,0.7793913478656642,0.8933123196093019,93,258,False,,,,,,,,
+c,"Didymos, zero-shot",zigong,,,,,,,R,decompensation@1440,0.8127376226294006,0.7434462784435152,0.8725579527176507,93,258,False,,,,,,,,
+c,"Didymos, adapted",zigong,,,,,,,R,decompensation@1440,0.8341558384979807,0.7707986205511613,0.8880222711979132,93,258,False,,,,,,,,
+d,adapted minus zero-shot,zigong,,,,,,,R,decompensation@1440,,-0.02446256274074201,0.07083833377752234,,,False,0.02141821586858006,1.0,,,,,,
+c,"Local LightGBM, 50% labelled",zigong,,,,,,,R,vasopressor_onset@1440,0.8159365140003845,0.7066564790341754,0.9073004139221077,28,228,False,,,,,,,,
+c,"TabPFN-3.5, transferred",zigong,,,,,,,R,vasopressor_onset@1440,0.7234423968428438,0.6026105855302133,0.8275259291122535,28,228,False,,,,,,,,
+c,Adapted + local LightGBM,zigong,,,,,,,R,vasopressor_onset@1440,0.7919369583610673,0.7151597381431074,0.8618995703162042,28,228,False,,,,,,,,
+c,"Didymos, zero-shot",zigong,,,,,,,R,vasopressor_onset@1440,0.6196429494430103,0.4921746931912808,0.761755313647632,28,228,False,,,,,,,,
+c,"Didymos, adapted",zigong,,,,,,,R,vasopressor_onset@1440,0.7449515123072394,0.6635945793038758,0.8206085703042307,28,228,False,,,,,,,,
+d,adapted minus zero-shot,zigong,,,,,,,R,vasopressor_onset@1440,,0.004578188548015669,0.2326045157870729,,,False,0.1253085628642291,0.643935606439356,,,,,,
+c,"Local LightGBM, 50% labelled",zigong,,,,,,,R,hyperkalemia_top@1440,0.7677351686689378,0.47452187494886594,0.9401477119348366,9,235,True,,,,,,,,
+c,"TabPFN-3.5, transferred",zigong,,,,,,,R,hyperkalemia_top@1440,0.8913406131373992,0.794248189923187,0.9489665226251894,9,235,True,,,,,,,,
+c,Adapted + local LightGBM,zigong,,,,,,,R,hyperkalemia_top@1440,0.8495624824453621,0.636460397659217,0.974424406710908,9,235,True,,,,,,,,
+c,"Didymos, zero-shot",zigong,,,,,,,R,hyperkalemia_top@1440,0.7017223493333383,0.3872573455736047,0.9065132237292401,9,235,True,,,,,,,,
+c,"Didymos, adapted",zigong,,,,,,,R,hyperkalemia_top@1440,0.850635673278574,0.6475509661298303,0.9706181819882709,9,235,True,,,,,,,,
+d,adapted minus zero-shot,zigong,,,,,,,R,hyperkalemia_top@1440,,0.031036773829618593,0.3699145311300476,,,True,0.1489133239452357,,,,,,,
+c,"Local LightGBM, 50% labelled",zigong,,,,,,,R,thrombocytopenia@2880,0.7698703077108822,0.6372815926175003,0.9443122245578253,10,233,False,,,,,,,,
+c,"TabPFN-3.5, transferred",zigong,,,,,,,R,thrombocytopenia@2880,0.7073948143706902,0.5796616168504529,0.9016183983187056,10,233,False,,,,,,,,
+c,Adapted + local LightGBM,zigong,,,,,,,R,thrombocytopenia@2880,0.9020558833233506,0.8343044277179341,0.9634208138013542,9,231,False,,,,,,,,
+c,"Didymos, zero-shot",zigong,,,,,,,R,thrombocytopenia@2880,0.8363359374748519,0.7133589197344097,0.930475438702388,10,233,False,,,,,,,,
+c,"Didymos, adapted",zigong,,,,,,,R,thrombocytopenia@2880,0.9021547192666497,0.8265324847394585,0.9752066692259587,9,231,False,,,,,,,,
+d,adapted minus zero-shot,zigong,,,,,,,R,thrombocytopenia@2880,,-0.07502744707483294,0.13793540990613115,,,False,0.015344884752029553,1.0,,,,,,
+c,"Local LightGBM, 50% labelled",ricd,,,,,,,L24e,icu_death@-1,0.7681599935420056,0.7170003448792485,0.8170433621642513,133,338,False,,,,,,,,
+c,"TabPFN-3.5, transferred",ricd,,,,,,,L24e,icu_death@-1,0.7014740632259213,0.6395782820556256,0.7586074494620242,133,338,False,,,,,,,,
+c,Adapted + local LightGBM,ricd,,,,,,,L24e,icu_death@-1,0.7443601969784936,0.6879061336455528,0.7982744683508936,133,338,False,,,,,,,,
+c,"Didymos, zero-shot",ricd,,,,,,,L24e,icu_death@-1,0.6947711764700764,0.6358138429264489,0.7532984094743604,133,338,False,,,,,,,,
+c,"Didymos, adapted",ricd,,,,,,,L24e,icu_death@-1,0.7376021495403738,0.6781821398988572,0.7915723676008802,133,338,False,,,,,,,,
+d,adapted minus zero-shot,ricd,,,,,,,L24e,icu_death@-1,,-0.01068113673399925,0.09171459481922177,,,False,0.042830973070297484,0.8799120087991201,,,,,,
+c,"Local LightGBM, 50% labelled",ricd,,,,,,,L24e,hospital_death@0,0.7176687116564426,0.6602532672387895,0.7706345706165638,163,338,False,,,,,,,,
+c,"TabPFN-3.5, transferred",ricd,,,,,,,L24e,hospital_death@0,0.6804206836108685,0.6237134187599702,0.7367979725734014,163,338,False,,,,,,,,
+c,Adapted + local LightGBM,ricd,,,,,,,L24e,hospital_death@0,0.718737949167398,0.6634207202606529,0.7736156154691617,163,338,False,,,,,,,,
+c,"Didymos, zero-shot",ricd,,,,,,,L24e,hospital_death@0,0.6580368098159507,0.6034582585258349,0.7115140417712555,163,338,False,,,,,,,,
+c,"Didymos, adapted",ricd,,,,,,,L24e,hospital_death@0,0.7153374233128835,0.6587358680317726,0.767175291924243,163,338,False,,,,,,,,
+d,adapted minus zero-shot,ricd,,,,,,,L24e,hospital_death@0,,-0.004103302943239985,0.11648583276686408,,,False,0.05730061349693283,0.6767323267673233,,,,,,
+c,"Local LightGBM, 50% labelled",ricd,,,,,,,L24e,remaining_los_gt_7d,0.7948963991664518,0.7308609545556279,0.8577632723587246,241,338,False,,,,,,,,
+c,"TabPFN-3.5, transferred",ricd,,,,,,,L24e,remaining_los_gt_7d,0.5532321177081213,0.46748932300752716,0.6322263409405625,241,338,False,,,,,,,,
+c,Adapted + local LightGBM,ricd,,,,,,,L24e,remaining_los_gt_7d,0.7885932929722953,0.7155292191133951,0.854205014195297,241,338,False,,,,,,,,
+c,"Didymos, zero-shot",ricd,,,,,,,L24e,remaining_los_gt_7d,0.601474896535374,0.5186754538138322,0.6882076573557889,241,338,False,,,,,,,,
+c,"Didymos, adapted",ricd,,,,,,,L24e,remaining_los_gt_7d,0.720022256292564,0.6443307298428496,0.7920438121350378,241,338,False,,,,,,,,
+d,adapted minus zero-shot,ricd,,,,,,,L24e,remaining_los_gt_7d,,0.013915254606620265,0.2141988644188969,,,False,0.11854735975719,0.3047695230476952,,,,,,
+c,"Local LightGBM, 50% labelled",zigong,,,,,,,L24e,decompensation@1440,0.7247030791183501,0.6369883364741089,0.801832337605803,42,345,False,,,,,,,,
+c,"TabPFN-3.5, transferred",zigong,,,,,,,L24e,decompensation@1440,0.74972000508993,0.6668925353727966,0.8284753817864065,42,345,False,,,,,,,,
+c,Adapted + local LightGBM,zigong,,,,,,,L24e,decompensation@1440,0.7351185012282828,0.6542862597179989,0.8076149985813096,42,345,False,,,,,,,,
+c,"Didymos, zero-shot",zigong,,,,,,,L24e,decompensation@1440,0.7549167883296726,0.6783062201770129,0.8245458697752288,42,345,False,,,,,,,,
+c,"Didymos, adapted",zigong,,,,,,,L24e,decompensation@1440,0.7362637362637329,0.6569443154067914,0.8090945571712631,42,345,False,,,,,,,,
+d,adapted minus zero-shot,zigong,,,,,,,L24e,decompensation@1440,,-0.06033933138103466,0.026061946828153437,,,False,-0.0186530520659397,1.0,,,,,,
+c,"Local LightGBM, 50% labelled",zigong,,,,,,,L24e,icu_death@-1,0.7523131663798364,0.6973402929259072,0.8022455195726491,137,345,False,,,,,,,,
+c,"TabPFN-3.5, transferred",zigong,,,,,,,L24e,icu_death@-1,0.7411600908240547,0.6842791742361023,0.7930943522435141,137,345,False,,,,,,,,
+c,Adapted + local LightGBM,zigong,,,,,,,L24e,icu_death@-1,0.7301136925602806,0.6664162156535803,0.7886696207328995,137,345,False,,,,,,,,
+c,"Didymos, zero-shot",zigong,,,,,,,L24e,icu_death@-1,0.7334348180551644,0.6729467754627371,0.7881850203539977,137,345,False,,,,,,,,
+c,"Didymos, adapted",zigong,,,,,,,L24e,icu_death@-1,0.709691702626096,0.6512685023052343,0.7703286145609647,137,345,False,,,,,,,,
+d,adapted minus zero-shot,zigong,,,,,,,L24e,icu_death@-1,,-0.05673007342629755,0.00925452918210682,,,False,-0.023743115429068373,1.0,,,,,,
+c,"Local LightGBM, 50% labelled",zigong,,,,,,,L24e,hospital_death@0,0.7102020202020177,0.6526949412154321,0.7649219854893796,165,345,False,,,,,,,,
+c,"TabPFN-3.5, transferred",zigong,,,,,,,L24e,hospital_death@0,0.7222222222222198,0.668402373089872,0.7718245886028047,165,345,False,,,,,,,,
+c,Adapted + local LightGBM,zigong,,,,,,,L24e,hospital_death@0,0.6916835016834993,0.629545996889746,0.7475335443967785,165,345,False,,,,,,,,
+c,"Didymos, zero-shot",zigong,,,,,,,L24e,hospital_death@0,0.6899326599326586,0.6349011000643865,0.7452663408309516,165,345,False,,,,,,,,
+c,"Didymos, adapted",zigong,,,,,,,L24e,hospital_death@0,0.676161616161615,0.6156388800314748,0.7327257644526208,165,345,False,,,,,,,,
+d,adapted minus zero-shot,zigong,,,,,,,L24e,hospital_death@0,,-0.055049404400497284,0.02410379730115144,,,False,-0.013771043771043656,1.0,,,,,,
+c,"Local LightGBM, 50% labelled",zigong,,,,,,,L24e,remaining_los_gt_7d,0.67562796618661,0.6024799906709709,0.7455694756489023,94,345,False,,,,,,,,
+c,"TabPFN-3.5, transferred",zigong,,,,,,,L24e,remaining_los_gt_7d,0.6486582800326176,0.5825672421964686,0.7130555425268837,94,345,False,,,,,,,,
+c,Adapted + local LightGBM,zigong,,,,,,,L24e,remaining_los_gt_7d,0.7055533573260807,0.6331759513584988,0.7694311914618953,94,345,False,,,,,,,,
+c,"Didymos, zero-shot",zigong,,,,,,,L24e,remaining_los_gt_7d,0.617118811474513,0.5481069468756338,0.6910220503530635,94,345,False,,,,,,,,
+c,"Didymos, adapted",zigong,,,,,,,L24e,remaining_los_gt_7d,0.7054874537252548,0.6336002484381407,0.7694803737345071,94,345,False,,,,,,,,
+d,adapted minus zero-shot,zigong,,,,,,,L24e,remaining_los_gt_7d,,0.01490560339507232,0.16088783246675706,,,False,0.08836864225074181,0.3047695230476952,,,,,,
+e,Adapted + local LightGBM,,,,,,,,,,,2.1538461538461537,4.230769230769231,,,,,,F1S,3.1538461538461537,4,0.7946889483488531,,
+e,"Local LightGBM, 80% labelled",,,,,,,,,,,2.4615384615384617,5.846153846153846,,,,,,lgbm_local,4.0,3,0.7878118990348209,,
+e,"Didymos, adapted",,,,,,,,,,,3.3076923076923075,5.846153846153846,,,,,,F1,4.538461538461538,0,0.7768802482528293,,
+e,"Local LightGBM, 50% labelled",,,,,,,,,,,2.6153846153846154,7.0,,,,,,lgbm_ftlabel,4.615384615384615,2,0.7639738819442751,,
+e,"TabPFN-3.5, transferred",,,,,,,,,,,4.3076923076923075,7.769230769230769,,,,,,tabpfn_v3_5,6.0,2,0.7339619971734213,,
+e,"Didymos, zero-shot",,,,,,,,,,,4.769230769230769,7.769230769230769,,,,,,Z0,6.3076923076923075,1,0.7366524060064552,,
+e,"Didymos, mapped codes",,,,,,,,,,,5.461538461538462,8.23076923076923,,,,,,Z1,6.846153846153846,0,0.730024003501937,,
+e,"Local LightGBM, 15% labelled",,,,,,,,,,,5.461538461538462,9.307692307692308,,,,,,lgbm_label,7.3076923076923075,1,0.7205022178799513,,
+e,"LightGBM, transferred",,,,,,,,,,,6.076923076923077,9.692307692307692,,,,,,lgbm_pooled,7.846153846153846,0,0.7108453030142836,,
+e,SOFA,,,,,,,,,,,7.769230769230769,12.23076923076923,,,,,,sofa,10.076923076923077,0,0.6516069883731419,,
+e,NEWS,,,,,,,,,,,8.846153846153847,12.0,,,,,,news,10.538461538461538,0,0.6549628131317498,,
+e,MEWS,,,,,,,,,,,9.76923076923077,11.846153846153847,,,,,,mews,10.846153846153847,0,0.6545801655227018,,
+e,qSOFA,,,,,,,,,,,10.846153846153847,13.23076923076923,,,,,,qsofa,12.076923076923077,0,0.6238130594152402,,
+e,"Logistic (L2), transferred",,,,,,,,,,,11.923076923076923,13.461538461538462,,,,,,logistic_pooled,12.692307692307692,0,0.6051129328000981,,
+e,SIRS,,,,,,,,,,,11.615384615384615,14.307692307692308,,,,,,sirs,13.153846153846153,0,0.6065270447840967,,
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,decompensation@1440,,,,,25,,-0.21355691449347203,,,,,,0.6844644088655751,0.8980213233590472
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,decompensation@1440,,,,,50,,-0.19390389163767952,,,,,,0.7041174317213676,0.8980213233590472
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,decompensation@1440,,,,,100,,-0.15293232334948437,,,,,,0.7450890000095628,0.8980213233590472
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,decompensation@1440,,,,,200,,-0.12184282731793872,,,,,,0.7761784960411084,0.8980213233590472
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,decompensation@1440,,,,,877,,-0.024026015037238557,,,,,,0.8739953083218086,0.8980213233590472
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,aki_2@2880,,,,,25,,-0.2564859284972342,,,,,,0.5904617318605536,0.8469476603577878
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,aki_2@2880,,,,,50,,-0.13936206893337932,,,,,,0.7075855914244085,0.8469476603577878
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,aki_2@2880,,,,,100,,-0.06828107257342653,,,,,,0.7786665877843613,0.8469476603577878
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,aki_2@2880,,,,,200,,-0.04411874795977955,,,,,,0.8028289123980082,0.8469476603577878
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,aki_2@2880,,,,,877,,0.05256537282774798,,,,,,0.8995130331855358,0.8469476603577878
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,hyperkalemia_top@1440,,,,,25,,-0.18397191489651565,,,,,,0.6886739206790399,0.8726458355755555
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,hyperkalemia_top@1440,,,,,50,,-0.2483818094416128,,,,,,0.6242640261339427,0.8726458355755555
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,hyperkalemia_top@1440,,,,,100,,-0.25800125635719495,,,,,,0.6146445792183606,0.8726458355755555
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,hyperkalemia_top@1440,,,,,200,,-0.22957319733389703,,,,,,0.6430726382416585,0.8726458355755555
+f,LightGBM minus adapted Didymos,ricd,,,,,,,R,hyperkalemia_top@1440,,,,,877,,-0.3714101408833328,,,,,,0.5012356946922227,0.8726458355755555
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,decompensation@1440,,,,,25,,-0.19128814457777332,,,,,,0.6428676939202079,0.8341558384979813
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,decompensation@1440,,,,,50,,-0.12607928029889703,,,,,,0.7080765581990842,0.8341558384979813
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,decompensation@1440,,,,,100,,-0.10129514854345723,,,,,,0.732860689954524,0.8341558384979813
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,decompensation@1440,,,,,200,,-0.062019693247412855,,,,,,0.7721361452505684,0.8341558384979813
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,decompensation@1440,,,,,466,,-0.032291880758439584,,,,,,0.8018639577395417,0.8341558384979813
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,vasopressor_onset@1440,,,,,25,,-0.06403793062988661,,,,,,0.6809135816773528,0.7449515123072394
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,vasopressor_onset@1440,,,,,50,,-0.08083042879535374,,,,,,0.6641210835118857,0.7449515123072394
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,vasopressor_onset@1440,,,,,100,,-0.04329159812111305,,,,,,0.7016599141861264,0.7449515123072394
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,vasopressor_onset@1440,,,,,200,,-0.0010036204509787927,,,,,,0.7439478918562606,0.7449515123072394
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,vasopressor_onset@1440,,,,,466,,0.0028609484840278476,,,,,,0.7478124607912673,0.7449515123072394
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,thrombocytopenia@2880,,,,,25,,-0.23355095113906688,,,,,,0.6686037681275827,0.9021547192666496
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,thrombocytopenia@2880,,,,,50,,-0.3224991000176488,,,,,,0.5796556192490008,0.9021547192666496
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,thrombocytopenia@2880,,,,,100,,-0.3397291610964046,,,,,,0.562425558170245,0.9021547192666496
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,thrombocytopenia@2880,,,,,200,,-0.2563337420292332,,,,,,0.6458209772374164,0.9021547192666496
+f,LightGBM minus adapted Didymos,zigong,,,,,,,R,thrombocytopenia@2880,,,,,466,,-0.09243853107347266,,,,,,0.8097161881931769,0.9021547192666496
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,icu_death@-1,,,,,25,,-0.2376021495403734,,,,,,0.5,0.7376021495403734
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,icu_death@-1,,,,,50,,-0.2376021495403734,,,,,,0.5,0.7376021495403734
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,icu_death@-1,,,,,100,,-0.06043560931208336,,,,,,0.67716654022829,0.7376021495403734
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,icu_death@-1,,,,,200,,-0.061439101577281385,,,,,,0.676163047963092,0.7376021495403734
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,icu_death@-1,,,,,877,,-0.02665765631645678,,,,,,0.7109444932239166,0.7376021495403734
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,hospital_death@0,,,,,25,,-0.21533742331288375,,,,,,0.5,0.7153374233128837
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,hospital_death@0,,,,,50,,-0.21533742331288375,,,,,,0.5,0.7153374233128837
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,hospital_death@0,,,,,100,,-0.08034180543382985,,,,,,0.6349956178790539,0.7153374233128837
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,hospital_death@0,,,,,200,,-0.06121822962313739,,,,,,0.6541191936897464,0.7153374233128837
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,hospital_death@0,,,,,877,,-0.03151621384750203,,,,,,0.6838212094653817,0.7153374233128837
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,remaining_los_gt_7d,,,,,25,,-0.2200222562925629,,,,,,0.5,0.7200222562925629
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,remaining_los_gt_7d,,,,,50,,-0.2200222562925629,,,,,,0.5,0.7200222562925629
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,remaining_los_gt_7d,,,,,100,,-0.05118648582699836,,,,,,0.6688357704655645,0.7200222562925629
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,remaining_los_gt_7d,,,,,200,,-0.010757499959791472,,,,,,0.7092647563327714,0.7200222562925629
+f,LightGBM minus adapted Didymos,ricd,,,,,,,L24e,remaining_los_gt_7d,,,,,877,,0.052297702756720965,,,,,,0.7723199590492839,0.7200222562925629
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,icu_death@-1,,,,,25,,-0.2096917026260967,,,,,,0.5,0.7096917026260967
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,icu_death@-1,,,,,50,,-0.2096917026260967,,,,,,0.5,0.7096917026260967
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,icu_death@-1,,,,,100,,-0.10587182546747265,,,,,,0.6038198771586241,0.7096917026260967
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,icu_death@-1,,,,,200,,-0.08498603657830128,,,,,,0.6247056660477954,0.7096917026260967
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,icu_death@-1,,,,,466,,-0.014787344823396054,,,,,,0.6949043578027007,0.7096917026260967
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,hospital_death@0,,,,,25,,-0.17616161616161474,,,,,,0.5,0.6761616161616147
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,hospital_death@0,,,,,50,,-0.17616161616161474,,,,,,0.5,0.6761616161616147
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,hospital_death@0,,,,,100,,-0.09696969696969704,,,,,,0.5791919191919177,0.6761616161616147
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,hospital_death@0,,,,,200,,-0.08289562289562291,,,,,,0.5932659932659918,0.6761616161616147
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,hospital_death@0,,,,,466,,-0.030235690235690282,,,,,,0.6459259259259245,0.6761616161616147
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,remaining_los_gt_7d,,,,,25,,-0.20548745372525512,,,,,,0.5,0.7054874537252551
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,remaining_los_gt_7d,,,,,50,,-0.20548745372525512,,,,,,0.5,0.7054874537252551
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,remaining_los_gt_7d,,,,,100,,-0.1727625154485326,,,,,,0.5327249382767225,0.7054874537252551
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,remaining_los_gt_7d,,,,,200,,-0.12950867713870018,,,,,,0.5759787765865549,0.7054874537252551
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,remaining_los_gt_7d,,,,,466,,-0.11753313378806984,,,,,,0.5879543199371853,0.7054874537252551
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,decompensation@1440,,,,,25,,-0.23626373626373587,,,,,,0.5,0.7362637362637359
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,decompensation@1440,,,,,50,,-0.23626373626373587,,,,,,0.5,0.7362637362637359
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,decompensation@1440,,,,,100,,-0.1245392104580646,,,,,,0.6117245258056713,0.7362637362637359
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,decompensation@1440,,,,,200,,-0.11265144737698418,,,,,,0.6236122888867517,0.7362637362637359
+f,LightGBM minus adapted Didymos,zigong,,,,,,,L24e,decompensation@1440,,,,,466,,-0.09974181215231326,,,,,,0.6365219241114226,0.7362637362637359

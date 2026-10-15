@@ -1,0 +1,17 @@
+# SICdb 1.0.8 — PhysioNet .csv.gz layout; patient key = PatientID, row key = CaseID.
+# data_float_m (60 GB minute data) is covered by data_float_h.rawdata; staged only with include=[sicdb_minute].
+name: sicdb
+archive: SICDB/SICDB-1.0.8.tar.zst
+strip_prefix: SICDB-1.0.8/
+out_compression: gzip
+anchor:
+  member: cases.csv
+  patient_col: PatientID
+  derived_keys: {case: CaseID}
+rules:
+  - {pattern: "cases.csv", action: filter, key_col: PatientID, key: patient}
+  - {pattern: "d_references.csv", action: copy}
+  - {pattern: "data_float_m.csv", action: filter, key_col: CaseID, key: case, optional: sicdb_minute}
+  - {pattern: "*.csv", action: filter, key_col: CaseID, key: case}
+  - {pattern: "*SHA256SUMS.txt", action: checksums}
+  - {pattern: "*", action: copy}

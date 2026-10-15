@@ -1,0 +1,9 @@
+priority,pattern,mode_category,provenance
+10,aprv|bi-?vent,aprv,
+20,prvc|\bvc\+|autoflow|\bapv\b,prvc,CLIF-MIMIC: PRVC/AC -> PRVC
+30,simv,simv,
+40,^ps\b|pressure support|\bpsv\b|cpap|spont,ps_or_cpap,CLIF-MIMIC: CPAP/PSV and SPONT -> PS/CPAP
+50,ac/cmv|^cmv|a/c|assist control|^ac\b|volume control|^vc\b,acvc,CLIF-MIMIC: CMV/ASSIST -> ACVC
+60,pressure control|\bpcv?\b,pressure_control,
+70,^vs\b|volume support,volume_support,
+80,s/t,other,CLIF-MIMIC: BiPAP Spontaneous/Timed -> Other

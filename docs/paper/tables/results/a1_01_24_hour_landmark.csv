@@ -1,0 +1,4 @@
+Endpoint,Anchors,Positives,Twin AUROC,95% CI,Twin (common anchors),TabPFN-3.5,TabPFN v2,LightGBM pooled,LightGBM per dataset,Logistic,Twin probe,Twin - LightGBM,95% CI (paired)
+ICU death,2904,104,0.858,0.814 to 0.902,0.858,0.932,0.914,0.915,0.895,0.864,0.906,-0.057,-0.096 to -0.019
+In-hospital death,3500,346,0.858,0.837 to 0.879,0.858,0.881,0.869,0.867,0.853,0.830,0.870,-0.008,-0.028 to 0.010
+ICU stay > 7 days,3465,485,0.808,0.786 to 0.828,0.808,0.856,0.839,0.855,0.844,0.787,0.837,-0.047,-0.066 to -0.028

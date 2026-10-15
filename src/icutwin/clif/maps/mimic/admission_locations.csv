@@ -1,0 +1,12 @@
+admission_location,admission_source,provenance
+EMERGENCY ROOM,ed,admissions.admission_location
+PHYSICIAN REFERRAL,direct,admissions.admission_location
+CLINIC REFERRAL,direct,admissions.admission_location
+WALK-IN/SELF REFERRAL,direct,admissions.admission_location
+TRANSFER FROM HOSPITAL,other_hospital,admissions.admission_location
+TRANSFER FROM SKILLED NURSING FACILITY,other,admissions.admission_location
+INTERNAL TRANSFER TO OR FROM PSYCH,other,admissions.admission_location
+PROCEDURE SITE,other,admissions.admission_location (cath lab / interventional suite)
+PACU,or,admissions.admission_location (post-anaesthesia care unit)
+AMBULATORY SURGERY TRANSFER,or,admissions.admission_location
+INFORMATION NOT AVAILABLE,unknown,admissions.admission_location

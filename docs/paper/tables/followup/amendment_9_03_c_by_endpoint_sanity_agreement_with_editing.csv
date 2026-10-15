@@ -1,0 +1,5 @@
+Endpoint,Anchors,Rollout (C2): sanity,editing,"Rollout less null, means: sanity",editing,"Gradient-weighted rollout, means: sanity",editing,"Attn x grad, means: sanity",editing,Knockout: sanity,editing
+"AKI stage >= 2, 48 h",39,0.97,-0.08,0.01,-0.13,-0.02,0.15,-0.02,0.15,0.01,0.72
+"Decompensation, 24 h",38,0.96,0.04,0.07,-0.08,-0.02,0.04,0.01,0.02,-0.13,0.74
+"Hypotension, 4 h",37,0.97,-0.20,0.01,0.01,-0.10,0.25,-0.07,0.25,0.00,0.69
+"New IMV, 24 h",38,0.97,-0.07,0.15,-0.11,-0.06,0.21,0.02,0.21,-0.07,0.60

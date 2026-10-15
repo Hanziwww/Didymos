@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this software, cite this repository. The article citation will be added when available."
+type: software
+title: "Didymos"
+version: 0.1.0
+date-released: 2026-10-15
+repository-code: "https://github.com/Hanziwww/Didymos"
+license: Apache-2.0
+authors:
+  - family-names: Wang
+    given-names: Han
+  - family-names: Ye
+    given-names: Kaisheng
+  - family-names: Yuan
+    given-names: Huaguo
+  - family-names: Chen
+    given-names: Weibang
+  - family-names: Cai
+    given-names: Yao
+  - family-names: Tian
+    given-names: Ye
+  - family-names: Liu
+    given-names: Ting
+  - family-names: Xu
+    given-names: Yue
+  - family-names: Liu
+    given-names: Xiaoyu
+  - family-names: Pang
+    given-names: Lingpin
+  - family-names: Liu
+    given-names: Huafeng
+  - family-names: Ma
+    given-names: Yue
+  - family-names: Yu
+    given-names: Zizhong
+  - family-names: Zou
+    given-names: Xiaozheng
+  - family-names: Hao
+    given-names: Junfeng
+  - family-names: Tian
+    given-names: Chunjie

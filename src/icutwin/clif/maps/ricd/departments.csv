@@ -1,0 +1,9 @@
+department,location_category,location_type,is_icu,admission_source,provenance
+ICU,icu,general_icu,1,other_icu,"the centre's intensive care unit; the release names no unit type"
+neurorehabilitation,rehab,,0,ward,neurorehabilitation department
+medical rehabilitation,rehab,,0,ward,medical rehabilitation department
+neurosurgery,ward,,0,ward,neurosurgery department
+therapeutic,ward,,0,ward,internal medicine (therapeutic) department
+endocrinological,ward,,0,ward,endocrinology department
+palliative psychiatric ward,other,,0,ward,palliative psychiatric ward
+day hospital,other,,0,other,day hospital

@@ -1,0 +1,4 @@
+Endpoint,Anchors,"AUROC, site known","AUROC, site unknown",O/E known,O/E unknown
+In-hospital death,2045,0.851,0.862,1.40,1.36
+ICU death,1615,0.851,0.882,1.08,1.03
+ICU stay > 7 days,2080,0.814,0.846,0.77,0.74

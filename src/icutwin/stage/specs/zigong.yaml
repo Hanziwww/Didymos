@@ -1,0 +1,14 @@
+# zigongICU 1.1 (PhysioNet: Critical care database comprising patients with infection at Zigong Fourth People's
+# Hospital) — flat layout of eight CSVs with an unnamed row-index first column and "NA" for missing values.
+# Inference only (Paper P amendment 16a): staged in full mode; every table copied byte-exactly.
+name: zigong
+archive: zigongICU/zigongicu-1.1.tar.zst
+strip_prefix: zigongicu-1.1/
+out_compression: gzip
+anchor:
+  member: dtBaseline.csv
+  patient_col: PATIENT_ID
+rules:
+  - {pattern: "*SHA256SUMS.txt", action: checksums}
+  - {pattern: "*.csv", action: copy}
+  - {pattern: "*", action: copy}

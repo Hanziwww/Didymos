@@ -1,0 +1,17 @@
+priority,pattern,target,category,provenance
+10,insertion of venous catheter|catheter for hemodialysis,__skip__,,vascular access procedure; not a therapy session
+20,c v v h d f|cvvhdf,crrt_therapy,cvvhdf,
+21,c v v h d|cvvhd,crrt_therapy,cvvhd,
+22,c v v h|cvvh,crrt_therapy,cvvh,
+23,\bscuf\b|slow continuous ultrafiltration,crrt_therapy,scuf,
+24,continuous renal replacement|\bcrrt\b,crrt_therapy,,CRRT with mode not recorded
+30,hemodialysis,intermittent_dialysis,,CLIF 3.0 intermittent_dialysis
+31,dialysis|ultrafiltration,__skip__,,modality not recorded or no CLIF table (peritoneal dialysis)
+40,balloon pump removal,__skip__,,device removal
+41,intraaortic balloon pump|\biabp\b,mcs,ext_iabp,declared extension (CLIF 3.0 mcs has no IABP category)
+42,\becmo\b|extracorporeal membrane,mcs,ecmo,
+43,impella|ventricular assist|\blvad\b,mcs,lvad,
+50,non-invasive ventilation,respiratory_support,nippv,documented active treatment
+51,mechanical ventilation|ventilator weaning,respiratory_support,imv,documented active treatment
+52,oxygen therapy.*nasal cannula,respiratory_support,nasal_cannula,documented active treatment
+53,oxygen therapy.*face mask,respiratory_support,face_mask,documented active treatment

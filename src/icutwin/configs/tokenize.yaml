@@ -1,0 +1,22 @@
+# S5 tokenizer (M4): fit the vocabulary on the train split of every dataset, encode every split, validate
+defaults:
+  - paths
+  - _self_
+
+task: validate          # fit | encode | validate
+mode: subset            # which MEDS layout to read
+datasets: [mimic, aumc, eicu, hirid, sicdb, nwicu, inspire]
+splits: [train, tuning, held_out]
+meds_root: ${paths.data}/meds/${mode}
+derived_root: ${paths.data}/derived/${mode}
+out_root: ${paths.data}/tokens/${mode}       # vocab.json, vocabulary.parquet, <dataset>/<split>.parquet, index.json
+qa_root: ${paths.data}/qa/${mode}            # tokenizer_report.json / .md
+workers: 1              # fit / encode / validate: parallel processes over chunks of subjects (the server: ~100)
+chunk_stays: 2000       # subjects per chunk
+backoff: null           # amendment 17: 'default' (tokenization/backoff.yaml) or a path; encoding only
+
+hydra:
+  run:
+    dir: ${paths.runs}/hydra/tokenize/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    chdir: false

@@ -1,0 +1,9 @@
+hospitaldischargelocation,discharge_category,provenance
+Home,home,
+Skilled Nursing Facility,snf,
+Death,expired,
+Rehabilitation,acute_ip_rehab,
+Other Hospital,acute_care_hosp,
+Nursing Home,other,no CLIF category for long-term nursing home
+Other External,other,
+Other,other,

@@ -1,0 +1,34 @@
+# S4: canonical CLIF + ELF events (CLIF_MEDS + our extension domains) -> MEDS v0.4 per dataset, ICU stay = subject
+defaults:
+  - paths
+  - _self_
+
+task: build             # build | parity | derived | mimic_code | weights
+mode: subset            # which staged layout to read
+datasets: [mimic, aumc, eicu, hirid, sicdb, nwicu, inspire]
+clif_root: ${paths.data}/clif_canonical/${mode}
+elf_root: ${paths.data}/meds_elf/${mode}       # CLIF_MEDS output (data/) and our extension domains (ext/)
+meds_root: ${paths.data}/meds/${mode}
+derived_root: ${paths.data}/derived/${mode}  # labels and evaluation concepts (never tokenized)
+parquet_root: ${paths.data}/parquet/${mode}  # raw parquet mirror (mimic_code runs mimic-code on it)
+work_root: ${paths.data}/work/${mode}
+qa_root: ${paths.data}/qa/${mode}
+pre_icu_hours: 48       # events of the hospitalization this long before ICU admission belong to the stay
+min_age_years: 18       # adult cohort: age at hospital admission (binned ages at their midpoint); null keeps all
+subjects_per_shard: 20000
+dataset_versions:
+  mimic: MIMIC-IV 3.1
+  aumc: AmsterdamUMCdb 1.0.2
+  eicu: eICU-CRD 2.0
+  hirid: HiRID 1.1.1
+  sicdb: SICdb 1.0.8
+  nwicu: NWICU 0.1.0
+  inspire: INSPIRE 1.4.2
+  ricd: RICD 3.0            # inference only (Paper P amendment 16a)
+  zigong: zigongICU 1.1     # inference only (Paper P amendment 16a)
+
+hydra:
+  run:
+    dir: ${paths.runs}/hydra/meds/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    chdir: false

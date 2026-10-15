@@ -1,0 +1,5 @@
+Subset,Cause,0-6 h,6-12 h,12-24 h,24-48 h
+R128,death,0.56,0.34,0.31,0.28
+R128,alive discharge,0.89,0.88,0.84,0.99
+L24x,death,0.52,0.42,0.34,0.49
+L24x,alive discharge,1.08,0.99,0.93,1.05

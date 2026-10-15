@@ -1,0 +1,2 @@
+# LF in every checkout, whatever core.autocrlf says: the CLIF-MIMIC patches, WSL scripts and mapping files are LF
+* text=auto eol=lf

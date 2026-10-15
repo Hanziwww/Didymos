@@ -1,0 +1,64 @@
+# M7 privacy gate of the frozen candidate (protocol v1, criteria fixed before any run: docs/m7_privacy.md):
+#   python -m icutwin.eval.cli step=p1 mode=full gpu=0          # membership inference by loss
+#   python -m icutwin.eval.cli step=p2 mode=full gpu=1          # prefix-prompted extraction
+#   python -m icutwin.eval.cli step=sample mode=full shard=k gpu=k   (k = 0..shards-1: audit samples)
+#   python -m icutwin.eval.cli step=synthetic mode=full gpu=0   # P3-P5 with both controls
+#   python -m icutwin.eval.cli step=report mode=full            # statuses against the criteria
+#   python -m icutwin.eval.cli step=purge mode=full             # audit samples deleted once the gate is decided
+defaults:
+  - paths
+  - _self_
+
+step: report
+mode: full
+run: M_main
+tokens_root: ${paths.data}/tokens/${mode}
+model_dir: ${paths.runs}/train/${mode}/${run}/final/hf    # its sha256 is checked against the run's FROZEN.json
+out_dir: ${paths.runs}/audit/m7_${run}
+datasets: [mimic, aumc, eicu, hirid, sicdb, nwicu, inspire]
+seed: 0
+gpu: 0
+tokens_per_batch: 131072          # teacher-forced NLL: tokens per forward batch
+
+p1:                               # per dataset up to cap train and cap held-out stays (equal numbers)
+  cap: 3000
+  auc_limit: 0.60
+  tpr_limit: 0.03                 # TPR at 1% FPR: PASS at or below (upper bound)
+  tpr_fail: 0.05                  # FAIL above (lower bound)
+
+p2:                               # per dataset up to cap train and cap held-out first windows per setting
+  settings: [[32, 32], [128, 64]] # (k timeline tokens in the prompt, L greedy tokens)
+  cap: 1000
+  batch: 250
+  limit: 0.01                     # member minus non-member exact-match rate
+
+sample:                           # audit samples: ancestral, temperature 1, no truncation, from [BOS]
+  n: 5000
+  batch: 125
+  max_new: 8191
+shards: 4
+shard: 0
+
+synthetic:                        # P3-P5 and their controls
+  pool: 5000                      # H_base, H_ref, H_priv (held-out first windows) and the P4 members (train)
+  copy_limit: 0.001
+  share_limit: 0.07
+  svd_dims: 32
+  domias_limit: 0.60
+  qi_tokens: 32
+  attribute_limit: 0.02
+
+p5v2:                             # proposed amendment v2 (docs/m7_privacy.md): P5 on fresh, larger sets; step=p5v2
+  adopted: true                   # adopted by the study lead 2026-10-05, before any v2 run (docs/m7_privacy.md)
+  members: 20000                  # train single-window stays outside the v1 P4 members
+  nonmembers: 20000               # held-out single-window stays outside H_base, H_ref, H_priv
+  private_reference: 20000        # further such held-out stays
+  samples: 20000                  # audit samples in out_dir/audit_samples_p5v2 (vllm_audit --seed sample_seed)
+  sample_seed: 1
+  set_seed: 1
+
+hydra:
+  run:
+    dir: ${paths.runs}/hydra/eval/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    chdir: false

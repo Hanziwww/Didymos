@@ -1,0 +1,164 @@
+table,med_category,kind,ingredients,med_group,routes,units,untyped_iv,clif_3_0,source,why
+medication_admin_continuous,acetaminophen,consortium,acetaminophen,others,iv,mg/min,,medication_admin_intermittent only,CLIF-MIMIC mapping med_category.csv 228315 (decision BOTH),CLIF-MIMIC emits IV acetaminophen infusions in the continuous table
+medication_admin_continuous,alteplase,local,alteplase,anticoagulation,iv,mg/hr|ml/hr|mg/min,,medication_admin_intermittent only,CLIF-MIMIC mapping med_category.csv (decision CONTINUOUS); eICU infusionDrug,alteplase infusions (ext_alteplase until M4: the term exists in CLIF 3.0)
+medication_admin_continuous,ext_albumin_20,concept,albumin_20,fluids_electrolytes,iv,ml/min,,none,lexicon drugs.csv 'albumin 20%',20% albumin (European hyperoncotic product)
+medication_admin_continuous,potassium_repletion,local,potassium_chloride,fluids_electrolytes,iv,ml/min|mmol/min|meq/hr|mmol/hr,,medication_admin_intermittent only,M4 rule (a): 15502 subset infusion records in 5 datasets,potassium chloride infusions (incl. CRRT potassium)
+medication_admin_continuous,phosphate_repletion,local,potassium_phosphate,fluids_electrolytes,iv,mmol/min|mmol/hr,,medication_admin_intermittent only,M4 rule (a): 3427 records in 3 datasets,potassium or sodium phosphate infusions
+medication_admin_continuous,ext_calcium,concept,calcium,fluids_electrolytes,iv,g/hr|mg/hr|mmol/min|ml/hr|ml/min,,none,M4 rule (a): 3082 records in 5 datasets,calcium (gluconate; chloride; glubionate) infusions incl. CRRT calcium replacement
+medication_admin_continuous,ext_clonidine,concept,clonidine,sedation,iv,mcg/min|mg/hr,,none,M4 rule (a): 5995 records in 3 datasets,clonidine infusions (sedation; withdrawal)
+medication_admin_continuous,ext_nimodipine,concept,nimodipine,cardiac,iv,mg/min|mg/hr,,none,M4 rule (a): 1741 records in 2 datasets,nimodipine infusions (subarachnoid haemorrhage)
+medication_admin_continuous,ext_clonazepam,concept,clonazepam,sedation,iv,mg/min|mg/hr,,none,M4 rule (a): 1063 records in 2 datasets,clonazepam infusions
+medication_admin_continuous,atracurium,local,atracurium,paralytics,iv,mg/min,,medication_admin_intermittent only,M4 rule (b): 967 records (HiRID),atracurium infusions
+medication_admin_continuous,ext_sodium_citrate,concept,sodium_citrate,anticoagulation,iv,ml/hr|ml/min,,none,M4 rule (a): 967 records in 3 datasets,regional citrate anticoagulation of CRRT circuits
+medication_admin_continuous,ext_phenytoin,concept,phenytoin,others,iv,mg/min,,none,M4 rule (b): 798 records (HiRID),phenytoin loading infusions
+medication_admin_continuous,ext_iloprost,concept,iloprost,pulmonary_vasodilators_iv,iv,mcg/min,,none,M4 rule (b): 529 records (HiRID),intravenous iloprost
+medication_admin_continuous,ext_sufentanil,concept,sufentanil,sedation,iv,mcg/min,,none,M4 rule (b): 418 records (SICdb),sufentanil analgosedation infusions
+medication_admin_continuous,ext_immunoglobulin,concept,immunoglobulin,others,iv,g/min|ml/hr,,none,M4 rule (a): 338 records in 2 datasets,intravenous immunoglobulin (IVIG)
+medication_admin_continuous,ext_metamizole,concept,metamizole,others,iv,mcg/min|mg/min,,none,M4 rule (b): 239 records in 2 datasets,metamizole (dipyrone) infusions
+medication_admin_continuous,ext_flucloxacillin,concept,flucloxacillin,others,iv,mg/hr,,none,M4 rule (b): 213 records in 2 datasets,continuous flucloxacillin infusion
+medication_admin_continuous,ext_tranexamic_acid,concept,tranexamic_acid,others,iv,mcg/min|mg/min|ml/hr,,none,M4 rule (b): 199 records in 3 datasets,tranexamic acid infusions (as aminocaproic acid)
+medication_admin_continuous,ext_urapidil,concept,urapidil,cardiac,iv,mcg/min|mg/min,,none,M4 rule (b): 189 records in 2 datasets,urapidil infusions
+medication_admin_continuous,hydrocortisone,local,hydrocortisone,endocrine,iv,mcg/min,,medication_admin_intermittent only,M4 rule (b): 173 records in 2 datasets,hydrocortisone infusions (septic shock)
+medication_admin_continuous,ext_levosimendan,concept,levosimendan,vasoactives,iv,mcg/min|mg/min,,none,M4 rule (b): 162 records in 2 datasets,levosimendan infusions
+medication_admin_continuous,valproate,local,valproate,others,iv,mg/min,,medication_admin_intermittent only,M4 rule (b): 109 records (HiRID),valproate infusions
+medication_admin_intermittent,dextrose_5_water,consortium,dextrose_5_water,,iv,ml,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv (decision BOTH),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,dextrose_10_water,consortium,dextrose_10_water,,iv,ml,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv (decision BOTH),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,dextrose_other,consortium,dextrose_other,,iv,ml|g,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv (decision BOTH),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,insulin,consortium,insulin,,im|iv,u,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv (decision BOTH),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,sodium_chloride,consortium,sodium_chloride,,iv|inhaled|enteral,ml|g,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv (decision BOTH),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,heparin,consortium,heparin,,im|iv,u|dose,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv (decision BOTH),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,furosemide,consortium,furosemide,,iv|enteral,mg,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv (decision BOTH),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,pantoprazole,consortium,pantoprazole,,enteral|iv,mg|dose,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv (decision BOTH),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,labetalol,consortium,labetalol,,enteral|iv,mg,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv (decision BOTH),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,sodium_bicarbonate,consortium,sodium_bicarbonate,,enteral|iv,mg|ml|meq,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv (decision INTERMITTENT),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,diltiazem,consortium,diltiazem,,enteral|iv,mg,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv (decision BOTH),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,amiodarone,consortium,amiodarone,,enteral|iv,mg,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv (decision BOTH),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,adenosine,consortium,adenosine,,iv,mg,,none,CLIF-MIMIC mapping med_category.csv (decision INTERMITTENT),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,lidocaine,consortium,lidocaine,,enteral|iv|im,ml|mg,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv (decision BOTH),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,bumetanide,consortium,bumetanide,,iv|enteral,mg,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv (decision BOTH),CLIF-MIMIC intermittent practice
+medication_admin_intermittent,argatroban,local,argatroban,other,iv,mg,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv 225147 'Argatroban' (decision BOTH); lexicon drugs.csv 'argatroban',loading dose (bolus) of an anticoagulant CLIF 3.0 lists as an infusion only
+medication_admin_intermittent,eptifibatide,local,eptifibatide,other,iv,mg,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv 225151 'Eptifibatide (Integrilin)' (decision BOTH); lexicon drugs.csv 'eptifibatid|integrilin',loading dose (bolus) of a GP IIb/IIIa inhibitor CLIF 3.0 lists as an infusion only
+medication_admin_intermittent,esomeprazole,local,esomeprazole,other,enteral|iv,mg,,medication_admin_continuous only,CLIF-MIMIC mapping med_category.csv 229615 'Esomeprazole (Nexium)' (decision INTERMITTENT); lexicon drugs.csv 'esomeprazol|nexium',proton-pump inhibitor given as single doses as pantoprazole (CLIF 3.0 lists both as infusions only)
+medication_admin_intermittent,ext_flucloxacillin,concept,flucloxacillin,cms_sepsis_qualifying_antibiotics,iv,g|mg,,none,lexicon drugs.csv 'flucloxacillin|floxapen',standard European anti-staphylococcal penicillin
+medication_admin_intermittent,albuterol,local,albuterol,other,inhaled,ml|neb|puff|mg|mcg,continuous,medication_admin_continuous only,M4 rule (a): 26633 subset records in 7 datasets,nebulized or inhaled albuterol doses
+medication_admin_intermittent,ext_levalbuterol,concept,levalbuterol,other,inhaled,mg|puff,,none,M4 rule (a): 957 records in 2 datasets,R-enantiomer of albuterol nebulized at half the albuterol dose (kept apart from albuterol)
+medication_admin_intermittent,ipratropium,local,ipratropium,other,inhaled|enteral,neb|mcg|puff|mg|ml,continuous,medication_admin_continuous only,M4 rule (a): 7928 records in 7 datasets,nebulized or inhaled ipratropium doses
+medication_admin_intermittent,levothyroxine,local,levothyroxine,other,enteral|iv,mcg|mg,continuous,medication_admin_continuous only,M4 rule (a): 6980 records in 7 datasets,levothyroxine tablets and IV doses
+medication_admin_intermittent,tacrolimus,local,tacrolimus,other,enteral|buccal_sublingual,mg,continuous,medication_admin_continuous only,M4 rule (a): 4462 records in 7 datasets,tacrolimus doses
+medication_admin_intermittent,octreotide,local,octreotide,other,iv|im,mcg|mg,continuous,medication_admin_continuous only,M4 rule (a): 2236 records in 4 datasets,subcutaneous or IV octreotide doses
+medication_admin_intermittent,torsemide,local,torsemide,other,enteral,mg,continuous,medication_admin_continuous only,M4 rule (a): 1952 records in 5 datasets,torsemide doses
+medication_admin_intermittent,lactated_ringers_solution,local,lactated_ringers_solution,other,iv,ml,continuous,medication_admin_continuous only,M4 rule (a): 1687 records in 4 datasets,lactated Ringer's boluses
+medication_admin_intermittent,baclofen,local,baclofen,other,enteral,mg,continuous,medication_admin_continuous only,M4 rule (a): 1676 records in 5 datasets,baclofen tablets
+medication_admin_intermittent,albumin_25,local,albumin_25,other,iv,g,continuous,medication_admin_continuous only,M4 rule (a): 1287 records in 3 datasets,25% albumin doses
+medication_admin_intermittent,albumin_5,local,albumin_5,other,iv,g|ml,continuous,medication_admin_continuous only,M4 rule (a): 939 records in 4 datasets,5% albumin doses
+medication_admin_intermittent,norepinephrine,local,norepinephrine,vasopressor,iv,mcg|mg,continuous,medication_admin_continuous only,M4 rule (a): 1691 records in 7 datasets,norepinephrine boluses (push-dose vasopressor)
+medication_admin_intermittent,phenylephrine,local,phenylephrine,vasopressor,iv,mg,continuous,medication_admin_continuous only,M4 rule (a): 1639 records in 6 datasets,phenylephrine boluses (push-dose vasopressor)
+medication_admin_intermittent,nitroglycerin,local,nitroglycerin,anti_hypertensive,buccal_sublingual|enteral,mg,continuous,medication_admin_continuous only,M4 rule (a): 1263 records in 7 datasets,sublingual nitroglycerin and IV boluses
+medication_admin_intermittent,nicardipine,local,nicardipine,anti_hypertensive,enteral,mg,continuous,medication_admin_continuous only,M4 rule (a): 447 records in 3 datasets,nicardipine boluses and capsules
+medication_admin_intermittent,dexmedetomidine,local,dexmedetomidine,sedation,iv,mg,continuous,medication_admin_continuous only,M4 rule (a): 437 records in 4 datasets,dexmedetomidine boluses
+medication_admin_intermittent,remifentanil,local,remifentanil,analgesia,iv,mg,continuous,medication_admin_continuous only,M4 rule (a): 310 records in 3 datasets,remifentanil boluses
+medication_admin_intermittent,ext_metoprolol,concept,metoprolol,anti_hypertensive,enteral|iv,mg,,none,M4 rule (a): 24777 records in 7 datasets,beta-blocker
+medication_admin_intermittent,ext_aspirin,concept,aspirin,other,enteral,mg,,none,M4 rule (a): 17781 records in 7 datasets,antiplatelet (incl. carbasalate calcium)
+medication_admin_intermittent,ext_docusate,concept,docusate,other,enteral,mg,,none,M4 rule (a): 16838 records in 3 datasets,stool softener
+medication_admin_intermittent,ext_famotidine,concept,famotidine,other,enteral|iv,mg,,none,M4 rule (a): 16055 records in 4 datasets,H2 blocker
+medication_admin_intermittent,ext_gabapentin,concept,gabapentin,other,enteral,mg,,none,M4 rule (a): 15155 records in 6 datasets,gabapentinoid
+medication_admin_intermittent,ext_tramadol,concept,tramadol,analgesia,enteral|iv,mg,,none,M4 rule (a): 13064 records in 7 datasets,opioid analgesic
+medication_admin_intermittent,ext_senna,concept,senna,other,enteral,mg|tab,,none,M4 rule (a): 13057 records in 3 datasets,stimulant laxative
+medication_admin_intermittent,ext_atorvastatin,concept,atorvastatin,other,enteral,mg,,none,M4 rule (a): 12385 records in 6 datasets,statin
+medication_admin_intermittent,ext_ondansetron,concept,ondansetron,other,iv|enteral,mg,,none,M4 rule (a): 10963 records in 6 datasets,antiemetic
+medication_admin_intermittent,ext_enoxaparin,concept,enoxaparin,other,im|iv,mg|mg/kg,,none,M4 rule (a): 10729 records in 6 datasets,low-molecular-weight heparin
+medication_admin_intermittent,ext_calcium,concept,calcium,other,enteral|iv,mg|g|tab,,none,M4 rule (a): 9308 records in 7 datasets,calcium salts (supplement; repletion; phosphate binder)
+medication_admin_intermittent,ext_macrogol,concept,macrogol,other,enteral,g|sachet|ml,,none,M4 rule (a): 9064 records in 6 datasets,osmotic laxative (polyethylene glycol)
+medication_admin_intermittent,ext_omeprazole,concept,omeprazole,other,enteral,mg,,none,M4 rule (a): 7689 records in 5 datasets,proton-pump inhibitor
+medication_admin_intermittent,ext_amlodipine,concept,amlodipine,anti_hypertensive,enteral,mg,,none,M4 rule (a): 7547 records in 7 datasets,calcium-channel blocker
+medication_admin_intermittent,ext_lactulose,concept,lactulose,other,enteral,ml|g,,none,M4 rule (a): 6747 records in 6 datasets,osmotic laxative
+medication_admin_intermittent,ext_levetiracetam,concept,levetiracetam,other,enteral|iv,mg,,none,M4 rule (a): 6745 records in 7 datasets,anticonvulsant
+medication_admin_intermittent,ext_hydralazine,concept,hydralazine,anti_hypertensive,enteral|iv,mg,,none,M4 rule (a): 6623 records in 5 datasets,vasodilator (incl. dihydralazine)
+medication_admin_intermittent,ext_thiamine,concept,thiamine,other,enteral|iv,mg,,none,M4 rule (a): 6622 records in 7 datasets,vitamin B1
+medication_admin_intermittent,ext_metoclopramide,concept,metoclopramide,other,iv|enteral,mg,,none,M4 rule (a): 6062 records in 6 datasets,prokinetic antiemetic
+medication_admin_intermittent,ext_folic_acid,concept,folic_acid,other,enteral|iv,mg|mcg,,none,M4 rule (a): 5155 records in 4 datasets,folate
+medication_admin_intermittent,ext_apixaban,concept,apixaban,other,enteral,mg,,none,M4 rule (a): 5125 records in 4 datasets,direct oral anticoagulant
+medication_admin_intermittent,ext_acetylcysteine,concept,acetylcysteine,other,inhaled|enteral,ml|mg,,none,M4 rule (a): 5039 records in 5 datasets,mucolytic or antidote
+medication_admin_intermittent,ext_ibuprofen,concept,ibuprofen,analgesia,enteral|iv,mg,,none,M4 rule (a): 4941 records in 5 datasets,NSAID analgesic
+medication_admin_intermittent,ext_midodrine,concept,midodrine,vasopressor,enteral,mg,,none,M4 rule (a): 4414 records in 4 datasets,oral alpha-1 agonist for hypotension
+medication_admin_intermittent,ext_carvedilol,concept,carvedilol,anti_hypertensive,enteral,mg,,none,M4 rule (a): 4375 records in 7 datasets,beta-blocker
+medication_admin_intermittent,ext_ketorolac,concept,ketorolac,analgesia,iv|im,mg,,none,M4 rule (a): 4180 records in 4 datasets,NSAID analgesic
+medication_admin_intermittent,ext_metamizole,concept,metamizole,analgesia,iv|enteral,mg,,none,M4 rule (a): 4145 records in 2 datasets,non-opioid analgesic (dipyrone)
+medication_admin_intermittent,ext_ics_laba,concept,ics_laba,steroid,inhaled,inh|puff,,none,M4 rule (a): 4117 records in 4 datasets,inhaled corticosteroid with a long-acting beta2-agonist
+medication_admin_intermittent,ext_tamsulosin,concept,tamsulosin,other,enteral,mg,,none,M4 rule (a): 4040 records in 6 datasets,alpha-1 blocker (urinary)
+medication_admin_intermittent,ext_warfarin,concept,warfarin,other,enteral,mg,,none,M4 rule (a): 3901 records in 4 datasets,vitamin K antagonist
+medication_admin_intermittent,ext_sucralfate,concept,sucralfate,other,enteral,g,,none,M4 rule (a): 3848 records in 4 datasets,mucosal protectant
+medication_admin_intermittent,ext_guaifenesin,concept,guaifenesin,other,enteral,ml|mg,,none,M4 rule (a): 3843 records in 3 datasets,expectorant
+medication_admin_intermittent,ext_clopidogrel,concept,clopidogrel,other,enteral,mg,,none,M4 rule (a): 3794 records in 7 datasets,antiplatelet
+medication_admin_intermittent,ext_bisacodyl,concept,bisacodyl,other,enteral,mg,,none,M4 rule (a): 3718 records in 6 datasets,stimulant laxative
+medication_admin_intermittent,ext_sevelamer,concept,sevelamer,other,enteral,mg,,none,M4 rule (a): 3665 records in 4 datasets,phosphate binder
+medication_admin_intermittent,ext_piritramide,concept,piritramide,analgesia,iv|im,mg,,none,M4 rule (a): 3560 records in 2 datasets,opioid analgesic
+medication_admin_intermittent,ext_spironolactone,concept,spironolactone,other,enteral,mg,,none,M4 rule (a): 3295 records in 7 datasets,mineralocorticoid antagonist (incl. potassium canrenoate)
+medication_admin_intermittent,ext_rifaximin,concept,rifaximin,other,enteral,mg,,none,M4 rule (a): 3195 records in 4 datasets,non-absorbed antibiotic (hepatic encephalopathy)
+medication_admin_intermittent,ext_ramelteon,concept,ramelteon,sedation,enteral,mg,,none,M4 rule (a): 3064 records in 2 datasets,hypnotic (ATC N05C)
+medication_admin_intermittent,ext_mycophenolate,concept,mycophenolate,other,enteral|iv,mg|mg/kg,,none,M4 rule (a): 3040 records in 5 datasets,immunosuppressant
+medication_admin_intermittent,ext_ranitidine,concept,ranitidine,other,enteral|iv,mg,,none,M4 rule (a): 3015 records in 4 datasets,H2 blocker
+medication_admin_intermittent,ext_iron,concept,iron,other,enteral|iv,mg,,none,M4 rule (a): 3007 records in 4 datasets,iron salts
+medication_admin_intermittent,ext_fluticasone,concept,fluticasone,steroid,inhaled,puff,,none,M4 rule (a): 2892 records in 3 datasets,inhaled corticosteroid
+medication_admin_intermittent,ext_pregabalin,concept,pregabalin,other,enteral,mg,,none,M4 rule (a): 2792 records in 6 datasets,gabapentinoid
+medication_admin_intermittent,ext_clonazepam,concept,clonazepam,anxiolytic,enteral|iv,mg,,none,M4 rule (a): 2723 records in 6 datasets,benzodiazepine
+medication_admin_intermittent,ext_trazodone,concept,trazodone,other,enteral,mg,,none,M4 rule (a): 2633 records in 7 datasets,antidepressant
+medication_admin_intermittent,ext_allopurinol,concept,allopurinol,other,enteral,mg,,none,M4 rule (a): 2606 records in 6 datasets,xanthine oxidase inhibitor
+medication_admin_intermittent,ext_simvastatin,concept,simvastatin,other,enteral,mg,,none,M4 rule (a): 2363 records in 6 datasets,statin
+medication_admin_intermittent,ext_ursodiol,concept,ursodiol,other,enteral,mg,,none,M4 rule (a): 2319 records in 2 datasets,bile acid
+medication_admin_intermittent,ext_sertraline,concept,sertraline,other,enteral,mg,,none,M4 rule (a): 1982 records in 6 datasets,antidepressant
+medication_admin_intermittent,ext_metformin,concept,metformin,other,enteral,mg,,none,M4 rule (a): 1978 records in 6 datasets,oral antidiabetic
+medication_admin_intermittent,ext_methadone,concept,methadone,analgesia,enteral|iv,mg,,none,M4 rule (a): 1975 records in 4 datasets,opioid
+medication_admin_intermittent,ext_urapidil,concept,urapidil,anti_hypertensive,iv,mg,,none,M4 rule (a): 1920 records in 2 datasets,alpha-1 blocker (antihypertensive)
+medication_admin_intermittent,ext_rosuvastatin,concept,rosuvastatin,other,enteral,mg,,none,M4 rule (a): 1907 records in 5 datasets,statin
+medication_admin_intermittent,ext_levodopa,concept,levodopa,other,enteral,tab|mg|cap,,none,M4 rule (a): 1905 records in 5 datasets,antiparkinsonian
+medication_admin_intermittent,ext_loperamide,concept,loperamide,other,enteral,mg,,none,M4 rule (a): 1856 records in 4 datasets,antidiarrhoeal
+medication_admin_intermittent,ext_mirtazapine,concept,mirtazapine,other,enteral|buccal_sublingual,mg,,none,M4 rule (a): 1848 records in 6 datasets,antidepressant
+medication_admin_intermittent,ext_nadroparin,concept,nadroparin,other,iv|im,u,,none,M4 rule (a): 1764 records in 3 datasets,low-molecular-weight heparin
+medication_admin_intermittent,ext_escitalopram,concept,escitalopram,other,enteral,mg,,none,M4 rule (a): 1688 records in 4 datasets,antidepressant
+medication_admin_intermittent,ext_bisoprolol,concept,bisoprolol,anti_hypertensive,enteral,mg,,none,M4 rule (a): 1510 records in 5 datasets,beta-blocker
+medication_admin_intermittent,ext_codeine,concept,codeine,analgesia,enteral,ml|mg,,none,M4 rule (a): 1501 records in 3 datasets,opioid (analgesic or antitussive)
+medication_admin_intermittent,ext_digoxin,concept,digoxin,other,enteral|iv,mg|mcg,,none,M4 rule (a): 1499 records in 7 datasets,cardiac glycoside
+medication_admin_intermittent,ext_hydrochlorothiazide,concept,hydrochlorothiazide,anti_hypertensive,enteral,mg,,none,M4 rule (a): 1445 records in 6 datasets,thiazide diuretic
+medication_admin_intermittent,ext_nimodipine,concept,nimodipine,other,enteral,mg,,none,M4 rule (a): 1433 records in 5 datasets,calcium-channel blocker (subarachnoid haemorrhage)
+medication_admin_intermittent,ext_citalopram,concept,citalopram,other,enteral,mg,,none,M4 rule (a): 1406 records in 6 datasets,antidepressant
+medication_admin_intermittent,ext_clonidine,concept,clonidine,anti_hypertensive,enteral,mg|mcg,,none,M4 rule (a): 1375 records in 6 datasets,central alpha-2 agonist
+medication_admin_intermittent,ext_pravastatin,concept,pravastatin,other,enteral,mg,,none,M4 rule (a): 1275 records in 6 datasets,statin
+medication_admin_intermittent,ext_duloxetine,concept,duloxetine,other,enteral,mg,,none,M4 rule (a): 1247 records in 5 datasets,antidepressant
+medication_admin_intermittent,ext_hydroxyzine,concept,hydroxyzine,anxiolytic,enteral,mg,,none,M4 rule (a): 1204 records in 4 datasets,antihistamine anxiolytic
+medication_admin_intermittent,ext_lacosamide,concept,lacosamide,other,enteral|iv,mg,,none,M4 rule (a): 1145 records in 6 datasets,anticonvulsant
+medication_admin_intermittent,ext_zolpidem,concept,zolpidem,sedation,enteral,mg,,none,M4 rule (a): 1128 records in 6 datasets,hypnotic (ATC N05C)
+medication_admin_intermittent,ext_propranolol,concept,propranolol,anti_hypertensive,enteral,mg,,none,M4 rule (a): 1105 records in 6 datasets,beta-blocker
+medication_admin_intermittent,ext_tiotropium,concept,tiotropium,other,inhaled,cap|mg|puff,,none,M4 rule (a): 1045 records in 6 datasets,inhaled long-acting antimuscarinic
+medication_admin_intermittent,ext_lamotrigine,concept,lamotrigine,other,enteral,mg,,none,M4 rule (a): 976 records in 6 datasets,anticonvulsant
+medication_admin_intermittent,ext_oxazepam,concept,oxazepam,anxiolytic,enteral,mg,,none,M4 rule (a): 921 records in 4 datasets,benzodiazepine
+medication_admin_intermittent,ext_venlafaxine,concept,venlafaxine,other,enteral,mg,,none,M4 rule (a): 920 records in 5 datasets,antidepressant
+medication_admin_intermittent,ext_dalteparin,concept,dalteparin,other,iv,u,,none,M4 rule (a): 875 records in 2 datasets,low-molecular-weight heparin
+medication_admin_intermittent,ext_budesonide,concept,budesonide,steroid,inhaled|enteral,mg|mcg|neb|puff|appl|ml,,none,M4 rule (a): 869 records in 6 datasets,corticosteroid (inhaled or oral)
+medication_admin_intermittent,ext_rivaroxaban,concept,rivaroxaban,other,enteral,mg,,none,M4 rule (a): 849 records in 4 datasets,direct oral anticoagulant
+medication_admin_intermittent,ext_pethidine,concept,pethidine,analgesia,iv|enteral,mg,,none,M4 rule (a): 826 records in 6 datasets,opioid analgesic (meperidine)
+medication_admin_intermittent,ext_sildenafil,concept,sildenafil,other,enteral,mg,,none,M4 rule (a): 814 records in 5 datasets,PDE-5 inhibitor
+medication_admin_intermittent,ext_nifedipine,concept,nifedipine,anti_hypertensive,enteral,mg,,none,M4 rule (a): 799 records in 5 datasets,calcium-channel blocker
+medication_admin_intermittent,ext_tranexamic_acid,concept,tranexamic_acid,other,iv|inhaled|enteral,mg|g,,none,M4 rule (a): 792 records in 6 datasets,antifibrinolytic
+medication_admin_intermittent,ext_phenytoin,concept,phenytoin,other,iv|enteral,mg|mgpe,,none,M4 rule (a): 768 records in 6 datasets,anticonvulsant (incl. fosphenytoin)
+medication_admin_intermittent,ext_ezetimibe,concept,ezetimibe,other,enteral,mg,,none,M4 rule (a): 687 records in 5 datasets,cholesterol absorption inhibitor
+medication_admin_intermittent,ext_ticagrelor,concept,ticagrelor,other,enteral,mg,,none,M4 rule (a): 674 records in 6 datasets,antiplatelet
+medication_admin_intermittent,ext_polystyrene_sulfonate,concept,polystyrene_sulfonate,other,enteral,g|mg,,none,M4 rule (a): 644 records in 6 datasets,potassium binder
+medication_admin_intermittent,ext_doxazosin,concept,doxazosin,anti_hypertensive,enteral,mg,,none,M4 rule (a): 482 records in 6 datasets,alpha-1 blocker
+medication_admin_intermittent,ext_topiramate,concept,topiramate,other,enteral,mg,,none,M4 rule (a): 468 records in 5 datasets,anticonvulsant
+medication_admin_intermittent,ext_filgrastim,concept,filgrastim,other,im|iv,mcg,,none,M4 rule (a): 462 records in 5 datasets,granulocyte colony-stimulating factor
+medication_admin_intermittent,ext_verapamil,concept,verapamil,anti_hypertensive,enteral|iv,mg,,none,M4 rule (a): 458 records in 6 datasets,calcium-channel blocker
+medication_admin_intermittent,ext_melatonin,concept,melatonin,sedation,enteral,mg,,none,M4 rule (a): 443 records in 3 datasets,hypnotic (ATC N05C)
+medication_admin_intermittent,ext_phenobarbital,concept,phenobarbital,other,enteral|iv,mg|ml,,none,M4 rule (a): 440 records in 3 datasets,barbiturate anticonvulsant
+medication_admin_intermittent,ext_carbamazepine,concept,carbamazepine,other,enteral,mg,,none,M4 rule (a): 437 records in 6 datasets,anticonvulsant
+medication_admin_intermittent,ext_atropine,concept,atropine,other,iv|enteral|buccal_sublingual,mg|drop,,none,M4 rule (a): 427 records in 7 datasets,anticholinergic (bradycardia)
+medication_admin_intermittent,ext_glycopyrrolate,concept,glycopyrrolate,other,iv|enteral,mg,,none,M4 rule (a): 412 records in 5 datasets,anticholinergic
+medication_admin_intermittent,ext_amitriptyline,concept,amitriptyline,other,enteral,mg,,none,M4 rule (a): 404 records in 6 datasets,tricyclic antidepressant
+medication_admin_intermittent,ext_umeclidinium,concept,umeclidinium,other,inhaled,puff,,none,M4 rule (a): 393 records in 2 datasets,inhaled long-acting antimuscarinic
+medication_admin_intermittent,ext_diclofenac,concept,diclofenac,analgesia,enteral|iv,mg,,none,M4 rule (a): 372 records in 5 datasets,NSAID analgesic
+medication_admin_intermittent,ext_nicotine,concept,nicotine,other,enteral,mg,,none,M4 rule (a): 367 records in 3 datasets,nicotine replacement (gum; lozenge)
+medication_admin_intermittent,ext_ivabradine,concept,ivabradine,other,enteral,mg,,none,M4 rule (a): 358 records in 3 datasets,heart-rate lowering (If inhibitor)
+medication_admin_intermittent,ext_ciclosporin,concept,ciclosporin,other,enteral|iv,mg,,none,M4 rule (a): 321 records in 6 datasets,immunosuppressant
+medication_admin_intermittent,ext_acetazolamide,concept,acetazolamide,other,enteral|iv,mg,,none,M4 rule (a): 316 records in 5 datasets,carbonic anhydrase inhibitor
+medication_admin_intermittent,ext_oxcarbazepine,concept,oxcarbazepine,other,enteral,mg,,none,M4 rule (a): 310 records in 4 datasets,anticonvulsant
+medication_admin_intermittent,ext_salmeterol,concept,salmeterol,other,inhaled,inh|puff,,none,M4 rule (a): 300 records in 4 datasets,inhaled long-acting beta2-agonist

@@ -1,0 +1,5 @@
+Run,Learning rate,Passes over FT,Steps,Held-out FT loss,"Seven databases' tuning loss, change (mean)",change (largest),
+E17_lr3e-05_p1,3e-05,1,76,1.5298,0.0117,0.0186,
+E17_lr0.0001_p1,0.0001,1,76,1.2936,0.0208,0.0379,
+E17_lr3e-05_p3,3e-05,3,228,1.2909,0.0131,0.0266,
+E17_lr0.0001_p3,0.0001,3,228,1.1305,0.0189,0.0327,chosen

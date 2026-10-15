@@ -1,0 +1,169 @@
+priority,antimicrobial_category,pattern,provenance
+1,__skip__,relebactam,agent without a CLIF antimicrobial category
+10,amoxicillin_clavulanate,amoxicillin\W*clavul|augmentin,CLIF 3.0 antimicrobial category name + aliases
+10,ampicillin_sulbactam,ampicillin\W*sulbactam|unasyn,CLIF 3.0 antimicrobial category name + aliases
+10,ceftazidime_avibactam,ceftazidime\W*avibactam,CLIF 3.0 antimicrobial category name + aliases
+10,ceftazidime_clavulanate,ceftazidime\W*clavul,CLIF 3.0 antimicrobial category name + aliases
+10,ceftolozane_tazobactam,ceftolozane\W*tazo,CLIF 3.0 antimicrobial category name + aliases
+10,fusidic_acid,fusidic,CLIF 3.0 antimicrobial category name + aliases
+10,meropenem_vaborbactam,meropenem\W*vaborbactam,CLIF 3.0 antimicrobial category name + aliases
+10,piperacillin_tazobactam,piperacillin\W*tazo|pip\W*tazo|zosyn,CLIF 3.0 antimicrobial category name + aliases
+10,polymyxin_b,polymyxin\W*b,CLIF 3.0 antimicrobial category name + aliases
+10,quinupristin_dalfopristin,quinupristin|synercid,CLIF 3.0 antimicrobial category name + aliases
+10,ticarcillin_clavulanate,ticarcillin\W*clavul,CLIF 3.0 antimicrobial category name + aliases
+10,trimethoprim_sulfamethoxazole,trimethoprim\W*sulfa|sulfa\w*\W*trimethoprim|co-?trimox|\bsxt\b|\btmp\W*smx,CLIF 3.0 antimicrobial category name + aliases
+50,actinomycin_d,\bactinomycin[ _-]?d\b,CLIF 3.0 antimicrobial category name
+50,acyclovir,\bacyclovir\b,CLIF 3.0 antimicrobial category name
+50,amikacin,\bamikacin\b,CLIF 3.0 antimicrobial category name
+50,amoxicillin,\bamoxicillin\b,CLIF 3.0 antimicrobial category name
+50,amphotericin_b,\bamphotericin[ _-]?b\b,CLIF 3.0 antimicrobial category name
+50,ampicillin,\bampicillin\b,CLIF 3.0 antimicrobial category name
+50,anidulafungin,\banidulafungin\b,CLIF 3.0 antimicrobial category name
+50,azithromycin,\bazithromycin\b,CLIF 3.0 antimicrobial category name
+50,aztreonam,\baztreonam\b,CLIF 3.0 antimicrobial category name
+50,baloxavir_marboxil,\bbaloxavir[ _-]?marboxil\b,CLIF 3.0 antimicrobial category name
+50,bedaquiline,\bbedaquiline\b,CLIF 3.0 antimicrobial category name
+50,beta_lactams,\bbeta[ _-]?lactams\b,CLIF 3.0 antimicrobial category name
+50,capreomycin,\bcapreomycin\b,CLIF 3.0 antimicrobial category name
+50,caspofungin,\bcaspofungin\b,CLIF 3.0 antimicrobial category name
+50,cefaclor,\bcefaclor\b,CLIF 3.0 antimicrobial category name
+50,cefadroxil,\bcefadroxil\b,CLIF 3.0 antimicrobial category name
+50,cefamandole,\bcefamandole\b,CLIF 3.0 antimicrobial category name
+50,cefazolin,\bcefazolin\b,CLIF 3.0 antimicrobial category name
+50,cefdinir,\bcefdinir\b,CLIF 3.0 antimicrobial category name
+50,cefditoren,\bcefditoren\b,CLIF 3.0 antimicrobial category name
+50,cefepime,\bcefepime\b,CLIF 3.0 antimicrobial category name
+50,cefiderocol,\bcefiderocol\b,CLIF 3.0 antimicrobial category name
+50,cefixime,\bcefixime\b,CLIF 3.0 antimicrobial category name
+50,cefmetazole,\bcefmetazole\b,CLIF 3.0 antimicrobial category name
+50,cefonicid,\bcefonicid\b,CLIF 3.0 antimicrobial category name
+50,cefoperazone,\bcefoperazone\b,CLIF 3.0 antimicrobial category name
+50,cefotaxime,\bcefotaxime\b,CLIF 3.0 antimicrobial category name
+50,cefotetan,\bcefotetan\b,CLIF 3.0 antimicrobial category name
+50,cefoxitin,\bcefoxitin\b,CLIF 3.0 antimicrobial category name
+50,cefpodoxime,\bcefpodoxime\b,CLIF 3.0 antimicrobial category name
+50,cefprozil,\bcefprozil\b,CLIF 3.0 antimicrobial category name
+50,ceftaroline,\bceftaroline\b,CLIF 3.0 antimicrobial category name
+50,ceftazidime,\bceftazidime\b,CLIF 3.0 antimicrobial category name
+50,ceftibuten,\bceftibuten\b,CLIF 3.0 antimicrobial category name
+50,ceftizoxime,\bceftizoxime\b,CLIF 3.0 antimicrobial category name
+50,ceftriaxone,\bceftriaxone\b,CLIF 3.0 antimicrobial category name
+50,cefuroxime,\bcefuroxime\b,CLIF 3.0 antimicrobial category name
+50,cephalexin,\bcephalexin\b,CLIF 3.0 antimicrobial category name
+50,cephalothin,\bcephalothin\b,CLIF 3.0 antimicrobial category name
+50,cephapirin,\bcephapirin\b,CLIF 3.0 antimicrobial category name
+50,cephradine,\bcephradine\b,CLIF 3.0 antimicrobial category name
+50,chloramphenicol,\bchloramphenicol\b,CLIF 3.0 antimicrobial category name
+50,ciclopirox,\bciclopirox\b,CLIF 3.0 antimicrobial category name
+50,cidofovir,\bcidofovir\b,CLIF 3.0 antimicrobial category name
+50,cinoxacin,\bcinoxacin\b,CLIF 3.0 antimicrobial category name
+50,ciprofloxacin,\bciprofloxacin\b,CLIF 3.0 antimicrobial category name
+50,clarithromycin,\bclarithromycin\b,CLIF 3.0 antimicrobial category name
+50,clindamycin,\bclindamycin\b,CLIF 3.0 antimicrobial category name
+50,clofazimine,\bclofazimine\b,CLIF 3.0 antimicrobial category name
+50,clotrimazole,\bclotrimazole\b,CLIF 3.0 antimicrobial category name
+50,cloxacillin,\bcloxacillin\b,CLIF 3.0 antimicrobial category name
+50,colistin,\bcolistin\b,CLIF 3.0 antimicrobial category name
+50,cycloserine,\bcycloserine\b,CLIF 3.0 antimicrobial category name
+50,dalbavancin,\bdalbavancin\b,CLIF 3.0 antimicrobial category name
+50,daptomycin,\bdaptomycin\b,CLIF 3.0 antimicrobial category name
+50,delamanid,\bdelamanid\b,CLIF 3.0 antimicrobial category name
+50,dicloxacillin,\bdicloxacillin\b,CLIF 3.0 antimicrobial category name
+50,dolutegravir,\bdolutegravir\b,CLIF 3.0 antimicrobial category name
+50,doripenem,\bdoripenem\b,CLIF 3.0 antimicrobial category name
+50,doxycycline,\bdoxycycline\b,CLIF 3.0 antimicrobial category name
+50,efavirenz,\befavirenz\b,CLIF 3.0 antimicrobial category name
+50,efinaconazole,\befinaconazole\b,CLIF 3.0 antimicrobial category name
+50,emtricitabine,\bemtricitabine\b,CLIF 3.0 antimicrobial category name
+50,entecavir,\bentecavir\b,CLIF 3.0 antimicrobial category name
+50,ertapenem,\bertapenem\b,CLIF 3.0 antimicrobial category name
+50,erythromycin,\berythromycin\b,CLIF 3.0 antimicrobial category name
+50,ethambutol,\bethambutol\b,CLIF 3.0 antimicrobial category name
+50,ethionamide,\bethionamide\b,CLIF 3.0 antimicrobial category name
+50,famciclovir,\bfamciclovir\b,CLIF 3.0 antimicrobial category name
+50,fidaxomicin,\bfidaxomicin\b,CLIF 3.0 antimicrobial category name
+50,fluconazole,\bfluconazole\b,CLIF 3.0 antimicrobial category name
+50,flucytosine,\bflucytosine\b,CLIF 3.0 antimicrobial category name
+50,foscarnet,\bfoscarnet\b,CLIF 3.0 antimicrobial category name
+50,fosfomycin,\bfosfomycin\b,CLIF 3.0 antimicrobial category name
+50,fosmidomycin,\bfosmidomycin\b,CLIF 3.0 antimicrobial category name
+50,ganciclovir,\bganciclovir\b,CLIF 3.0 antimicrobial category name
+50,gatifloxacin,\bgatifloxacin\b,CLIF 3.0 antimicrobial category name
+50,gentamicin,\bgentamicin\b,CLIF 3.0 antimicrobial category name
+50,glecaprevir,\bglecaprevir\b,CLIF 3.0 antimicrobial category name
+50,griseofulvin,\bgriseofulvin\b,CLIF 3.0 antimicrobial category name
+50,imipenem,imipenem,CLIF 3.0 antimicrobial category name + aliases
+50,isavuconazole,\bisavuconazole\b,CLIF 3.0 antimicrobial category name
+50,isavuconazonium,\bisavuconazonium\b,CLIF 3.0 antimicrobial category name
+50,isoniazid,\bisoniazid\b,CLIF 3.0 antimicrobial category name
+50,itraconazole,\bitraconazole\b,CLIF 3.0 antimicrobial category name
+50,kanamycin,\bkanamycin\b,CLIF 3.0 antimicrobial category name
+50,ketoconazole,\bketoconazole\b,CLIF 3.0 antimicrobial category name
+50,lamivudine,\blamivudine\b,CLIF 3.0 antimicrobial category name
+50,ledipasvir,\bledipasvir\b,CLIF 3.0 antimicrobial category name
+50,levofloxacin,\blevofloxacin\b,CLIF 3.0 antimicrobial category name
+50,lincomycin,\blincomycin\b,CLIF 3.0 antimicrobial category name
+50,linezolid,\blinezolid\b,CLIF 3.0 antimicrobial category name
+50,lopinavir,\blopinavir\b,CLIF 3.0 antimicrobial category name
+50,macrolides,\bmacrolides\b,CLIF 3.0 antimicrobial category name
+50,meropenem,merope?nem|meropenam,CLIF 3.0 antimicrobial category name + aliases
+50,methicillin,\bmethicillin\b,CLIF 3.0 antimicrobial category name
+50,metronidazole,\bmetronidazole\b,CLIF 3.0 antimicrobial category name
+50,mezlocillin,\bmezlocillin\b,CLIF 3.0 antimicrobial category name
+50,micafungin,\bmicafungin\b,CLIF 3.0 antimicrobial category name
+50,miconazole,\bmiconazole\b,CLIF 3.0 antimicrobial category name
+50,minocycline,\bminocycline\b,CLIF 3.0 antimicrobial category name
+50,moxalactam,\bmoxalactam\b,CLIF 3.0 antimicrobial category name
+50,moxifloxacin,\bmoxifloxacin\b,CLIF 3.0 antimicrobial category name
+50,mupirocin,\bmupirocin\b,CLIF 3.0 antimicrobial category name
+50,nafcillin,\bnafcillin\b,CLIF 3.0 antimicrobial category name
+50,nitrofurantoin,\bnitrofurantoin\b,CLIF 3.0 antimicrobial category name
+50,norfloxacin,\bnorfloxacin\b,CLIF 3.0 antimicrobial category name
+50,nystatin,\bnystatin\b,CLIF 3.0 antimicrobial category name
+50,ofloxacin,\bofloxacin\b,CLIF 3.0 antimicrobial category name
+50,oritavancin,\boritavancin\b,CLIF 3.0 antimicrobial category name
+50,oseltamivir,\boseltamivir\b,CLIF 3.0 antimicrobial category name
+50,oxacillin,\boxacillin\b,CLIF 3.0 antimicrobial category name
+50,para_aminosalicylic_acid,\bpara[ _-]?aminosalicylic[ _-]?acid\b,CLIF 3.0 antimicrobial category name
+50,penicillin,penicillin(\s*g|\s*v)?\b,CLIF 3.0 antimicrobial category name + aliases
+50,peramivir,\bperamivir\b,CLIF 3.0 antimicrobial category name
+50,pibrentasvir,\bpibrentasvir\b,CLIF 3.0 antimicrobial category name
+50,piperacillin,\bpiperacillin\b,CLIF 3.0 antimicrobial category name
+50,pivampicillin,\bpivampicillin\b,CLIF 3.0 antimicrobial category name
+50,posaconazole,\bposaconazole\b,CLIF 3.0 antimicrobial category name
+50,pretomanid,\bpretomanid\b,CLIF 3.0 antimicrobial category name
+50,pristinamycin,\bpristinamycin\b,CLIF 3.0 antimicrobial category name
+50,pyrazinamide,\bpyrazinamide\b,CLIF 3.0 antimicrobial category name
+50,raltegravir,\braltegravir\b,CLIF 3.0 antimicrobial category name
+50,ribavirin,\bribavirin\b,CLIF 3.0 antimicrobial category name
+50,rifabutin,\brifabutin\b,CLIF 3.0 antimicrobial category name
+50,rifampin,rifampi(n|cin),CLIF 3.0 antimicrobial category name + aliases
+50,rifapentine,\brifapentine\b,CLIF 3.0 antimicrobial category name
+50,ritonavir,\britonavir\b,CLIF 3.0 antimicrobial category name
+50,roxithromycin,\broxithromycin\b,CLIF 3.0 antimicrobial category name
+50,sofosbuvir,\bsofosbuvir\b,CLIF 3.0 antimicrobial category name
+50,spectinomycin,\bspectinomycin\b,CLIF 3.0 antimicrobial category name
+50,streptomycin,\bstreptomycin\b,CLIF 3.0 antimicrobial category name
+50,sulfadiazine,\bsulfadiazine\b,CLIF 3.0 antimicrobial category name
+50,sulfamethoxazole,\bsulfamethoxazole\b,CLIF 3.0 antimicrobial category name
+50,sulfisoxazole,\bsulfisoxazole\b,CLIF 3.0 antimicrobial category name
+50,tavaborole,\btavaborole\b,CLIF 3.0 antimicrobial category name
+50,tedizolid,\btedizolid\b,CLIF 3.0 antimicrobial category name
+50,telavancin,\btelavancin\b,CLIF 3.0 antimicrobial category name
+50,telithromycin,\btelithromycin\b,CLIF 3.0 antimicrobial category name
+50,temocillin,\btemocillin\b,CLIF 3.0 antimicrobial category name
+50,tenofovir,\btenofovir\b,CLIF 3.0 antimicrobial category name
+50,terbinafine,\bterbinafine\b,CLIF 3.0 antimicrobial category name
+50,tetracycline,\btetracycline\b,CLIF 3.0 antimicrobial category name
+50,ticarcillin,\bticarcillin\b,CLIF 3.0 antimicrobial category name
+50,tigecycline,\btigecycline\b,CLIF 3.0 antimicrobial category name
+50,tobramycin,\btobramycin\b,CLIF 3.0 antimicrobial category name
+50,trimethoprim,\btrimethoprim\b,CLIF 3.0 antimicrobial category name
+50,tylosin,\btylosin\b,CLIF 3.0 antimicrobial category name
+50,valacyclovir,\bvalacyclovir\b,CLIF 3.0 antimicrobial category name
+50,valganciclovir,\bvalganciclovir\b,CLIF 3.0 antimicrobial category name
+50,vancomycin,\bvancomycin\b,CLIF 3.0 antimicrobial category name
+50,velpatasvir,\bvelpatasvir\b,CLIF 3.0 antimicrobial category name
+50,voriconazole,\bvoriconazole\b,CLIF 3.0 antimicrobial category name
+50,zanamivir,\bzanamivir\b,CLIF 3.0 antimicrobial category name
+50,zidovudine,\bzidovudine\b,CLIF 3.0 antimicrobial category name

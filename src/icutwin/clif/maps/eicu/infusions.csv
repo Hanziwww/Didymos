@@ -1,0 +1,75 @@
+priority,pattern,med_category,provenance
+10,(\bnss? w/ ?(atb|abx)|\+ ?atbx|\babx\b|\banx\b|zosyn|\bmvi\b|banana bag|flush),__skip__,antibiotic/vitamin carriers and line flushes: not a CLIF continuous medication
+11,(prbc|\brbc\b|blood|\bffp\b|fresh frozen|platelet|cryo),__skip__,blood products (CLIF input table; not a medication)
+12,(tirofiban|aggrastat|abciximab|reopro|glucagon|haldol|haloperidol|acetylc|mannitol|dextran|\btf\b|per gtube|lipid),__skip__,no continuous category (CLIF 3.0 or medication_extensions.csv)
+13,^(ivf|miv|mivf|iv|main|kvo|bolus|iv bolus|ivf bolus|fluid bolus|ivf non-vasoactive|ivf\+additives|ivpb|other ml/hr|other)$,__skip__,fluid composition not recorded
+14,^kcl\b|^potassium( chl|$),potassium_repletion,"potassium chloride infusions and riders (local extension); fluids with a KCl additive ('d5+40kcl', 'ns w/ 20 kcl') stay fluids"
+15,^k ?phos|^(potassium|sodium) phos,phosphate_repletion,phosphate infusions and riders (local extension)
+16,^(cacl|calcium|calicum)\b,ext_calcium,calcium gluconate or chloride infusions (extension concept)
+17,^citrate\b|sodium citrate|trisodium citrate,ext_sodium_citrate,regional citrate anticoagulation (extension concept)
+18,tranexamic|ciklokapron|cyklokapron,ext_tranexamic_acid,tranexamic acid infusions (extension concept)
+20,norepi|levophed,norepinephrine,ricu norepi_rate (regex ^norepi)
+21,(^|[^r])epinephrine|adrenalin|^epi\b,epinephrine,ricu epi_rate (regex ^epi)
+22,phenylephrine|neo-?synephrine,phenylephrine,ricu phn_rate
+23,vasopressin|vasopresin|pitressin,vasopressin,ricu adh_rate (regex ^vasopressin)
+24,dopamine,dopamine,ricu dopa_rate
+25,dobutamine|^dobu,dobutamine,ricu dobu_rate
+26,milrinone|primacor,milrinone,
+27,isoproterenol|isuprel,isoproterenol,
+28,angiotensin|giapreza,angiotensin,
+30,propofol|diprivan,propofol,
+31,fentanyl|sublimaze,fentanyl,
+32,midazolam|versed,midazolam,
+33,lorazepam|ativan,lorazepam,
+34,dexmed|dexmetet|precedex,dexmedetomidine,
+35,ketamine,ketamine,
+36,remifentanil,remifentanil,
+37,hydromorphone|dilaudid,hydromorphone,
+38,morphine,morphine,
+39,pentobarbital,pentobarbital,
+40,insulin,insulin,
+41,heparin,heparin,
+42,argatroban|agatroban,argatroban,
+43,bivalirudin|angiomax,bivalirudin,
+44,eptifibatide|integrilin,eptifibatide,
+45,alteplase|activase|\btpa\b|cathflo,alteplase,alteplase infusion (local extension: CLIF 3.0 lists alteplase as intermittent only)
+46,aminocaproic|amicar,aminocaproic_acid,
+50,amiodarone|cordarone,amiodarone,
+51,diltiazem|cardizem,diltiazem,
+52,esmolol|brevibloc,esmolol,
+53,labetalol,labetalol,
+54,nicardipine|cardene,nicardipine,
+55,clevidipine|cleviprex,clevidipine,
+56,nitroglycerin|\bntg\b|tridil,nitroglycerin,
+57,nitroprusside|nipride,nitroprusside,
+58,procainamide,procainamide,
+59,lidocaine,lidocaine,
+60,cisatracurium|nimbex,cisatracurium,
+61,vecuronium,vecuronium,
+62,rocuronium,rocuronium,
+63,furosemide|lasix,furosemide,
+64,bumetanide|bumex,bumetanide,
+65,torsemide,torsemide,
+66,pantoprazole|protonix,pantoprazole,
+67,esomeprazole|nexium,esomeprazole,
+68,octreotide|sandostatin,octreotide,
+69,naloxone|narcan,naloxone,
+70,oxytocin|pitocin,oxytocin,
+71,levothyroxine|synthroid,levothyroxine,
+72,aminophylline,aminophylline,
+73,terbutaline,terbutaline,
+74,epoprostenol|flolan|veletri,epoprostenol,
+75,treprostinil|remodulin,treprostinil,
+76,alprostadil,alprostadil,
+80,magnesium,magnesium_sulfate,magnesium sulfate infusion
+81,bicarb|nahco3|\bhco3\b|\bbic\b,sodium_bicarbonate,sodium bicarbonate infusion (incl. isotonic bicarbonate in D5W or sterile water)
+82,albumin 25|25% albumin,albumin_25,
+83,albumin 5|5% albumin,albumin_5,
+84,albumin,__skip__,albumin concentration not recorded (CLIF 3.0 splits albumin by concentration)
+85,\btpn\b|parenteral,tpn,
+86,^d5w? ?(1/2|\.45|0\.45|\.2|/ ?ns|in|\+ ?ns|ns|nss)|^d5\.2|^d5 ?1/2|^d51/2,dextrose_other,dextrose-saline mixtures (CLIF-MIMIC: Dextrose 5% / Saline -> dextrose_other)
+87,^d10|dextrose 10,dextrose_10_water,
+88,^d5w?\b|dextrose 5|^d5\+,dextrose_5_water,
+89,lactated ringer|^lr\b,lactated_ringers_solution,
+90,plasma-?lyte|normosol,plasma_lyte,
+91,\bns\b|\bnss\b|saline|nacl|sodium chloride|^0\.9|^\.9|^\.45|^0\.45|^1/2 ?nss?,sodium_chloride,"all saline concentrations (CLIF-MIMIC maps NaCl 0.9%, 0.45%, 3% and 23.4% to sodium chloride)"

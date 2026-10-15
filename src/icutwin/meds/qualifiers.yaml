@@ -1,0 +1,19 @@
+# One extension level appended to ELF codes in our build (M4 decision D2). The ELF code is the event's parent
+# code (metadata/codes.parquet parent_codes), so ELF-only consumers collapse a qualified code to it. Our engine
+# runs CLIF_MEDS's own concept config of the domain (the run's _concept_config, our overlay included) with the
+# level appended; icutwin.meds.parity checks that the parents are CLIF_MEDS's events exactly.
+#   level: the CLIF column whose value becomes the last code part, normalized as CLIF categories are
+#          (trimmed, lower case, spaces and hyphens -> '_'; NULL -> UNK, as CLIF_MEDS writes a missing part)
+#   where: only rows matching this SQL predicate are qualified; the others keep the ELF code
+MED_CON:
+  level: med_route_category       # iv | im | inhaled; UNK where the source states no route
+MED_INT:
+  level: med_route_category       # CLIF 3.0 intermittent routes plus the local extension 'inhaled'
+MED_ORD:                          # our extension domain (meds/elf_ext/MED_ORD.yaml); the column is a declared
+  level: med_route_category       # extension of CLIF 3.0 medication_orders (clif/extension_columns.yaml)
+VITAL:
+  level: meas_site_name           # arterial | cuff; the ELF code merges the two (HELIOS limitation)
+  where: "vital_category IN ('sbp', 'dbp', 'map')"
+PA:
+  level: categorical_value        # CLIF_MEDS's PA config drops categorical results (CAM-ICU, SBT pass/fail);
+  where: "categorical_value IS NOT NULL AND numerical_value IS NULL"   # a scored item (Braden) keeps its score

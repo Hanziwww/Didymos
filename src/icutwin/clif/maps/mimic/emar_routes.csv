@@ -1,0 +1,76 @@
+route,med_route_category,provenance
+PO,enteral,oral
+ORAL,enteral,oral
+PO/NG,enteral,oral or nasogastric
+NG,enteral,nasogastric tube
+NG/OG,enteral,nasogastric or orogastric tube
+OG,enteral,orogastric tube
+ND,enteral,nasoduodenal tube
+G TUBE,enteral,gastrostomy tube
+J TUBE,enteral,jejunostomy tube
+PEG,enteral,gastrostomy tube
+IV,iv,intravenous
+IV DRIP,,"intravenous: an infusion, not an intermittent dose"
+IV BOLUS,iv,intravenous
+IV INFUSION,,"intravenous: an infusion, not an intermittent dose"
+IVCI,,"intravenous continuous infusion: an infusion, not an intermittent dose"
+IVPCA,,"intravenous patient-controlled analgesia: an infusion, not an intermittent dose"
+PB,iv,intravenous piggyback
+IJ,iv,internal jugular (central venous)
+FEMORAL VEIN,iv,central venous
+IM,im,intramuscular
+SC,im,subcutaneous (CLIF mCIDE files subcutaneous under im)
+SUBCUT,im,subcutaneous
+SUBCUT INFUSION,,"subcutaneous: an infusion, not an intermittent dose"
+SCPUMP,,"subcutaneous pump: an infusion, not an intermittent dose"
+SCPCA,,"subcutaneous patient-controlled analgesia: an infusion, not an intermittent dose"
+SL,buccal_sublingual,sublingual
+BUCCAL,buccal_sublingual,buccal
+BU,buccal_sublingual,buccal
+INTRAPLEURAL,intrapleural,intrapleural
+PL,intrapleural,pleural
+IH,inhaled,inhaled (local intermittent route extension: extensions.yaml)
+NEB,inhaled,nebulized (local intermittent route extension: extensions.yaml)
+INHALATION,inhaled,inhaled (local intermittent route extension: extensions.yaml)
+TP,,topical
+TD,,transdermal
+TRANSDERMAL,,transdermal
+PR,,rectal
+VG,,vaginal
+NU,,nasal (fluticasone / saline / mupirocin nasal)
+NAS,,nasal
+NS,,nasal
+IN,,intranasal
+BOTH EYES,,ophthalmic
+RIGHT EYE,,ophthalmic
+LEFT EYE,,ophthalmic
+OU,,ophthalmic
+OD,,ophthalmic
+OS,,ophthalmic
+INTRAVITREAL,,ophthalmic
+IVT,,intravitreal
+BOTH EARS,,otic
+RIGHT EAR,,otic
+LEFT EAR,,otic
+AD,,otic
+AS,,otic
+AU,,otic
+DWELL,,catheter dwell / lock
+LOCK,,catheter lock
+FLUSH,,line flush
+DIALYS,,in dialysate
+REPLACE,,CRRT replacement fluid
+IP,,intraperitoneal
+IA,,intra-arterial
+IT,,intrathecal
+ED,,epidural (regional)
+PERIPHNERVE,,peripheral nerve block (regional)
+LUMBAR PLEXUS,,lumbar plexus block (regional)
+ID,,intradermal (skin test)
+IRR,,irrigation
+IR,,irrigation
+IMPELLA,,Impella purge solution
+INTRACORPOREAL,,intracorporeal
+IMPLANT,,implant
+SUBDERMAL,,subdermal implant
+TT,,unspecified

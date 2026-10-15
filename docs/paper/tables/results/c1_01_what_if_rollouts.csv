@@ -1,0 +1,10 @@
+Treatment,Response,Expected,Prefixes,Share expected sign,Mean effect (give - withhold),95% CI,Withhold mean,Dose arms (mean response)
+norepinephrine,map,+,173,0.45,-0.806,-1.567 to -0.143,76.80,high 76.2; low 76.1; median 76.0
+insulin,glucose,-,200,0.63,-14.157,-22.592 to -6.378,196.79,high 177.2; low 176.3; median 182.6
+crrt,potassium,-,200,0.60,-0.095,-0.173 to -0.024,4.75,-
+crrt,creatinine_24h,-,191,0.58,-0.173,-0.453 to 0.125,3.24,-
+furosemide,urine_output,+,52,1.00,723.347,626.754 to 833.615,204.42,-
+imv,fio2_charted,+,200,0.93,2.458,2.167 to 2.768,1.22,-
+imv,spo2,+,194,0.62,0.384,0.234 to 0.543,97.32,-
+fluid_bolus,map,+,193,0.45,-0.211,-0.809 to 0.429,79.12,-
+fluid_bolus,urine_output,+,186,0.52,30.535,-23.232 to 86.514,307.33,-

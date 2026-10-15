@@ -1,0 +1,7 @@
+Database,Patients,Stays
+"RICD, TEST",2015,2646
+"RICD, FT",1388,1859
+"RICD, LABEL",645,877
+"zigongICU, TEST",1384,1460
+"zigongICU, FT",927,973
+"zigongICU, LABEL",431,466

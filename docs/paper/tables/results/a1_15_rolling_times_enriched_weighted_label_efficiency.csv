@@ -1,0 +1,58 @@
+Endpoint,Dataset,Twin,n=100,300,"1,000","3,000","all (up to 5,000)"
+"Decompensation, 24 h",MIMIC-IV,0.927,0.721,0.703,0.918,0.942,0.954
+"Decompensation, 24 h",eICU,0.828,0.745,0.784,0.845,0.861,0.887
+"Decompensation, 24 h",HiRID,0.885,0.857,0.770,0.912,0.914,0.941
+"Decompensation, 24 h",AmsterdamUMCdb,0.892,0.820,0.830,0.926,0.948,0.951
+"Decompensation, 24 h",SICdb,0.873,0.886,0.878,0.933,0.941,0.940
+"Decompensation, 24 h",NWICU,0.896,0.805,0.832,0.913,0.923,0.935
+"Decompensation, 24 h",INSPIRE,0.912,0.684,0.786,0.872,0.926,0.881
+"New IMV, 24 h",MIMIC-IV,0.935,0.576,0.763,0.740,0.805,0.869
+"New IMV, 24 h",eICU,0.795,0.500,0.650,0.826,0.845,0.873
+"New IMV, 24 h",HiRID,0.698,0.649,0.678,0.741,0.719,0.805
+"New IMV, 24 h",AmsterdamUMCdb,0.894,0.550,0.788,0.764,0.860,0.854
+"New IMV, 24 h",SICdb,0.945,0.672,0.866,0.748,0.842,0.872
+"New IMV, 24 h",NWICU,0.860,0.737,0.726,0.688,0.791,0.811
+"New IMV, 24 h",INSPIRE,0.630,0.450,0.655,0.446,0.619,0.817
+"New vasopressor, 24 h",MIMIC-IV,0.942,0.804,0.827,0.753,0.857,0.869
+"New vasopressor, 24 h",eICU,0.910,0.694,0.709,0.719,0.807,0.805
+"New vasopressor, 24 h",HiRID,0.693,0.535,0.574,0.611,0.695,0.655
+"New vasopressor, 24 h",AmsterdamUMCdb,0.884,0.594,0.870,0.887,0.861,0.888
+"New vasopressor, 24 h",SICdb,0.769,0.645,0.694,0.712,0.693,0.719
+"New vasopressor, 24 h",NWICU,0.874,0.662,0.704,0.810,0.807,0.824
+"New vasopressor, 24 h",INSPIRE,0.701,0.417,0.525,0.508,0.472,0.563
+"New RRT, 48 h",MIMIC-IV,0.971,0.590,0.870,0.900,0.948,0.944
+"New RRT, 48 h",eICU,0.975,0.466,0.545,0.836,0.848,0.888
+"New RRT, 48 h",HiRID,0.907,0.686,0.742,0.835,0.845,0.879
+"New RRT, 48 h",AmsterdamUMCdb,0.912,0.918,0.829,0.859,0.915,0.939
+"New RRT, 48 h",SICdb,0.944,-,0.736,0.781,0.925,0.928
+"New RRT, 48 h",NWICU,0.986,0.927,0.935,0.966,0.970,0.977
+"New RRT, 48 h",INSPIRE,0.721,-,0.639,0.652,0.733,0.639
+"AKI stage >= 2, 48 h",MIMIC-IV,0.842,0.707,0.726,0.721,0.752,0.765
+"AKI stage >= 2, 48 h",eICU,0.863,0.656,0.706,0.718,0.756,0.777
+"AKI stage >= 2, 48 h",HiRID,0.866,0.706,0.743,0.844,0.852,0.869
+"AKI stage >= 2, 48 h",AmsterdamUMCdb,0.875,0.547,0.629,0.767,0.787,0.785
+"AKI stage >= 2, 48 h",SICdb,0.854,0.693,0.741,0.782,0.766,0.801
+"AKI stage >= 2, 48 h",NWICU,0.911,0.353,0.714,0.836,0.828,0.856
+"AKI stage >= 2, 48 h",INSPIRE,0.864,0.665,0.649,0.796,0.780,0.844
+"Sepsis (ASE), 24 h",MIMIC-IV,0.842,0.618,0.672,0.662,0.688,0.787
+"Sepsis (ASE), 24 h",AmsterdamUMCdb,0.945,0.636,0.673,0.820,0.890,0.801
+"Hypotension, 4 h",MIMIC-IV,0.841,0.889,0.848,0.830,0.880,0.890
+"Hypotension, 4 h",eICU,0.886,0.873,0.852,0.855,0.924,0.891
+"Hypotension, 4 h",HiRID,0.884,0.853,0.859,0.857,0.864,0.845
+"Hypotension, 4 h",AmsterdamUMCdb,0.904,0.910,0.917,0.885,0.895,0.886
+"Hypotension, 4 h",SICdb,0.893,0.750,0.808,0.843,0.870,0.883
+"Hypotension, 4 h",INSPIRE,0.915,0.765,0.538,0.863,0.933,0.973
+"Hyperkalaemia (top bin), 24 h",MIMIC-IV,0.799,0.651,0.722,0.744,0.743,0.752
+"Hyperkalaemia (top bin), 24 h",eICU,0.814,0.583,0.511,0.612,0.820,0.814
+"Hyperkalaemia (top bin), 24 h",HiRID,0.853,0.753,0.801,0.859,0.882,0.873
+"Hyperkalaemia (top bin), 24 h",AmsterdamUMCdb,0.901,0.628,0.833,0.799,0.850,0.874
+"Hyperkalaemia (top bin), 24 h",SICdb,0.650,0.643,0.674,0.699,0.751,0.691
+"Hyperkalaemia (top bin), 24 h",NWICU,0.746,0.391,0.660,0.638,0.593,0.614
+"Hyperkalaemia (top bin), 24 h",INSPIRE,0.729,0.584,0.799,0.578,0.735,0.829
+"Thrombocytopenia, 48 h",MIMIC-IV,0.871,0.742,0.489,0.881,0.917,0.907
+"Thrombocytopenia, 48 h",eICU,0.730,0.826,0.784,0.647,0.772,0.869
+"Thrombocytopenia, 48 h",HiRID,0.990,0.866,0.883,0.880,0.970,0.983
+"Thrombocytopenia, 48 h",AmsterdamUMCdb,0.995,0.933,0.948,0.937,0.984,0.985
+"Thrombocytopenia, 48 h",SICdb,0.981,0.932,0.840,0.939,0.914,0.953
+"Thrombocytopenia, 48 h",NWICU,0.917,0.757,0.822,0.901,0.924,0.927
+"Thrombocytopenia, 48 h",INSPIRE,0.966,0.678,0.960,0.927,0.940,0.964

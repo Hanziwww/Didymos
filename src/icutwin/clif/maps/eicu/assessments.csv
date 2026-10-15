@@ -1,0 +1,14 @@
+item,assessment_category,provenance
+Glasgow coma score|Eyes,gcs_eye,ricu egcs
+Glasgow coma score|Motor,gcs_motor,ricu mgcs
+Glasgow coma score|Verbal,gcs_verbal,ricu vgcs
+Glasgow coma score|GCS Total,gcs_total,ricu tgcs
+Best Eye Response|Value,gcs_eye,site-specific flowsheet row
+Eye Opening|Value,gcs_eye,site-specific flowsheet row
+Best Motor Response|Value,gcs_motor,site-specific flowsheet row
+Motor Response|Value,gcs_motor,site-specific flowsheet row
+Best Verbal Response|Value,gcs_verbal,site-specific flowsheet row
+Verbal Response|Value,gcs_verbal,site-specific flowsheet row
+Score (Glasgow Coma Scale)|Value,gcs_total,site-specific flowsheet row
+RASS|Value,rass,site-specific flowsheet row
+Pain Score/Goal|Pain Score,nrs,eICU 0-10 pain score (Pain Score/Goal pick-list); numeric rating scale

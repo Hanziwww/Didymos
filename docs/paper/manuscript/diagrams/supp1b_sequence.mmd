@@ -1,0 +1,30 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif", "fontSize": "13px", "primaryColor": "#F0F0F0", "primaryBorderColor": "#4D4D4D", "primaryTextColor": "#000000", "lineColor": "#333333", "clusterBkg": "#FFFFFF", "clusterBorder": "#8C8C8C", "edgeLabelBackground": "#FFFFFF"}, "fontFamily": "Arial, Helvetica, sans-serif", "markdownAutoWrap": false, "htmlLabels": false, "flowchart": {"htmlLabels": false, "wrappingWidth": 480, "subGraphTitleMargin": {"top": 6, "bottom": 10}, "curve": "linear", "nodeSpacing": 22, "rankSpacing": 30}}}%%
+%% Supplementary Fig. 1b: one ICU stay as one token sequence (source: docs/paper/tokenization.md)
+flowchart TB
+    subgraph PRE["Before the timeline"]
+        direction LR
+        BOS["[BOS]"] --> PF["Prefix<br/>dataset, site, sex, 5-year age band,<br/>era, race, ethnicity<br/>270 tokens"]
+        PF --> HD["Header<br/>ICU unit type, admission source,<br/>surgical status, diagnosis group,<br/>admission type, prior ICU stays<br/>96 tokens"]
+        HD --> GL["Goal, optional<br/>outcomes to condition on<br/>50 tokens; never a target"]
+    end
+    subgraph TLN["Timeline"]
+        direction LR
+        TL["[TL]<br/>from 48 h before ICU admission<br/>to ICU discharge"] --> G1["Time group<br/>events within 1 minute,<br/>in canonical order:<br/>event code with value decile<br/>19,774 event tokens"]
+        G1 --> IV["Interval<br/>one of 12 bins,<br/>1-5 min to 7 d+"]
+        IV --> G2["Time group"]
+        G2 --> DY["ICU-day clock<br/>day number and each<br/>treatment's status;<br/>written by the grammar<br/>40 tokens"]
+        DY --> MORE["..."]
+    end
+    subgraph POST["After the timeline"]
+        direction LR
+        EN["[END] end block<br/>hospital discharge, death,<br/>billing diagnoses<br/>500 tokens"] --> EOS["[EOS]"]
+    end
+    PRE --> TLN --> POST
+    NOTE["Longer stays continue in further windows of up to 32,768 tokens<br/>that repeat the prefix and header and open with a state summary.<br/>Diagnoses and procedures use 3,057 sub-tokens."]
+    POST ~~~ NOTE
+    classDef accent fill:#E3EEF7,stroke:#0072B2,stroke-width:1.5px,color:#000000;
+    classDef plain fill:#F0F0F0,stroke:#4D4D4D,stroke-width:1px,color:#000000;
+    classDef note fill:#FFFFFF,stroke:#B3B3B3,stroke-width:1px,color:#4D4D4D;
+    class G1,G2,IV accent;
+    class BOS,PF,HD,GL,TL,DY,MORE,EN,EOS plain;
+    class NOTE note;

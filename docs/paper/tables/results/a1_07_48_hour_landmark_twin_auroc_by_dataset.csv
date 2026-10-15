@@ -1,0 +1,4 @@
+Endpoint,MIMIC-IV,eICU,HiRID,AmsterdamUMCdb,SICdb,NWICU,INSPIRE
+ICU death,0.830,0.978,0.908,0.836,0.912,0.838,-
+In-hospital death,0.849,0.890,0.790,0.816,0.882,0.835,0.785
+ICU stay > 7 days,0.834,0.785,0.696,0.810,0.784,0.771,0.797

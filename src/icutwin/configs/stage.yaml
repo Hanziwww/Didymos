@@ -1,0 +1,26 @@
+# S1 raw staging: archive -> native layout (+ deterministic patient-hash subsets for local runs)
+defaults:
+  - paths
+  - _self_
+
+task: stage             # stage (archive -> native layout) | mirror (native layout -> parquet)
+mode: subset            # subset | full
+frac: 0.02              # subset fraction of patients per dataset
+salt: icutwin-subset-v1 # selection salt (independent of the split salt)
+datasets: [mimic, eicu, aumc, hirid, sicdb, nwicu, inspire]
+include: []             # optional members, e.g. [sicdb_minute, hirid_imputed]
+compression: null       # null = dataset default (gzip for PhysioNet layouts, none for AUMCdb/HiRID)
+jobs: 1                 # datasets staged in parallel processes
+threads_per_job: 4      # pyarrow CPU/IO threads per staging process (bounds CSV readahead memory)
+out_root: ${paths.data}/raw/${mode}
+mirror_root: ${paths.data}/parquet/${mode}
+duckdb:
+  threads: 8
+  memory_limit: 12GB
+  sample_size: -1         # -1 = scan whole file for type detection
+
+hydra:
+  run:
+    dir: ${paths.runs}/hydra/stage/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    chdir: false
